@@ -1,0 +1,452 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, menu, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+head {
+    display: none;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+body {
+    line-height: 1;
+}
+
+body, th, td, input, select, textarea, button {
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+}
+
+@media only screen and (min-width: 768px){
+body {
+    min-width: 1140px;
+}
+}
+
+main {
+    display: block;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+.badge-contents {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(-244px + 100vh);
+    background-color: rgb(246, 246, 246);
+    box-sizing: border-box;
+}
+
+
+
+.badgeshop-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    color: transparent;
+}
+
+div {
+    display: block;
+}
+
+.content-whole {
+    padding-bottom: 24px;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px){
+
+.content-whole {
+    width: 1120px;
+    margin: 0px auto;
+    padding: 40px 0px 64px;
+}
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.badgeshop-text1 {
+    color: rgb(32, 32, 32);
+    font-size: 26px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    font-family: "KakaoBig Bold";
+    line-height: 1.52;
+    text-align: center;
+}
+
+.top-bar {
+    padding: 24px 20px 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px){
+
+.top-bar {
+    padding: 0px;
+}
+}
+
+label {
+    cursor: default;
+}
+
+.check-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input {
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+.check-input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    outline: 0px;
+    opacity: 0;
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+svg[Attributes Style] {
+    width: 20;
+    height: 20;
+    opacity: 1;
+}
+
+.checkbox-image {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    flex-shrink: 0;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+circle[Attributes Style] {
+    cx: 10;
+    cy: 10;
+    r: 9.25;
+    fill: white;
+    stroke: rgb(255, 64, 80);
+    stroke-width: 1;
+}
+
+.check-input:not(:checked) + svg circle {
+    stroke: rgb(174, 174, 174);
+}
+
+.check-label-text {
+    padding-left: 4px;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.5;
+}
+
+div {
+    display: block;
+}
+
+.content-wrap {
+    padding: 16px 20px 0px;
+}
+
+@media only screen and (min-width: 768px){
+.content-wrap {
+    padding: 8px 0px 0px;
+}
+}
+
+.badge-whole {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px){
+.badge-whole {
+    margin: -10px;
+}
+}
+
+.content-card {
+    box-sizing: border-box;
+    height: 100px;
+    margin: 10px calc(6px);
+    width: calc(33.33% - 12px);
+    height: 100%;
+    margin: 16px calc(6px);
+}
+
+@media only screen and (min-width: 768px){
+.content-card {
+    height: 120px;
+}
+}
+ 
+@media only screen and (min-width: 768px){
+.badge-whole .content-card {
+    height: 100%;
+    margin: 20px calc(10px);
+    width: 360px;
+}
+}
+
+.badge-whole .content-card {
+    height: auto;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px;
+    width: calc(33.33% - 12px);
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card_inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.badge-whole .content_card .card_inner {
+    flex-direction: column;
+}
+
+.badge-1-thumnail {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: inherit;
+    flex-shrink: 0;
+    position: relative;
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    background: url(https://mud-kage.kakaocdn.net/dn/cdS2zq/btqcKJyBiPS/SDkrVVYcKkxHXkcD8l68i0/img.png) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
+}
+
+.badge-1-thumnail::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: inherit;
+}
+
+
+@media only screen and (min-width: 768px){
+.badge-1-thumnail {
+    width: 120px;
+    border-radius: 8px;
+}
+}
+
+.badge-whole .content_card .thumbnail {
+    height: 0px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 0px;
+    
+}
+
+@media only screen and (min-width: 768px){
+.badge-whole .content_card .thumbnail {
+    height: 180px;
+}
+}
+
+.card_content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+.badge-whole .content_card .card_content {
+    width: 100%;
+    padding: 8px 0px 0px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+.badge-whole .content_card .card_content {
+    padding: 24px 20px;
+}
+}
+
+strong {
+    font-weight: bold;
+}
+
+.card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+}
+
+.badge-whole .content_card .card_title {
+    font-size: 14px;
+    line-height: 1.43;
+    font-family: "KakaoBig Bold";
+    font-size: 16px;
+    line-height: 1.56;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px){
+.badge-whole .content_card .card_title {
+    font-size: 18px;
+    line-height: 1.48;
+}
+}
+
+.card_subtext {
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.5;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 768px){
+ .badge-whole .content_card .card_subtext {
+    margin-top: 6px;
+    font-size: 15px;
+}
+}
