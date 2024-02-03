@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>카카오계정</title>
+        <link
+            href="/staticfiles/css/khj/login.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <div id="container-doc">
+            <!-- ::before -->
+            <div class="inner-container">
+                <!-- 메인 -->
+                <main class="login-main">
+                    <!-- 제목 -->
+                    <div class="login-title">
+                        <h1 class="tit-service">
+                            <span class="logo-kakao">
+                                <span class="ir-wa">Kakao</span>
+                            </span>
+                        </h1>
+                    </div>
+                    <!-- 로그인 -->
+                    <article id="login-content" class="content-article">
+                        <div class="cont-login">
+                            <div class="login-kakaomail">
+                                <form name="box">
+                                    <div class="item-form fst">
+                                        <div class="box-tf">
+                                            <!-- login-id-1" -->
+                                            <label
+                                                class="screen-out"
+                                                for="login-id-1"
+                                                >계정정보 입력</label
+                                            >
+                                            <!-- 아이디 입력창 -->
+                                            <input
+                                                type="text"
+                                                id="login-id-1"
+                                                name="login"
+                                                placeholder="카카오메일 아이디, 이메일, 전화번호 "
+                                                class="tf-g"
+                                                value
+                                            />
+                                            <div class="util-tf"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-form">
+                                        <div class="box-tf" id="box-password">
+                                            <!-- login-password-2 -->
+                                            <label
+                                                class="screen-out"
+                                                for="login-password-2"
+                                                >비밀번호 입력</label
+                                            >
+                                            <!-- 비밀번호 입력창 -->
+                                            <input
+                                                type="password"
+                                                id="login-password-2"
+                                                name="password"
+                                                placeholder="비밀번호"
+                                                autocomplete="off"
+                                                class="tf-g"
+                                                value
+                                            />
+                                        </div>
+                                        <div class="util-tf"></div>
+                                    </div>
+                                    <div class="set-login">
+                                        <div class="item-choice">
+                                            <span>
+                                                <!-- 간편로그인 -->
+                                                <input
+                                                    type="checkbox"
+                                                    id="save-signedin-4"
+                                                    class="inp-choice"
+                                                    name="save-signedin"
+                                                    value="false"
+                                                />
+                                                <label
+                                                    class="lab-choice"
+                                                    for="save-signedin-4"
+                                                    id="label-save-signedin"
+                                                >
+                                                    <span
+                                                        class="ico-comm"
+                                                    ></span
+                                                    >간편로그인 정보 저장
+                                                </label>
+                                            </span>
+                                            <button
+                                                type="button"
+                                                class="btn-help"
+                                                aria-describedby="label-savesignedin"
+                                                aria-expanded="false"
+                                            >
+                                                <span class="ico-comm ico-help"
+                                                    >도움말 보기</span
+                                                >
+                                            </button>
+                                            <!-- ::after -->
+                                        </div>
+                                        <!-- ::after -->
+                                    </div>
+                                    <div class="confirm-btn">
+                                        <!-- 로그인 버튼 -->
+                                        <button
+                                            type="submit"
+                                            class="btn-g highlight"
+                                        >
+                                            로그인
+                                        </button>
+                                        <span class="line-or">
+                                            <span class="txt-or">또는</span>
+                                        </span>
+                                        <!-- QR코드 로그인 -->
+                                        <button type="button" class="btn-g">
+                                            QR코드 로그인
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="info-user">
+                                    <!-- 회원가입으로 이동(href) -->
+                                    <a href="join.html" class="link-join"
+                                        >회원가입</a
+                                    >
+                                    <ul class="list-user">
+                                        <li>
+                                            <!-- 계정찾기로 이동(href) -->
+                                            <a
+                                                href="find-id.html"
+                                                class="link-user"
+                                                >계정 찾기</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <!-- 비밀번호찾기로 이동(href) -->
+                                            <a
+                                                href="find-password.html"
+                                                class="link-user"
+                                                >비밀번호 찾기</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+            <footer class="login-footer">
+                <strong class="screen-out">서비스 이용정보</strong>
+                <div class="service-info">
+                    <a
+                        href="https://www.kakao.com/policy/terms?lang=ko"
+                        class="link-info"
+                        >이용약관</a
+                    >
+                    <a
+                        href="https://www.kakao.com/policy/privacy?lang=ko"
+                        class="link-info"
+                        ><strong>개인정보 처리방침</strong></a
+                    >
+                    <a
+                        href="https://www.kakao.com/policy/oppolicy?lang=ko"
+                        class="link-info"
+                        >운영정책</a
+                    >
+                    <a href="https://cs.kakao.com/" class="link-info"
+                        >고객센터</a
+                    >
+                    <a
+                        href="https://www.kakao.com/notices?lang=ko"
+                        class="link-info"
+                        >공지사항</a
+                    >
+                </div>
+                <small class="txt-copyright">
+                    Copyright ©
+                    <a class="link-kakaocorp" href="http://kakaocorp.com/"
+                        >Kakao Corp.</a
+                    >
+                    All rights reserved.
+                </small>
+            </footer>
+        </div>
+    </body>
+    <script src="/staticfiles/js/khj/login.js"></script>
+</html>
