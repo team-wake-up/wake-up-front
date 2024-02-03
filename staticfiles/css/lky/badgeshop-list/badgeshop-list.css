@@ -1,0 +1,115 @@
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    background: #fff;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoBig Regular,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,dotum,돋움,sans-serif;
+    color: #444;
+}
+
+body, html {
+    min-width: 1140px;
+    margin: 0;
+    padding: 0;
+}
+
+/* body CSS */
+
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+#dkWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100vh;
+}
+
+#dkContent, #rootContent {
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+#dkContent {
+    position: relative;
+    margin: 0 0 -212px;
+}
+
+#mArticle {
+    padding: 0 0 250px;
+}
+
+.group-tagcovernew {
+    width: 100%;
+}
+
+.cont-search #mArticle {
+    margin-bottom: 100px;
+    padding-bottom: 252px;
+}
+
+.screen-out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.group-tagcovernew .info-tag:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004d;
+    content: "";
+}
+
+.group-tagcovernew.type-html .info-tag:before {
+    display: none;
+}
+
+.group-tagcovernew .info-tag {
+    position: relative;
+    height: 600px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.group-tagcovernew.type-html .info-tag {
+    background-position: 50% 100%;
+    background-size: contain;
+}
+
+.inner-info-tag {
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    width: 700px;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.group-tagcovernew .tit-tag {
+    display: block;
+    font-family: KakaoBig Bold,sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+}

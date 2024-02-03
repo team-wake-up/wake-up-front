@@ -18,6 +18,52 @@
         />
     </head>
     <body>
-        <span></span>
+        <together-app ng-version="12.1.5">
+            <div
+                id="dkWrap"
+                scrollheaderfixed=""
+                fixedreachedelementid="btnSearch"
+                fixeddirection="bottom"
+                fixedclass="header_fixed"
+                class="together_top"
+            >
+                <span id="rootContent">
+                    <router-outlet></router-outlet>
+                    <ng-component>
+                        <div id="dkContent" class="cont-search">
+                            <div id="mArticle">
+                                <tag-home-big-issue-header>
+                                    <div class="group-tagcovernew type-html">
+                                        <h2 class="screen-out">뱃지홈 본문</h2>
+                                        <div
+                                            class="info-tag tag-img"
+                                            style="
+                                                background-color: rgb(
+                                                    255,
+                                                    227,
+                                                    230
+                                                );
+                                                background-image: url('https://mud-kage.kakaocdn.net/dn/B5RzN/btsATki6fAp/8kkvyfddKGoXDPUfLyMQ00/img.jpg');
+                                            "
+                                        >
+                                            <div class="inner-info-tag">
+                                                <span class="cont-tag">
+                                                    <h3
+                                                        class="tit-tag"
+                                                        style="
+                                                            white-space: pre-line;
+                                                        "
+                                                    ></h3>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tag-home-big-issue-header>
+                            </div>
+                        </div>
+                    </ng-component>
+                </span>
+            </div>
+        </together-app>
     </body>
 </html>
