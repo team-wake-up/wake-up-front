@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 파비콘 및 타이틀 -->
+        <link href="../admin_post/images/favicon.png" rel="shortcut icon" />
+        <link
+            href="../../../../staticfiles/css/admin/admin-post.css"
+            rel="stylesheet"
+        />
+        <title>관리자페이지 : 포스트</title>
+    </head>
+    <body class="body-full">
+        <div class="all-full-div">
+            
+            
+            <!-- 관리자페이지 전체 -->
+            <div class="content-full-div">
+                <!-- 상단 메뉴 -->
+                <nav class="header-menu-nav">
+                    <!-- 관리자 왼쪽 로고 -->
+                    <div class="admin-left-logo-div">
+                        <a href="#">
+                            <div class="admin-logo-img-div">
+                                <img src="images\admin_logo.png" id="admin-logo" alt="" />
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="admin-right-menu-div">
+                        <div class="admin-right-menu-img-div">
+                            <button class="admin-right-menu-img-button">
+                                <img src="../admin_post/images/favicon.png" class="admin-right-my-img-tag" alt=""/>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+                <!-- 상단 메뉴 끝 -->
+                
+                <!-- 아래부턴 관리자 메뉴 배경 내용 -->
+                <div class="admin-content-body-div">
+                    <!-- 왼쪽 메뉴 전체 div -->
+                    <nav class="admin-menu-nav">
+
+                        <!-- 관리자 프로필 감싼 div -->
+                        <div class="admin-profile-div_all">
+                            <!--프로필 중앙 -->
+                            <div class ="admin-profile-content-center-div">
+                                <!-- 프로필 내용 이미지 감싼 div  -->
+                                <div class="admin-profile-content-img-div" >
+                                    <!-- 프로필 이미지 버튼 -->
+                                        <button aria-rabel="button" class ="admin-profile-img-button" type="button">
+                                            <img src="../../admin/admin_post/images/favicon.png" class="admin-profile-button-img" alt="프로필 이미지" />
+                                            <div class = "admin-profile-button-div"></div>
+                                        </button>
+                                </div>
+                                    <!-- 이미지 하단 관리자 이름 -->
+                                    <h2 class="admin-profile-name-div">관리자</h2>
+                                <a target="#" href="#">
+                                    <!-- 관리자 정보 버튼 -->
+                                    <button aria-label="button" class="admin-info-button" type="button">
+                                        <!-- 관리자 정보 버튼 div -->
+                                        <div class="admin-info-button-div">
+                                            <!-- 관리자 정보 버튼명 -->
+                                            <div class="admin-info-button-name">내 스튜디오</div>
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="admin-profile-button-info-img" height="16px" width="16px">
+                                            <path d="M11 7a1 1 0 0 0-1-1H4v14h14v-6a1 1 0 1 0-2 0v4H6V8h4a1 1 0 0 0 1-1Z"></path>
+                                            <path d="M19.01 3.829H20v6.656a1 1 0 1 1-2 0V7.244l-5.293 5.293a1 1 0 0 1-1.414-1.415l5.293-5.292h-3.243a1 1 0 1 1 0-2H19.01Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- 메뉴 선택 -->
+                        <ul class="admin-menu-list">
+                            <!-- 포스트 -->
+                            <li class="admin-menu-list-post">
+                                <a class="admin-menu-list-post-a-tag" href="#">
+                                    <svg viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-post-img">
+                                    <path d="M21.38 2.768a1.726 1.726 0 0 0-2.441 0L17.807 3.9l2.442 2.441L21.38 5.21a1.727 1.727 0 0 0 0-2.441ZM19.141 7.449 16.7 5.007l-6.542 6.541-1.193 2.573c-.314.676.386 1.376 1.062 1.062L12.6 13.99l6.541-6.541Z"></path><path d="M16.015 3.233A5.662 5.662 0 0 0 15.4 3.2H8.6A5.6 5.6 0 0 0 3 8.8v6.8a5.6 5.6 0 0 0 5.6 5.6h6.8a5.6 5.6 0 0 0 5.6-5.6V8.8c0-.247-.016-.49-.047-.729l-7.397 7.075a.447.447 0 0 1-.127.086l-2.764 1.228a2.281 2.281 0 0 1-3.034-2.959l.915-2.205a4.805 4.805 0 0 1 1.02-1.536l6.449-6.527Z"></path></svg>
+                                    <span class="admin-menu-list-post-name">포스트</span>
+                                </a>
+                            </li>
+                            <!-- 커뮤니티 카테고리 -->
+                            <li class="admin-menu-list-category">
+                                <a class="admin-menu-list-category-a-tag" href="#">
+                                    <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-category-img">
+                                    <path d="M2 5.111C2 4.498 2.45 4 3.007 4h15.099c.556 0 1.006.498 1.006 1.111 0 .614-.45 1.112-1.006 1.112h-15.1C2.452 6.223 2 5.725 2 5.11ZM2 10.668c0-.614.45-1.111 1.007-1.111h10.946a6.53 6.53 0 0 0-2.418 2.223H3.007C2.45 11.78 2 11.282 2 10.668ZM10.503 15.114H3.007C2.45 15.114 2 15.61 2 16.225s.45 1.111 1.007 1.111h7.818a6.496 6.496 0 0 1-.322-2.222Z" fill="#333334"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.945 12.347a.665.665 0 0 1 .306-.74l.833-.49a.665.665 0 0 1 .795.092l.46.437c.167.16.398.231.63.23a.892.892 0 0 0 .626-.24l.451-.445a.665.665 0 0 1 .794-.105l.84.476a.665.665 0 0 1 .32.735l-.15.616a.895.895 0 0 0 .116.66c.118.2.298.36.522.423l.61.169c.287.079.486.338.488.635l.008.965a.665.665 0 0 1-.477.644l-.608.179a.892.892 0 0 0-.513.43.898.898 0 0 0-.105.663l.159.614a.665.665 0 0 1-.307.74l-.832.49a.665.665 0 0 1-.795-.092l-.46-.437a.898.898 0 0 0-.63-.23.893.893 0 0 0-.626.24l-.452.445a.665.665 0 0 1-.794.105l-.84-.476a.665.665 0 0 1-.319-.734l.15-.618a.894.894 0 0 0-.117-.66.894.894 0 0 0-.52-.421l-.612-.17a.665.665 0 0 1-.488-.635l-.008-.965a.665.665 0 0 1 .477-.643l.608-.18a.892.892 0 0 0 .514-.43.898.898 0 0 0 .105-.663l-.159-.614Zm3.115 4.279a1.283 1.283 0 1 0 0-2.567 1.283 1.283 0 0 0 0 2.567Z" fill="#333334"></path></svg>
+                                    <span class = "admin-menu-list-category-name">커뮤니티 카테고리</span>
+                                </a>
+                            </li>
+                            
+                            <!-- 멤버 -->
+                            <li class="admin-menu-list-member">
+                                <a class="admin-menu-list-member-a-tag" href="#">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-member-img">
+                                    <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 10.2a3.502 3.502 0 0 1 0-7 3.5 3.5 0 1 1 0 7Zm1.9-3.5a1.9 1.9 0 1 1-3.8 0 1.9 1.9 0 0 1 3.8 0ZM13.945 13.147a.665.665 0 0 1 .306-.74l.833-.49a.665.665 0 0 1 .795.092l.46.437c.167.16.398.231.63.23a.892.892 0 0 0 .626-.24l.451-.445a.665.665 0 0 1 .794-.105l.84.476a.665.665 0 0 1 .32.735l-.15.616a.895.895 0 0 0 .116.66c.118.2.298.36.522.423l.61.168c.287.08.486.339.488.636l.008.965a.665.665 0 0 1-.477.644l-.608.179a.892.892 0 0 0-.513.43.898.898 0 0 0-.105.663l.159.614a.665.665 0 0 1-.307.74l-.832.49a.665.665 0 0 1-.795-.092l-.46-.437a.898.898 0 0 0-.63-.23.893.893 0 0 0-.626.24l-.452.445a.665.665 0 0 1-.794.105l-.84-.476a.665.665 0 0 1-.319-.735l.15-.617a.894.894 0 0 0-.117-.66.894.894 0 0 0-.52-.421l-.612-.17a.665.665 0 0 1-.488-.635l-.008-.965a.665.665 0 0 1 .477-.644l.608-.179a.892.892 0 0 0 .514-.43.898.898 0 0 0 .105-.663l-.159-.614Zm3.115 4.278a1.283 1.283 0 1 0 0-2.566 1.283 1.283 0 0 0 0 2.566Z"></path></svg>
+                                    <span class="admin-menu-list-member-name">멤버</span>
+                                </a>
+                            </li>
+
+                            <!-- 포스트 판매 -->
+                            <li class="admin-menu-list-sell">
+                                <a class="admin-menu-list-sell-a-tag" href="#">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-sell-img">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="m21.226 6.582-.534.534.005.004-1.131 1.131-.005-.004-6.52 6.52-3.74 1.104a.8.8 0 0 1-.994-.994l1.103-3.74 8.186-8.185a2.567 2.567 0 1 1 3.63 3.63Zm-9.03 6.766 6.234-6.232-1.368-1.368-6.233 6.233-.572 1.94 1.94-.572Zm5.998-8.731 1.367 1.367.534-.533a.967.967 0 0 0-1.368-1.368l-.533.534ZM8.6 3.137h6.478l-1.6 1.6H8.6a4 4 0 0 0-4 4v6.8a4 4 0 0 0 4 4h4.498a5.46 5.46 0 0 0 .574 1.6H8.6a5.6 5.6 0 0 1-5.6-5.6v-6.8a5.6 5.6 0 0 1 5.6-5.6ZM21 13.6V8.943l-1.6 1.6v2.53a5.461 5.461 0 0 1 1.6.527ZM17.959 14.446a.617.617 0 0 1 .593-.446h.896c.276 0 .518.182.594.446l.161.563c.06.207.211.373.398.48a.828.828 0 0 0 .612.103l.572-.143a.618.618 0 0 1 .684.29l.448.773c.138.238.101.538-.09.735l-.646.665c.012.111.018.224.018.338 0 .215.068.427.218.58l.41.423a.614.614 0 0 1 .09.735l-.448.774a.618.618 0 0 1-.684.289l-.572-.143a.828.828 0 0 0-.612.102.834.834 0 0 0-.398.481l-.161.563a.617.617 0 0 1-.594.446h-.896a.617.617 0 0 1-.593-.446l-.162-.563a.834.834 0 0 0-.397-.48.828.828 0 0 0-.613-.103l-.572.143a.618.618 0 0 1-.684-.29l-.448-.773a.614.614 0 0 1 .09-.735l.411-.423a.825.825 0 0 0 .218-.58.825.825 0 0 0-.218-.58l-.41-.423a.614.614 0 0 1-.091-.735l.448-.774a.618.618 0 0 1 .684-.289l.572.143a.828.828 0 0 0 .613-.102.834.834 0 0 0 .397-.481l.162-.563ZM19 19.744c.78 0 1.41-.63 1.41-1.406 0-.777-.63-1.406-1.41-1.406-.78 0-1.411.63-1.411 1.406 0 .776.632 1.406 1.41 1.406Z" fill="#000"></path></svg>
+                                    <span class="admin-menu-list-sell-name">포스트 판매</span>
+                                </a>
+                            </li>
+
+                            <!-- 쿠폰 -->
+                            <li class="admin-menu-list-coupon">
+                                <a class="admin-menu-list-coupon-a-tag" href="#">
+                                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-coupon-img">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22 8.942c0 .513-.24.996-.649 1.304A2.188 2.188 0 0 0 20.477 12c0 .716.34 1.351.874 1.754.409.308.649.79.649 1.304v.968A3.967 3.967 0 0 1 18.04 20H5.96A3.967 3.967 0 0 1 2 16.026v-.968c0-.513.24-.996.649-1.304A2.188 2.188 0 0 0 3.523 12c0-.716-.34-1.351-.874-1.754A1.633 1.633 0 0 1 2 8.942v-.967A3.967 3.967 0 0 1 5.96 4h12.08C20.228 4 22 5.78 22 7.975v.967ZM5.96 5.631a2.34 2.34 0 0 0-2.336 2.344v.967A3.82 3.82 0 0 1 5.147 12a3.82 3.82 0 0 1-1.523 3.058v.968a2.34 2.34 0 0 0 2.335 2.343h12.082a2.34 2.34 0 0 0 2.335-2.343v-.968A3.82 3.82 0 0 1 18.853 12c0-1.25.598-2.36 1.523-3.058v-.967A2.34 2.34 0 0 0 18.04 5.63H5.959Z" fill="#333334"></path><path d="M16.112 14.066c0 .751-.606 1.36-1.354 1.36a1.356 1.356 0 0 1-1.353-1.36c0-.75.606-1.358 1.353-1.358.748 0 1.354.608 1.354 1.358ZM10.697 9.537c0 .75-.606 1.359-1.353 1.359A1.356 1.356 0 0 1 7.99 9.537c0-.75.606-1.359 1.354-1.359.747 0 1.353.609 1.353 1.36ZM13.957 8.728a.772.772 0 0 1 1.095 0 .78.78 0 0 1 0 1.1l-5.419 5.44a.773.773 0 0 1-1.095 0 .78.78 0 0 1 0-1.1l5.419-5.44Z" fill="#333334"></path></svg>
+                                    <span class="admin-menu-list-coupon-name">쿠폰</span>
+                                </a>
+                            </li>
+                            <!-- 정산 -->
+                            <li class="admin-menu-list-account">
+                                <a class="admin-menu-list-account-a-tag" href="#">
+                                    <svg viewBox="0 0 24 24" xmlns="#" class="admin-menu-list-account-img">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 4.3H8.7a4.4 4.4 0 0 0-4.4 4.4v6.6a4.4 4.4 0 0 0 4.4 4.4h6.6a4.4 4.4 0 0 0 4.4-4.4V8.7a4.4 4.4 0 0 0-4.4-4.4ZM8.7 2.7a6 6 0 0 0-6 6v6.6a6 6 0 0 0 6 6h6.6a6 6 0 0 0 6-6V8.7a6 6 0 0 0-6-6H8.7Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.874 14.516c.129.434.543.734 1.014.734.474 0 .89-.303 1.016-.74l.724-2.501h.66l.724 2.501c.126.437.542.74 1.015.74.472 0 .886-.3 1.015-.734l.743-2.507h.6c.34 0 .615-.264.615-.59a.603.603 0 0 0-.615-.589h-.252l.274-.925c.135-.454-.221-.905-.714-.905a.737.737 0 0 0-.72.539l-.338 1.291h-1.409l-.3-1.113A.992.992 0 0 0 11.96 9a.99.99 0 0 0-.967.721l-.295 1.11H9.283l-.339-1.293A.738.738 0 0 0 8.224 9c-.494 0-.85.451-.715.906l.274.924h-.168a.603.603 0 0 0-.615.59c0 .325.276.589.615.589h.516l.743 2.507Zm.718-2.507h.793l-.368 1.388h-.06l-.365-1.388Zm4.32 1.365-.368-1.365h.783l-.356 1.365h-.06Z"></path></svg>
+                                    <span class="admin-menu-list-account-name">정산</span>
+                            </a>
+                            </li>
+                            <!-- 클럽 -->
+                            <li class="admin-menu-list-club">
+                                <a class="admin-menu-list-club-a-tag" href="#">
+                                    <svg viewBox="0 -3 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-club-img">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3.7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.6 0a1.9 1.9 0 1 1-3.8 0 1.9 1.9 0 0 1 3.8 0ZM8.6 4.599a2.6 2.6 0 1 1-5.2 0 2.6 2.6 0 0 1 5.2 0Zm-1.4 0a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0ZM6.8 13.4a4.8 4.8 0 0 1 4.8-4.8h4a4.8 4.8 0 0 1 4.8 4.8v2a2.8 2.8 0 0 1-2.8 2.8h-8a2.8 2.8 0 0 1-2.8-2.8v-2Zm4.8-3.2a3.2 3.2 0 0 0-3.2 3.2v2a1.2 1.2 0 0 0 1.2 1.2h8a1.2 1.2 0 0 0 1.2-1.2v-2a3.2 3.2 0 0 0-3.2-3.2h-4Z" fill="#333334"></path>                          
+                                    <path d="M3.6 16.6h1.61c.07.705.507 1.303 1.117 1.6H3.6a2.8 2.8 0 0 1-2.8-2.8v-2a4.8 4.8 0 0 1 4.8-4.8h2.346a4.01 4.01 0 0 0-2.088 1.6H5.6a3.2 3.2 0 0 0-3.2 3.2v2a1.2 1.2 0 0 0 1.2 1.2Z" fill="#333334"></path></svg>
+                                    <span class="admin-menu-list-club-name">클럽</span>
+                                </a>
+                            </li>
+                            <!-- 멤버십 -->
+                            <li class="admin-menu-list-membership">
+                                <a class="admin-menu-list-membership-a-tag" href="#">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-membership-img">
+                                    <path d="M8.892 9.13a.5.5 0 0 0-.862 0l-.576.977a.5.5 0 0 1-.33.236l-1.112.228a.5.5 0 0 0-.266.83l.748.806a.5.5 0 0 1 .13.394l-.12 1.092a.5.5 0 0 0 .697.513l1.06-.462a.5.5 0 0 1 .4 0l1.06.462a.5.5 0 0 0 .697-.513l-.12-1.092a.5.5 0 0 1 .13-.395l.748-.805a.5.5 0 0 0-.267-.83l-1.11-.228a.5.5 0 0 1-.33-.236l-.577-.977ZM18.108 10.3a.7.7 0 0 1-.7.7h-3.732a.7.7 0 1 1 0-1.4h3.732a.7.7 0 0 1 .7.7ZM17.408 14a.7.7 0 1 0 0-1.4h-3.732a.7.7 0 1 0 0 1.4h3.732Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M2.2 8.4A4.4 4.4 0 0 1 6.6 4h10.7a4.4 4.4 0 0 1 4.4 4.4v6.8a4.4 4.4 0 0 1-4.4 4.4H6.6a4.4 4.4 0 0 1-4.4-4.4V8.4Zm4.4-2.8h10.7a2.8 2.8 0 0 1 2.8 2.8v6.8a2.8 2.8 0 0 1-2.8 2.8H6.6a2.8 2.8 0 0 1-2.8-2.8V8.4a2.8 2.8 0 0 1 2.8-2.8Z"></path></svg>
+                                    <span class="admin-menu-list-membership-name">멤버십</span>
+                                </a>
+                            </li>
+                            <!-- 내 스튜디오 -->
+                            <li class="admin-menu-list-studio">
+                                <a class="admin-menu-list-studio-a-tag" href="#">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-studio-img">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4 4.4H8.8a4.4 4.4 0 0 0-4.4 4.4v6.6a4.4 4.4 0 0 0 4.4 4.4h6.6a4.4 4.4 0 0 0 4.4-4.4V8.8a4.4 4.4 0 0 0-4.4-4.4ZM8.8 2.8a6 6 0 0 0-6 6v6.6a6 6 0 0 0 6 6h6.6a6 6 0 0 0 6-6V8.8a6 6 0 0 0-6-6H8.8Z"></path>
+                                    <path d="M12.2 12.5a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM12.2 16.4c2.21 0 4-.672 4-1.5s-1.79-1.5-4-1.5-4 .672-4 1.5 1.79 1.5 4 1.5Z"></path></svg>
+                                    <span class="admin-menu-list-studio-name">내 스튜디오</span>
+                                </a>
+                            </li>
+                            <!-- 기본 정보 -->
+                            <li class="admin-menu-list-basic">
+                                <a class="admin-menu-list-basic-a-tag" href="#">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-basic-img">
+                                <path d="M5.5 7.8a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM5.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7 17.7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM10 5.4a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H10ZM9 12a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1ZM10 16.6a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H10Z"></path></svg>
+                                <span class="admin-menu-list-basic-name">기본정보</span>
+                            </a>
+                            </li>
+                            <!--크리에이터 설정  -->
+                            <li class="admin-menu-list-createset">
+                                <a class="admin-menu-list-createset-a-tag" href="#">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-createset-img">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.123 13.575a1.8 1.8 0 1 0 .113-3.599 1.8 1.8 0 0 0-.113 3.599Zm-.05 1.599a3.4 3.4 0 1 0 .213-6.797 3.4 3.4 0 0 0-.213 6.797Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.916 5.077a.543.543 0 0 0-.245.606l.332 1.236c.186.694.03 1.387-.274 1.935-.305.552-.81 1.048-1.497 1.257l-1.225.372a.543.543 0 0 0-.385.529l.034 1.95a.543.543 0 0 0 .402.514l1.24.331c.692.186 1.213.664 1.537 1.203.324.54.501 1.225.339 1.924l-.29 1.249a.543.543 0 0 0 .265.597l1.705.946c.212.117.476.08.647-.091l.905-.906c.508-.508 1.182-.72 1.813-.73.627-.01 1.312.177 1.837.668l.934.874a.543.543 0 0 0 .65.069l1.672-1.004a.543.543 0 0 0 .245-.606l-.332-1.236c-.187-.694-.03-1.387.273-1.935.306-.552.81-1.047 1.497-1.256l1.224-.373a.543.543 0 0 0 .385-.528l-.033-1.95a.543.543 0 0 0-.403-.515l-1.236-.33c-.694-.186-1.216-.664-1.54-1.204-.324-.54-.501-1.226-.339-1.925l.29-1.247a.543.543 0 0 0-.266-.597l-1.705-.946a.543.543 0 0 0-.647.09l-.904.906c-.508.508-1.182.72-1.813.73-.626.01-1.311-.177-1.836-.668l-.935-.874a.543.543 0 0 0-.65-.069L6.916 5.077Zm-1.79 1.02c-.249-.923.146-1.9.966-2.392l1.671-1.003a2.143 2.143 0 0 1 2.567.272l.934.874c.159.148.41.242.719.237.306-.005.551-.106.706-.261l.904-.906a2.143 2.143 0 0 1 2.556-.36l1.704.946a2.143 2.143 0 0 1 1.048 2.359l-.29 1.247c-.049.213-.005.476.153.74.158.262.37.425.58.481l1.237.33a2.143 2.143 0 0 1 1.59 2.034l.033 1.95a2.143 2.143 0 0 1-1.519 2.086l-1.224.372c-.21.064-.414.232-.563.5-.15.27-.184.537-.128.746l.332 1.236c.248.924-.146 1.9-.967 2.393l-1.671 1.003a2.143 2.143 0 0 1-2.566-.271l-.935-.874c-.158-.149-.41-.243-.719-.238-.306.005-.551.107-.706.262l-.905.906a2.143 2.143 0 0 1-2.555.359l-1.705-.946a2.143 2.143 0 0 1-1.048-2.358l.29-1.25c.05-.212.006-.475-.151-.737-.158-.263-.37-.425-.58-.48l-1.239-.332a2.143 2.143 0 0 1-1.589-2.033l-.033-1.95A2.143 2.143 0 0 1 3.54 8.953l1.225-.373c.21-.064.415-.232.563-.5.15-.27.185-.537.128-.746l-.331-1.236Z"></path></svg>
+                                <span class="admin-menu-list-createset-name">크리에이터 설정</span>
+                                </a>
+                            </li>
+
+                            <!-- 헬프센터 -->
+                            <li class="admin-menu-list-helpcenter">
+                                <a class="admin-menu-list-helpcenter-a-tag" href="#" rel="noreferrer" target="_blank">
+                                    <div class="admin_menu-list-helpcenter-help-center-div">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-helpcenter-img">
+                                        <path d="M10.457 8.471a1.494 1.494 0 1 1 2.988 0 1.494 1.494 0 0 1-2.988 0ZM10.955 11.459c0-.275.223-.498.498-.498h.996c.275 0 .498.223.498.498v4.979a.498.498 0 0 1-.498.498h-.996a.498.498 0 0 1-.498-.498v-4.98Z"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.951 20.117a8.166 8.166 0 1 0 0-16.333 8.166 8.166 0 0 0 0 16.333Zm0 1.792c5.5 0 9.959-4.458 9.959-9.958S17.45 1.99 11.95 1.99s-9.959 4.46-9.959 9.96c0 5.5 4.459 9.958 9.959 9.958Z"></path></svg>
+                                        <span class="admin-menu-list-helpcenter-name">헬프센터</span>
+                                    </div>
+                                <!-- 헬프센터 페이지 이동 -->
+                                <svg viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg" class="admin-menu-list-help-center-move">
+                                <path d="M4.834 2.667A.667.667 0 0 0 4.167 2h-4v9.333H9.5v-4a.667.667 0 0 0-1.333 0V10H1.5V3.333h2.667a.667.667 0 0 0 .667-.666Z"></path>
+                                <path d="M10.173.552h.66V4.99a.667.667 0 0 1-1.333 0V2.828L5.972 6.357a.667.667 0 0 1-.943-.943l3.528-3.528H6.396a.667.667 0 0 1 0-1.334h3.777Z"></path></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- 메뉴 리스트 끝 -->
+
+                    <!-- 내용들 여기서 부턴 복붙못함 -->
+                    <div class = "admin-content-body">
+                        <div class = "admin-content-post">
+                            <div class = "admin-content-post-width">
+                                <!-- 포스트 메뉴 -->
+                                <div class = "admin-content-post-menu">
+                                    <!-- 상단 타이틀 제목 -->
+                                    <header class = "admin-content-post-header-top">
+                                        <h1 class="admin-content-post-header-top-title">포스트</h1>
+                                        <div class ="admin-content-post-header-middle-menu-div">
+                                            <button aria-label="button" class ="category-fix">카테고리 편집</button>
+                                            <button aria-label="button" class="write">작성</button>
+                                        </div>
+                                    </header>
+
+                                   <!-- 게시완료, 임시보관 -->
+                                    <div class = "admin-content-post-header-middle">
+                                        
+                                        <ul class = "admin-content-post-header-middle-menu">
+                                            <li class = "completion-button-li">
+                                                <button class="completion-button" aria-label="tab button" type="button">
+                                                    <div class = "completion-button-div">
+                                                        <p class="completion-p">게시완료</p>
+                                                        <div class = "completion-num-div">
+                                                            <p class="completion-num-p">0</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <div class = "completion-button-underline"></div>
+                                            </li>
+                                            <!-- 임시보관 -->
+                                            <li class = "storage-button-li">
+                                                <button class = "storage-button" aria-label="tab button" type="button">
+                                                    <div class = "storage-button-div">
+                                                        <div class="storage-button-div-div">
+                                                            <p class="storage-p">임시보관</p>
+                                                            <div class="storage-count-div">
+                                                                <p class="storage-num-p">0</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                        </ul>                                     
+                                    </div>
+                                    
+                                    
+                                    <!-- 전체/ 카테고리 전체, 공개범위 전체, 최신순 -->
+                                    <div class = "admin-content-post-conetent-end">
+                                        <!-- 전체 텍스트 -->
+                                        <div class = "left-text">
+                                            <span class = "left-text-count-all-span">전체</span>
+                                            <span class = "left-text-count-span">0</span>
+                                        </div>
+
+                                        <!-- 오른쪽 버튼 div -->
+                                        <div class="right-button">
+                                            <!-- 카테고리 전체 버튼 -->
+                                            <div class="category-all-div">
+                                                <button class="category-all-button">
+                                                    <span class = "category-all-button-span">카테고리 전체</span>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
+                                                        class="category-all-button-svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <!-- 공개범위 전체 -->
+                                            <div class="scope-all-div">
+                                                <button class="scope-all-button" aria-label="filter">
+                                                    <span class ="scope-all-button-span">공개범위 전체</span>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="scope-all-button-svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            
+                                            <!-- 최신순 -->
+                                            <div class="new-all-div">
+                                                <button aria-label="new-all-button" class="new-all-button">
+                                                    <span class="new-all-button-span">최신순</span>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  class="new-all-button-svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                <!-- 포스트 목록 -->
+                                <div class = "admin-content-post-conetent">
+                                    <img src="images/nonpost.png" class = "nonpost-img">
+                                        <p class="admin-content-post-conetent-nonpost-msg">게시 완료된 포스트가 없습니다.</p>
+                                        <p class="admin-content-post-conetent-firstpost-msg">지금 첫 포스트를 작성하고 게시해보세요.</p>
+                                    <div class="admin-content-writepost-button-div">
+                                        <button aria-label="button" class="admin-content-writepost-button" type="button">
+                                            포스트 작성하기
+                                        </button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+        </div>
+    </body>
+</html>
