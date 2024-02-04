@@ -1,10 +1,16 @@
 @font-face {
-    font-family: "KakaoBig Regular";
-    src: url("/staticfiles/css/jth/font/KakaoRegular.ttf") format("truetype");
+    font-family: 'KakaoBig regular';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format('woff2'),url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format('woff');
 }
 @font-face {
-    font-family: "KakaoBig Bold";
-    src: url("/staticfiles/css/jth/font/KakaoBold.ttf") format("truetype");
+    font-family: 'KakaoBig Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format('woff2'),url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format('woff');
 }
 
 
@@ -149,6 +155,13 @@ button {
         height: 70px;
     }
 }
+@media only screen and (max-width: 767px) {
+    .main-nav-back-color {
+        min-height: 92px;
+        top: -56px;
+    }
+}
+
 .main-nav-back-color::before {
     content: "";
     display: block;
@@ -175,9 +188,17 @@ button {
         margin: 0px auto;
     }
 }
+@media only screen and (max-width: 767px) {
+    .main-nav-div {
+        flex-wrap: wrap;
+    }
+}
+
+
 
 .main-nav-title {
-    height: 55px;
+    height: 0px;
+    margin: 0px;
 }
 @media only screen and (min-width: 768px) {
     .main-nav-title {
@@ -197,7 +218,15 @@ button {
         background-image: url(/staticfiles/css/jth/images/title.png);
     }
 }
-
+@media only screen and (max-width: 767px) {
+    .main-nav-title-link {
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        height: 55px;
+        transform: translateX(-50%);
+    }
+}
 
 /* header-중앙 */
 .main-nav {
@@ -211,6 +240,17 @@ button {
         height: 100%;
     }
 }
+@media only screen and (max-width: 767px) {
+    .main-nav {
+        justify-content: center;
+        order: 2;
+        box-sizing: border-box;
+        width: 100%;
+        height: 37px;
+        transition: height 0.2s ease 0s;
+    }
+}
+
 
 .main-nav-ul {
     display: flex;
@@ -218,6 +258,18 @@ button {
     height: 100%;
     margin: 0px;
     padding: 0px;
+}
+@media only screen and (max-width: 767px) {
+    .main-nav-ul {
+        overflow-x: auto;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        padding: 0px 20px;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
 }
 
 .main-nav-li {
@@ -288,6 +340,11 @@ button {
     position: relative;
     display: flex;
     align-items: center;
+}
+@media only screen and (max-width: 767px){
+    .main-nav-right-mypage  {
+        display: none !important;
+    }
 }
 
 .main-nav-right-mypage-div {
@@ -382,9 +439,19 @@ button {
     font-size: 12px;
     position: relative;
 }
-
+@media only screen and (max-width: 767px){
+    .main-nav-menu {
+        order: -1;
+        height: 55px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+}
 .main-nav-menu-img {
     width: 18px;
     height: 18px;
     vertical-align: top;
 }
+
+
+/* main footer */
