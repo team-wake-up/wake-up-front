@@ -653,7 +653,7 @@ section {
     width: 52px;
     height: 52px;
     vertical-align: top;
-    background: url(https://t1.kakaocdn.net/together_image/common/ico_home_donation_choonsik.png) center center / cover no-repeat;
+    background: url("https://t1.kakaocdn.net/together_image/common/ico_home_donation_choonsik.png") center center / cover no-repeat;
     flex-shrink: 0;
 }
 .main-content-info-right-fitst-span{
@@ -684,7 +684,7 @@ section {
     overflow: hidden;
     display: inline-block;
     vertical-align: top;
-    background: url(https://t1.kakaocdn.net/together_image/common/bg_home_hands.png) center center / cover no-repeat;
+    background: url("https://t1.kakaocdn.net/together_image/common/bg_home_hands.png") center center / cover no-repeat;
     flex-shrink: 0;
 }
 .main-content-info-right-third-i {
@@ -692,7 +692,7 @@ section {
     height: 52px;
     display: inline-block;
     vertical-align: top;
-    background: url(https://t1.kakaocdn.net/together_image/common/ico_action_people.png) center center / cover no-repeat;
+    background: url("https://t1.kakaocdn.net/together_image/common/ico_action_people.png") center center / cover no-repeat;
     flex-shrink: 0;
 }
 .main-content-info-right-a {
@@ -732,7 +732,7 @@ section {
     height: 52px;
     display: inline-block;
     vertical-align: top;
-    background: url(https://t1.kakaocdn.net/together_image/common/ico_home_arrow_220831.png) center center / cover no-repeat;
+    background: url("https://t1.kakaocdn.net/together_image/common/ico_home_arrow_220831.png") center center / cover no-repeat;
 }
 
 /* 메인 컨텐츠 */
@@ -746,8 +746,9 @@ section {
 }
 .main-section-left {
     width: 700px;
-
 }
+
+/* 실시간 콘텐츠 */
 .main-section-left-up {
     position: relative;
     margin-bottom: 30px;
@@ -906,11 +907,6 @@ section {
     height: 100%;
     left: 0%;
     pointer-events: none;
-/*     
-    display: block;
-    padding-bottom: 16px;
-    margin: 0px 1px;
-    border-radius: 2px; */
 }
 .card-back::before .card-back::after {
     animation-delay: 100ms;
@@ -977,7 +973,7 @@ section {
     position: relative;
     height: 100%;
     overflow: hidden;
-    background: url(https://mud-kage.kakaocdn.net/dn/MHEPQ/btsC771iklR/TcOudEGxuvbkUODeNF7qo0/c1400x960.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
+    background: url("https://mud-kage.kakaocdn.net/dn/MHEPQ/btsC771iklR/TcOudEGxuvbkUODeNF7qo0/c1400x960.jpg") 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
 }
 .main-section-left-up-main-content-img-link::after {
     content: "";
@@ -1153,7 +1149,7 @@ section {
     height: 50px;
     transform: scale(0.8);
     margin: 0px -9px 0px -16px;
-    background: url(https://t1.kakaocdn.net/together_image/common/heart_fundraising.png) 0px 0px / auto 100% repeat-x;
+    background: url("https://t1.kakaocdn.net/together_image/common/heart_fundraising.png") 0px 0px / auto 100% repeat-x;
 }
 .main-section-left-up-main-content-info-end-left-span {
     display: inline-flex;
@@ -1236,4 +1232,1140 @@ section {
     height: 40px;
     padding: 0px 18px;
     font-size: 14px;
+}
+
+/* 가장 많이 참여 중인 첼린지 */
+.main-section-left-mid {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 24px 30px 32px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
+.main-section-left-mid-title {
+    margin: 0;
+}
+.main-section-left-mid-title-a {
+    display: inline-block;
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+.main-section-left-mid-title-a {
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+}
+.main-section-left-mid-text {
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.6;
+    padding-top: 4px;
+    margin: 0;
+}
+.main-section-left-mid-text-br {
+    display: none;
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.6;
+}
+.main-section-left-mid-content {
+    flex: 1 1 0%;
+    width: auto;
+    margin: -20px calc(-10px);
+    padding-top: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.main-section-left-mid-content-img {
+    width: calc(33.33% - 20px);
+    margin: 20px calc(10px);
+    height: auto;   
+}
+.main-section-left-mid-content-img-a {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main-section-left-mid-content-img-updiv {
+    border-radius: 8px;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 68.75%;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: url("https://mud-kage.kakaocdn.net/dn/c8gigV/btsD3skpbXr/rhxDwJLlOqfEfPpiVwJmk0/c1400x960.jpg") 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
+}
+.main-section-left-mid-content-img-updiv::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: inherit;
+}
+.main-section-left-mid-content-img-underdiv {
+    width: 100%;
+    height: auto;
+    padding: 12px 0px 0px;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.main-section-left-mid-content-img-title {
+    font-size: 14px;
+    line-height: 20px;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+    color: rgb(32, 32, 32);
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+}
+.main-section-left-mid-content-img-title-info {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 2px;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgb(136, 136, 136);
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+}
+.main-section-left-mid-content-img-title-total {
+    padding-top: 8px;
+    margin-top: auto;
+
+}
+.main-section-left-mid-content-img-title-total-bar {
+    height: 2px;
+    display: flex;
+    border-radius: 999px;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+}
+.main-section-left-mid-content-img-title-total-percent {
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgb(255, 64, 80);
+    width: 46%;
+}
+.main-section-left-mid-content-img-title-total-money {
+    padding-top: 4px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-section-left-mid-content-img-title-total-money-curent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-section-left-mid-content-img-title-total-money-current-span {
+    font-size: 12px;
+    line-height: 1.67;
+    color: rgb(32, 32, 32);
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+}
+.main-section-left-mid-content-img-title-total-money-percent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-section-left-mid-content-img-title-total-money-percent-current {
+    font-size: 12px;
+    line-height: 1.67;
+    color: rgb(255, 64, 80);
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+}
+/* 종료임박 */
+.main-section-left-mid-content-img-finish {
+    top: -29px;
+    left: 6px;
+    margin-right: 0px;
+    bottom: 6px;
+    position: absolute;
+    z-index: 1;
+    height: 23px;
+    padding: 0px 7px 2px;
+    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: pre-line;
+    background-color: rgb(255, 64, 80);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.5;
+}
+
+/* 종료임박 */
+.main-section-left-up-time {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    z-index: 10;
+    width: 280px;
+    border-radius: 6px 6px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0px 10px;
+    background-color: rgb(32, 32, 32);
+    box-sizing: border-box;
+}
+.main-section-left-up-time-div {
+    gap: 4px;
+    width: 280px;
+    height: 40px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgb(32, 32, 32);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-section-left-up-time-clock {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    border-radius: 100%;
+    background-color: rgb(255, 64, 80);
+    opacity: 0.8;
+}
+.main-section-left-up-time {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+    line-height: 1;
+}
+.main-section-left-up-time-clock-span1 {
+    display: block;
+    position: absolute;
+    top: 9px;
+    width: 20px;
+    height: 2px;
+    animation: 3s linear 0s infinite normal none running clockAnimation;
+}
+.main-section-left-up-time-clock-span1::before {
+    display: block;
+    position: absolute;
+    right: 4px;
+    width: 6px;
+    height: 2px;
+    border-radius: 0px 999px 999px 0px;
+    background-color: rgb(255, 255, 255);
+    content: "";
+}
+@keyframes clockAnimation {
+    0% {
+        transform: rotate(-90deg);
+    }
+    33% {
+        transform: rotate(-90deg);
+    }
+    66% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+.main-section-left-up-time-clock-span2 {
+    display: block;
+    position: absolute;
+    top: 9px;
+    width: 20px;
+    height: 2px;
+}
+.main-section-left-up-time-clock-span2::before {
+    display: block;
+    position: absolute;
+    right: 4px;
+    width: 6px;
+    height: 2px;
+    border-radius: 0px 999px 999px 0px;
+    background-color: rgb(255, 255, 255);
+    content: "";
+}
+.main-section-left-up-time-clock::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 2px;
+    margin: -1px 0px 0px -1px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    content: "";
+}
+
+/* 태그로ㅓ 보는 모금함 */
+.main-section-left-mid-tag {
+    overflow: hidden;
+    margin: 13px 0px 21px;
+    padding: 0px;
+    display: flex;
+    gap: 6px;
+    white-space: nowrap;
+    /* margin: 13px 0px 21px 0px; */
+}
+/* 선택됨 */
+.main-section-left-mid-tag-button-select {
+    height: 37px;
+    padding: 7px 14px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(32, 32, 32);
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    border-radius: 999px;
+}
+.main-section-left-mid-tag-button-no-select {
+    height: 37px;
+    padding: 7px 14px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(238, 238, 238);
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+    font-size: 12px;
+    border-radius: 999px;
+}
+
+.main-section-left-mid-tag-button-span1-select {
+    font-size: 14px;
+    font-family: "KakaoBig Bold";
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    padding-right: 2px;
+}
+.main-section-left-mid-tag-button-span2-select {
+    font-size: 14px;
+    font-family: "KakaoBig Bold";
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+.main-section-left-mid-tag-button-span1-no-select {
+    font-size: 14px;
+    color: rgb(32, 32, 32);
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    padding-right: 2px;
+}
+.main-section-left-mid-tag-button-span2-no-select {
+    font-size: 14px;
+    color: rgb(32, 32, 32);
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.main-section-left-mid-tag-content {
+    flex: 1 1 0%;
+    width: auto;
+    margin: -20px calc(-10px);
+    /* padding-top: 16px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+/* 슬라이드 광고 */
+/* 확인 필요 */
+/* 안보이는 이전 슬라이드 */
+.main-section-left-slide {
+    height: 250px;
+}
+.main-section-left-slide-div {
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    height: 250px;
+}
+.main-section-left-slide-doyorn {
+    height: 250px;
+}
+.main-section-left-slide-container {
+    position: relative;
+    width: 700px;
+    height: 250px;
+}
+.main-section-left-slide-container-slide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.main-section-left-slide-container-slide-content {
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
+.slider-control-bottomright {
+    pointer-events: auto;
+}
+
+.slider-control-bottomrigh-div {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 20px;
+    padding: 0px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    box-sizing: border-box;
+}
+.main-slide-frame {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    outline: none;
+    touch-action: pan-y;
+    height: auto;
+    transition: height 300ms ease-in-out;
+    will-change: height;
+    user-select: none;
+}
+.main-slide-list {
+    width: 900%;
+    text-align: left;
+    user-select: auto;
+    transform: translateX(calc(-33.3333% + 0px));
+    display: flex;
+    touch-action: pan-y !important;
+    height: 250px;
+}
+.main-slide-prev-cloned {
+    width: 11.11111111111111%;
+    height: auto;
+    padding: 0 0px;
+    opacity: 1;    
+}
+.main-ontent-card {
+    height: 250px;
+    border-radius: 12px;
+    margin-bottom: 0px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0px 0px 20px;
+    box-sizing: border-box;
+}
+.main-card-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+.main-card-inner-thumbnail {
+    width: 250px;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: url("https://t1.kakaocdn.net/together_action_prod/admin/20230522/3e46a68ee3504a2f8132688e8772f732?type=thumb&opt=S500x500") 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
+}
+.main-card-inner-thumbnail::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: inherit;
+}
+.main-card-inner-content {
+    position: relative;
+    padding: 0px 30px;
+    margin-top: -8px;
+    overflow: visible;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.main-card-inner-content-title {
+    padding-top: 3px;
+    order: 2;
+    font-family: "KakaoBig Bold";
+    font-size: 20px;
+    /* white-space: pre-wrap; */
+    word-break: keep-all;
+    color: rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+    letter-spacing: -0.1px;
+    line-height: 1.56;
+}
+.main-card-inner-content-subtext{
+    padding-top: 11px;
+    line-height: 23px;
+    display: -webkit-box;
+    overflow: hidden;
+    order: 3;
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    max-height: 46px;
+    -webkit-line-clamp: 2;
+    width: 100%;
+    margin-top: 4px;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+}
+.main-card-inner-content-button {
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    font-family: "KakaoBig Bold";
+    font-size: 13px;
+    letter-spacing: -0.15px;
+    order: 1;
+    justify-content: flex-start;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 4px;
+    box-shadow: none;
+    min-width: 0px;
+
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    margin: 0px;
+    line-height: 1.5;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(136, 136, 136);
+    height: auto;
+}
+.main-card-inner-content-button-span1 {
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+    opacity: 0.7;
+    padding-right: 2px;
+}
+.main-card-inner-content-button-span2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+}
+
+.main-card-inner-content-em {
+    margin-right: 0px;
+    margin-top: 15px;
+    color: rgb(187, 107, 255);
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    align-self: flex-start;
+    order: 4;
+    height: 30px;
+    padding: 0px 12px;
+    border-radius: 0px;
+    border: 1px solid rgba(187, 107, 255, 0.5);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* white-space: pre-line; */
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+.main-card-inner-content-em-svg {
+    display: inline-block;
+    vertical-align: top;
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+}
+
+/* 보이는 슬라이드 */
+.main-slide-visible {
+    width: 11.11111111111111%;
+    height: auto;
+    padding: 0 0px;
+    opacity: 1;
+}
+.main-slide-visible-div {
+    height: 250px;
+    border-radius: 12px;
+    margin-bottom: 0px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0px 0px 20px;
+    box-sizing: border-box;
+}
+.main-slide-visible-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+/* 숨겨진 다음 슬라이드 */
+
+
+
+/* 메인 마지막 컨텐츠 */
+.main-total-list-total {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+}
+.main-total-list-total-div {
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0px 0px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.main-total-list-total-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main-total-list-total-thumbnail {
+    width: 250px;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: url("https://mud-kage.kakaocdn.net/dn/ckeNRg/btsDAR5xsNh/G9jukNnwa27M3JZcN01t7K/c1400x788.jpg") 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
+}
+.main-total-list-total-content {
+    padding: 0px 30px;
+    margin-top: -8px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.main-total-list-total-title {
+    order: 2;
+    padding-top: 3px;
+    font-family: "KakaoBig Bold";
+    font-size: 20px;
+    word-break: keep-all;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+    color: rgb(32, 32, 32);
+    font-style: normal;
+    letter-spacing: -0.1px;
+    line-height: 1.56;
+}
+.main-total-list-total-subtext {
+    order: 3;
+    margin-top: 11px;
+    line-height: 23px;
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 14px;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    width: 100%;
+    text-overflow: ellipsis;
+    color: rgb(136, 136, 136);
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+}
+.main-total-list-total-progress {
+    order: 4;
+    padding-top: 16px;
+    margin-top: auto;
+}
+.main-total-list-total-progress-bar {
+    height: 4px;
+    display: flex;
+    border-radius: 999px;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+}
+.main-total-list-total-current {
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgb(255, 64, 80);
+    width: 36%;
+}
+.main-total-list-total-info {
+    padding-top: 6px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-total-list-total-info-div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-total-list-total-info-div1-span {
+    font-size: 14px;
+    line-height: 1.57;
+    color: rgb(32, 32, 32);
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+}
+.main-total-list-total-info-div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-total-list-total-info-div2-span {
+    font-size: 14px;
+    line-height: 1.57;
+    color: rgb(255, 64, 80);
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+}
+.main-total-list-button {
+    order: 1;
+    padding: 10px 0px 0px;
+    background-color: transparent;
+    border: 0px;
+    width: fit-content;
+    border-radius: 4px;
+    box-shadow: none;
+    min-width: 0px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    height: auto;
+    font-size: 12px;
+}
+.main-total-list-button-left {
+    color: rgb(153, 153, 153);
+    font-family: "KakaoBig Bold";
+    font-size: 13px;
+    letter-spacing: -0.15px;
+    font-style: normal;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    opacity: 0.7;
+    padding-right: 2px;
+}
+.main-total-list-button-right {
+    color: rgb(153, 153, 153);
+    font-family: "KakaoBig Bold";
+    font-size: 13px;
+    letter-spacing: -0.15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+}
+
+/* 메인 섹터 오른쪽 */
+.main-section-right {
+    width: 360px;
+}
+.main-section-right-first {
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.main-section-right-fitst-div1 {
+    padding: 34px 26px 29px;
+    border-radius: 12px 12px 0px 0px;
+    position: relative;
+    background-color: rgb(255, 232, 0);
+}
+.main-section-right-fitst-div2 {
+    height: 281px;
+    padding: 31px 26px 46px;
+    border-radius: 0px 0px 12px 12px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+.main-section-right-fitst-div1-h4 {
+    margin: 0;
+}
+.main-section-right-fitst-div1-a {
+    display: inline-block;
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+.main-section-right-fitst-div1-a-span {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+.main-section-right-br {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+.main-section-right-fitst-div1-p {
+    padding-top: 12px;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    padding: 10px 0px 0px;
+    margin: 0;
+}
+.main-section-right-fitst-div1-img {
+    right: 20px;
+    top: 19px;
+    width: 105px;
+    height: 133px;
+    position: absolute;
+    background: url("https://t1.kakaocdn.net/together_image/common/img_choonsik_231226.png") center center / cover no-repeat;
+}
+.main-section-right-fitst-div1-div-a {
+    display: block;
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+.main-section-right-fitst-div1-div-a-div {
+    height: 60px;
+    padding: 0px 20px;
+    margin-top: 41px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    box-sizing: border-box;
+    margin: 24px 0px 0px;
+}
+.main-section-right-fitst-div1-div-a-div-i {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    background: url("https://t1.kakaocdn.net/together_image/common/ico_won.png") center center / cover no-repeat;
+}
+.main-section-right-fitst-div1-div-a-div-strong {
+    font-size: 16px;
+    letter-spacing: -0.15px;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(68, 68, 68);
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+}
+.main-section-right-fitst-div1-div-a-div-em {
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    flex-grow: 1;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(32, 32, 32);
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    text-align: right;
+}
+
+.main-section-right-fitst-div2 {
+    height: 281px;
+    padding: 31px 26px 46px;
+    border-radius: 0px 0px 12px 12px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+.main-section-right-fitst-div2-a {
+    display: inline-block;
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+.main-section-right-fitst-div2-a-h4 {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    margin: 0;
+}
+.main-section-right-fitst-div2-container {
+    position: relative;
+}
+.main-section-right-fitst-div2-container-listup {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.main-section-right-fitst-div2-container-listmid {
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
+.main-section-right-fitst-div2-container-listmid-div {
+    pointer-events: auto;
+    left: 0px;
+    width: 100%;
+}
+.list_paging {
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+}
+.list_paging li + li {
+    margin-left: 6px;
+}
+.list_paging-button {
+    opacity: 0.4;
+    position: relative;
+    width: 20px;
+    height: 2px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+    font-size: 13px;
+}
+.list_paging-button::before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    height: 30px;
+    margin-top: -15px;
+    background-color: transparent;
+    content: "";
+}
+
+/* 슬라이드 배너라 나중에 따로 작업해야 합니다. */
+.main-section-right-fitst-div2-container-listend {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    outline: none;
+    touch-action: pan-y;
+    height: auto;
+    transition: height 300ms ease-in-out;
+    will-change: height;
+    user-select: none;
 }
