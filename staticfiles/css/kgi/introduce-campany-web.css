@@ -94,6 +94,11 @@ button {
     border-image: initial;
 }
 
+blockquote,
+q {
+    quotes: none;
+}
+
 menu,
 ol,
 ul {
@@ -283,6 +288,9 @@ video {
 .list-wrap {
     border-bottom: 1px solid rgb(229, 229, 229);
     background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 150;
 }
 
 .tab-list {
@@ -630,7 +638,7 @@ video {
     padding-top: 32px;
 }
 
-.star-thumb {
+.star-thumb1 {
     width: 80px;
     height: 80px;
     flex: 0 0 auto;
@@ -646,4 +654,334 @@ video {
     object-fit: cover;
     display: inline-block;
     vertical-align: top;
+}
+
+.star-thumb-img::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background-image: url(//t1.kakaocdn.net/together_image/svg/squircle_border.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.star-thumb2 {
+    width: 96px;
+    height: 96px;
+    position: relative;
+    margin: 0px -19px;
+    z-index: 1;
+    flex: 0 0 auto;
+    overflow: hidden;
+    mask-image: url(//t1.kakaocdn.net/together_image/svg/squircle.svg);
+    mask-size: 100% 100%;
+}
+
+.review-wrap {
+    width: 700px;
+    margin: 40px auto 0px;
+    padding-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px 0px;
+    box-sizing: border-box;
+    padding: 24px 20px 52px;
+}
+
+.review-tit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0px 12px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: rgb(32, 32, 32);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+}
+
+.review-sub {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1.47;
+    padding: 12px 0px 24px;
+    text-align: center;
+}
+
+.review-content-wrap {
+    width: 100%;
+}
+
+.slide-container {
+    position: relative;
+    margin: 0px -8px;
+}
+
+.slide-tab {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.slide-content {
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.slider-control {
+    pointer-events: auto;
+    margin-bottom: -30px;
+}
+
+.list-paging {
+    gap: 3px;
+    display: flex;
+}
+
+.list-paging li {
+    line-height: 0;
+}
+
+.control-button {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 100%;
+    opacity: 0.2;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.control-button::before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    height: 16px;
+    margin-top: -8px;
+    background-color: transparent;
+    content: "";
+}
+
+.slider-frame {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    outline: none;
+    touch-action: pan-y;
+    height: auto;
+    /* transition: height 300ms ease-in-out;
+    will-change: height; */
+    user-select: none;
+}
+
+.slider-list {
+    width: 860%;
+    text-align: left;
+    user-select: auto;
+    /* transform: translateX(calc(-50% + 5408px)); */
+    display: flex;
+}
+
+.slide {
+    width: 5.555555555555555%;
+    height: auto;
+    padding: 0 8px;
+    opacity: 1;
+}
+
+.color-red {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: rgb(255, 236, 237);
+    box-sizing: border-box;
+    padding: 32px 20px;
+}
+
+.color-purple {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: #f7edff;
+    box-sizing: border-box;
+    padding: 32px 20px;
+}
+
+.content-tit-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.content-tit {
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.6;
+}
+
+.review-img-wrap {
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.review-img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.review-img-wrap::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.review-content {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: rgb(32, 32, 32);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    padding-top: 16px;
+}
+
+.every-action-img-wrap {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.every-action-img {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+}
+
+.action-container {
+    width: 700px;
+    margin-top: -93px;
+    padding: 50px 0px 32px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px 0px;
+    position: relative;
+    margin: -49px auto 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.action-tit {
+    color: rgb(32, 32, 32);
+    font-size: 40px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+}
+
+.action-content {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1.47;
+    padding: 24px 0px;
+    text-align: center;
+}
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.direct-go {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    height: 36px;
+    padding: 0px 20px;
+    border-radius: 999px;
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+    font-family: "KakaoBig Bold";
+    font-size: 14px;
 }
