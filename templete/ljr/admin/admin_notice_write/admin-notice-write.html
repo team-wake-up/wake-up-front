@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 파비콘 및 타이틀 -->
+        <link href="../images/favicon.png" rel="shortcut icon" />
+        <link
+            href="../../../..//staticfiles/css/ljr/admin/admin_notice_write/admin-notice-write.css"
+            rel="stylesheet"
+        />
+        <title>관리자페이지 : 공지 작성</title>
+    </head>
+    <body class="body-full">
+        <div class="all-full-div">
+            <!-- 관리자페이지 전체 -->
+            <div class="content-full-div">
+                <!-- 상단 메뉴 -->
+                <div>
+                    <nav class="header-menu-nav">
+                        <!-- 관리자 왼쪽 로고 -->
+                        <div class="admin-left-logo-div">
+                            <a href="#">
+                                <div class="admin-logo-img-div">
+                                    <img
+                                        src="../images/admin_logo.png"
+                                        id="admin-logo"
+                                        alt=""
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                    <!-- 상단 메뉴 끝 -->
+                    <!-- 상단메뉴 div -->
+                    <header class="admin-post-write-top-menu-header">
+                        <!-- 상단 메뉴 div -->
+                        <div class="admin-post-write-top-menu-div">
+                            <!-- 상단 왼쪽 메뉴 버튼 -->
+                            <div class="top-menu-left-button-div">
+                                <button class="top-menu-left-button">
+                                    <img
+                                        src="../images/arraw.png"
+                                        class="top-menu-left-button-image"
+                                    />
+                                </button>
+                                <h1 class="top-menu-left-button-text">
+                                    공지 작성하기
+                                </h1>
+                            </div>
+
+                            <!-- 상단 오른쪽 메뉴 -->
+                            <div class="top-menu-right-button-div">
+                                <!-- 상단 버튼 임시저장 -->
+                                <div class="top-menu-right-save-div">
+                                    <button
+                                        aria-label="button"
+                                        class="top-menu-right-save-button"
+                                        disabled=""
+                                        type="button"
+                                    >
+                                        임시저장
+                                    </button>
+                                </div>
+                                <!-- 상단 버튼 게시 -->
+                                <div class="top-menu-right-push-div">
+                                    <button
+                                        aria-label="button"
+                                        class="top-menu-right-push-button"
+                                        disabled
+                                        type="button"
+                                    >
+                                        게시
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div
+                        class="admin-menu-end"
+                        style="width: 0%; height: 3px"
+                    ></div>
+                </div>
+                <main>
+                    <!-- 글작성 전체 div -->
+                    <div class="admin-content-body">
+                        <!-- 작성 칸 섹션 -->
+                        <section class="admin-write-board">
+                            <!-- 제목 div -->
+                            <div class="title-text-div">
+                                <!-- 제목 감싸는 div -->
+                                <div>
+                                    <label class="title-text-label">
+                                        <!-- 제목 입력칸 -->
+                                        <input
+                                            class="title-text-input"
+                                            placeholder="제목을 입력해주세요."
+                                            type="text"
+                                            value=""
+                                    /></label>
+                                </div>
+                            </div>
+                            <!-- 제목 입력란 끝 -->
+
+                            <!-- margin-bottom: 14px; 14픽셀 띄우는 공백 div -->
+                            <div class="admin-write-board-end"></div>
+
+                            <div>
+                                <!-- 작성란 전체를 감싸고 마진이 있는 div -->
+                                <div class="admin-write-board-all">
+                                    <!-- 작성란 전체를 감싸는 div -->
+                                    <div class="admin-write-board-all-round">
+                                        <textarea
+                                            id="textarea-board"
+                                            aria-hidden="true"
+                                        >
+                                        </textarea>
+                                        <div class="write-body">
+                                            <div class="tox-edtior-container">
+                                                <div
+                                                    class="tox-edtior-container-header"
+                                                >
+                                                    <div
+                                                        class="tox-toolbar-overlord"
+                                                    ></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- 작성 카테고리 메뉴 섹선 -->
+                        <section class="admin-write-board-write-menu">
+                            <section class="admin-write-board-write-menu-body">
+                                <!-- 카테고리 -->
+                                <div class="category-div">
+                                    <div class="category-text">
+                                        <strong class="category-text-strong">
+                                            카테고리
+                                        </strong>
+                                        <!-- 물음표 버튼 -->
+                                        <button
+                                            class="category-help-button"
+                                            type="button"
+                                        >
+                                            <img
+                                                src="../images/quset.png"
+                                                class="category-help-img"
+                                                style="width: 11px"
+                                            />
+                                        </button>
+                                    </div>
+                                    <!-- 편집 버튼 -->
+                                    <button class="category-fix-button">
+                                        편집
+                                    </button>
+                                </div>
+                                <!-- 카테고리 상단 메뉴 끝 -->
+                                <!-- 카테고리 설정 칸 -->
+                                <div class="category-choice-div">
+                                    <div class="category-choice-div-shape">
+                                        <div
+                                            class="category-choice-input-scope-div"
+                                        >
+                                            <div>
+                                                <label
+                                                    class="category-choice-input-label"
+                                                >
+                                                    <input
+                                                        class="category-choice-input"
+                                                        disabled=""
+                                                        name=""
+                                                        placeholder="공지 사항"
+                                                        readonly=""
+                                                        type="text"
+                                                        value=""
+                                                    />
+                                                    <img
+                                                        src="../images/clickdown.png"
+                                                        alt=""
+                                                        style="width: 15px"
+                                                        class="category-choice-img"
+                                                    />
+                                                </label>
+                                                <div
+                                                    class="category-choice-div-endline"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 카테고리 설정 칸 끝 -->
+                                <!-- 공개 범위 -->
+                                <div class="open-range-div-body">
+                                    <div class="open-range-div">
+                                        <strong class="open-range-text-strong">
+                                            공개 범위
+                                        </strong>
+                                    </div>
+                                </div>
+                                <div class="open-range-choice">
+                                    <ul>
+                                        <li class="all-open-li">
+                                            <label class="all-open-li-label">
+                                                <input
+                                                    class="all-open-radio-button"
+                                                    type="radio"
+                                                    value="PUBLIC"
+                                                    checked
+                                                />
+                                                <div
+                                                    class="all-open-radio-button-img"
+                                                >
+                                                    <img src="" />
+                                                </div>
+                                                <div
+                                                    class="all-open-radio-text-div-body"
+                                                >
+                                                    <div
+                                                        class="all-open-radio-text-div"
+                                                    >
+                                                        전체 공개
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 공개 범위 선택칸 끝 -->
+                                <div class="tag-div-body">
+                                    <div class="tag-text">
+                                        <strong class="tag-text-strong">
+                                            태그
+                                        </strong>
+                                    </div>
+                                </div>
+                                <!-- tag 설정 칸 -->
+                                <div class="tag-div">
+                                    <div class="tag-input-scope-div">
+                                        <div>
+                                            <label class="tag-input-label">
+                                                <input
+                                                    class="tag-input"
+                                                    placeholder="포스트의 키워드를 태그로 입력하세요."
+                                                    type="text"
+                                                />
+                                            </label>
+                                            <div class="tag-div-endtext-div">
+                                                <div class="tag-div-endtext">
+                                                    최대 5개, 1개당 20자까지
+                                                    입력할 수 있습니다. 태그를
+                                                    입력하면 태그별 탐색 및
+                                                    검색에 활용되어 내 포스트가
+                                                    더 많이 노출됩니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+    <script src="../../../../staticfiles/js/ljr/admin_notice_write/admin-notice-write.js"></script>
+</html>
