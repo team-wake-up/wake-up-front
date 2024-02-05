@@ -224,7 +224,7 @@ ul {
     /* display: flex; */
     margin-bottom: 8px;
     /* 버튼 클릭시 색상변환 */
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
     
 }
 
@@ -489,7 +489,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-post-a-tag{
     text-align: -webkit-match-parent;
@@ -522,7 +522,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-notice-a-tag{
     text-align: -webkit-match-parent;
@@ -554,7 +554,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-answer-a-tag{
     text-align: -webkit-match-parent;
@@ -588,7 +588,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-solo-a-tag{
     text-align: -webkit-match-parent;
@@ -619,7 +619,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-group-a-tag{
     text-align: -webkit-match-parent;
@@ -651,7 +651,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-solo-a-tag{
     text-align: -webkit-match-parent;
@@ -682,7 +682,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-group-a-tag{
     text-align: -webkit-match-parent;
@@ -715,7 +715,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-Wake-Up-a-tag{
     text-align: -webkit-match-parent;
@@ -748,7 +748,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    background-color: #f2f0fc;
+    /* background-color: #f2f0fc; */
 }
 .admin-menu-list-badge-a-tag{
     text-align: -webkit-match-parent;
@@ -770,6 +770,41 @@ admin-profile-button-img*/
     color: #1d1d1e;
     fill: #1d1d1e;
 }
+
+/* 메뉴리스트 태그 */
+/* 메뉴리스트 badge */
+
+.admin-menu-list-tag{
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    margin-bottom: 8px;
+    /* background-color: #f2f0fc; */
+}
+.admin-menu-list-tag-a-tag{
+    text-align: -webkit-match-parent;
+    
+}
+
+.admin-menu-list-tag-img{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: #7e69fe;
+    fill: #7e69fe;
+}
+.admin-menu-list-tag-name{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1d1d1e;
+    fill: #1d1d1e;
+}
+
 
 /* 메뉴 끝
 아래부턴 content 

@@ -147,7 +147,7 @@ ul {
     left: 0;
     top: 0;
     position: sticky;
-    background-color: #1d1d1e;
+    background-color: #c8c8ff;
 }
 
 /* 오른쪽 버튼 이미지
@@ -617,11 +617,14 @@ ul{
     margin: 0;
     padding: 0;
 }
+/* ================= 전체 공개 ================= */
+
 .all-open-li{
     border-top-width: 0;
     padding-top: 26px;
     padding-bottom: 26px;
     border-color: #f3f3f4;
+    
 }
 
 /* 전체공개 비디오 라벨 */
@@ -656,7 +659,179 @@ ul{
 
 
 
+
+
+/* ================= 비공개 ================= */
+
+.secret-li{
+    border-top-width: 0;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-color: #f3f3f4;
+}
+
+/* 전체공개 비디오 라벨 */
+.secret-li-label{
+    display: flex;
+}
+.all-open-radio-button{
+    /* opacity: 0; */
+    /* width: 0; */
+    /* height: 0; */
+    /* position: absolute; */
+}
+
+.secret-radio-text-div-body{
+    flex-grow: 1;
+    margin-top: 1px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1d1d1e;
+    fill: #1d1d1e;
+    display: block;
+}
+.secret-radio-text-div{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1d1d1e;
+    fill: #1d1d1e;
+    
+}
+
+
+
 /* 태그 */
+.tag-div-body{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    display: flex;
+    border-color: #e6e6e7;
+    background-color: #fafafb;
+}
+
+.tag-text{
+
+}
+.tag-text-strong{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1d1d1e;
+    fill: #1d1d1e;
+
+}
+/* 태그 입력칸 */
+.tag-div{
+    column-gap: 12px;
+    /* display: flex; */
+    margin-bottom: 16px;
+
+
+}
+.tag-input-scope-div{
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+/* 라벨 */
+.tag-input-label{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+
+    background-color: #fff;
+}
+/* 인풋 칸 */
+
+.tag-input{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 48px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+
+}
+/* 태그 아래 글 */
+.tag-div-endtext-div{
+    display: flex;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8a8a8b;
+    fill: #8a8a8b;
+}
+.tag-div-endtext{
+    word-break: keep-all;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+}
+.category-choice-img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    color: #b9b9bb;
+    fill: #b9b9bb;
+    display: block;
+    vertical-align: middle;
+}
+
+
+/* 셀렉트 카테고리 선택 */
+select{
+    background-color:transparent;
+    width: 100%;   
+    outline: none;
+}
+
+
+/* taglist */
+#tagcount{border: 1px solid #f3f3f4;
+    padding-left: 15px;
+    
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 15px;
+    background-color:#f3f3f4;
+    margin-top: 10px;
+    margin-left: 3px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    }
+    
+    
+.taglistAdd{
+    }
+    
+.tagInner{
+        display: inline-flex;
+        border:2px solid #8a8a8b;
+        background-color: #d6d6d6;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 2px;
+}
+
+
 .tag-div-body{
     padding-left: 16px;
     padding-right: 16px;
@@ -708,83 +883,4 @@ ul{
     height: 48px;
     display: flex;
     border-color: rgba(0, 0, 0, .1);
-    background-color: #f3f3f4;
-}
-/* 인풋 칸 */
-
-
-/* .tag-input{
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    height: 48px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-
-} */
-/* 태그 아래 글 */
-.tag-div-endtext-div{
-    display: flex;
-    margin-top: 8px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #8a8a8b;
-    fill: #8a8a8b;
-}
-.tag-div-endtext{
-    word-break: keep-all;
-    align-items: center;
-    display: flex;
-    margin-right: auto;
-}
-.category-choice-img{
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
-    color: #b9b9bb;
-    fill: #b9b9bb;
-    display: block;
-    vertical-align: middle;
-}
-
-
-
-/* 셀렉트 카테고리 선택 */
-select{
-    background-color:transparent;
-    width: 100%;   
-    outline: none;
-}
-/* taglist */
-#tagcount{border: 1px solid #f3f3f4;
-padding-left: 15px;
-
-padding-top: 3px;
-padding-bottom: 3px;
-border-radius: 15px;
-background-color:#f3f3f4;
-margin-top: 10px;
-margin-left: 3px;
-font-weight: 500;
-display: inline-flex;
-align-items: center;
-}
-
-
-.taglistAdd{
-}
-
-.tagInner{
-    display: inline-flex;
-    border:2px solid #8a8a8b;
-    background-color: #d6d6d6;
-    border-radius: 15px;
-    padding: 5px;
-    margin: 2px;
-}
-
-
+    background-color: #f3f3f4;}
