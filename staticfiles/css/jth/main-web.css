@@ -2308,7 +2308,7 @@ section {
     bottom: 0;
     right: 0;
     pointer-events: none;
-    height: 190.5px;
+    /* height: 190.5px; */
 }
 .main-section-right-fitst-div2-container-listmid-div {
     pointer-events: auto;
@@ -2343,8 +2343,8 @@ section {
     line-height: 1.5;
     letter-spacing: -0.1px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgb(32, 32, 32);
+    color: #ffffff;
+    background-color: #202020;
     cursor: pointer;
     font-size: 13px;
 }
@@ -2408,7 +2408,7 @@ section {
     font-style: normal;
     font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
     overflow-wrap: break-word;
-    padding: 16px 0px 0px;
+    height: 28.078px;
 }
 .listend-list-list-p {
     max-height: 135px;
@@ -2426,9 +2426,10 @@ section {
     font-style: normal;
     font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
     -webkit-font-smoothing: antialiased;
-    padding: 11px 0px 0px;
     margin: 0;
 }
+
+
 /* slide-current slide-visible */
 .slide-current {
     width: 11.11111111111111%;
@@ -2478,7 +2479,7 @@ section {
     letter-spacing: -0.18px;
     white-space: pre-line;
     word-break: keep-all;
-    color: rgb(102, 26, 32);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-style: normal;
     font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
@@ -2501,6 +2502,7 @@ section {
     -webkit-font-smoothing: antialiased;
     opacity: 0.8;
     padding: 10px 0px 0px;
+    margin: 0;
 }
 /* 세 번째 */
 .main-section-right-third{
