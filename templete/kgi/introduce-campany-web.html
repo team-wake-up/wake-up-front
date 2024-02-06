@@ -9,7 +9,8 @@
     <body>
         <header></header>
         <main id="main" class="main">
-            <section>
+            <!-- 메인 배너 -->
+            <section id="introduce-banner">
                 <div class="main-wrap">
                     <div class="main-img"></div>
                     <h2 class="main-txt">
@@ -24,26 +25,32 @@
                 </div>
             </section>
             <div class="introduce-section">
+                <!-- 네이게이션 바 -->
+                <nav id="nav-bar">
                 <div class="list-wrap">
                         <ul class="tab-list">
-                            <li class="tab-menu-on">
+                            <li id="tab-menu" class="tab-menu-on tab-menu">
                                 <button type="button" color="transparent" class="tab-button">
-                                    <span class="tab-menu-txt-on">소개</span>
+                                    <span id="tab-menu-txt" class="tab-menu-txt-on tab-menu-txt">소개</span>
                                 </button>
                             </li>
-                            <li class="tab-menu-off">
+                            <li id="tab-menu" class="tab-menu">
                                 <button type="button" color="transparent" class="tab-button">
-                                    <span class="tab-menu-txt-off">현황</span>
+                                    <span id="tab-menu-txt" class="tab-menu-txt">현황</span>
                                 </button>
                             </li>
-                            <li class="tab-menu-off">
+                            <!-- <li class="tab-menu-off">
                                 <button type="button" color="transparent" class="tab-button">
                                     <span class="tab-menu-txt-off">히스토리</span>
                                 </button>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
-                <section>
+                </nav>
+                <!-- 회사 소개 -->
+                <div id="company-introduce">
+                    <!-- 함께 기부 -->
+                <section id="introduce-share-donate">
                     <div id="togather-tab" class="tab-panel">
                         <div class="panel-img-wrap">
                             <img src="https://t1.kakaocdn.net/together_image/common/img_choonsik_01.png" class="panel-img" />
@@ -137,7 +144,8 @@
                             </div>
                         </div>
                     </section>
-                    <section>
+                    <!-- 후기 -->
+                    <section id="introduce-review">
                         <div class="review-wrap">
                             <strong class="review-tit">같이기부 후기</strong>
                             <p class="review-sub">같이가치를 통해 만들어진 값진 변화</p>
@@ -318,7 +326,8 @@
                             </div>
                         </div>
                     </section>
-                    <section>
+                    <!-- 모두의 행동 -->
+                    <section id="introduce-every-action">
                         <div class="every-action-img-wrap">
                             <img src="	https://t1.kakaocdn.net/together_image/common/img_choonsik_02.png" class="every-action-img" />
                         </div>
@@ -460,7 +469,8 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section>
+                                    <!-- 마음 날씨 -->
+                                    <section id="introduce-mind-weather">
                                         <div class="mind-weather-img">
                                             <img src="https://t1.kakaocdn.net/together_image/common/img_choonsik_03.png" class="mind-chunsik">
                                         </div>
@@ -530,13 +540,257 @@
                                             </ul>
                                         </div>
                                     </section>
+                                </div>
+                                <!-- 현황 -->
+                                <div id="current" class="now-wrap">
+                                    <!-- 총기부금 -->
+                                <section>
+                                        <h4></h4>
+                                        <div class="now-donate-img-wrap">
+                                            <img src="https://t1.kakaocdn.net/together_image/common/img_choonsik_04.png" class="donate-img">
+                                        </div>
+                                        <div class="now-donate-wrap">
+                                            <h5 class="donate-tit">지금까지 총 기부금</h5>
+                                            <em class="donate-total-money">732억</em>
+                                            <ul class="donate-detail-list">
+                                                <li class="donate-detail">
+                                                    <div class="detail-img-wrap">
+                                                        <img src="https://t1.kakaocdn.net/together_image/common/ico_donate_01.png" class="detail-img">
+                                                    </div>
+                                                    <div class="detail-donate-wrap">
+                                                        <strong class="detail-tit">같이기부 기부금</strong>
+                                                        <p class="detail-money">73,260,626,683원</p>
+                                                    </div>
+                                                </li>
+                                                <li class="donate-detail">
+                                                    <div class="detail-img-wrap">
+                                                        <img src="https://t1.kakaocdn.net/together_image/common/ico_donate_02.png" class="detail-img">
+                                                    </div>
+                                                    <div class="detail-donate-wrap">
+                                                        <strong class="detail-tit">같이가치 모금함</strong>
+                                                        <p class="detail-money">17,167개</p>
+                                                    </div>
+                                                </li>
+                                                <li class="donate-detail">
+                                                    <div class="detail-img-wrap">
+                                                        <img src="https://t1.kakaocdn.net/together_image/common/ico_donate_03.png" class="detail-img">
+                                                    </div>
+                                                    <div class="detail-donate-wrap">
+                                                        <strong class="detail-tit">함께 기부한 마음</strong>
+                                                        <p class="detail-money">57,507,623건</p>
+                                                    </div>
+                                                </li>
+                                                <li class="donate-detail">
+                                                    <div class="detail-img-wrap">
+                                                        <img src="https://t1.kakaocdn.net/together_image/common/ico_donate_04.png" class="detail-img">
+                                                    </div>
+                                                    <div class="detail-donate-wrap">
+                                                        <strong class="detail-tit">모두의 행동 기부금</strong>
+                                                        <p class="detail-money">337,673,860원</p>
+                                                    </div>
+                                                </li>
+                                                <li class="donate-detail">
+                                                    <div class="detail-img-wrap">
+                                                        <img src="https://t1.kakaocdn.net/together_image/common/ico_donate_05.png" class="detail-img">
+                                                    </div>
+                                                    <div class="detail-donate-wrap">
+                                                        <strong class="detail-tit">행동 건수</strong>
+                                                        <p class="detail-money">599,909건</p>
+                                                    </div>
+                                                </li>
+                                                <li class="donate-detail">
+                                                    <div class="detail-img-wrap">
+                                                        <img src="https://t1.kakaocdn.net/together_image/common/ico_donate_06.png" class="detail-img">
+                                                    </div>
+                                                    <div class="detail-donate-wrap">
+                                                        <strong class="detail-tit">내 마음 살펴보기</strong>
+                                                        <p class="detail-money">13,686,349건</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </section>
+                                <!-- 그래프 -->
+                                <section>
+                                    <div class="graph-wrap">
+                                        <div class="with-donate">
+                                            <strong class="with-tit">같이기부</strong>
+                                            <p class="with-sub">
+                                                국내외 도움이 필요한 곳에
+                                                <br class="txt-br2">
+                                                기부금이 100% 전달됩니다.
+                                            </p>
+                                            <div class="with-container">
+                                                <div class="select-year-wrap">
+                                                    <div class="select-year">
+                                                        <select class="select-box">
+                                                            <option value="2024">2024</option>
+                                                            <option value="2023">2023</option>
+                                                            <option value="2022">2022</option>
+                                                        </select>
+                                                        <svg viewBox="0 0 20 20" class="select-year-button">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2253 0.225303C6.52571 -0.0751008 7.01276 -0.0751008 7.31316 0.225303L15.8187 8.73083C16.5196 9.43178 16.5196 10.5682 15.8187 11.2692L7.31316 19.7747C7.01276 20.0751 6.52571 20.0751 6.2253 19.7747C5.9249 19.4743 5.9249 18.9872 6.2253 18.6868L14.7308 10.1813C14.831 10.0812 14.831 9.91883 14.7308 9.81869L6.2253 1.31316C5.9249 1.01276 5.9249 0.525706 6.2253 0.225303Z" fill="#202020"></path>
+                                                    </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="graph-container">
+                                                    <ul class="graph-statics-list">
+                                                        <li class="graph-statics">
+                                                            <strong class="graph-list-tit">기부금</strong>
+                                                            <span class="graph-list-num-wrap">
+                                                                <em class="graph-list-num">375,299,252</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li class="graph-statics">
+                                                            <strong class="graph-list-tit">기부자 수</strong>
+                                                            <span class="graph-list-num-wrap">
+                                                                <em class="graph-list-num">125,962</em>
+                                                                명
+                                                            </span>
+                                                        </li>
+                                                        <li class="graph-statics">
+                                                            <strong class="graph-list-tit">모금함 수</strong>
+                                                            <span class="graph-list-num-wrap">
+                                                                <em class="graph-list-num">105</em>
+                                                                개
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="circle-graph-container">
+                                                        <div class="circle-wrap">
+                                                            <svg viewBox="0 0 160 160" class="circle-svg" style="height: 260px; width: 260px">
+                                                                <g>
+                                                                    <circle cx="80" cy="80" r="60" stroke="#ff6672" stroke-width="30" stroke-dasharray="374.99111843077515" stroke-dashoffset="153.6088758615122" transform="rotate(-90, 80, 80)" fill="transparent"></circle>
+                                                                    <text text-anchor="middle" dy="3px" x="137.7608715032883" y="96.23827956344564" class="circle-per">59%</text>
+                                                                </g>
+                                                                <g>
+                                                                    <circle cx="80" cy="80" r="60" stroke="#ad4cfe" stroke-width="30" stroke-dasharray="374.99111843077515" stroke-dashoffset="219.38224256926293" transform="rotate(121.4044693060033, 80, 80)" fill="transparent"></circle>
+                                                                    <text text-anchor="middle" dy="3px" x="22.239128496711693" y="63.761720436554356" class="circle-per">41%</text>
+                                                                </g>
+                                                                <g>
+                                                                    <circle cx="80" cy="80" r="60" stroke="#444" stroke-width="30" stroke-dasharray="374.99111843077515" stroke-dashoffset="374.99111843077515" transform="rotate(270, 80, 80)" fill="transparent"></circle>
+                                                                </g>
+                                                            </svg>
+                                                            <div class="circle-inner-year">
+                                                                <strong class="inner-year-txt">2024</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="graph-bottom">
+                                                    <ul class="bottom-lists">
+                                                        <li class="bottom-list">
+                                                            <strong class="bottom-tit">
+                                                                <i class="red-dot">🔴</i>
+                                                                사용자 기부금
+                                                            </strong>
+                                                            <p class="bottom-money-wrap">
+                                                                <em class="bottom-money">220,338,720</em>
+                                                                원
+                                                            </p>
+                                                        </li>
+                                                        <li class="bottom-list">
+                                                            <strong class="bottom-tit">
+                                                                <i class="red-dot">🟣</i>
+                                                                카카오 기부금
+                                                            </strong>
+                                                            <p class="bottom-money-wrap">
+                                                                <em class="bottom-money">154,910,532</em>
+                                                                원
+                                                            </p>
+                                                        </li>
+                                                        <li class="bottom-list">
+                                                            <strong class="bottom-tit">
+                                                                <i class="red-dot">⚫</i>
+                                                                파트너 기부금
+                                                            </strong>
+                                                            <p class="bottom-money-wrap">
+                                                                <em class="bottom-money">0</em>
+                                                                원
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="with-donate">
+                                            <strong class="with-tit">모두의행동</strong>
+                                            <p class="with-sub">
+                                                더 나은 내일을 위해
+                                                <br class="txt-br2">
+                                                모두의행동에서 함께해요!
+                                            </p>
+                                            <div class="with-container">
+                                                <div class="select-year-wrap">
+                                                    <div class="select-year">
+                                                        <select class="select-box">
+                                                            <option value="2024">2024</option>
+                                                            <option value="2023">2023</option>
+                                                            <option value="2022">2022</option>
+                                                        </select>
+                                                        <svg viewBox="0 0 20 20" class="select-year-button">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2253 0.225303C6.52571 -0.0751008 7.01276 -0.0751008 7.31316 0.225303L15.8187 8.73083C16.5196 9.43178 16.5196 10.5682 15.8187 11.2692L7.31316 19.7747C7.01276 20.0751 6.52571 20.0751 6.2253 19.7747C5.9249 19.4743 5.9249 18.9872 6.2253 18.6868L14.7308 10.1813C14.831 10.0812 14.831 9.91883 14.7308 9.81869L6.2253 1.31316C5.9249 1.01276 5.9249 0.525706 6.2253 0.225303Z" fill="#202020"></path>
+                                                    </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="graph-container">
+                                                    <ul class="graph-statics-list">
+                                                        <li class="graph-statics">
+                                                            <strong class="graph-list-tit">기부금</strong>
+                                                            <span class="graph-list-num-wrap">
+                                                                <em class="graph-list-num">0</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li class="graph-statics">
+                                                            <strong class="graph-list-tit">행동수</strong>
+                                                            <span class="graph-list-num-wrap">
+                                                                <em class="graph-list-num">1,403</em>
+                                                                건
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="circles-wrap">
+                                                        <div class="circles">
+                                                            <div class="circle-action-donate">
+                                                                <strong class="circle-action-donate-tit">행동 기부금</strong>
+                                                                <em class="circle-action-donate-detail">0원</em>
+                                                            </div>
+                                                            <div class="action-circle">
+                                                                <strong class="action-circle-tit">행동수</strong>
+                                                                <em class="action-circle-detail">1,03건</em>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="graph-bottom">
+                                                    <ul class="bottom-lists">
+                                                        <strong class="action-bottom-tit">
+                                                            <i class="red-dot">🔴</i>
+                                                            행동 기부금
+                                                        </strong>
+                                                        <p class="action-bottom-detail">
+                                                            더 나은 내일을 만드는 움직임
+                                                            <br class="txt-br2">
+                                                            모두의행동을 통해 쌓은 기부금입니다.
+                                                        </p>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div></div>
                                     </div>
+                                </section>
+                            </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
+        <footer></footer>
     </body>
     <script src="../../staticfiles/js/kgi/introduce-campany-web.js"></script>
 </html>

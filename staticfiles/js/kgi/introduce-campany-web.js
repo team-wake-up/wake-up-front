@@ -1,5 +1,4 @@
 // 같이기부 후기 슬라이드 배너
-
 const dots = document.querySelectorAll("button.control-button");
 const banner = document.querySelector("div.slider-list");
 const divs = document.querySelectorAll(".slider-list .slide");
@@ -98,7 +97,7 @@ function autoSlide() {
     // console.log(count);
     banner.style.transition = "transform 0.7s";
     count++;
-    console.log(count);
+    // console.log(count);
 
     if (count == 6) {
         banner.style.transform = `translate(${-338.97 * (count - 1)}px)`;
@@ -213,7 +212,7 @@ function autoSlide2() {
     // console.log(count);
     banner2.style.transition = "transform 0.7s";
     count2++;
-    console.log(count2);
+    // console.log(count2);
 
     if (count2 == 6) {
         banner2.style.transform = `translate(${-354 * (count2 - 1)}px)`;
@@ -228,3 +227,37 @@ function autoSlide2() {
         check2 = true;
     }, 700);
 }
+
+// 네이게이션 바 컨트롤
+
+const lists = document.querySelectorAll("li#tab-menu");
+const listTexts = document.querySelectorAll("span#tab-menu-txt");
+const introduce = document.querySelector("div#company-introduce");
+const current = document.querySelector("div#current");
+
+lists.forEach((list, i) => {
+    // console.log(i);
+    listTexts.forEach((text, j) => {
+        console.log(j);
+        list.addEventListener("click", () => {
+            console.log(i);
+            if (i == 0) {
+                console.log("11111");
+                list.classList.add("tab-menu-on");
+                lists[1].classList.remove("tab-menu-on");
+                text.classList.add("tab-menu-txt-on");
+                listTexts[1].classList.remove("tab-menu-txt-on");
+                introduce.style.display = "block";
+                current.style.display = "none";
+            } else if (i == 1) {
+                console.log("2222");
+                list.classList.add("tab-menu-on");
+                lists[0].classList.remove("tab-menu-on");
+                text.classList.add("tab-menu-txt-on");
+                listTexts[0].classList.remove("tab-menu-txt-on");
+                introduce.style.display = "none";
+                current.style.display = "block";
+            }
+        });
+    });
+});
