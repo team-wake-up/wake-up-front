@@ -45,6 +45,1672 @@ menu, ol, ul {
     list-style: none;
 }
 
+.move-banner-chunsick {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.move-banner-img {
+    max-width: 125px;
+    flex-shrink: 0;
+    display: flex;
+    width: auto;
+    /* max-width: 100px; */
+    height: 100%;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.move-banner-now-arrow {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0px 0px 2px;
+    opacity: 1;
+}
+
+.move-banner-now {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.8;
+    color: rgb(102, 26, 32);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2;
+    letter-spacing: -0.1px;
+}
+
+.move-banner-texts {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: -0.3px;
+    color: rgb(102, 26, 32);
+    font-size: 18px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    /* letter-spacing: -0.1px; */
+    font-weight: 600;
+}
+
+.move-banner-inner {
+    max-width: 370px;
+    padding: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.move-banner-container {
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.move-banner-bar {
+    height: 100px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    overflow: hidden;
+    position: relative;
+    /* height: 80px; */
+    border-radius: 6px;
+    background-color: rgb(255, 217, 221);
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+.move-banner-box {
+    text-decoration: none;
+}
+
+.p-chall-move-banner {
+    padding-bottom: 60px;
+}
+
+.introduce-arrow {
+    width: 42px;
+    height: 42px;
+    vertical-align: top;
+    transform: rotate(270deg);
+    opacity: 1;
+}
+
+.introduce-img-down {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.introduce-img-style {
+    color: rgb(68, 68, 68);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+}
+
+.introduce-img-up {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.introduce-user-action-img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.introduce-user-action-inner {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.introduce-user-action {
+    width: calc(25% - 20px);
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-check-count {
+    color: rgb(68, 68, 68);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+    padding-left: 5px;
+}
+
+.card-check-mark {
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+}
+.card-texts-bottom {
+    padding-top: 10px;
+}
+
+
+.content-card-texts-title {
+    font-size: 14px;
+    line-height: 1.43;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+    color: rgb(32, 32, 32);
+    /* font-size: 18px; */
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    /* overflow-wrap: break-word; */
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    /* line-height: 1.56; */
+}
+
+.content-card-texts {
+    width: 100%;
+    padding: 8px 0px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    box-sizing: border-box;
+    /* padding: 0px 20px; */
+}
+
+.content-card-thumbnail::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.content-card-thumbnail {
+    padding-bottom: 116.251%;
+    width: 100%;
+    height: 0px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    position: relative;
+    /* width: 100px; */
+    /* height: 100%; */
+    overflow: hidden;
+    /* border-radius: 6px; */
+    background: url(https://t1.kakaocdn.net/together_action_prod/admin/20230522/99209ece7cba4e3189b6f993f274b33b?type=thumb&opt=S324x376) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
+}
+
+.content-card-inner {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.p-content-card {
+    width: calc(25% - 20px);
+    margin: 20px 10px;
+    height: 100%;
+}
+
+.progress-content-card {
+    margin: 0px -10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.progress-box {
+    margin: 0px -10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.progress-title {
+    padding-top: 0px;
+    font-size: 18px;
+    color: rgb(32, 32, 32);
+    /* font-size: 16px; */
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.p-chall-progress-more {
+    border-top: 0px;
+    padding: 0px 0px 40px;
+}
+
+.see-more-button-in {
+    width: 12px;
+    height: 12px;
+    vertical-align: top;
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.see-more-button {
+    gap: 6px;
+    width: 116px;
+    color: rgb(68, 68, 68);
+    font-family: "KakaoBig Regular";
+    font-weight: normal;
+    font-size: 14px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(229, 229, 229);
+    margin: 0px;
+    /* font-family: "KakaoBig Bold"; */
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(229, 229, 229);
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px; */
+    height: 46px;
+    padding: 0px 20px;
+    /* font-size: 16px; */
+    border-radius: 999px;
+}
+
+.comment-see-more {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.button-option-style {
+    color: rgb(32, 32, 32);
+    flex-grow: 1;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(174, 174, 174);
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    cursor: pointer;
+    /* color: rgb(174, 174, 174); */
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    padding: 0px 18px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+
+.button-option-menu {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+
+.button-lining {
+    box-sizing: border-box;
+}
+
+.comment-set-button-style {
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+}
+
+.set-button-tool {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    top: 20px;
+    left: 0px;
+    display: none;
+}
+
+.comment-set-button {
+    padding: 6px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    height: auto;
+    /* padding: 8px; */
+    font-size: 12px;
+}
+
+.comment-setting {
+    display: inline-flex;
+    position: relative;
+}
+
+.comment-write-date {
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+}
+
+.comment-like-counts {
+    position: relative;
+    color: rgb(68, 68, 68);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+}
+
+.comment-like-style {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin: -16px -19px -17px;
+    transform: scale(0.65);
+    background: url(https://t1.kakaocdn.net/together_image/common/heart_fundraising.png) 0px 0px / auto 100% repeat-x;
+}
+
+.comment-like-button {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    gap: 4px;
+    padding: 3px 0px;
+    box-sizing: border-box;
+    /* display: inline-flex; */
+    justify-content: center;
+    /* align-items: center; */
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    height: auto;
+    /* padding: 8px; */
+    font-size: 12px;
+}
+
+.comment-add-more {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 16px;
+}
+
+.comment-user-area {
+    word-break: break-word;
+    white-space: pre-wrap;
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.47;
+    letter-spacing: -0.1px;
+}
+
+.comment-user-nicknames-style {
+    overflow: hidden;
+    max-width: 125px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(68, 68, 68);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.comment-user-nicknames {
+    display: flex;
+}
+
+.comment-inner::before {
+    display: block;
+    position: absolute;
+    left: -3px;
+    top: 0px;
+    width: 9px;
+    height: 18px;
+    background-color: rgb(245, 245, 245);
+    mask: url(//t1.kakaocdn.net/together_image/svg/bg_speech_bubble_gray.svg) center center / contain no-repeat;
+    content: "";
+}
+
+.comment-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+    z-index: 10;
+    min-width: 190px;
+    border-radius: 14px;
+    background-color: rgb(245, 245, 245);
+    box-sizing: border-box;
+}
+
+.comment-background {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-best-icon {
+    display: block;
+    width: 24px;
+    height: 9px;
+    background: url(//t1.kakaocdn.net/together_image/svg/ico_best.svg) 50% 50% / contain no-repeat;
+}
+
+.comment-user-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.comment-user-face::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background-image: url(//t1.kakaocdn.net/together_image/svg/squircle_border.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comment-user-face {
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    mask-image: url(//t1.kakaocdn.net/together_image/svg/squircle.svg);
+    mask-size: 100% 100%;
+}
+
+.comment-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    gap: 3px;
+}
+
+.comment-user-each {
+    display: flex;
+    gap: 10px;
+}
+
+.user-recode-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment-user-recode {
+    padding-top: 20px;
+}
+
+.comment-count-style {
+    color: rgb(32, 32, 32);
+    font-size: 17px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.76;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+}
+
+.comment-user-count {
+    padding: 22px 0px 7px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.registration-button {
+    /* 이거 margin-right 왜 안될까? */
+    margin-right: -3px;
+    padding: 6px 13px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(32, 32, 32);
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+    height: 34px;
+    /* padding: 0px 16px; */
+    font-size: 13px;
+    border-radius: 999px;
+}
+
+.screen-count-max-style {
+    color: rgb(68, 68, 68);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}
+
+.screen-count-style {
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}
+
+.user-screen-count {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.emoticon-keyboard {
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid rgb(201, 201, 201);
+    height: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid rgb(189, 189, 189); */
+    /* border-radius: 2px; */
+    background: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+    color: rgb(51, 51, 51);
+    /* height: 323px; */
+}
+
+.emoticon-layer {
+    display: none;
+    top: 49px;
+    /* top: 39px; */
+    z-index: 20;
+    border-radius: 0px;
+    border: none;
+    width: 100%;
+    height: 253px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+    display: none;
+    position: absolute;
+    left: 0px;
+}
+
+.emoticon-text {
+    padding-left: 7px;
+    font-family: "KakaoBig Regular";
+    font-weight: normal;
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    font-style: normal;
+    /* font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif; */
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}
+
+.util-button-path {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+}
+
+.screen-util-button {
+    padding: 12px 16px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    height: auto;
+    /* padding: 8px; */
+    font-size: 12px;
+}
+
+.user-screen-util {
+    display: none;
+    height: 50px;
+    /* display: flex; */
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 14px;
+    letter-spacing: -0.3px;
+    justify-content: space-between;
+    position: relative;
+    /* height: 40px; */
+    border-top: 1px solid rgb(238, 238, 238);
+    padding: 0px 18px 0px 0px;
+}
+
+.user-screen-on {
+    height: 48px;
+    padding: 12px 15px 6px;
+    font-size: 14px;
+    min-height: 80px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    /* padding: 15px 20px 0px; */
+    /* font-size: 16px; */
+    line-height: 1.6;
+    letter-spacing: -0.3px;
+    color: rgb(68, 68, 68);
+    background: transparent;
+    resize: none;
+    outline: none;
+}
+
+.user-screen-writer {
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.47;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+}
+
+.user-screen-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user-screen-photo {
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    mask-image: url(//t1.kakaocdn.net/together_image/svg/squircle.svg);
+    mask-size: 100% 100%;
+}
+
+.user-screen-container {
+    display: none;
+    margin-bottom: -3px;
+    padding: 13px 20px 15px;
+}
+
+.user-screen-field-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.user-screen-style {
+    height: 50px;
+    min-height: 0px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid rgb(201, 201, 201);
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px; */
+    /* min-height: 100px; */
+}
+
+.user-screen-box {
+    outline: none;
+}
+
+.comment-user-screen {
+    padding-top: 15px;
+}
+
+.cheer-comment-title {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.cheer-comment-zone {
+    scroll-margin-top: 60px;
+    padding: 0px 0px 60px;
+}
+
+.p-cheer-comment {
+    box-sizing: border-box;
+    width: 1120px;
+    margin: 0px auto;
+    padding-right: 420px;
+}
+
+.board-button-second::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(242, 242, 242);
+}
+
+.board-button-second {
+    position: relative;
+    margin-top: -1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: 0px;
+    color: rgb(32, 32, 32);
+    flex-grow: 1;
+}
+
+.board-button-first {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: rgb(32, 32, 32);
+    flex-grow: 1;
+}
+
+.board-option-share {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(174, 174, 174);
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    /* color: rgb(32, 32, 32); */
+    height: 40px;
+    padding: 0px 18px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+
+.board-option-menu {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+
+.board-tooltip-content {
+    box-sizing: border-box;
+}
+
+.board-option-tooltip {
+    bottom: 26px;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    right: 0px;
+    display: none;
+}
+
+.board-button-style {
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+    opacity: 1;
+}
+
+.board-button-push {
+    padding: 9px 0px 9px 18px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    height: auto;
+    /* padding: 8px; */
+    font-size: 12px;
+}
+
+.board-option-buttons {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.board-upload-date::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 6px;
+    vertical-align: top;
+    background-color: rgb(211, 211, 211);
+}
+
+.board-upload-date {
+    display: inline-flex;
+    align-items: center;
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+}
+
+.board-user-id {
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    /* font-size: 14px; */
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+}
+
+.board-user-information {
+    padding-top: 7px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.like-count-number {
+    margin-top: -1px;
+    margin-left: -12px;
+    letter-spacing: -0.3px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 1.09;
+    font-family: "KakaoBig Regular";
+    box-sizing: border-box;
+}
+
+.like-letter {
+    font-family: 'AppleSDGothicNeo','맑은 고딕','Malgun Gothic',dotum,sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #828282;
+    display: none;
+    box-sizing: border-box;
+}
+
+.like-icon-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: image-set(url(https://t1.kakaocdn.net/together_image/common/heart_action_white_1x.png) 1x,url(https://t1.kakaocdn.net/together_image/common/heart_action_white_2x.png) 2x);
+    background-size: auto 100%;
+    flex-shrink: 0;
+    /* width: 50px; */
+    /* height: 50px; */
+    margin-left: -16px;
+    transform: scale(0.9);
+    box-sizing: border-box;
+}
+
+.like-selection-button {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 60px;
+    height: 30px;
+    padding: 0px 14px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 0 none;
+    vertical-align: middle;
+    outline: none;
+    font-family: inherit;
+}
+
+.board-like-selection {
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.board-like-main {
+    min-height: auto;
+    position: relative;
+}
+
+.action-board-like {
+    padding: 12px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 20;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+
+.action-image-upload {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.action-image-single::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.action-image-single {
+    position: relative;
+}
+
+.board-pin-item {
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    opacity: 1;
+}
+
+.action-board-pin {
+    top: 12px;
+    right: 12px;
+    position: absolute;
+    z-index: 5;
+}
+
+.list-menu-second {
+    position: relative;
+    margin-top: -1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: 0px;
+    color: rgb(32, 32, 32);
+    flex-grow: 1;
+}
+
+.list-menu-first {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: rgb(32, 32, 32);
+    flex-grow: 1;
+}
+
+.list-menu-style {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(174, 174, 174);
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    /* color: rgb(32, 32, 32); */
+    height: 40px;
+    padding: 0px 18px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+
+.list-change-menu {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+
+.list-change-tooltip-content {
+    box-sizing: border-box;
+}
+
+.list-change-tooltip {
+    left: auto;
+    right: 0px;
+    top: 43px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+.list-change-open {
+    width: 12px;
+    height: 12px;
+    vertical-align: top;
+    transform: rotate(270deg);
+    opacity: 1;
+}
+
+.list-change-first {
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    padding-right: 5px;
+}
+
+.list-change-button {
+    padding: 8px 0px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    height: auto;
+    /* padding: 8px; */
+    font-size: 12px;
+}
+
+.action-list-button {
+    position: absolute;
+    right: 0px;
+    top: -66px;
+    margin: 8px 0px -16px;
+}
+
+.action-board-view {
+    position: relative;
+}
+
+.action-check-counts {
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.56;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+.action-check-mark {
+    padding-top: 2px;
+    padding-right: 12px;
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+    opacity: 1;
+}
+
+.action-main-board {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: rgb(32, 32, 32);
+    /* font-size: 16px; */
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* 행동보드 */
+
+.related-link-picture {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+}
+
+.link-hidden-style {
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-contents-style {
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: -0.1px;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2;
+}
+
+.link-list-item {
+    display: list-item;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.related-link-contents {
+    margin: 0px;
+    padding: 0px;
+}
+
+.related-link-name {
+    padding-bottom: 14px;
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+    /* font-size: 16px; */
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.related-link-box {
+    gap: 60px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 36px; */
+}
+
+.hashtag-naming {
+    color: rgb(68, 68, 68);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.hashtag-shop {
+    padding-right: 2px;
+}
+
+
+.detail-hashtag-button {
+    padding: 6px 12px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(229, 229, 229);
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px; */
+    color: rgb(68, 68, 68);
+    height: auto;
+    /* padding: 8px; */
+    font-size: 12px;
+    border-radius: 999px;
+}
+
+.detail-hashtag-inner {
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* gap: 8px 4px; */
+}
+
+.section-hashtag-box {
+    padding: 50px 0px;
+}
+
+.how-to-order {
+    padding-top: 8px;
+    line-height: 2;
+    white-space: pre-wrap;
+    letter-spacing: -0.3px;
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    /* letter-spacing: -0.1px; */
+    /* line-height: 1.67; */
+}
+
+.how-warning {
+    white-space: pre-wrap;
+    letter-spacing: -0.3px;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.56;
+    /* letter-spacing: -0.1px; */
+    font-weight: 600;
+}
+
+.comment-how {
+    margin-top: 60px;
+    padding: 24px 30px;
+    border-radius: 6px;
+    background-color: rgb(247, 247, 247);
+}
+
+.to-everyone-icon {
+    width: 19px;
+    height: 15px;
+    display: block;
+    /* width: 16px; */
+    /* height: 13px; */
+    margin: 0px auto 15px;
+    background: url(//t1.kakaocdn.net/together_image/common/ico_quote.png) 0px 0px / contain no-repeat;
+    vertical-align: top;
+}
+
+.to-everyone-style {
+    white-space: pre-wrap;
+    word-break: keep-all;
+    color: rgb(173, 76, 254);
+    font-size: 16px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.7;
+    quotes: none;
+}
+
+.to-everyone-box {
+    padding-top: 60px;
+    max-width: 580px;
+    padding: 0px 24px;
+    display: flex;
+    /* max-width: 290px; */
+    margin: 0px auto;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.p-subheading-a {
+    padding-top: 50px;
+}
+
+.contents-news-name {
+    overflow: hidden;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+    padding: 8px 10px 0px;
+    text-align: center;
+}
+
+
+.contents-news-img {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.contents-news-box {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.p-img-a {
+    border-radius: 8px;
+}
+
+
+.subject-name {
+    margin-top: 45px;
+}
+
+.p-text-b {
+    padding-top: 24px;
+}
+
+.p-chall-img-box {
+    padding-top: 34px;
+}
+
+.p-text-a {
+    margin-top: -15px;
+}
+
+.sub-contents-text {
+    white-space: pre-wrap;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.88;
+    letter-spacing: -0.1px;
+}
+
+.sub-heading {
+    padding-bottom: 30px;
+    font-size: 18px;
+    display: block;
+    white-space: pre-wrap;
+    color: rgb(32, 32, 32);
+    /* font-size: 18px; */
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.challenge-reason::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 6px;
+    border-radius: 1px;
+    margin-right: 14px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    background-color: rgb(32, 32, 32);
+}
+
+.challenge-reason {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: stretch;
+    white-space: pre-wrap;
+    color: rgb(32, 32, 32);
+    /* font-size: 18px; */
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.p-content-img {
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    /* border-radius: 6px; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-text-box {
+    padding-top: 30px;
+}
+
+.mission-main-text {
+    box-sizing: border-box;
+    width: 1120px;
+    margin: 0px auto;
+    padding-left: 0px;
+    padding-right: 420px;
+    padding-bottom: 60px;
+}
+
+.menu-remain-font {
+    font-weight: 600;
+    position: relative;
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2;
+    letter-spacing: -0.1px;
+}
+
+.tab-remain-bar {
+    height: 60px;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+}
+
+.menu-select-font {
+    font-weight: 600;
+    position: relative;
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2;
+    letter-spacing: -0.1px;
+}
+
+.p-chall-menu-button {
+    display: flex;
+    height: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    /* display: inline-flex; */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    /* height: 34px; */
+    padding: 0px 16px;
+    font-size: 13px;
+}
+
+.tab-menu-select {
+    height: 60px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(32, 32, 32);
+    margin-bottom: -1px;
+}
+
+.tab-menu-bar {
+    max-width: 1120px;
+    margin: 0px auto;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.p-tab-menu {
+    width: 700px;
+    margin: 0px auto;
+    transform: translateX(-210px);
+    border-bottom: 1px solid rgb(229, 229, 229);
+    background: rgb(255, 255, 255);
+}
+
+.detail-page-box {
+    border-top: 0px;
+}
+
+.p-chall-detail-page {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .hidden-bar-open-img {
     max-width: 100%;
     height: auto;
