@@ -1,22 +1,48 @@
 @font-face {
-    font-family: "KakaoBig regular";
+    font-family: 'KakaoBig regular';
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format("woff2"),
-        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format("woff");
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format('woff');
 }
 /*!sc*/
 @font-face {
-    font-family: "KakaoBig Bold";
+    font-family: 'KakaoBig Bold';
     font-style: normal;
     font-weight: bold;
     font-display: swap;
-    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format("woff2"),
-        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format("woff");
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format('woff');
 }
 
-blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -29,7 +55,10 @@ body {
     background: #fff;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
     vertical-align: middle;
     font-size: 100%;
 }
@@ -41,25 +70,40 @@ button {
     cursor: pointer;
 }
 
-body, button, input, select, td, textarea, th {
+body,
+button,
+input,
+select,
+td,
+textarea,
+th {
     font-size: 14px;
     line-height: 1.5;
-    font-family: KakaoBig Regular,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,dotum,돋움,sans-serif;
+    font-family: KakaoBig Regular, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, dotum, 돋움, sans-serif;
     color: #444;
 }
 
-body, html {
+body,
+html {
     min-width: 1140px;
     margin: 0;
     padding: 0;
 }
 
-address, caption, cite, code, dfn, em, strong, var {
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+var {
     font-style: normal;
     font-weight: 400;
 }
 
-fieldset, img {
+fieldset,
+img {
     border: 0;
 }
 
@@ -71,7 +115,9 @@ a {
     color: #444;
 }
 
-a, a:active, a:hover {
+a,
+a:active,
+a:hover {
     text-decoration: none;
 }
 
@@ -89,7 +135,8 @@ body {
     min-height: 100vh;
 }
 
-#dkContent, #rootContent {
+#dkContent,
+#rootContent {
     flex-grow: 1;
     min-height: calc(100vh - (70px + 250px));
 }
@@ -128,7 +175,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #0000004d;
-    content: "";
+    content: '';
 }
 
 .group-tagcovernew.type-html .info-tag:before {
@@ -159,7 +206,7 @@ body {
 
 .group-tagcovernew .tit-tag {
     display: block;
-    font-family: KakaoBig Bold,sans-serif;
+    font-family: KakaoBig Bold, sans-serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 60px;
@@ -186,21 +233,20 @@ body {
     flex-wrap: wrap;
 }
 
-.group-tagstate.group-bigissue .box-total-state {
+.group-tagstate.group-bigissue .box-total-price {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-self: flex-start;
 }
-
-.group-tagstate.group-bigissue .em-tag {
+total-price .group-tagstate.group-bigissue .em-tag {
     display: block;
     font-size: 18px;
     font-family: KakaoBig Bold;
     color: #5478b7;
 }
 
-.group-tagstate .total-state {
+.group-tagstate .total-price {
     display: block;
     padding-bottom: 7px;
     font-size: 36px;
@@ -208,7 +254,7 @@ body {
     font-weight: 400;
 }
 
-.group-tagstate.group-bigissue .total-state {
+.group-tagstate.group-bigissue .total-price {
     padding-top: 6px;
     padding-bottom: 0;
     font-size: 40px;
@@ -272,7 +318,8 @@ body {
     margin: 0 auto 50px;
 }
 
-.ico-together, .ico-together2 {
+.ico-together,
+.ico-together2 {
     display: block;
     overflow: hidden;
     font-size: 0;
@@ -347,7 +394,8 @@ body {
     background-image: url(//t1.kakaocdn.net/together_image/svg/ico_copy.svg);
 }
 
-.area-sns .ico-copy, .area-sns .ico-social {
+.area-sns .ico-copy,
+.area-sns .ico-social {
     display: inline-block;
     float: none;
     margin: 5px 2px;
@@ -373,7 +421,11 @@ body {
     padding: 26px 0 40px;
 }
 
-dl, li, menu, ol, ul {
+dl,
+li,
+menu,
+ol,
+ul {
     list-style: none;
 }
 
@@ -404,7 +456,6 @@ dl, li, menu, ol, ul {
     background: url(//t1.kakaocdn.net/together_image/common/ico_together_231005.png) no-repeat 0 0;
 }
 
-
 .inner-together-layer .layer-foot .btn-close {
     display: block;
     overflow: hidden;
@@ -429,7 +480,7 @@ dl, li, menu, ol, ul {
     font-size: 21px;
     line-height: 26px;
     color: #444;
-    font-family: KakaoBig Bold,sans-serif;
+    font-family: KakaoBig Bold, sans-serif;
     box-sizing: border-box;
 }
 
@@ -447,7 +498,9 @@ dl, li, menu, ol, ul {
     color: #dc287c;
 }
 
-.tit-section .color-g1, .tit-section .emph-sign, .write-cmt .info-append .emph-sign {
+.tit-section .color-g1,
+.tit-section .emph-sign,
+.write-cmt .info-append .emph-sign {
     color: #ff4050;
 }
 
@@ -510,10 +563,13 @@ dl, li, menu, ol, ul {
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-    transition: .2s;
+    transition: 0.2s;
 }
 
-.group-catalog .link-official:hover .img-thumb, .group-topslide .slide-pannel:hover .img-thumb, .group-withyou .list-slide li:hover .area-thumb, .list-badge .link-pack:hover .img-thumb {
+.group-catalog .link-official:hover .img-thumb,
+.group-topslide .slide-pannel:hover .img-thumb,
+.group-withyou .list-slide li:hover .area-thumb,
+.list-badge .link-pack:hover .img-thumb {
     transform: scale(1.1);
 }
 
@@ -538,7 +594,8 @@ dl, li, menu, ol, ul {
     -webkit-line-clamp: 2;
 }
 
-.ellipsis-type1, .ellipsis-type2 {
+.ellipsis-type1,
+.ellipsis-type2 {
     display: block;
     display: -webkit-box;
     overflow: hidden;
@@ -568,7 +625,8 @@ dl, li, menu, ol, ul {
     max-width: 200px;
 }
 
-.cont-mypage .list-badge .tag-bundle, .cont-search .list-badge .tag-bundle {
+.cont-mypage .list-badge .tag-bundle,
+.cont-search .list-badge .tag-bundle {
     display: flex;
     top: -32px;
     left: 12px;
@@ -595,7 +653,8 @@ dl, li, menu, ol, ul {
     margin-top: 22px;
 }
 
-.cont-mypage .list-badge .wrap-state, .cont-search .list-badge .wrap-state {
+.cont-mypage .list-badge .wrap-state,
+.cont-search .list-badge .wrap-state {
     display: block;
     float: none;
     width: 100%;
@@ -613,7 +672,8 @@ dl, li, menu, ol, ul {
     background-color: #ebebeb;
 }
 
-.cont-mypage .list-badge .wrap-state .state-bar, .cont-search .list-badge .wrap-state .state-bar {
+.cont-mypage .list-badge .wrap-state .state-bar,
+.cont-search .list-badge .wrap-state .state-bar {
     height: 3px;
     border-radius: 999px;
     background-color: #e5e5e5;
@@ -631,7 +691,8 @@ dl, li, menu, ol, ul {
     background-color: #999;
 }
 
-.cont-mypage .list-badge .box-number, .cont-search .list-badge .box-number {
+.cont-mypage .list-badge .box-number,
+.cont-search .list-badge .box-number {
     display: flex;
     margin-top: 8px;
     justify-content: space-between;
@@ -642,24 +703,28 @@ dl, li, menu, ol, ul {
     font-size: 15px;
 }
 
-.cont-mypage .list-badge .percent-give, .cont-search .list-badge .percent-give {
-    font-family: KakaoBig Bold,sans-serif;
+.cont-mypage .list-badge .percent-give,
+.cont-search .list-badge .percent-give {
+    font-family: KakaoBig Bold, sans-serif;
     color: #ff4050;
     font-size: 14px;
 }
 
-.cont-mypage .list-badge .percent-give.state_end, .cont-search .list-badge .percent-give.state-end {
+.cont-mypage .list-badge .percent-give.state_end,
+.cont-search .list-badge .percent-give.state-end {
     color: #444;
 }
 
-.list-badge .price-give, .list-badge .price-goal {
+.list-badge .price-give,
+.list-badge .price-goal {
     display: block;
     color: #444;
-    font-family: KakaoBig Bold,sans-serif;
+    font-family: KakaoBig Bold, sans-serif;
     text-align: right;
 }
 
-.cont_mypage .list-badge .price-give, .cont-search .list-badge .price-give {
+.cont_mypage .list-badge .price-give,
+.cont-search .list-badge .price-give {
     margin-top: 0;
     font-size: 14px;
 }
@@ -674,12 +739,12 @@ dl, li, menu, ol, ul {
     margin-bottom: -100px;
     justify-content: center;
     transform: translateY(400%);
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .wrap-float-btns.sticky {
     transform: translateY(0);
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .wrap-float-btns .btn-g {

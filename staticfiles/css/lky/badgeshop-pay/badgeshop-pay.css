@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'KakaoBig regular';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format('woff');
+}
+/*!sc*/
+@font-face {
+    font-family: 'KakaoBig Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format('woff');
+}
+html {
+    width: 100%;
+}
+
+html {
+    width: 100%;
+}
+
+:root {
+    --swiper-theme-color: #007aff;
+}
+
+:root {
+    --swiper-navigation-size: 44px;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.pc,
+.pc body {
+    height: 100%;
+    background-color: #fff;
+}
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: HelveticaNeue, AppleSDGothicNeo-Regular, tahoma, Malgun Gothic, \b9d1\c740\ace0\b515, dotum, \b3cb\c6c0,
+        sans-serif;
+    color: #111;
+}
+
+.pc .buying-new {
+    height: auto;
+    min-width: 1280px;
+    min-height: 100%;
+    background-color: #f4f4f4;
+}
+
+#kakaoWrap {
+    min-width: 320px;
+}
+
+.hide {
+    display: none;
+}
+
+#kakaoContent {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.pc .buying-new #kakaoContent {
+    width: 870px;
+    margin: 0 auto;
+}
+
+.wrap-buying #kakaoContent.cont-order {
+    min-height: calc(100vh - 131px);
+}
+
+.pc .wrap-buying #mArticle {
+    width: 870px;
+    margin: 0 auto;
+}
+
+.pc .wrap-buying .cont-order #mArticle {
+    padding: 15px 0 50px;
+}
+
+.screen-out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.buyorder-detail .tit-order {
+    display: block;
+    height: 44px;
+    border-top: 1px solid #ebebeb;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 44px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fff;
+}
+
+.buyorder-detail .bundle-orderdata:after {
+    display: block;
+    height: 12px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #f2f3f5;
+    box-sizing: border-box;
+    content: '';
+}
+
+.buyorder-detail .bundle-orderdata:after {
+    display: block;
+    height: 12px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #f2f3f5;
+    box-sizing: border-box;
+    content: '';
+}

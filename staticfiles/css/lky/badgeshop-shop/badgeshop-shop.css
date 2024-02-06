@@ -1,23 +1,22 @@
 /* HTML CSS */
 
 @font-face {
-    font-family: "KakaoBig regular";
+    font-family: 'KakaoBig regular';
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format("woff2"),
-        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format("woff");
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format('woff');
 }
 /*!sc*/
 @font-face {
-    font-family: "KakaoBig Bold";
+    font-family: 'KakaoBig Bold';
     font-style: normal;
     font-weight: bold;
     font-display: swap;
-    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format("woff2"),
-        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format("woff");
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format('woff');
 }
-
 
 html {
     display: block;
@@ -27,7 +26,89 @@ html {
     -webkit-locale: "ko";
 } */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, menu, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -43,21 +124,37 @@ body {
     line-height: 1;
 }
 
-body, th, td, input, select, textarea, button {
-    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-family: 'KakaoBig Regular', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
 }
 
-@media only screen and (min-width: 768px){
-body {
-    min-width: 1140px;
-}
+@media only screen and (min-width: 768px) {
+    body {
+        min-width: 1140px;
+    }
 }
 /* main CSS */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
     display: block;
 }
-
 
 .badge-contents {
     display: flex;
@@ -86,12 +183,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 768px){
-.badge-wholeA {
-    width: 1120px;
-    margin: 0px auto;
-    padding: 40px 0px 64px;
-}
+@media only screen and (min-width: 768px) {
+    .badge-wholeA {
+        width: 1120px;
+        margin: 0px auto;
+        padding: 40px 0px 64px;
+    }
 }
 
 .badge-hidden {
@@ -113,13 +210,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: rgb(32, 32, 32);
     font-size: 26px;
     font-style: normal;
-    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    font-family: 'KakaoBig Bold', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
     overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
 }
 
 .badge-top-wordA {
-    font-family: "KakaoBig Bold";
+    font-family: 'KakaoBig Bold';
     line-height: 1.52;
 }
 
@@ -177,7 +274,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: rgb(51, 51, 51);
     font-size: 14px;
     font-style: normal;
-    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    font-family: 'KakaoBig Regular', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
     overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.1px;
@@ -188,10 +285,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 16px 20px 0px;
 }
 
-@media only screen and (min-width: 768px){
-.badge-wrapA {
-    padding: 8px 0px 0px;
-}
+@media only screen and (min-width: 768px) {
+    .badge-wrapA {
+        padding: 8px 0px 0px;
+    }
 }
 
 .wrap-wholeA {
@@ -200,10 +297,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 768px){
-.wrap-wholeB {
-    margin: -10px;
-}
+@media only screen and (min-width: 768px) {
+    .wrap-wholeB {
+        margin: -10px;
+    }
 }
 
 .content-cardA {
@@ -215,7 +312,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: 20px calc(10px);
 }
 
-
 .wrap-wholeB .content-cardB {
     width: 360px;
     height: auto;
@@ -223,7 +319,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px;
 }
-
 
 .card-innerA {
     display: flex;
@@ -238,7 +333,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .thumbnailA::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0px;
     left: 0px;
@@ -256,7 +351,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 100%;
     overflow: hidden;
     border-radius: 6px;
-    background: url(https://mud-kage.kakaocdn.net/dn/cqB365/btsCLrFqH7N/13QO3lxPyusKtBJqWZexL0/img.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together-image/common/no-image.png);
+    background: url(https://mud-kage.kakaocdn.net/dn/cqB365/btsCLrFqH7N/13QO3lxPyusKtBJqWZexL0/img.jpg) 50% 50% / cover
+            no-repeat,
+        url(https://t1.kakaocdn.net/together-image/common/no-image.png);
 }
 
 .wrap-wholeB .content-cardA .thumbnail {
@@ -280,19 +377,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: relative;
     width: 100%;
     padding: 24px 20px;
-
 }
 
 .card-titleA {
     color: rgb(32, 32, 32);
     font-size: 18px;
     font-style: normal;
-    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    font-family: 'KakaoBig Regular', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
     overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.1px;
     line-height: 1.56;
-    
 }
 
 .card-titleB {
@@ -314,7 +409,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: rgb(136, 136, 136);
     font-size: 13px;
     font-style: normal;
-    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    font-family: 'KakaoBig Regular', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
     overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.1px;
