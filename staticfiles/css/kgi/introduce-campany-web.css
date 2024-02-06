@@ -49,6 +49,11 @@ h5 {
     font-weight: bold;
 }
 
+text {
+    display: block;
+    white-space: nowrap;
+}
+
 ul {
     display: block;
     list-style-type: disc;
@@ -67,6 +72,14 @@ li {
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
 }
 
 button {
@@ -92,6 +105,32 @@ button {
     border-style: outset;
     border-color: buttonborder;
     border-image: initial;
+}
+
+select {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    -webkit-rtl-ordering: logical;
+    background-color: field;
+    cursor: default;
+    margin: 0em;
+    white-space: pre;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
 }
 
 blockquote,
@@ -299,13 +338,17 @@ video {
     align-items: center;
 }
 
-.tab-menu-on {
+li.tab-menu-on {
+    border-bottom: 2px solid rgb(32, 32, 32);
+}
+
+.tab-menu {
     display: flex;
     justify-content: center;
     flex-basis: 80px;
     height: 64px;
     box-sizing: border-box;
-    border-bottom: 2px solid rgb(32, 32, 32);
+    border-bottom: 2px solid transparent;
     margin-bottom: -1px;
 }
 
@@ -327,30 +370,11 @@ video {
     font-size: 13px;
 }
 
-.tab-menu-txt-on {
-    font-size: 20px;
-    font-weight: 600;
-    position: relative;
+span.tab-menu-txt-on {
     color: rgb(32, 32, 32);
-    font-style: normal;
-    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
-    overflow-wrap: break-word;
-    -webkit-font-smoothing: antialiased;
-    line-height: 2;
-    letter-spacing: -0.1px;
 }
 
-.tab-menu-off {
-    display: flex;
-    justify-content: center;
-    flex-basis: 80px;
-    height: 64px;
-    box-sizing: border-box;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -1px;
-}
-
-.tab-menu-txt-off {
+.tab-menu-txt {
     font-size: 20px;
     font-weight: 600;
     position: relative;
@@ -1350,4 +1374,527 @@ video {
     -webkit-font-smoothing: antialiased;
     line-height: 1.54;
     letter-spacing: -0.1px;
+}
+
+#company-introduce {
+    display: block;
+}
+
+#crrent {
+    display: none;
+}
+
+/* 현황 */
+.now-wrap {
+    width: 100%;
+    padding: 100px 0px 120px;
+    margin: 0px auto;
+    background-color: rgb(248, 248, 248);
+}
+
+.now-donate-img-wrap {
+    text-align: center;
+}
+
+.donate-img {
+    display: inline-block;
+    vertical-align: top;
+    width: 262px;
+}
+
+.now-donate-wrap {
+    width: 700px;
+    padding: 40px 26px 32px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px 0px;
+    position: relative;
+    margin: 0px auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.donate-tit {
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.donate-total-money {
+    padding: 16px 0px 32px;
+    display: block;
+    letter-spacing: -2px;
+    color: rgb(32, 32, 32);
+    font-size: 85px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    text-align: center;
+}
+
+.donate-detail-list {
+    display: grid;
+    grid-template-columns: repeat(3, 216px);
+    row-gap: 16px;
+    flex-direction: column;
+    padding-top: 24px;
+    border-top: 1px solid rgb(229, 229, 229);
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+.donate-detail {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.detail-img-wrap {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    mask-image: url(//t1.kakaocdn.net/together_image/svg/squircle.svg);
+    mask-size: 100% 100%;
+}
+
+.detail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.detail-img::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background-image: url(//t1.kakaocdn.net/together_image/svg/squircle_border.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.detail-donate-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detail-tit {
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+}
+
+.detail-money {
+    letter-spacing: -0.3px;
+    word-break: break-all;
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+}
+
+.graph-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 700px;
+    margin: 20px auto 0px;
+}
+
+.with-donate {
+    width: 700px;
+    height: 702px;
+    margin: 100px auto 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px 0px;
+    box-sizing: border-box;
+    padding-top: 24px;
+}
+
+.with-tit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0px 11px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 999px;
+    color: rgb(32, 32, 32);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+}
+
+.with-sub {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    line-height: 1.47;
+    padding: 12px 0px 18px;
+    text-align: center;
+}
+
+.with-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.select-year-wrap {
+    padding: 0px 20px;
+}
+
+.select-year {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(68, 68, 68);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-box {
+    padding: 10px 0px;
+    font-family: "KakaoBig Bold";
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    margin: 0px;
+    min-width: 0px;
+    display: block;
+    width: 100%;
+    line-height: inherit;
+    border: 0px;
+    color: inherit;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+    overflow: visible !important;
+}
+
+.select-year-button {
+    margin-left: -18px;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    transform: rotate(90deg);
+    opacity: 1;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+.graph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 14px 20px 24px;
+}
+
+.graph-statics-list {
+    padding-bottom: 20px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.graph-statics {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.graph-list-tit {
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.86;
+}
+
+.graph-list-num-wrap {
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.86;
+}
+
+.graph-list-num {
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.86;
+    padding-right: 4px;
+}
+
+.circle-graph-container {
+    display: flex;
+    justify-content: center;
+}
+
+.circle-wrap {
+    position: relative;
+}
+
+.circle-svg {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+.circle-per {
+    fill: rgb(255, 255, 255);
+    font-size: 7px;
+}
+
+.circle-inner-year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0px;
+}
+
+.inner-year-txt {
+    color: rgb(32, 32, 32);
+    font-size: 22px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+}
+
+.graph-bottom {
+    background-color: rgb(238, 238, 238);
+    padding: 16px 20px;
+}
+
+.bottom-lists {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bottom-list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.bottom-tit {
+    display: flex;
+    align-items: center;
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 2;
+    margin-left: -4px;
+}
+
+.red-dot {
+    display: inline-flex;
+    transform: scale(0.4);
+    color: rgb(32, 32, 32);
+    font-size: 10px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    padding-right: 3px;
+}
+
+.bottom-money-wrap {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 2;
+}
+
+.bottom-money {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 2;
+    padding-right: 4px;
+}
+
+.circles-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.circles {
+    display: flex;
+}
+
+.circle-action-donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 152px;
+    height: 152px;
+    border-radius: 100%;
+    background-color: rgb(255, 102, 114);
+}
+
+.circle-action-donate-tit {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+}
+
+.circle-action-donate-detail {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+}
+
+.action-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 184px;
+    height: 184px;
+    margin: 53px 0px 0px -33px;
+    border-radius: 100%;
+    background-color: rgb(68, 68, 68);
+}
+
+.action-circle-tit {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+}
+
+.action-circle-detail {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+}
+
+.action-bottom-tit {
+    display: flex;
+    align-items: center;
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 2;
+    margin-left: -4px;
+}
+
+.action-bottom-detail {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 2;
+    padding: 0px 10px;
+}
+
+#nav-bar {
+    border-bottom: 1px solid rgb(229, 229, 229);
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 209;
 }
