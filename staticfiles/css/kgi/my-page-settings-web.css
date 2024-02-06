@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "KakaoBig regular";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format("woff2"),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "KakaoBig Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format("woff2"),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format("woff");
+}
+
+body {
+    min-width: 1140px;
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+text {
+    display: block;
+    white-space: nowrap;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+select {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    -webkit-rtl-ordering: logical;
+    background-color: field;
+    cursor: default;
+    margin: 0em;
+    white-space: pre;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
+}
+
+menu,
+ol,
+ul {
+    list-style: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+body,
+button,
+input,
+select,
+td,
+textarea,
+th {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoBig Regular, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, dotum, 돋움, sans-serif;
+    color: #444;
+}
+
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100vh;
+}
+
+#settings-conatainer {
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+.settings-wrap {
+    position: relative;
+    margin: 0 0 -212px;
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+.article {
+    padding: 0 0 250px;
+}
+
+.settings-content-box {
+    overflow: hidden;
+    width: 740px;
+    margin: 40px auto 140px;
+}
+
+.service-settings {
+    float: left;
+    width: 330px;
+    margin: 0 20px;
+}
+
+.service-tit {
+    display: block;
+    padding: 19px 0 21px;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 400;
+    font-size: 20px;
+    color: #00adb7;
+}
+
+.service-list li {
+    height: 69px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.link-set {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    font-size: 16px;
+    line-height: 69px;
+    color: #444;
+    text-decoration: none;
+}
+
+.txt-set {
+    font-weight: 400;
+}
+
+.tit-set {
+    color: #dc287c;
+    display: block;
+    padding: 19px 0 21px;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.kakao-icon {
+    margin: 13px 12px 0 0;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 60px;
+    font-size: 0;
+    line-height: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    background-image: url("https://t1.kakaocdn.net/together_image/svg/ico_kakaotalk.svg");
+}
+.facebook-icon {
+    margin: 13px 12px 0 0;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 60px;
+    font-size: 0;
+    line-height: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    background-image: url("https://t1.kakaocdn.net/together_image/svg/ico_facebook.svg");
+}
+.instagram-icon {
+    margin: 13px 12px 0 0;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 60px;
+    font-size: 0;
+    line-height: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    background-image: url("https://t1.kakaocdn.net/together_image/svg/ico_instagram.svg");
+}
