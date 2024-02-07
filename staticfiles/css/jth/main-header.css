@@ -1,0 +1,221 @@
+/* header */
+/* header-왼쪽 */
+.main-nav-back-color {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 200;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    height: 70px;
+}
+
+
+.main-nav-back-color::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(238, 238, 238);
+}
+
+.main-nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-width: 280px;
+    width: 100%;
+    align-items: center;
+    width: 1120px;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.main-nav-title {
+    height: 0px;
+    margin: 0px;
+    height: 70px;
+}
+
+
+.main-nav-title-link  {
+    display: block;
+    width: 103px;
+    height: 100%;
+    background: url(/staticfiles/css/jth/images/WakeUp!.png) center center / contain no-repeat;
+}
+
+/* header-중앙 */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        flex: 1 0 auto;
+        height: 100%;
+}
+
+
+.main-nav-ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.main-nav-li {
+    display: list-item;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.main-nav-li-under {
+    height: 100%;
+    border-bottom: 2px solid rgb(57, 57, 57);
+    box-sizing: border-box;
+    margin: 0px 11px;
+}
+
+.main-nav-li-a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5px 4px 9px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    text-decoration: none;
+
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+
+    padding: 0px 14px;
+    font-family: "KakaoBig Bold";
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+.link_gnb {color: rgb(32, 32, 32);}
+
+.main-nav-li-rest {
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    margin: 0px 11px;
+}
+
+/* header-오른쪽 */
+/* 마이페이지 */
+.main-nav-right-mypage {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-right-mypage-div {
+    position: relative;
+    display: flex;
+}
+
+.main-nav-right-mypage-a {
+    display: flex;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    /* display: inline-block; */
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav-right-mypage-inner-div {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    /* width: 34px;
+    height: 34px; */
+    mask-image: url(//t1.kakaocdn.net/together_image/svg/squircle.svg);
+    mask-size: 100% 100%;
+}
+
+.main-nav-right-mypage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* 검색 */
+.main-nav-search {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 55px;
+    padding-left: 11px;
+    padding-right: 21px;
+
+    height: auto;
+    margin: 0px 11px 0px 19px;
+    padding: 8px;
+}
+
+
+.main-nav-search-img {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    opacity: 1;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    width: 22px;
+    height: 22px;
+}
+
+
+/* 메뉴 */
+.main-nav-menu {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    height: auto;
+    padding: 8px;
+    font-size: 12px;
+    position: relative;
+}
+
+.main-nav-menu-img {
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+}

@@ -169,6 +169,7 @@ section {
     color: transparent;
 }
 
+
 /* header */
 /* header-왼쪽 */
 .main-nav-back-color {
@@ -217,7 +218,7 @@ section {
     display: block;
     width: 103px;
     height: 100%;
-    background: url(/staticfiles/css/jth/images/title.png) center center / contain no-repeat;
+    background: url(/staticfiles/css/jth/images/WakeUp!.png) center center / contain no-repeat;
 }
 /* @media only screen and (min-width: 768px) {
     .main-nav-title-link {
@@ -422,7 +423,7 @@ section {
     height: 18px;
     flex-shrink: 0;
     display: block;
-    background: url(/staticfiles/css/jth/images/title.png) center center / contain no-repeat;
+    background: url(/staticfiles/css/jth/images/WakeUp!.png) center center / contain no-repeat;
 }
 
 .footer-inner-p {
@@ -1177,7 +1178,7 @@ section {
     background: url(//t1.kakaocdn.net/together_image/common/arrow_bubble_black.png) 50% 0px / contain no-repeat;
     content: "";
 }
-.main-section-left-up-main-content-info-end-left-iner-span {
+.main-section-left-up-main-content-info-end-left-inner-span {
     color: rgb(255, 255, 255);
     font-size: 11px;
     font-style: normal;
@@ -1186,20 +1187,6 @@ section {
     -webkit-font-smoothing: antialiased;
     line-height: 1.1;
     letter-spacing: -0.1px;
-    display: inline-flex;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    bottom: -27px;
-    height: 28px;
-    padding: 0px 10px;
-    border-radius: 6px;
-    background-color: rgb(32, 32, 32);
-    transform: translateX(-50%);
-    white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
-    animation: 5s linear 1s 1 normal none running fadeInOut;
 }
 .main-section-left-up-main-content-info-end-left-span-em {
     color: rgb(255, 255, 255);
@@ -1870,7 +1857,7 @@ section {
     font-size: 20px;
     white-space: pre-wrap;
     word-break: keep-all;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1882,18 +1869,20 @@ section {
     letter-spacing: -0.1px;
     line-height: 1.56;
 }
+
 .main-section-slide-div-inner-subtext {
     padding-top: 11px;
     line-height: 23px;
     display: -webkit-box;
     overflow: hidden;
+    max-height: 69px;
     order: 3;
-    color: rgb(153, 153, 153);
+    color: #999;
     font-size: 14px;
     white-space: normal;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     max-height: 46px;
-    -webkit-line-clamp: 2;
     width: 100%;
     margin-top: 4px;
     text-overflow: ellipsis;
@@ -2010,15 +1999,63 @@ section {
     cursor: pointer;
     text-decoration: none;
 }
-.main-total-list-total-thumbnail {
+/* 사진 바꾸기 각각 */
+.main-total-list-total-thumbnail1 {
     width: 250px;
     height: 100%;
     border-radius: 12px 0px 0px 12px;
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-    background: url("https://mud-kage.kakaocdn.net/dn/ckeNRg/btsDAR5xsNh/G9jukNnwa27M3JZcN01t7K/c1400x788.jpg") 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
+    background: url("https://mud-kage.kakaocdn.net/dn/bXLK0X/btsCzRyZ3Up/BJ3Yeko5IRKMgZeVT2UxzK/c1400x960.jpg") 50% 50% / cover no-repeat, url("https://t1.kakaocdn.net/together_image/common/no_image.png");
 }
+.main-total-list-total-thumbnail2 {
+    width: 250px;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: url("https://mud-kage.kakaocdn.net/dn/cw2Q0d/btsBGkCpRP5/kJvZTXlQKMouUymDbd35g0/c1400x788.jpg") 50% 50% / cover no-repeat, url("https://t1.kakaocdn.net/together_image/common/no_image.png");
+}
+.main-total-list-total-thumbnail3 {
+    width: 250px;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: url("https://mud-kage.kakaocdn.net/dn/bA8Agf/btsDriXtQh1/nA0HlbkNKdTm6aXyrqShH0/c1400x788.jpg") 50% 50% / cover no-repeat, url("https://t1.kakaocdn.net/together_image/common/no_image.png");
+}
+.main-total-list-total-thumbnail4 {
+    width: 250px;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: url("https://mud-kage.kakaocdn.net/dn/bXLK0X/btsCzRyZ3Up/BJ3Yeko5IRKMgZeVT2UxzK/c1400x960.jpg") 50% 50% / cover no-repeat, url("https://t1.kakaocdn.net/together_image/common/no_image.png");
+}
+.main-total-list-total-thumbnail5 {
+    width: 250px;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: url("https://mud-kage.kakaocdn.net/dn/bXLK0X/btsCzRyZ3Up/BJ3Yeko5IRKMgZeVT2UxzK/c1400x960.jpg") 50% 50% / cover no-repeat, url("https://t1.kakaocdn.net/together_image/common/no_image.png");
+}
+.main-total-list-total-thumbnail6 {
+    width: 250px;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: url("https://mud-kage.kakaocdn.net/dn/bXLK0X/btsCzRyZ3Up/BJ3Yeko5IRKMgZeVT2UxzK/c1400x960.jpg") 50% 50% / cover no-repeat, url("https://t1.kakaocdn.net/together_image/common/no_image.png");
+}
+
+
 .main-total-list-total-content {
     padding: 0px 30px;
     margin-top: -8px;
@@ -2078,12 +2115,47 @@ section {
     background-color: rgb(233, 233, 233);
     width: 100%;
 }
-.main-total-list-total-current {
+
+
+/* 진행도 수정 */
+.main-total-list-total-current1 {
     height: 100%;
     border-radius: inherit;
     background-color: rgb(255, 64, 80);
-    width: 36%;
+    width: 78%;
 }
+.main-total-list-total-current2 {
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgb(255, 64, 80);
+    width: 50%;
+}
+.main-total-list-total-current3 {
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgb(255, 64, 80);
+    width: 78%;
+}
+.main-total-list-total-current4 {
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgb(255, 64, 80);
+    width: 78%;
+}
+.main-total-list-total-current5 {
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgb(255, 64, 80);
+    width: 78%;
+}
+.main-total-list-total-current6 {
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgb(255, 64, 80);
+    width: 78%;
+}
+
+
 .main-total-list-total-info {
     padding-top: 6px;
     display: inline-flex;
