@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, viewport-fit=cover" />
+        <title>뱃지 상세보기</title>
+        <link rel="shortcut icon" href="../images/favicon_wake_up_RERE.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/staticfiles/css/lky/badgeshop-list/badgeshop-list.css" />
+    </head>
+    <body>
+        <together-app ng-version="12.1.5">
+            <div
+                id="dkWrap"
+                scrollheaderfixed=""
+                fixedreachedelementid="btnSearch"
+                fixeddirection="bottom"
+                fixedclass="header_fixed"
+                class="together_top"
+            >
+                <together-header></together-header>
+                <span id="rootContent">
+                    <router-outlet></router-outlet>
+                    <div id="dkContent" class="cont-search">
+                        <div id="mArticle">
+                            <tag-home-big-issue-header>
+                                <div class="group-tagcovernew type-html">
+                                    <h2 class="screen-out">뱃지홈 본문</h2>
+                                    <div
+                                        class="info-tag tag-img"
+                                        style="
+                                            background-color: rgb(255, 227, 230);
+                                            background-image: url('https://mud-kage.kakaocdn.net/dn/B5RzN/btsATki6fAp/8kkvyfddKGoXDPUfLyMQ00/img.jpg');
+                                        "
+                                    >
+                                        <div class="inner-info-tag">
+                                            <span class="cont-tag">
+                                                <h3 class="tit-tag" style="white-space: pre-line"></h3>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tag-home-big-issue-header>
+                            <div class="group-tagstate group-bigissue">
+                                <tag-home-big-issue-stats>
+                                    <div class="cont-tagstate">
+                                        <div class="box-total-state">
+                                            <em class="em-tag">#뱃지No.1</em>
+                                            <strong class="total-state">
+                                                <span class="screen-out">획득한 인원</span>
+                                                <span>(획득한 총 인원)명</span>
+                                            </strong>
+                                        </div>
+                                        <div class="box-desc-state">
+                                            <span class="txt-state">직접 획득자 : ???명</span>
+                                            <span class="txt-state">구매 획득자 : ???명</span>
+                                            <div class="join-state">
+                                                <tag-home-profile-box>
+                                                    <div class="box-profiles">
+                                                        <img
+                                                            src="https://t1.kakaocdn.net/together_image/common/avatar/avatar04.png"
+                                                            alt="프로필사진"
+                                                        />
+                                                        <img
+                                                            src="https://t1.kakaocdn.net/together_image/common/avatar/avatar03.png"
+                                                            alt="프로필사진"
+                                                        />
+                                                    </div>
+                                                </tag-home-profile-box>
+                                                <span class="screen-out">획득자</span>???명 획득
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tag-home-big-issue-stats>
+                                <tag-home-main-text>
+                                    <div class="box-tagdesc">
+                                        <span class="ico-together2 ico-quot1"></span>
+                                        <p class="desc-tag">
+                                            <span style="white-space: pre-line">
+                                                뱃지 No.1 설명글 뱃지 No.1 설명글 뱃지 No.1 설명글 뱃지 No.1 설명글 뱃지
+                                                No.1 설명글
+                                            </span>
+                                            <span class="ico-together2 ico-quot2">"</span>
+                                        </p>
+                                    </div>
+                                </tag-home-main-text>
+                                <tag-home-share-article>
+                                    <div class="area-sns">
+                                        <button type="button" class="ico-social ico-kakaotalk social-on">
+                                            Kakaotalk 공유
+                                        </button>
+                                        <button type="button" class="ico-social ico-facebook social-on">
+                                            Facebook 공유
+                                        </button>
+                                        <button type="button" class="ico-social ico-twitter social-on">
+                                            Twitter 공유
+                                        </button>
+                                        <button type="button" class="ico-social ico-copy social-on">
+                                            URL<br />복사
+                                        </button>
+                                    </div>
+                                    <share-modal>
+                                        <modal>
+                                            <div
+                                                tabindex="-1"
+                                                role="dialog"
+                                                class="ngdialog-content"
+                                                id="modalOFF"
+                                                style="
+                                                    position: fixed;
+                                                    display: none;
+                                                    top: 50%;
+                                                    margin-left: -180px;
+                                                    transform: translateY(-50%);
+                                                "
+                                            >
+                                                <modal-content>
+                                                    <div class="inner-together-layer inner-together-layer14">
+                                                        <div class="layer-head">
+                                                            <strong class="screen-out">SNS 공유하기</strong>
+                                                        </div>
+                                                        <div class="layer-body">
+                                                            <div class="wrap-sns">
+                                                                <strong class="screen-out">SNS목록</strong>
+                                                                <ul class="list-sns">
+                                                                    <li>
+                                                                        <button
+                                                                            type="button"
+                                                                            class="ico-social ico-kakaotalk social-on"
+                                                                        >
+                                                                            Kakaotalk 공유
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button
+                                                                            type="button"
+                                                                            class="ico-social ico-facebook social-on"
+                                                                        >
+                                                                            Facebook 공유
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button
+                                                                            type="button"
+                                                                            class="ico-social ico-twitter social-on"
+                                                                        >
+                                                                            Twitter 공유
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button
+                                                                            type="button"
+                                                                            class="ico-social ico-copy social-on"
+                                                                        >
+                                                                            URL<br />복사
+                                                                        </button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="layer-foot">
+                                                            <button type="button" class="btn-close">
+                                                                <span class="ico-together">닫기</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </modal-content>
+                                            </div>
+                                        </modal>
+                                    </share-modal>
+                                </tag-home-share-article>
+                            </div>
+                            <tag-home-project-content-list> </tag-home-project-content-list>
+                            <tag-home-badge-list>
+                                <div class="group-taglist">
+                                    <h3 class="tit-section section-type5">
+                                        다른 뱃지들<span class="emph-sign">4 </span>
+                                    </h3>
+                                    <tag-home-badge-list-filter>
+                                        <div class="sort-cate"></div>
+                                    </tag-home-badge-list-filter>
+                                    <ul class="list-badge">
+                                        <li>
+                                            <intersection-observer>
+                                                <badge-card>
+                                                    <a class="link-pack" href="/fundraisings/112268">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                kagetype="c203"
+                                                                class="img-thumb"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/GbrF5/btsALUkfYnp/Pp2N0Bw6YrtkR6UJR5IVpk/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                        </span>
+                                                        <span class="box-together">
+                                                            <span class="bundle-tit">
+                                                                <strong class="tit-together ellipsis-type1">
+                                                                    <span class="tag-bundle"> </span>
+                                                                    갖고 싶지 다른 뱃지???
+                                                                </strong>
+                                                                <span class="txt-proposer">
+                                                                    <span class="screen-out">제안자</span>
+                                                                    Wake up!
+                                                                </span>
+                                                            </span>
+                                                            <span class="wrap-state">
+                                                                <span class="state-bar">
+                                                                    <span
+                                                                        class="state-gage state-end"
+                                                                        style="width: 0%"
+                                                                    ></span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="box-number">
+                                                                <span class="price-give">
+                                                                    <span class="screen-out">총 획득명 수</span>
+                                                                    ???명</span
+                                                                >
+                                                                <span class="percent-give state-end">
+                                                                    <span class="screen-out">획득률</span>??%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </badge-card>
+                                            </intersection-observer>
+                                        </li>
+                                        <li>
+                                            <intersection-observer>
+                                                <badge-card>
+                                                    <a class="link-pack" href="/fundraisings/112268">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                kagetype="c203"
+                                                                class="img-thumb"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/GbrF5/btsALUkfYnp/Pp2N0Bw6YrtkR6UJR5IVpk/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                        </span>
+                                                        <span class="box-together">
+                                                            <span class="bundle-tit">
+                                                                <strong class="tit-together ellipsis-type1">
+                                                                    <span class="tag-bundle"> </span>
+                                                                    갖고 싶지 다른 뱃지???
+                                                                </strong>
+                                                                <span class="txt-proposer">
+                                                                    <span class="screen-out">제안자</span>
+                                                                    Wake up!
+                                                                </span>
+                                                            </span>
+                                                            <span class="wrap-state">
+                                                                <span class="state-bar">
+                                                                    <span
+                                                                        class="state-gage state-end"
+                                                                        style="width: 0%"
+                                                                    ></span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="box-number">
+                                                                <span class="price-give">
+                                                                    <span class="screen-out">총 획득명 수</span>
+                                                                    ???명</span
+                                                                >
+                                                                <span class="percent-give state-end">
+                                                                    <span class="screen-out">획득률</span>???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </badge-card>
+                                            </intersection-observer>
+                                        </li>
+                                        <li>
+                                            <intersection-observer>
+                                                <badge-card>
+                                                    <a class="link-pack" href="/fundraisings/112268">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                kagetype="c203"
+                                                                class="img-thumb"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/GbrF5/btsALUkfYnp/Pp2N0Bw6YrtkR6UJR5IVpk/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                        </span>
+                                                        <span class="box-together">
+                                                            <span class="bundle-tit">
+                                                                <strong class="tit-together ellipsis-type1">
+                                                                    <span class="tag-bundle"> </span>
+                                                                    갖고 싶지 다른 뱃지???
+                                                                </strong>
+                                                                <span class="txt-proposer">
+                                                                    <span class="screen-out">제안자</span>
+                                                                    Wake up!
+                                                                </span>
+                                                            </span>
+                                                            <span class="wrap-state">
+                                                                <span class="state-bar">
+                                                                    <span
+                                                                        class="state-gage state-end"
+                                                                        style="width: 0%"
+                                                                    ></span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="box-number">
+                                                                <span class="price-give">
+                                                                    <span class="screen-out">총 획득명 수</span>
+                                                                    ???명</span
+                                                                >
+                                                                <span class="percent-give state-end">
+                                                                    <span class="screen-out">획득률</span>???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </badge-card>
+                                            </intersection-observer>
+                                        </li>
+                                        <li>
+                                            <intersection-observer>
+                                                <badge-card>
+                                                    <a class="link-pack" href="/fundraisings/112268">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                kagetype="c203"
+                                                                class="img-thumb"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/GbrF5/btsALUkfYnp/Pp2N0Bw6YrtkR6UJR5IVpk/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                        </span>
+                                                        <span class="box-together">
+                                                            <span class="bundle-tit">
+                                                                <strong class="tit-together ellipsis-type1">
+                                                                    <span class="tag-bundle"> </span>
+                                                                    갖고 싶지 다른 뱃지???
+                                                                </strong>
+                                                                <span class="txt-proposer">
+                                                                    <span class="screen-out">제안자</span>
+                                                                    Wake up!
+                                                                </span>
+                                                            </span>
+                                                            <span class="wrap-state">
+                                                                <span class="state-bar">
+                                                                    <span
+                                                                        class="state-gage state-end"
+                                                                        style="width: 0%"
+                                                                    ></span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="box-number">
+                                                                <span class="price-give">
+                                                                    <span class="screen-out">총 획득명 수</span>
+                                                                    ???명</span
+                                                                >
+                                                                <span class="percent-give state-end">
+                                                                    <span class="screen-out">획득률</span>???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </badge-card>
+                                            </intersection-observer>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </tag-home-badge-list>
+                            <div class="wrap-float-btns sticky">
+                                <button type="button" class="btn-g btn-off">
+                                    <span class="txt-btn txt-end">획득 완료 </span>
+                                </button>
+                                <button type="button" class="btn-g btn-on" onclick="window.open('http://naver.com')">
+                                    <span class="txt-btn txt-end">구매 하기 </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                <hr class="hide" />
+                <togher-foorer></togher-foorer>
+            </div>
+        </together-app>
+    </body>
+</html>
