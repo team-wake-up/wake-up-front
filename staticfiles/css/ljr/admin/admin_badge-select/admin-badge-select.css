@@ -1354,6 +1354,7 @@ list-img
     margin-left: 48px;
   
 }
+
 .badge-list-img{
     width: 50px;
     display: flex;
@@ -1592,4 +1593,11 @@ div.cancel {
     height: 30px;
     right: 15px;
     top: 0;
+}
+
+.admin-logo-img-div{
+    width: 100%;
+}
+.admin-logo{
+    width: 100%;
 }
