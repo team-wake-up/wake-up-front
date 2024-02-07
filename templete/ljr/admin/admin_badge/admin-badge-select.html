@@ -6,10 +6,10 @@
         <!-- 파비콘 및 타이틀 -->
         <link href="../images/favicon.png" rel="shortcut icon" />
         <link
-            href="../../../../staticfiles/css/ljr/admin/admin_notice-select/admin-notice-select.css"
+            href="../../../../staticfiles/css/ljr/admin/admin_badge-select/admin-badge-select.css"
             rel="stylesheet"
         />
-        <title>관리자페이지 : 공지사항 관리 </title>
+        <title>관리자페이지 : 뱃지샵 관리 </title>
     </head>
     <body class="body-full">
         <div class="all-full-div">
@@ -141,10 +141,10 @@
                                 <div class = "admin-content-post-menu">
                                     <!-- 상단 타이틀 제목 -->
                                     <header class = "admin-content-post-header-top">
-                                        <h1 class="admin-content-post-header-top-title">공지사항</h1>
+                                        <h1 class="admin-content-post-header-top-title">뱃지샵 관리</h1>
                                         <div class ="admin-content-post-header-middle-menu-div">
-                                            <button aria-label="button" class ="category-fix">카테고리 편집</button>
-                                            <button aria-label="button" class="write">작성</button>
+                                            <!-- <button aria-label="button" class ="category-fix">뱃지 편집</button> -->
+                                            <button aria-label="button" class="write">뱃지 추가</button>
                                         </div>
                                     </header>
 
@@ -152,7 +152,7 @@
                                     <div class = "admin-content-post-header-middle">
                                         
                                         <ul class = "admin-content-post-header-middle-menu">
-                                            <li class = "completion-button-li">
+                                            <!-- <li class = "completion-button-li">
                                                 <button class="completion-button" aria-label="tab button" type="button">
                                                     <div class = "completion-button-div">
                                                         <p class="completion-p">게시완료</p>
@@ -162,9 +162,9 @@
                                                     </div>
                                                 </button>
                                                 <div class = "completion-button-underline"></div>
-                                            </li>
+                                            </li> -->
                                             <!-- 임시보관 -->
-                                            <li class = "storage-button-li">
+                                            <!-- <li class = "storage-button-li">
                                                 <button class = "storage-button" aria-label="tab button" type="button">
                                                     <div class = "storage-button-div">
                                                         <div class="storage-button-div-div">
@@ -175,7 +175,7 @@
                                                         </div>
                                                     </div>
                                                 </button>
-                                            </li>
+                                            </li> -->
                                         </ul>                                     
                                     </div>
                                     
@@ -192,32 +192,38 @@
                                         <div class="right-button">
                                             <!-- 카테고리 전체 버튼 -->
                                             <div class="category-all-div">
-                                                <button class="category-all-button">
+                                                <!-- <button class="category-all-button">
                                                     <span class = "category-all-button-span">카테고리 전체</span>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
-                                                        class="category-all-button-svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
-                                                    </svg>
+                                                    <img src="../images/clickdown.png" 
+                                                        class="category-all-button-svg"
+                                                        style="width: 10px;"> -->
                                                 </button>
                                             </div>
                                             <!-- 공개범위 전체 -->
                                             <div class="scope-all-div">
-                                                <button class="scope-all-button" aria-label="filter">
-                                                    <span class ="scope-all-button-span">공개범위 전체</span>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="scope-all-button-svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
-                                                    </svg>
-                                                </button>
+                                                <select>
+                                                    <option>최신순                                                 
+                                                            <img src="../images/clickdown.png" 
+                                                                class="category-all-button-img"
+                                                                style="width: 10px;">                                                      
+                                                    </option>
+                                                    <option>
+                                                        오래된 순
+                                                        <img src="../images/clickdown.png" 
+                                                                class="category-all-button-img"
+                                                                style="width: 10px;" >  
+                                                    </option>
+                                                </select>
                                             </div>
                                             
-                                            <!-- 최신순 -->
-                                            <div class="new-all-div">
-                                                <button aria-label="new-all-button" class="new-all-button">
-                                                    <span class="new-all-button-span">최신순</span>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  class="new-all-button-svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
-                                                    </svg>
-                                                </button>
+                                            
+                                            <!-- 검색 -->
+                                            <div class="scope-search-div">
+                                                <input type ="text" class="scope-search-text" placeholder="검색">
+                                                    <!-- <img src="../images/clickdown.png" 
+                                                        class="category-all-button-svg"
+                                                        style="width: 10px;"> -->
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -225,16 +231,37 @@
                                 
                                 
                                 
-                                
-                                <!-- 포스트 목록 -->
-                                <div class = "admin-content-post-conetent">
-                                    <img src="../images/nonpost.png" class = "nonpost-img">
-                                        <p class="admin-content-post-conetent-nonpost-msg">게시 완료된 공지가 없습니다.</p>
-                                        <p class="admin-content-post-conetent-firstpost-msg">지금 첫 공지를 작성하고 게시해보세요.</p>
-                                    <div class="admin-content-writepost-button-div">
-                                        <button aria-label="button" class="admin-content-writepost-button" type="button">
-                                            공지 작성하기
-                                        </button>
+                                <!-- 원래 부모였던 div -->
+                                <!-- 목록 시작// 목록 타이틀 -->
+
+                                <div class="content-list">
+                                    <div class="details-list">
+                                            <div class="list-img">뱃지 이미지</div>
+                                            <div class="list-title">뱃지명</div>
+                                            <div class="list-price">뱃지 가격</div>
+                                            <div class="list-date">생성 날짜</div>
+                                            <div class="list-del">삭제</div>
+                                    </div>
+                                    
+                                    <!-- 목록 추가 -->
+                                    <div class="details-list-add-list">      
+                                        
+
+                                    </div>
+                                </div>
+                                <!-- 게시글이 없을 경우 뜨는 이미지 -->
+                                <div class = "admin-content-post-conetent" style="">
+
+                                    <div id="event-div-hidden" style="">
+                                        <img src="../images/nonpost.png" class = "nonpost-img">
+                                            <p class="admin-content-post-conetent-nonpost-msg">등록된 뱃지가 없습니다.</p>
+                                            <p class="admin-content-post-conetent-firstpost-msg">뱃지를 추가하세요.</p>
+                                        <div class="admin-content-writepost-button-div">
+                                            <!-- <button aria-label="button" class="admin-content-writepost-button" type="button">
+                                                뱃지 등록하기
+                                            </button> -->
+                                        </div>
+                                       
                                     </div>
 
 
@@ -244,8 +271,9 @@
 
                     </div>
 
+                </div>
             </div>
-        </div>
     </body>
+    <script src="../../../../staticfiles/js/ljr/admin-badge/admin-badge.js"></script>
 </html>
 

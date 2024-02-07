@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 파비콘 및 타이틀 -->
+        <link href="../images/favicon.png" rel="shortcut icon" />
+        <link
+            href="../../../../staticfiles/css/ljr/admin/admin_badge-select/admin-badge-select.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../../../staticfiles/css/ljr/admin/modal.css">
+        <title>관리자페이지 : 뱃지샵 관리 </title>
+    </head>
+    <body class="body-full">
+        <div class="all-full-div">
+            <div class="modal">
+                <div class="warn-modal">
+                    <div id="content-wrap"></div>
+                </div>
+            </div>
+            
+            <!-- 관리자페이지 전체 -->
+            <div class="content-full-div">
+                <!-- 상단 메뉴 -->
+                <nav class="header-menu-nav">
+                    <!-- 관리자 왼쪽 로고 -->
+                    <div class="admin-left-logo-div">
+                        <a href="#">
+                            <div class="admin-logo-img-div">
+                                <img src="../images/admin_logo.png" id="admin-logo" alt="" />
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="admin-right-menu-div">
+                        <div class="admin-right-menu-img-div">
+                            <button class="admin-right-menu-img-button">
+                                <img src="../images/favicon.png" class="admin-right-my-img-tag" alt=""/>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+                <!-- 상단 메뉴 끝 -->
+                
+                <!-- 아래부턴 관리자 메뉴 배경 내용 -->
+                <div class="admin-content-body-div">
+                    <!-- 왼쪽 메뉴 전체 div -->
+                    <nav class="admin-menu-nav">
+
+                        <!-- 관리자 프로필 감싼 div -->
+                        <div class="admin-profile-div_all">
+                            <!--프로필 중앙 -->
+                            <div class ="admin-profile-content-center-div">
+                                <!-- 프로필 내용 이미지 감싼 div  -->
+                                <div class="admin-profile-content-img-div" >
+                                    <!-- 프로필 이미지 버튼 -->
+                                        <button aria-rabel="button" class ="admin-profile-img-button" type="button">
+                                            <img src="../images/favicon.png" class="admin-profile-button-img" alt="프로필 이미지" />
+                                            <div class = "admin-profile-button-div"></div>
+                                        </button>
+                                </div>
+                                    <!-- 이미지 하단 관리자 이름 -->
+                                    <h2 class="admin-profile-name-div">관리자</h2>
+                                <a target="#" href="#">
+                                    <!-- 관리자 정보 버튼 -->
+                                    <button aria-label="button" class="admin-info-button" type="button">
+                                        <!-- 관리자 정보 버튼 div -->
+                                        <div class="admin-info-button-div">
+                                            <!-- 관리자 정보 버튼명 -->
+                                            <div class="admin-info-button-name">로그아웃</div>
+                                        </div>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- 메뉴 선택 -->
+                        <ul class="admin-menu-list">
+                            <!-- 회원 관리 -->
+                            <li class="admin-menu-list-member">
+                                <a class="admin-menu-list-post-a-tag" href="#">
+                                    <img src="../images/member.png" class="admin-menu-list-member-img">
+                                    <span class="admin-menu-list-member-name">회원관리</span>
+                                </a>
+                            </li>
+                            <!-- 공지 -->
+                            <li class="admin-menu-list-notice">
+                                <a class="admin-menu-list-post-a-tag" href="#">
+                                    <img src="../images/notice.png" class="admin-menu-list-notice-img">
+                                    <span class="admin-menu-list-notice-name">공지사항</span>
+                                </a>
+                            </li>
+                            <!-- 문의 관리 -->
+                            <li class="admin-menu-list-answer">
+                                <a class="admin-menu-list-Wake-Up-a-tag" href="#">
+                                    <img src="../images/answer.png" class="admin-menu-list-answer-img">
+                                    <span class="admin-menu-list-answer-name">문의 관리</span>
+                                </a>
+                            </li>
+                            <!-- 개인 챌린지 -->
+                            <li class="admin-menu-list-solo">
+                                <a class="admin-menu-list-solo-a-tag" href="#">
+                                    <img src="../images/solo.png" class="admin-menu-list-solo-img">
+                                    <span class="admin-menu-list-solo-name">개인 챌린지</span>
+                                </a>
+                            </li>
+                            <!-- 그룹 챌린지 -->
+                            <li class="admin-menu-list-group">
+                                <a class="admin-menu-list-solo-a-tag" href="#">
+                                    <img src="../images/group.png" class="admin-menu-list-group-img">
+                                    <span class="admin-menu-list-group-name">그룹 챌린지 관리</span>
+                                </a>
+                            </li>
+                            <!-- Wake Up! -->
+                            <li class="admin-menu-list-Wake-Up">
+                                <a class="admin-menu-list-Wake-Up-a-tag" href="#">
+                                    <img src="../images/photo.png" class="admin-menu-list-Wake-Up-img">
+                                    <span class="admin-menu-list-Wake-Up-name">Wake Up! 관리</span>
+                                </a>
+                            </li>
+                            <!-- 뱃지샵 -->
+                            <li class="admin-menu-list-badge">
+                                <a class="admin-menu-list-Wake-Up-a-tag" href="#">
+                                    <img src="../images/badge.png" class="admin-menu-list-badge-img">
+                                    <span class="admin-menu-list-badge-name">뱃지샵 관리</span>
+                                </a>
+                            </li>               
+                            <!-- 태그 -->
+                            <li class="admin-menu-list-tag">
+                                <a class="admin-menu-list-Wake-Up-a-tag" href="#">
+                                    <img src="../images/hash.png" class="admin-menu-list-tag-img">
+                                    <span class="admin-menu-list-tag-name">태그 관리</span>
+                                </a>
+                            </li>                
+                        </ul>
+                    </nav>
+                    <!-- 메뉴 리스트 끝 -->
+
+                    <!-- 내용들 여기서 부턴 복붙못함 -->
+                    <div class = "admin-content-body">
+                        <div class = "admin-content-post">
+                            <div class = "admin-content-post-width">
+                                <!-- 포스트 메뉴 -->
+                                <div class = "admin-content-post-menu">
+                                    <!-- 상단 타이틀 제목 -->
+                                    <header class = "admin-content-post-header-top">
+                                        <h1 class="admin-content-post-header-top-title">뱃지샵 관리</h1>
+                                        <div class ="admin-content-post-header-middle-menu-div">
+                                            <!-- <button aria-label="button" class ="category-fix">뱃지 편집</button> -->
+                                            <button aria-label="button" class="write">뱃지 추가</button>
+                                        </div>
+                                    </header>
+
+                                   <!-- 게시완료, 임시보관 -->
+                                    <div class = "admin-content-post-header-middle">
+                                        
+                                        <ul class = "admin-content-post-header-middle-menu">
+                                            <!-- <li class = "completion-button-li">
+                                                <button class="completion-button" aria-label="tab button" type="button">
+                                                    <div class = "completion-button-div">
+                                                        <p class="completion-p">게시완료</p>
+                                                        <div class = "completion-num-div">
+                                                            <p class="completion-num-p">0</p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <div class = "completion-button-underline"></div>
+                                            </li> -->
+                                            <!-- 임시보관 -->
+                                            <!-- <li class = "storage-button-li">
+                                                <button class = "storage-button" aria-label="tab button" type="button">
+                                                    <div class = "storage-button-div">
+                                                        <div class="storage-button-div-div">
+                                                            <p class="storage-p">임시보관</p>
+                                                            <div class="storage-count-div">
+                                                                <p class="storage-num-p">0</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </li> -->
+                                        </ul>                                     
+                                    </div>
+                                    
+                                    
+                                    <!-- 전체/ 카테고리 전체, 공개범위 전체, 최신순 -->
+                                    <div class = "admin-content-post-conetent-end">
+                                        <!-- 전체 텍스트 -->
+                                        <div class = "left-text">
+                                            <span class = "left-text-count-all-span">전체</span>
+                                            <span class = "left-text-count-span">0</span>
+                                        </div>
+
+                                        <!-- 오른쪽 버튼 div -->
+                                        <div class="right-button">
+                                            <!-- 카테고리 전체 버튼 -->
+                                            <div class="category-all-div">
+                                                <!-- <button class="category-all-button">
+                                                    <span class = "category-all-button-span">카테고리 전체</span>
+                                                    <img src="../images/clickdown.png" 
+                                                        class="category-all-button-svg"
+                                                        style="width: 10px;"> -->
+                                                </button>
+                                            </div>
+                                            <!-- 공개범위 전체 -->
+                                            <div class="scope-all-div">
+                                                <select>
+                                                    <option>최신순                                                 
+                                                            <img src="../images/clickdown.png" 
+                                                                class="category-all-button-img"
+                                                                style="width: 10px;">                                                      
+                                                    </option>
+                                                    <option>
+                                                        오래된 순
+                                                        <img src="../images/clickdown.png" 
+                                                                class="category-all-button-img"
+                                                                style="width: 10px;" >  
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            
+                                            
+                                            <!-- 검색 -->
+                                            <div class="scope-search-div">
+                                                <input type ="text" class="scope-search-text" placeholder="검색">
+                                                    <!-- <img src="../images/clickdown.png" 
+                                                        class="category-all-button-svg"
+                                                        style="width: 10px;"> -->
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                <!-- 원래 부모였던 div -->
+                                <!-- 목록 시작// 목록 타이틀 -->
+
+                                <div class="content-list">
+                                    <div class="details-list">
+                                            <div class="list-img">뱃지 이미지</div>
+                                            <div class="list-title">뱃지명</div>
+                                            <div class="list-price">뱃지 가격</div>
+                                            <div class="list-date">생성 날짜</div>
+                                            <div class="list-del">삭제</div>
+                                    </div>
+                                    
+                                    <!-- 목록 추가 -->
+                                    <div class="details-list-add-list">      
+                                   
+
+  
+
+
+                                    </div>
+                                </div>
+                                <!-- 게시글이 없을 경우 뜨는 이미지 -->
+                                <div class = "admin-content-post-conetent" style="">
+
+                                    <div id="event-div-hidden" style="">
+                                        <img src="../images/nonpost.png" class = "nonpost-img">
+                                            <p class="admin-content-post-conetent-nonpost-msg">등록된 뱃지가 없습니다.</p>
+                                            <p class="admin-content-post-conetent-firstpost-msg">뱃지를 추가하세요.</p>
+                                        <div class="admin-content-writepost-button-div">
+                                            <!-- <button aria-label="button" class="admin-content-writepost-button" type="button">
+                                                뱃지 등록하기
+                                            </button> -->
+                                        </div>
+                                       
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+    </body>
+    <script src="../../../../staticfiles/js/ljr/modal.js"></script>
+    <script src="../../../../staticfiles/js/ljr/admin-badge/admin-badge.js"></script>
+</html>
+

@@ -15,16 +15,11 @@ const taglist = document.getElementById("taglist");
 const tagAdd = document.querySelector("div.taglistAdd"); // 수정: # 기호 추가
 // console.log(tagAdd);
 
-taglist.addEventListener("change", (e) => {
-    const tagValue = e.target.value;
-    if (tagAdd.innerHTML.includes(`#${tagValue}`)) {
-        // 이미 존재하는 태그라면 처리
-        input.value = ""; // 입력값 초기화 또는 다른 처리를 할 수 있습니다.
-    } else {
-        tagAdd.innerHTML += `<div class="tagInner"> # ${tagValue} </div>`;
-    }
-});
+const delButtons = document.querySelectorAll(
+    "button.details-list-add-list-del-target"
+);
+console.log(delButtons);
 
-tagAdd.onclick = (e) => {
-    tagAdd.removeChild(e.target);
-};
+delButtons.addEventListener("click", (e) => {
+    delButton.parentElement.removeChild(badgeDiv);
+});

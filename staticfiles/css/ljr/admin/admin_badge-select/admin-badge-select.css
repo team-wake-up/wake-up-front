@@ -23,7 +23,7 @@ button{cursor: pointer;}
     line-height: inherit
 
 }
-;
+li{list-style: none;}
    
 html {
     line-height: 1.5;
@@ -132,7 +132,7 @@ ul {
     left: 0;
     top: 0;
     position: sticky;
-    background-color: #1d1d1e;
+    background-color: #f2b8cb;
 }
 
 /* 오른쪽 버튼 이미지
@@ -479,6 +479,10 @@ admin-profile-button-img*/
     margin-inline-end: 0px;
     /* padding-inline-start: 40px; */
 }
+/* hover */
+.admin-menu-list-member:hover{
+    background-color: #fce4ec;
+}
 
 /* 메뉴 리스트 member */
 .admin-menu-list-member{
@@ -491,6 +495,8 @@ admin-profile-button-img*/
     margin-bottom: 8px;
     /* background-color: #f2f0fc; */
 }
+
+
 .admin-menu-list-post-a-tag{
     text-align: -webkit-match-parent;
     
@@ -528,6 +534,11 @@ admin-profile-button-img*/
     text-align: -webkit-match-parent;
     
 }
+.admin-menu-list-notice:hover{
+    background-color: #fce4ec;
+}
+
+
 
 .admin-menu-list-notice-img{
     vertical-align: middle;
@@ -559,6 +570,10 @@ admin-profile-button-img*/
 .admin-menu-list-answer-a-tag{
     text-align: -webkit-match-parent;
     
+}
+
+.admin-menu-list-answer:hover{
+    background-color: #fce4ec;
 }
 
 .admin-menu-list-answer-img{
@@ -610,6 +625,12 @@ admin-profile-button-img*/
     color: #1d1d1e;
     fill: #1d1d1e;
 }
+
+.admin-menu-list-solo:hover{
+    background-color: #fce4ec;
+}
+
+
 /* 메뉴리스트 group */
 .admin-menu-list-group{
     padding-left: 12px;
@@ -624,6 +645,10 @@ admin-profile-button-img*/
 .admin-menu-list-group-a-tag{
     text-align: -webkit-match-parent;
     
+}
+
+.admin-menu-list-group:hover{
+    background-color: #fce4ec;
 }
 
 .admin-menu-list-group-img{
@@ -643,7 +668,7 @@ admin-profile-button-img*/
 }
 
 /* 메뉴리스트 Wake up */
-.admin-menu-list-solo{
+.admin-menu-list-Wake-Up{
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 8px;
@@ -653,56 +678,24 @@ admin-profile-button-img*/
     margin-bottom: 8px;
     /* background-color: #f2f0fc; */
 }
-.admin-menu-list-solo-a-tag{
+
+.admin-menu-list-Wake-Up:hover{
+    background-color: #fce4ec;
+}
+
+
+.admin-menu-list-Wake-Up-a-tag{
     text-align: -webkit-match-parent;
     
 }
 
-.admin-menu-list-solo-img{
+.admin-menu-list-Wake-Up-img{
     vertical-align: middle;
     width: 20px;
     height: 20px;
     margin-right: 10px;
     color: #7e69fe;
     fill: #7e69fe;
-}
-.admin-menu-list-solo-name{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    color: #1d1d1e;
-    fill: #1d1d1e;
-}
-/* 메뉴리스트 group */
-.admin-menu-list-Wak{
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 8px;
-    align-items: center;
-    height: 40px;
-    display: flex;
-    margin-bottom: 8px;
-    /* background-color: #f2f0fc; */
-}
-.admin-menu-list-group-a-tag{
-    text-align: -webkit-match-parent;
-    
-}
-
-.admin-menu-list-group-img{
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    color: #7e69fe;
-    fill: #7e69fe;
-}
-.admin-menu-list-group-name{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    color: #1d1d1e;
-    fill: #1d1d1e;
 }
 
 
@@ -748,11 +741,15 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    /* background-color: #f2f0fc; */
+    background-color:#fce4ec;
 }
 .admin-menu-list-badge-a-tag{
     text-align: -webkit-match-parent;
     
+}
+
+.admin-menu-list-tag:hover{
+    background-color: #fce4ec;
 }
 
 .admin-menu-list-badge-img{
@@ -818,6 +815,7 @@ admin-profile-button-img*/
     flex-grow: 1;
     flex-shrink: 0;
     display: block;
+
 }
 
 .admin-content-post{
@@ -849,6 +847,7 @@ admin-profile-button-img*/
     top: 0;
     position: sticky;
     display: block;
+    background-color: #fff;
 }
 
 /* 
@@ -1200,6 +1199,17 @@ storage-p */
 
 }
 
+.scope-all-div{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-width: 1px;
+    border-radius: 16px;
+    text-align: center;
+    width:80px;
+    
+}
+
+
 /* 
  <!-- 최신순 -->
 <div class="new-all-div">
@@ -1250,12 +1260,213 @@ storage-p */
     margin-top: 88px;
 }
 
+/* 뱃지샵 목록 */
+/* <!-- 목록 시작// 목록 타이틀 -->
+
+<div class="content-list">
+    <div class="details-list">
+            <div class="list-img">뱃지 이미지</div>
+            <div class="list-title">뱃지명</div>
+            <div class="list-price">뱃지 가격</div>
+            <div class="list-fix">수정</div>
+            <div class="list-del">삭제</div>
+    </div> */
+
+
+.details-list-add-list{
+    
+}
+
+/* 추가될 리스트 목록들 */
+.details-list-add-list-content-all{
+    padding-left: 0px;
+    padding-right: 16px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    display: flex;
+    border-color: #f3f3f4;
+}
+
+/* 게시글 목록들 list-details */
+.content-list{
+    margin-top: 2px;
+    
+
+}
+
+.details-list{
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+    font-weight: 500;
+    font-size: 13px;
+    padding: 9px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 36px;
+    display: flex;
+    border-color: #e6e6e7;
+    color: #1d1d1e;
+    fill: #1d1d1e;
+}
+
+/* 뱃지 이미지 상단 
+list-img
+*/
+.list-img{
+    width: 60px;
+    margin-left: 39px;
+
+}
+
+.list-title{
+    width: 260px; 
+    text-align: center;
+    padding-right: 20px;
+}
+
+.list-price{
+    padding-right: 60px;
+}
+
+.list-date{
+    padding-right: 30px;
+
+}
+/* 삭제 */
+
+.list-del{
+    padding-right:100px;
+}
+
+.details-list-add-list{
+    
+}
+
+/* 목록 추가 리스트  */
+
+/* 이미지div */
+.detalis-list-add-list-img{
+    margin-left: 48px;
+  
+}
+.badge-list-img{
+    width: 50px;
+    display: flex;
+    margin: auto; 
+    cursor: pointer;
+}
+
+.event-div-hidden{
+    margin: auto;;
+}
+
+
+/* 제목 목록 추가리스트 */
+/* 뱃지 텍스트 박스 크기 */
+.detalis-list-add-list-tilte-div{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 300px;
+    padding-left: 30px;
+
+}
+.details-list-add-list-title-label{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    background-color : #fff;
+}
+
+/* 뱃지명 텍스트박스 */
+.details-list-add-list-title-label-input{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 100%;
+    height: 48px;
+
+/* 가격 레이 */
+}
+.details-list-add-list-price-label{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    background-color : #fff;
+}
+
+/* 가격 리스트 */
+/* div */
+.details-list-add-list-price{
+    padding-right:0;
+    text-align: center;
+    width: 150px;
+    
+}
+
+/* 가격 */
+.details-list-add-list-price-input{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 100%;
+    height: 48px;
+    text-align: center;}
+
+/* 생성 날짜 */
+/* dic */
+.details-list-add-list-date{
+    width: 150px;
+}
+
+/* details-list-add-list-date-label */
+.details-list-add-list-date-label{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    background-color : #fff;
+}
+
+.details-list-add-list-date-input{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 100%;
+    height: 48px;
+}
+
+.details-list-add-list-del{
+    padding-right: 88px;
+}
+
+
+
 /* 게시글 없을 때 나오는 이미지 */
 .nonpost-img{
-    display: block;
-    vertical-align: middle;
+     display: flex;
+     margin: auto;
     width:110px !important;
     height:104px !important;
+    text-align: center;
 }
 /* 게시 완료된 포스터가 없습니다 메시지 */
 .admin-content-post-conetent-nonpost-msg{
@@ -1266,6 +1477,7 @@ storage-p */
     line-height: 28px;
     color: #1d1d1e;
     fill: #1d1d1e;
+    text-align: center;
 }
 /* 지금 첫 포스트를 작성하고 게시해보세요. 메시지 */
 .admin-content-post-conetent-firstpost-msg{
@@ -1275,11 +1487,13 @@ storage-p */
     line-height: 24px;
     color: #8a8a8b;
     fill: #8a8a8b;
+    text-align: center;
 }
 /* 포스트 작성하기 버튼을 감싼 div
 admin-content-writepost-button-div */
 .admin-content-writepost-button-div{
     margin-top: 24px;
+    
 }
 /* 
 포스트 작성하기 버튼
@@ -1304,4 +1518,78 @@ admin-content-writepost-button-div */
     /* background-color: transparent; */
     /* background-image: none; */
     cursor: pointer;
-    /* text-transform: none;} */}
+    /* text-transform: none;} */
+margin: auto;}
+
+select{
+    background-color:transparent;
+    color: #888888;
+    outline: none;
+    
+}
+
+option{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+/* 검색창 */
+.scope-search-div{
+    border: 1px solid #e6e6e7;
+    background-color:transparent;
+    outline-offset: 2px;
+    border-radius: 16px;
+    padding-left: 5px;
+    outline: none;
+    margin-right: 5px;
+    padding-right: 12px;
+    padding-left: 10px;
+}
+.scope-search-text{
+    outline: none;
+    width: 120px;
+}
+
+
+/* 파일 삽입 */
+.details-list-add-list-content-all-ul{
+    padding: 0;
+    margin: 0;
+}
+
+
+div.wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+div.image {
+    cursor: pointer;
+    background-image: url("images/images.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+div.cancel {
+    /* display: none; */
+    cursor: pointer;
+    /* position: absolute; */
+    background-image: url("images/delete.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    top: 0;
+}
