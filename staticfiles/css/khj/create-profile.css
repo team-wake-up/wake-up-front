@@ -1,0 +1,773 @@
+@font-face {
+    font-family: "NotoSans";
+    src: url(/templete/khj/fonts/NotoSansKR-Regular.woff);
+}
+
+/* body */
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    -webkit-text-size-adjust: none;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* container-doc */
+.container-doc {
+    height: 100%;
+    font-size: 0;
+}
+
+div {
+    display: block;
+}
+
+/* inner-container */
+.container-doc .inner-container {
+    display: inline-block;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+/* doc-main */
+main {
+    display: block;
+}
+
+/* doc-title */
+.doc-main .doc-title {
+    padding-top: 50px;
+}
+
+.doc-title .tit-service {
+    display: block;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.doc-title .tit-service .logo-kakao {
+    display: block;
+    width: 88px;
+    height: 27px;
+    margin: 0 auto;
+    background: #fff url(https://accounts.kakaocdn.net/images/pc/logo_kakao.png) no-repeat 0 0;
+    background-size: 100px 80px;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+}
+
+/* ir-wa */
+.ir-wa {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.ir-pm, .ir-wa {
+    display: block;
+    overflow: hidden;
+}
+
+/* content-article */
+.content-article {
+    width: 580px;
+    height: 100%;
+    margin: 40px auto 42px;
+    padding: 0 69px;
+    border: 1px solid rgba(0,0,0,.12);
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+article {
+    display: block;
+}
+
+/* cont-sign */
+.content-article [class^=cont-] {
+    position: relative;
+    height: 100%;
+    padding: 55px 0 50px;
+    box-sizing: border-box;
+}
+
+.screen-out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ir-caption, .screen-out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* navigation-wrap */
+.navigation-wrap {
+    width: 60px;
+    height: 4px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    background: rgba(0,0,0,.08);
+}
+
+/* bar-navigation */
+.navigation-wrap .bar-navigation {
+    height: 4px;
+    border-radius: 4px;
+    background: #4c4c4c;
+    text-indent: -9999px;
+}
+
+/* tit-g */
+.cont-sign .tit-g {
+    letter-spacing: -.03em;
+}
+
+.tit-g {
+    display: block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #191919;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* form */
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+/* setting-form */
+.setting-form {
+    padding: 49px 0 13px;
+}
+
+/* 첫번째 form-row */
+.setting-form .form-row:first-of-type {
+    padding-top: 0;
+}
+
+.setting-form .form-row {
+    padding-top: 42px;
+}
+
+/* tif-tf */
+.setting-form .form-row .tit-tf {
+    margin-top: 0;
+}
+
+.tit-tf {
+    display: block;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #999;
+}
+
+/* item-form */
+.item-form {
+    position: relative;
+    margin-top: 5px;
+    padding-bottom: 3px;
+}
+
+/* box-tf error */
+.setting-form .form-row .box-tf {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.box-tf.error {
+    border-color: #e65f3e;
+}
+
+.box-tf {
+    position: relative;
+    border: solid #ccc;
+    border-width: 0 0 2px;
+}
+
+.cont-sign .info-tf.error {
+    padding-bottom: 4px;
+}
+
+.info-tf.error {
+    color: #e65f3e;
+    letter-spacing: -.05em;
+}
+
+.info-tf {
+    display: block;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* input */
+.box-tf .tf-g {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 0 8px;
+    border: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #191919;
+    background-color: transparent;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    outline: 0 none;
+    caret-color: #191919;
+    opacity: 1;
+}
+
+html input[type=button], input[type=email], input[type=password], input[type=reset], input[type=search], input[type=submit], input[type=tel], input[type=text] {
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+/* util-tf */
+.box-tf .util-tf {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    z-index: 10;
+    min-width: 55px;
+    height: 43px;
+    font-size: 0;
+    text-align: right;
+}
+
+.box-tf .num-count {
+    padding-top: 15px;
+}
+
+.box-tf .num-count {
+    display: inline-block;
+    min-width: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 13px;
+    color: #8e8e8e;
+    vertical-align: top;
+}
+
+/* 두번째 form-row */
+
+/* select-tf select-year */
+.box-select .select-year {
+    width: auto;
+    margin-left: 0;
+}
+
+.box-select .select-tf {
+    float: left;
+    position: relative;
+    width: 108px;
+}
+
+.box-tf .select-tf {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    z-index: 10;
+    min-width: 77px;
+}
+
+/* view-pc */
+.view-pc {
+    display: block;
+}
+
+/* item-select */
+.box-select .item-select {
+    height: 45px;
+}
+
+.item-select {
+    position: relative;
+}
+
+.box-select .select-year .item-select .link-selected {
+    text-align: left;
+}
+
+.box-select .item-select .link-selected {
+    height: 100%;
+    font-size: 16px;
+    line-height: 47px;
+    text-align: right;
+}
+
+.item-select .link-selected {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color: #191919;
+    text-align: left;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+button {
+    appearance: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+/* ico-comm */
+.ico-comm {
+    background: url(https://accounts.kakaocdn.net/images/pc/ico_comm.png) 0 0 no-repeat;
+    background-size: 300px auto;
+}
+
+.item-form .box-select .item-select .link-selected .ico-arr {
+    transform: translateY(0);
+}
+
+.box-select .item-select .link-selected .ico-arr {
+    display: inline-block;
+    position: static;
+    margin: 11px 0 0 4px;
+    vertical-align: top;
+}
+
+.box-tf .select-tf .ico-arr {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 0;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    background-position: 0 -50px;
+    transform: translateY(-50%);
+}
+
+/* .link-selected .ico-arr {
+    width: 9px;
+    height: 5px;
+    margin: 6px 0 0 4px;
+    background-position: -30px -80px;
+} */
+
+.ico-account, .ico-comm {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    vertical-align: top;
+}
+
+
+/* list-option */
+.box-select .select-year .item-select .list-select {
+    left: 0;
+    right: auto;
+}
+
+.box-select .select-tf .item-select .list-select {
+    left: auto;
+    right: 0;
+}
+
+.select-tf .item-select .list-select {
+    bottom: auto;
+    left: 0;
+    top: 39px;
+}
+
+.item-select .list-select {
+    display: none;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    bottom: -12px;
+    z-index: 10;
+    min-width: 90px;
+    max-height: 240px;
+    font-size: 13px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+}
+
+dl, li, menu, ol, ul {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.item-select .link-select {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    color: #191919;
+    background: #fff;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* item-choice */
+.item-choice .inp-choice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 146.641px;
+    height: 20px;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+.item-choice .lab-choice {
+    line-height: 20px;
+}
+
+.item-choice .lab-choice {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    cursor: pointer;
+}
+
+.item-choice .lab-choice .ico-check {
+    background-position: 0 0;
+}
+
+.item-choice .lab-choice .ico-comm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.ico-account, .ico-comm {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    vertical-align: top;
+}
+
+.box-select .item-choice {
+    display: inline-block;
+    float: right;
+    margin-top: 13px;
+}
+
+p {
+    margin:0 !important
+}
+
+/* 성별 */
+.setting-form .group-choice {
+    display: block;
+    padding-top: 12px;
+    font-size: 0;
+}
+
+.setting-form .group-choice .item-choice {
+    display: inline-block;
+    width: 33.33%;
+    margin: 0;
+}
+
+.group-choice .item-choice .ico-comm {
+    margin-right: 6px;
+}
+
+.item-choice .lab-choice .ico-radio {
+    background-position: -50px 0;
+}
+
+.group-choice .item-choice .lab-choice {
+    padding-left: 26px;
+}
+
+.setting-form .group-choice .lab-choice {
+    height: 20px;
+    line-height: 22px;
+}
+
+.item-choice .inp-choice:checked+.lab-choice .ico-radio {
+    background-position: -75px 0;
+}
+
+/* confirm-btn */
+.cont-sign .confirm-btn {
+    padding-top: 45px;
+}
+
+.confirm-btn {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.btn-g {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 51px;
+    color: #191919;
+    background-color: #f0f0f0;
+}
+
+.btn-g:hover {
+    background-color: #ebebeb;
+}
+
+address, button[type=submit], caption, cite, code, dfn, em, input[type=submit], var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* footer */
+.doc-footer {
+    display: block;
+    padding-bottom: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.screen-out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ir-caption, .screen-out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.doc-footer .service-info, .doc-footer .service-info .link-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* sevice-info a태그 */
+.doc-footer .service-info .link-info:first-child {
+    margin-left: 0;
+}
+
+.doc-footer .service-info .link-info {
+    font-size: 12px;
+    padding: 0 5px;
+    color: #4c4c4c;
+}
+
+.service-info .link-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.doc-footer .service-info .link-info+.link-info {
+    margin-left: 5px;
+}
+
+/* list-option */
+.doc-footer .item-select .list-select {
+    bottom: 25px;
+}
+
+
+dl, li, menu, ol, ul {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* 언어 */
+.item-select .link-select {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    color: #191919;
+    background: #fff;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+/* copyright */
+.doc-footer .txt-copyright {
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(0,0,0,.5);
+}
+
+/* kakaocorp */
+.doc-footer .link-kakaocorp {
+    font-weight: 700;
+    color: rgba(0,0,0,.5);
+}
+
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item-select .link-select:hover {
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* clear-btn */
+.btn-clear {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn-clear .ico-clear {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -50px -25px;
+}

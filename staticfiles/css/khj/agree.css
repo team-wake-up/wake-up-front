@@ -2,6 +2,7 @@
     font-family: "NotoSans";
     src: url(/templete/khj/fonts/NotoSansKR-Regular.woff);
 }
+
 /* body */
 body, html {
     height: 100%;
@@ -11,7 +12,7 @@ body, button, input, select, td, textarea, th {
     font-size: 12px;
     line-height: 1.5;
     font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
-    color: #333;
+    color: #333
 }
 
 body {
@@ -174,7 +175,7 @@ h1 {
     font-weight: bold;
 }
 
-/* article */
+/* content-article */
 .content-article {
     width: 580px;
     height: 100%;
@@ -195,13 +196,13 @@ article {
 }
 
 
-/* div 위치가 안맞아서 임의수정 */
 .content-article [class^=cont-] {
     position: relative;
     height: 100%;
-    padding: 55px 0 67px;
+    padding: 55px 0 50px;
     box-sizing: border-box;
 }
+
 
 div{
     margin: 0;
@@ -624,47 +625,8 @@ a, button, input, label {
     -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 
-/* checked상태의 간편로그인 */
-.item-choice .inp-choice:checked+.lab-choice .ico-comm {
-    background-position: -25px 0;
-}
-.set-login .lab-choice .ico-comm {
-    margin: 0 8px 0 0;
-}
 
 
-/* ico-comm */
-.set-login .lab-choice .ico-comm {
-    margin: 0 8px 0 0;
-}
-
-.item-choice .lab-choice .ico-comm {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
-
-.ico-comm {
-    display: inline-block;
-    overflow: hidden;
-    font-size: 1px;
-    line-height: 0;
-    color: transparent;
-    vertical-align: top;
-}
-
-.ico-comm {
-    background: url(https://accounts.kakaocdn.net/images/pc/ico_comm.png) 0 0 no-repeat;
-    background-size: 300px auto;
-}
-
-body {
-    background: #fff;
-    -webkit-text-size-adjust: none;
-}
 
 /* btn-help */
 .set-login .item-choice .btn-help {
@@ -726,91 +688,6 @@ button {
 }
 
 
-/* ico-comm */
-/* 도움말보기 */
-.ico-comm {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-position: 0 -140px;
-}
-
-
-/* 도움말보기 이미지 위치변경 */
-.set-login .item-choice .ico-help {
-    width: 18px;
-    height: 18px;
-    background-position: -120px -110px;
-}
-
-.ico-account, .ico-comm {
-    display: inline-block;
-    overflow: hidden;
-    font-size: 1px;
-    line-height: 0;
-    color: transparent;
-    vertical-align: top;
-}
-
-.ico-comm {
-    background: url(https://accounts.kakaocdn.net/images/pc/ico_comm.png) 0 0 no-repeat;
-    background-size: 300px auto;
-}
-
-/* confirm button */
-.confirm-btn {
-    padding-top: 40px;
-    text-align: center;
-}
-
-blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
-    margin: 0;
-    padding: 0;
-}
-
-div {
-    display: block;
-}
-
-/* btn-g */
-.btn-g[type=submit] {
-    background-color: #fee500;
-}
-
-.btn-g.highlight:hover {
-    background-color: #fada0a;
-}
-
-.btn-g:hover {
-    background-color: #ebebeb;
-}
-
-address, button[type=submit], caption, cite, code, dfn, em, input[type=submit], var {
-    font-style: normal;
-    font-weight: 400;
-}
-
-button {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.btn-g {
-    display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 4px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 51px;
-    color: #191919;
-    background-color: #f0f0f0;
-}
-
-a, button, input, label {
-    -webkit-tap-highlight-color: rgba(255,255,255,0);
-}
 
 /* line-or */
 .line-or {
@@ -1005,48 +882,6 @@ strong {
     margin-left: 5px;
 }
 
-/* item-select */
-/* 언어선택 */
-.login-footer .item-select {
-    display: inline-block;
-    padding: 0 5px;
-    margin-left: 5px;
-    vertical-align: top;
-    cursor: pointer;
-}
-
-.item-select {
-    position: relative;
-}
-
-.item-select .link-selected {
-    display: block;
-    width: 100%;
-    font-size: 12px;
-    color: #191919;
-    text-align: left;
-}
-
-.item-select .link-selected .ico-arr {
-    width: 9px;
-    height: 5px;
-    margin: 6px 0 0 4px;
-    background-position: -30px -80px;
-}
-
-.ico-account, .ico-comm {
-    display: inline-block;
-    overflow: hidden;
-    font-size: 1px;
-    line-height: 0;
-    color: transparent;
-    vertical-align: top;
-}
-
-.ico-comm {
-    background: url(https://accounts.kakaocdn.net/images/pc/ico_comm.png) 0 0 no-repeat;
-    background-size: 300px auto;
-}   
 
 /* list-option */
 .login-footer .item-select .list-select {
@@ -1081,21 +916,6 @@ ul {
     padding-inline-start: 40px;
 }
 
-/* 언어 */
-.item-select .link-select {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    height: 40px;
-    padding: 0 15px;
-    color: #191919;
-    background: #fff;
-    line-height: 40px;
-    text-align: left;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    box-sizing: border-box;
-}
 
 /* copyright */
 .login-footer .txt-copyright {
@@ -1118,76 +938,470 @@ blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4,
     padding: 0;
 }
 
-/* 도움말 보기 */
-.set-login .tooltip-login {
-    top: 29px;
-}
-
-.tooltip-login {
-    top: 36px;
-    box-sizing: unset;
-}
-
-.tooltip-comm {
-    position: absolute;
-    z-index: 10;
-    width: 304px;
-    padding: 8px 12px;
-    border-radius: 3px;
-    font-size: 12px;
-    color: #fff;
-    text-align: left;
-    background-color: rgba(0,0,0,.8);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#cc000000,endColorStr=#cc000000)";
-    box-sizing: border-box;
-    word-break: keep-all;
-}
-
-div {
-    display: block;
-}
-
-.tooltip-login .link-more {
-    margin-top: 0;
-    color: #fbdd0f;
-}
-
-.link-more {
-    display: inline-block;
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-top: 10px;
-    font-size: 12px;
-    vertical-align: top;
-    color: #fbdd0d;
-}
-
+/* ---------------------------------------------------------------------------------------------- */
+/* join.css */
 .screen-out {
     position: absolute;
     width: 0;
     height: 0;
 }
-
 .ir-caption, .screen-out {
     overflow: hidden;
     line-height: 0;
     text-indent: -9999px;
 }
 
-/* 아이디창 focus시 나오는 문구 */
-.item-form .info-tip {
-    padding: 13px 0 8px;
+strong {
+    font-weight: bold;
 }
 
-.info-tip {
-    padding: 10px 0 16px;
+/* navigation-wrap */
+.navigation-wrap {
+    width: 60px;
+    height: 4px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    background: rgba(0,0,0,.08);
+}
+
+
+/* bar-navigation */
+.navigation-wrap .bar-navigation {
+    height: 4px;
+    border-radius: 4px;
+    background: #4c4c4c;
+    text-indent: -9999px;
+}
+
+/* tit-g */
+.cont-sign .tit-g {
+    letter-spacing: -.03em;
+}
+
+.tit-g {
+    display: block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #191919;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+/* check-all */
+.check-all {
+    margin-top: 49px;
+    padding: 0 0 19px 28px;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.check-all .item-choice, .cont-agree .list-agree .item-choice {
+    margin-left: -28px;
+}
+
+.item-choice {
+    display: block;
+    position: relative;
+    vertical-align: top;
+}
+
+.item-choice .inp-choice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+.check-all .lab-choice {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.item-choice .lab-choice {
+    line-height: 20px;
+}
+
+.item-choice .lab-choice {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    cursor: pointer;
+}
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.check-all .lab-choice .ico-check {
+    margin-top: 2px;
+}
+
+.item-choice .lab-choice .ico-check {
+    background-position: 0 0;
+}
+
+
+.item-choice .inp-choice:checked+.lab-choice .ico-check {
+    background-position: -25px 0;
+}
+
+.item-choice .lab-choice .ico-comm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.ico-account, .ico-comm {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    vertical-align: top;
+}
+
+.ico-comm {
+    background: url(https://accounts.kakaocdn.net/images/pc/ico_comm.png) 0 0 no-repeat;
+    background-size: 300px auto;
+}
+
+
+/* txt-info */
+.check-all .txt-info {
+    padding-top: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    /* 마진 수정 */
+    margin: 0px;
+}
+
+.txt-info {
+    font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: #666;
+    color: #999;
 }
 
-.info-tip .txt-tip {
-    font-weight: 700;
-    color: #e65f32;
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+/* list-agree */
+.list-agree {
+    padding-top: 22px;
+}
+
+dl, li, menu, ol, ul {
+    list-style: none;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.list-agree li:first-child {
+    margin-top: 0;
+}
+
+.list-agree li {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 16px 0 28px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.list-agree .item-choice {
+    margin-left: -28px;
+}
+
+.item-choice {
+    display: block;
+    position: relative;
+    vertical-align: top;
+}
+
+.item-choice .inp-choice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+.item-choice .lab-choice {
+    line-height: 20px;
+}
+
+.item-choice .lab-choice {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    cursor: pointer;
+}
+/* li1 */
+.list-agree .lab-choice .ico-check {
+    margin-top: 2px;
+}
+
+.item-choice .lab-choice .ico-check {
+    background-position: 0 0;
+}
+
+.item-choice .lab-choice .ico-comm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.ico-account, .ico-comm {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    vertical-align: top;
+}
+
+.list-agree .link-arr {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.link-arr {
+    display: inline-block;
+    vertical-align: top;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.link-arr .ico-arr {
+    width: 9px;
+    height: 14px;
+    margin: 8px 10px 8px 11px;
+    background-position: -110px -75px;
+}
+
+.list-agree .txt-info {
+    margin-top: 0px;
+    margin-right: -6px;
+    padding-top: 4px;
+}
+
+.txt-info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* confirm-btn */
+.btn-g:disabled {
+    color: #b2b2b2;
+    background-color: #fafafa;
+    pointer-events: none;
+    cursor: default;
+}
+
+address, button[type=submit], caption, cite, code, dfn, em, input[type=submit], var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.confirm-btn {
+    padding-top: 45px;
+}
+
+.btn-g {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 51px;
+    color: #191919;
+    background-color: #f0f0f0;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+
+
+
+/* 전체동의 버튼 클래스만  */
+.item-choice .inp-choice-all {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+.item-choice .inp-choice-all:checked+.lab-choice .ico-check {
+    background-position: -25px 0;
 }

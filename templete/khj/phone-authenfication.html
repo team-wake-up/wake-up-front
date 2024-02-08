@@ -1,0 +1,2440 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>휴대폰 인증</title>
+        <link
+            href="/staticfiles/css/khj/phone-authenfication.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <div
+            class="common-layer"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="confirm-title"
+        >
+            <div class="inner-layer" tabindex="0">
+                <div class="layer-head">
+                    <h3 class="tit-layer" id="confirm-title">
+                        인증번호를 받지 못하셨나요?
+                    </h3>
+                </div>
+                <div class="layer-body">
+                    <p class="desc-layer" id="confirm-desc">
+                        전화번호가 정확한지 확인해 주세요.<br />
+                    </p>
+                    <p class="desc-layer" id="confirm-desc">
+                        통신사에 따라 인증번호 발송이 늦어질 수 있습니다.<br />
+                    </p>
+                    <p class="desc-layer" id="confirm-desc">
+                        계속해서 문자 메세지가 오지 않으면, 다시 인증번호를
+                        요청해 주세요.<br />
+                    </p>
+                </div>
+                <div class="layer-foot">
+                    <div class="group-btn">
+                        <button type="button" class="btn-g highlight">
+                            인증번호 재발송</button
+                        ><button type="button" class="btn-g">
+                            다른 번호로 인증
+                        </button>
+                    </div>
+                </div>
+                <button type="button" class="btn-close">
+                    <span class="ico-comm ico-close">닫기</span>
+                </button>
+            </div>
+        </div>
+        <div class="container-doc">
+            <div class="inner-container">
+                <main class="doc-main">
+                    <div class="doc-title">
+                        <h1 class="tit-service">
+                            <span class="logo-kakao">
+                                <span class="ir-wa">Kakao</span>
+                            </span>
+                        </h1>
+                    </div>
+                    <article id="main-content" class="content-article">
+                        <div class="cont-sign">
+                            <strong class="screen-out"
+                                >가입하기 진행순서</strong
+                            >
+                            <div class="navigation-wrap">
+                                <strong class="screen-out"
+                                    >가입하기 진행률</strong
+                                >
+                                <div class="bar-navigation" style="width: 40%">
+                                    40%
+                                </div>
+                            </div>
+                            <h2 class="tit-g">
+                                카카오계정 가입을 위해
+                                <br />
+                                휴대폰 인증을 진행해 주세요.
+                            </h2>
+                            <form>
+                                <div class="item-form fst">
+                                    <div class="box-tf">
+                                        <div class="select-tf">
+                                            <!-- 모바일 -->
+                                            <div class="view-m"></div>
+                                            <!-- PC -->
+                                            <div class="view-pc">
+                                                <div
+                                                    class="item-select select-phone"
+                                                >
+                                                    <label
+                                                        id="select-label"
+                                                        class="screen-out"
+                                                        >+82</label
+                                                    >
+                                                    <button
+                                                        type="button"
+                                                        class="link-selected"
+                                                        role="combobox"
+                                                        aria-controls="listOption"
+                                                        aria-labelledby="selectLabel"
+                                                        aria-haspopup="listbox"
+                                                        aria-expanded="false"
+                                                        aria-activedescendant
+                                                    >
+                                                        <div id="firstNumber">
+                                                            +82
+                                                        </div>
+                                                        <span
+                                                            class="ico-comm ico-arr"
+                                                        ></span>
+                                                    </button>
+                                                    <strong class="screen-out"
+                                                        >선택목록</strong
+                                                    >
+                                                    <ul
+                                                        id="listOption"
+                                                        class="list-select"
+                                                        role="listbox"
+                                                        aria-labelledby="selectLabel"
+                                                    >
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1) Canada
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1) United
+                                                                States
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+81) 日本
+                                                                (Japan)
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+63)
+                                                                Philippines
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+62) Indonesia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+84) Vietnam
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+55) Brazil
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+966) Saudi
+                                                                Arabia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+86) 中国
+                                                                (China)
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+852) Hong Kong
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+44) United
+                                                                Kingdom
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+61) Australia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+49) Germany
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+82) 대한민국
+                                                                (Republic of
+                                                                Korea)
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+93)
+                                                                Afghanistan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+355) Albania
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+213) Algeria
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 684)
+                                                                American Samoa
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+376) Andorra
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+244) Angola
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 264)
+                                                                Anguilla
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+672)
+                                                                Antarctica
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 268) Antigua
+                                                                and Barbuda
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+54) Argentina
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+374) Armenia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+297) Aruba
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+61) Australia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+43) Austria
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+994)
+                                                                Azerbaijan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 242) Bahamas
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+973) Bahrain
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+880)
+                                                                Bangladesh
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 246)
+                                                                Barbados
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+375) Belarus
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+32) Belgium
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+501) Belize
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+229) Benin
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 441) Bermuda
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+975) Bhutan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+591) Bolivia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+387) Bosnia
+                                                                and Herzegovina
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+267) Botswana
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+55) Brazil
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+246) British
+                                                                Indian Ocean
+                                                                Territory
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 284) British
+                                                                Virgin Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+673) Brunei
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+359) Bulgaria
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+226) Burkina
+                                                                Faso
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+257) Burundi
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+237) Cameroon
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+855) Cambodia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1) Canada
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+238) Cape
+                                                                Verde
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 345) Cayman
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+36) Central
+                                                                African Republic
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+235) Chad
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+56) Chile
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+86) China
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+61) Christmas
+                                                                Island
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+61) Cocos
+                                                                (Keeling)
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+57) Colombia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+242) Congo -
+                                                                Brazzaville
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+243) Congo -
+                                                                Kinshasa
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+682) Cook
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+506) Costa
+                                                                Rica
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+385) Croatia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+53) Cuba
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+599) Curacao
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+357) Cyprus
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+420) Czech
+                                                                Republic
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+45) Denmark
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+253) Djibouti
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 767)
+                                                                Dominica
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 809)
+                                                                Dominican
+                                                                Republic
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 829)
+                                                                Dominican
+                                                                Republic 2
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 849)
+                                                                Dominican
+                                                                Republic 3
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+670) East
+                                                                Timor
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+593) Ecuador
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+20) Egypt
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+503) El
+                                                                Salvador
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+240)
+                                                                Equatorial
+                                                                Guinea
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+291) Eritrea
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+372) Estonia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+251) Ethiopia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+500) Falkland
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+298) Faroe
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+679) Fiji
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+358) Finland
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+33) France
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+594) French
+                                                                Guiana
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+689) French
+                                                                Polynesia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+241) Gabon
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+220) Gambia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+995) Georgia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+49) Germany
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+233) Ghana
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+350) Gibraltar
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+30) Greece
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+299) Greenland
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 473) Grenada
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+590)
+                                                                Guadeloupe
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 671) Guam
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+502) Guatemala
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+44) Guernsey
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+224) Guinea
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+245)
+                                                                Guinea-Bissau
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+592) Guyana
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+509) Haiti
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+504) Honduras
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+852) Hong Kong
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+39) Holy See
+                                                                (Vatican City)
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+36) Hungary
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+354) Iceland
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+91) India
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+62) Indonesia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+98) Iran
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+964) Iraq
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+353) Ireland
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+44) Isle of
+                                                                Man
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+972) Israel
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+39) Italy
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+225) Ivory
+                                                                Coast
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 876) Jamaica
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+81) Japan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+44) Jersey
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+962) Jordan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+7) Kazakhstan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+254) Kenya
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+686) Kiribati
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+965) Kuwait
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+996)
+                                                                Kyrgyzstan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+856) Laos
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+371) Latvia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+961) Lebanon
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+266) Lesotho
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+231) Liberia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+218) Libya
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+423)
+                                                                Liechtenstein
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+370) Lithuania
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+352)
+                                                                Luxembourg
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+853) Macau SAR
+                                                                China
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+389) Macedonia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+261)
+                                                                Madagascar
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+265) Malawi
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+60) Malaysia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+960) Maldives
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+223) Mali
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+356) Malta
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+692) Marshall
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+596)
+                                                                Martinique
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+222)
+                                                                Mauritania
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+230) Mauritius
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+269) Mayotte
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+52) Mexico
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+691)
+                                                                Micronesia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+373) Moldova
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+377) Monaco
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+976) Mongolia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+382)
+                                                                Montenegro
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 664)
+                                                                Montserrat
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+212) Morocco
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+258)
+                                                                Mozambique
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+95) Burma
+                                                                (Myanmar)
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+264) Namibia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+674) Nauru
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+977) Nepal
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+31)
+                                                                Netherlands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+687) New
+                                                                Caledonia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+64) New
+                                                                Zealand
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+505) Nicaragua
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+227) Niger
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+234) Nigeria
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+683) Niue
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+672) Norfolk
+                                                                Island
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 670)
+                                                                Northern Mariana
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+47) Norway
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+968) Oman
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+92) Pakistan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+680) Palau
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+507) Panama
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+675) Papua New
+                                                                Guinea
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+595) Paraguay
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+51) Peru
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+63)
+                                                                Philippines
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+870) Pitcairn
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+48) Poland
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+351) Portugal
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1) Puerto Rico
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+974) Qatar
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+262) Reunion
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+82) Republic
+                                                                of Korea
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+40) Romania
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+7) Russia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+250) Rwanda
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+590) Saint
+                                                                Barthelemy
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+290) Saint
+                                                                Helena
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 869) Saint
+                                                                Kitts and Nevis
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 758) Saint
+                                                                Lucia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 721) Saint
+                                                                Martin
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 599) Saint
+                                                                Martin [Old]
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+508) Saint
+                                                                Pierre and
+                                                                Miquelon
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 784) Saint
+                                                                Vincent and the
+                                                                Grenadines
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+685) Samoa
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+378) San
+                                                                Marino
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+239) Sao Tome
+                                                                and Principe
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+966) Saudi
+                                                                Arabia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+221) Senegal
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+381) Serbia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+248)
+                                                                Seychelles
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+232) Sierra
+                                                                Leone
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+65) Singapore
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+599) Sint
+                                                                Maarten
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+421) Slovakia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+386) Slovenia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+677) Solomon
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+252) Somalia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+27) South
+                                                                Africa
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+82) South
+                                                                Korea
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+211) South
+                                                                Sudan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+34) Spain
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+94) Sri Lanka
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+249) Sudan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+597) Suriname
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+47) Svalbard
+                                                                and Jan Mayen
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+268) Swaziland
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+46) Sweden
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+41)
+                                                                Switzerland
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+963) Syria
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+886) Taiwan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+992)
+                                                                Tajikistan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+255) Tanzania
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+66) Thailand
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+228) Togo
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+690) Tokelau
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+676) Tonga
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 868)
+                                                                Trinidad and
+                                                                Tobago
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+216) Tunisia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+90) Turkey
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+993)
+                                                                Turkmenistan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 649) Turks
+                                                                and Caicos
+                                                                Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+688) Tuvalu
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1 340) US
+                                                                Virgin Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+256) Uganda
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+380) Ukraine
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+971) United
+                                                                Arab Emirates
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+44) United
+                                                                Kingdom
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+1) United
+                                                                States
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+699) United
+                                                                States Minor
+                                                                Outlying Islands
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+598) Uruguay
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+998)
+                                                                Uzbekistan
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+678) Vanuatu
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+58) Venezuela
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+84) Vietnam
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+681) Wallis
+                                                                and Futuna
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+212) Western
+                                                                Sahara
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+967) Yemen
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+260) Zambia
+                                                            </button>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <button
+                                                                type="button"
+                                                                class="link-select"
+                                                            >
+                                                                (+263) Zimbabwe
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label
+                                            class="screen-out"
+                                            for="phone-phone-number"
+                                            >전화번호 입력</label
+                                        >
+                                        <input
+                                            type="tel"
+                                            id="phone-phone-number"
+                                            name="phone-number"
+                                            placeholder="전화번호 입력"
+                                            class="tf-g"
+                                            value=""
+                                        />
+                                        <div class="util-tf">
+                                            <!-- 입력 내용 -->
+                                            <button
+                                                type="button"
+                                                class="btn-clear"
+                                            >
+                                                <span class="ico-comm ico-clear"
+                                                    >입력 내용 지우기</span
+                                                >
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn-round"
+                                            >
+                                                인증요청
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 인증번호 요청 창 ▼ -->
+                                <div class="item-form" id="certification">
+                                    <div class="box-tf error">
+                                        <label
+                                            class="screen-out"
+                                            for="sms-passcode--15"
+                                            >입력</label
+                                        >
+                                        <input
+                                            type="tel"
+                                            id="sms-passcode--15"
+                                            name="sms-passcode"
+                                            placeholder="인증번호 입력"
+                                            maxlength="6"
+                                            class="tf-g"
+                                            value=""
+                                        />
+                                        <div class="util-tf">
+                                            <span class="screen-out"
+                                                >인증번호 입력 제한 시간</span
+                                            >
+                                            <span class="num-count num-timer"
+                                                ><span aria-hidden="true"></span
+                                                ><span class="screen-out"
+                                                    >0 초</span
+                                                ></span
+                                            >
+                                        </div>
+                                    </div>
+                                    <p class="info-tf error" role="alert">
+                                        휴대전화로 발송된 6자리의 인증번호를
+                                        입력해 주세요.
+                                        <br />
+                                    </p>
+                                </div>
+                                <div class="sep"></div>
+                                <a
+                                    class="link-g link-number"
+                                    tabindex="0"
+                                    role="link"
+                                    >인증번호를 받지 못하셨나요?</a
+                                >
+                                <!-- 인증번호 요청 창 끝 ▲ -->
+
+                                <p
+                                    class="info-tf error"
+                                    id="error-msg"
+                                    role="alert"
+                                >
+                                    잘못된 형식의 전화번호입니다. 정확한
+                                    전화번호를 입력해 주세요.
+                                    <br />
+                                </p>
+
+                                <div class="confirm-btn">
+                                    <button
+                                        type="button"
+                                        id="next-button"
+                                        class="btn-g"
+                                    >
+                                        다음
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+                </main>
+                <footer class="doc-footer">
+                    <strong class="screen-out">서비스 이용정보</strong>
+                    <div class="service-info">
+                        <a
+                            href="https://www.kakao.com/policy/terms?lang=ko"
+                            class="link-info"
+                            >이용약관</a
+                        >
+                        <a
+                            href="https://www.kakao.com/policy/privacy?lang=ko"
+                            class="link-info"
+                            ><strong>개인정보 처리방침</strong></a
+                        >
+                        <a
+                            href="https://www.kakao.com/policy/oppolicy?lang=ko"
+                            class="link-info"
+                            >운영정책</a
+                        >
+                        <a href="https://cs.kakao.com/" class="link-info"
+                            >고객센터</a
+                        >
+                        <a
+                            href="https://www.kakao.com/notices?lang=ko"
+                            class="link-info"
+                            >공지사항</a
+                        >
+                    </div>
+                    <small class="txt-copyright">
+                        Copyright ©
+                        <a class="link-kakaocorp" href="http://kakaocorp.com/"
+                            >Kakao Corp.</a
+                        >
+                        All rights reserved.
+                    </small>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script src="/staticfiles/js/khj/phone-authenfication.js"></script>
+</html>
