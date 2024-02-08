@@ -4,12 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- 파비콘 및 타이틀 -->
-        <link href="../images/favicon.png" rel="shortcut icon" />
+        <link href="images/favicon.png" rel="shortcut icon" />
         <link
-            href="../../../..//staticfiles/css/ljr/admin/admin_notice_write/admin-notice-write.css"
+            href="../../../staticfiles/css/ljr/admin/user-answer-write.css"
             rel="stylesheet"
         />
-        <title>관리자페이지 : 공지 작성</title>
+        <title>고객 문의 작성</title>
     </head>
     <body class="body-full">
         <div class="all-full-div">
@@ -23,7 +23,7 @@
                             <a href="#">
                                 <div class="admin-logo-img-div">
                                     <img
-                                        src="../images/admin_logo.png"
+                                        src="images/logo.png"
                                         id="admin-logo"
                                         alt=""
                                     />
@@ -40,12 +40,12 @@
                             <div class="top-menu-left-button-div">
                                 <button class="top-menu-left-button">
                                     <img
-                                        src="../images/arraw.png"
+                                        src="images/arraw.png"
                                         class="top-menu-left-button-image"
                                     />
                                 </button>
                                 <h1 class="top-menu-left-button-text">
-                                    공지 작성하기
+                                    고객 문의 작성
                                 </h1>
                             </div>
 
@@ -110,10 +110,7 @@
                                 <div class="admin-write-board-all">
                                     <!-- 작성란 전체를 감싸는 div -->
                                     <div class="admin-write-board-all-round">
-                                        <textarea
-                                            id="textarea-board"
-                                            aria-hidden="true"
-                                        >
+                                        <textarea class="textarea-board">
                                         </textarea>
                                         <div class="write-body">
                                             <div class="tox-edtior-container">
@@ -144,17 +141,17 @@
                                             class="category-help-button"
                                             type="button"
                                         >
-                                            <img
+                                            <!-- <img
                                                 src="../images/quset.png"
                                                 class="category-help-img"
                                                 style="width: 11px"
-                                            />
+                                            /> -->
                                         </button>
                                     </div>
                                     <!-- 편집 버튼 -->
-                                    <button class="category-fix-button">
+                                    <!-- <button class="category-fix-button">
                                         편집
-                                    </button>
+                                    </button> -->
                                 </div>
                                 <!-- 카테고리 상단 메뉴 끝 -->
                                 <!-- 카테고리 설정 칸 -->
@@ -167,20 +164,21 @@
                                                 <label
                                                     class="category-choice-input-label"
                                                 >
-                                                    <select calss="admin-category" >
-                                                        <option value="선택">카테고리 선택</option>
-                                                            
-                                                        </option>
-                                                        <option value="공지">공지</option>
-                                                        <option value="개인 챌린지">개인 챌린지</option>
-                                                        <option value="그룹 챌린지">그룹 챌린지</option>
-
+                                                    <select>
                                                         <img
-                                                            src="../images/clickdown.png"
+                                                            src="images/clickdown.png"
                                                             alt=""
                                                             style="width: 15px"
                                                             class="category-choice-img"
                                                         />
+                                                        <option>버그</option>
+                                                        <option>
+                                                            개인정보 변경
+                                                        </option>
+                                                        <option>뱃지샵</option>
+                                                        <option>
+                                                            기타사항
+                                                        </option>
                                                     </select>
                                                 </label>
                                                 <div
@@ -201,13 +199,14 @@
                                 </div>
                                 <div class="open-range-choice">
                                     <ul>
+                                        <!-- 전체 버튼 -->
                                         <li class="all-open-li">
                                             <label class="all-open-li-label">
                                                 <input
                                                     class="all-open-radio-button"
                                                     type="radio"
-                                                    value="PUBLIC"
-                                                    checked
+                                                    value=""
+                                                    name="range"
                                                 />
                                                 <div
                                                     class="all-open-radio-button-img"
@@ -225,6 +224,31 @@
                                                 </div>
                                             </label>
                                         </li>
+                                        <!-- 비공개 버튼 -->
+                                        <li class="secret-li">
+                                            <label class="secret-li-label">
+                                                <input
+                                                    class="all-open-radio-button"
+                                                    type="radio"
+                                                    value=""
+                                                    name="range"
+                                                />
+                                                <div
+                                                    class="secret-radio-button-img"
+                                                >
+                                                    <img src="" />
+                                                </div>
+                                                <div
+                                                    class="secret-radio-text-div-body"
+                                                >
+                                                    <div
+                                                        class="secret-radio-text-div"
+                                                    >
+                                                        비공개
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- 공개 범위 선택칸 끝 -->
@@ -235,49 +259,120 @@
                                         </strong>
                                     </div>
                                 </div>
-                                <!-- tag 설정 칸 -->
                                 <div class="tag-div">
                                     <div class="tag-input-scope-div">
                                         <div>
                                             <label class="tag-input-label">
-                                                
-                                                <select id= "taglist" class="admin-tag">
-                                                    <option name="tag" value="선택">선택</option>                                                  
-                                                    <option name="tag" value="공지">공지</option>
-                                                    <option name="tag" value="개인 챌린지">개인 챌린지</option>
-                                                    <option name="tag" value="그룹 챌린지">그룹 챌린지</option>
-                                                    <option name="tag" value="20대">20대</option>
-                                                    <option name="tag" value="30대">30대</option>
-                                                    <option name="tag" value="서울특별시">서울특별시</option>
-                                                    <option name="tag" value="부산광역시">부산광역시</option>
-                                                    <option name="tag" value="대구광역시">대구광역시</option>
-                                                    <option name="tag" value="인천광역시">인천광역시</option>
-                                                    <option name="tag" value="광주광역시">광주광역시</option>
-                                                    <option name="tag" value="대전광역시">대전광역시</option>
-                                                    <option name="tag" value="울산광역시">울산광역시</option>
-                                                    <option name="tag" value="세종특별자치시">세종특별자치시</option>
-                                                    <option name="tag" value="경기도">경기도</option>
-
+                                                <select
+                                                    id="taglist"
+                                                    class="admin-tag"
+                                                >
+                                                    <!-- <option
+                                                        name="tag"
+                                                        value="선택"
+                                                    >
+                                                        선택
+                                                    </option> -->
+                                                    <!-- <option
+                                                        name="tag"
+                                                        value="공지"
+                                                    >
+                                                        공지
+                                                    </option> -->
+                                                    <option
+                                                        name="tag"
+                                                        value="개인 챌린지"
+                                                    >
+                                                        개인 챌린지
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="그룹 챌린지"
+                                                    >
+                                                        그룹 챌린지
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="20대"
+                                                    >
+                                                        20대
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="30대"
+                                                    >
+                                                        30대
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="서울특별시"
+                                                    >
+                                                        서울특별시
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="부산광역시"
+                                                    >
+                                                        부산광역시
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="대구광역시"
+                                                    >
+                                                        대구광역시
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="인천광역시"
+                                                    >
+                                                        인천광역시
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="광주광역시"
+                                                    >
+                                                        광주광역시
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="대전광역시"
+                                                    >
+                                                        대전광역시
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="울산광역시"
+                                                    >
+                                                        울산광역시
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="세종특별자치시"
+                                                    >
+                                                        세종특별자치시
+                                                    </option>
+                                                    <option
+                                                        name="tag"
+                                                        value="경기도"
+                                                    >
+                                                        경기도
+                                                    </option>
 
                                                     <img
-                                                        src="../images/clickdown.png"
+                                                        src="images/clickdown.png"
                                                         alt=""
                                                         style="width: 15px"
                                                         class="category-choice-img"
                                                     />
                                                 </select>
-                                                
                                             </label>
                                             <p></p>
-                                            <div class="taglistAdd">
-                                                
-                                            </div>
-                                            
+                                            <div class="taglistAdd"></div>
+
                                             <div class="tag-div-endtext-div">
-                                                
-                                                <div class="tag-div-endtext">
-                                                    
-                                                </div>
+                                                <div
+                                                    class="tag-div-endtext"
+                                                ></div>
                                             </div>
                                         </div>
                                     </div>
@@ -289,5 +384,5 @@
             </div>
         </div>
     </body>
-    <script src="../../../../staticfiles/js/ljr/admin_notice_write/admin-notice-write.js"></script>
+    <script src="../../../staticfiles/js/ljr/admin/admin-answer_write.js"></script>
 </html>

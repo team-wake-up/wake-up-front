@@ -409,10 +409,7 @@ ul {
 
 }
 
-textarea {
-    display: none;
-    resize: vertical;
-}
+
 
 .write-body {
     /* visibility: hidden; */
@@ -824,11 +821,13 @@ select{
     
 .tagInner{
         display: inline-flex;
-        border:2px solid #8a8a8b;
-        background-color: #d6d6d6;
+        border:2px solid none;
+        background-color: #cfd4ff;
         border-radius: 15px;
         padding: 5px;
         margin: 2px;
+        font-size: 13px;
+        font-weight: bold;
 }
 
 
@@ -884,3 +883,18 @@ select{
     display: flex;
     border-color: rgba(0, 0, 0, .1);
     background-color: #f3f3f4;}
+
+
+textarea {
+    width: 615px;
+    align-items: center;
+    height: 461px;
+    text-decoration: none;
+    background-color: transparent;
+    margin-left:4px;
+    position: absolute;
+    resize: none;
+    border: none;
+    outline: none;
+}
+

@@ -147,7 +147,7 @@ ul {
     left: 0;
     top: 0;
     position: sticky;
-    background-color: #1d1d1e;
+    background-color: #f2b8cb;
 }
 
 /* 오른쪽 버튼 이미지
@@ -410,8 +410,16 @@ ul {
 }
 
 textarea {
-    display: none;
-    resize: vertical;
+    width: 615px;
+    align-items: center;
+    height: 461px;
+    text-decoration: none;
+    background-color: transparent;
+    margin-left:4px;
+    position: absolute;
+    resize: none;
+    border: none;
+    outline: none;
 }
 
 .write-body {
@@ -780,11 +788,40 @@ align-items: center;
 
 .tagInner{
     display: inline-flex;
-    border:2px solid #8a8a8b;
-    background-color: #d6d6d6;
+    border:2px solid none;
+    background-color: #ffe0e0;
     border-radius: 15px;
     padding: 5px;
     margin: 2px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
+
+
+
+.category-edit-div{
+    display: flex;
+    justify-content: center;
+}
+
+.category-del-button{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: solid;
+    border-width: 1px;
+
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    border-color: rgba(0, 0, 0, .1);
+    color: #333334;
+    fill: #333334;
+    background-color: #fff;
+}

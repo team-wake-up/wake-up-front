@@ -10,7 +10,7 @@ badgeButton.addEventListener("click", (e) => {
     <li class="details-list-add-list-content-all">
         <div class="detalis-list-add-list-img">
             <label for="attach${count}">
-                <img src="../images/image.png" class="badge-list-img" id="img${count}">
+                <img src="../../../templete/ljr/admin/images/image.png" class="badge-list-img" id="img${count}">
             </label>
             <input type="file" id="attach${count}" style="display: none" />
         </div>
@@ -52,7 +52,7 @@ badgeButton.addEventListener("click", (e) => {
                 if (path.includes("image")) {
                     thumbnails[i].src = path;
                 } else {
-                    let modalMessage = `<span>이미지만 등록할 수 있어요!</span>`;
+                    let modalMessage = `<span>이미지만 등록해주세요.</span>`;
                     showWarnModal(modalMessage);
                 }
             });
