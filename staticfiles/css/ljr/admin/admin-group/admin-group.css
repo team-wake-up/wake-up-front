@@ -6,6 +6,7 @@
     border: 0 solid #e5e7eb;
 
 }
+
 * {
     text-decoration: none !important;
 }
@@ -132,7 +133,7 @@ ul {
     left: 0;
     top: 0;
     position: sticky;
-    background-color: #1d1d1e;
+    background-color: #f2b8cb;
 }
 
 /* 오른쪽 버튼 이미지
@@ -479,6 +480,10 @@ admin-profile-button-img*/
     margin-inline-end: 0px;
     /* padding-inline-start: 40px; */
 }
+/* hover */
+.admin-menu-list-member:hover{
+    background-color: #fce4ec;
+}
 
 /* 메뉴 리스트 member */
 .admin-menu-list-member{
@@ -491,6 +496,8 @@ admin-profile-button-img*/
     margin-bottom: 8px;
     /* background-color: #f2f0fc; */
 }
+
+
 .admin-menu-list-post-a-tag{
     text-align: -webkit-match-parent;
     
@@ -528,6 +535,11 @@ admin-profile-button-img*/
     text-align: -webkit-match-parent;
     
 }
+.admin-menu-list-notice:hover{
+    background-color: #fce4ec;
+}
+
+
 
 .admin-menu-list-notice-img{
     vertical-align: middle;
@@ -559,6 +571,10 @@ admin-profile-button-img*/
 .admin-menu-list-answer-a-tag{
     text-align: -webkit-match-parent;
     
+}
+
+.admin-menu-list-answer:hover{
+    background-color: #fce4ec;
 }
 
 .admin-menu-list-answer-img{
@@ -610,6 +626,12 @@ admin-profile-button-img*/
     color: #1d1d1e;
     fill: #1d1d1e;
 }
+
+.admin-menu-list-solo:hover{
+    background-color: #fce4ec;
+}
+
+
 /* 메뉴리스트 group */
 .admin-menu-list-group{
     padding-left: 12px;
@@ -619,11 +641,15 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    /* background-color: #f2f0fc; */
+    background-color: #fce4ec;
 }
 .admin-menu-list-group-a-tag{
     text-align: -webkit-match-parent;
     
+}
+
+.admin-menu-list-group:hover{
+    background-color: #fce4ec;
 }
 
 .admin-menu-list-group-img{
@@ -643,7 +669,7 @@ admin-profile-button-img*/
 }
 
 /* 메뉴리스트 Wake up */
-.admin-menu-list-solo{
+.admin-menu-list-Wake-Up{
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 8px;
@@ -653,56 +679,24 @@ admin-profile-button-img*/
     margin-bottom: 8px;
     /* background-color: #f2f0fc; */
 }
-.admin-menu-list-solo-a-tag{
+
+.admin-menu-list-Wake-Up:hover{
+    background-color: #fce4ec;
+}
+
+
+.admin-menu-list-Wake-Up-a-tag{
     text-align: -webkit-match-parent;
     
 }
 
-.admin-menu-list-solo-img{
+.admin-menu-list-Wake-Up-img{
     vertical-align: middle;
     width: 20px;
     height: 20px;
     margin-right: 10px;
     color: #7e69fe;
     fill: #7e69fe;
-}
-.admin-menu-list-solo-name{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    color: #1d1d1e;
-    fill: #1d1d1e;
-}
-/* 메뉴리스트 group */
-.admin-menu-list-Wak{
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 8px;
-    align-items: center;
-    height: 40px;
-    display: flex;
-    margin-bottom: 8px;
-    /* background-color: #f2f0fc; */
-}
-.admin-menu-list-group-a-tag{
-    text-align: -webkit-match-parent;
-    
-}
-
-.admin-menu-list-group-img{
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    color: #7e69fe;
-    fill: #7e69fe;
-}
-.admin-menu-list-group-name{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    color: #1d1d1e;
-    fill: #1d1d1e;
 }
 
 
@@ -748,10 +742,20 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
+    /* background-color:#fce4ec; */
 }
+
+.admin-menu-list-badge:hover{
+    background-color: #fce4ec;
+}
+
 .admin-menu-list-badge-a-tag{
     text-align: -webkit-match-parent;
     
+}
+
+.admin-menu-list-tag:hover{
+    background-color: #fce4ec;
 }
 
 .admin-menu-list-badge-img{
@@ -768,7 +772,6 @@ admin-profile-button-img*/
     line-height: 20px;
     color: #1d1d1e;
     fill: #1d1d1e;
-    
 }
 
 /* 메뉴리스트 태그 */
@@ -850,6 +853,7 @@ admin-profile-button-img*/
     top: 0;
     position: sticky;
     display: block;
+    background-color: #fff;
 }
 
 /* 
@@ -1175,8 +1179,6 @@ storage-p */
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
-    padding-right: 16px;
-    border-width: 1px;
     border-radius: 16px;
     align-items: center;
     max-width: 164px;
@@ -1200,6 +1202,17 @@ storage-p */
     vertical-align: middle;
 
 }
+
+.scope-all-div{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-width: 1px;
+    border-radius: 16px;
+    text-align: center;
+    width:80px;
+    
+}
+
 
 /* 
  <!-- 최신순 -->
@@ -1238,7 +1251,7 @@ storage-p */
     height: 10px;
     margin-left: 4px;
     display: block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     
 }
 
@@ -1251,17 +1264,21 @@ storage-p */
     margin-top: 88px;
 }
 
-/* 뱃지샵 목록 */
-/* <!-- 목록 시작// 목록 타이틀 -->
-
+/* 목록 */
+/* 
 <div class="content-list">
-    <div class="details-list">
-            <div class="list-img">뱃지 이미지</div>
-            <div class="list-title">뱃지명</div>
-            <div class="list-price">뱃지 가격</div>
-            <div class="list-fix">수정</div>
-            <div class="list-del">삭제</div>
-    </div> */
+<div class="details-list">
+        <div class="list-title">챌린지 명</div>
+        <div class="list-date">기간</div>                                            
+        <div class="list-week-day">주</div>
+        <div class="list-week-count">주 횟수</div>
+        <div class="list-week-registrationt">등록 날짜</div>
+        <div class="list-attendance">참가 인원</div>
+        <div class="list-week-registrationt">등록 날짜</div>
+        <div class="list-fix">수정</div>
+        <div class="list-del">삭제</div>
+</div>
+*/
 
 
 .details-list-add-list{
@@ -1271,7 +1288,6 @@ storage-p */
 /* 추가될 리스트 목록들 */
 .details-list-add-list-content-all{
     padding-left: 0px;
-    padding-right: 16px;
     border-style: solid;
     border-bottom-width: 1px;
     justify-content: space-between;
@@ -1304,48 +1320,308 @@ storage-p */
     color: #1d1d1e;
     fill: #1d1d1e;
 }
-
-/* 뱃지 이미지 상단 
-list-img
+/* 
+ <div class="list-title">챌린지 명</div>
+  <div class="detalis-list-add-list-title"
+  detalis-list-add-list-title-text>
 */
-.list-img{
-    margin-left: 39px;
-}
-
 .list-title{
-    min-width: 380px;
+    width: 200px;
     text-align: center;
+    }
+
+
+.detalis-list-add-list-title-label{
+
+}
+.detalis-list-add-list-title-text{
+    width: 200px;
+    height: 48px;
+    outline-offset: 2px;
+    padding-left: 20px;
     padding-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
 }
 
-.list-price{
-    padding-right: 35px;
+
+
+/* 
+기간
+<div class="list-date">기간</div>  
+<div class="detalis-list-add-list-title"
+detalis-list-add-list-date-text>
+    */
+.list-date{
+   width: 130px;
+   text-align: center;
+}
+.detalis-list-add-list-date{
+    width: 130px;
+   
+
 }
 
-/* 삭제 */
+.detalis-list-add-list-date-text-start-year{
+    width: 40px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    
+}
+.detalis-list-add-list-date-text-start-month{
+    width: 40px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+}
+.detalis-list-add-list-date-text-start-day{
+    width: 40px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+}
 
+.detalis-list-add-list-date-text-end-year{
+    width: 40px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1); 
+}
+.detalis-list-add-list-date-text-end-month{
+    width: 40px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+}
+
+.detalis-list-add-list-date-text-end-day{
+    width: 40px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+}
+/* 
+<div class="list-week-day">주</div> 
+<div class="details-list-add-list-week">
+<input type="text" class="details-list-add-list-week-text">
+*/
+/* 주 목록 상단 */
+.list-week-day{
+    width: 100px;
+    text-align: center;
+    
+}
+.details-list-add-list-week{
+    width: 100px;
+    
+    
+}
+/* 주 */
+.details-list-add-list-week-text{
+    width:60px;
+    height: 24px;
+    outline-offset: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    margin-right: 3px;
+    
+}
+/* 주 횟수 */
+.details-list-add-list-week-count-text{
+    width: 60px;
+    height: 24px;
+    outline-offset: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    margin-right: 3px;
+   
+}
+
+/* 
+참가인원
+<!-- 참가 인원 -->
+.list-attendance
+<div class="details-list-add-list-attendance">
+<input type="text" class="details-list-add-list-attendance-text">
+*/
+.list-attendance{
+    width: 70px;
+    text-align: center;
+}
+
+.details-list-add-list-attendance{
+    width: 70px;
+}
+
+.details-list-add-list-attendance-text{
+    text-align: center;
+    width: 50px;
+    height: 24px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    margin-right: 2px;
+}
+
+/* 등록 날짜 */
+/* 
+<div class="list-week-registrationt">등록 날짜</div>
+<div class="details-list-add-list-registrationt">
+<label class="details-list-add-list-registrationt-label">
+<input type="text" class="details-list-add-list-registrationt-text" placeholder="2022-12-31">
+*/
+.list-week-registrationt{
+    width: 152px;
+    text-align: center;
+}
+
+.details-list-add-list-registrationt{
+    width: 152px;
+}
+
+.details-list-add-list-registrationt-text-year{
+    text-align: center;
+    width: 45px;
+    height: 24px;
+    outline-offset: 2px; 
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    margin-right: 2px;
+}
+.details-list-add-list-registrationt-text-month{
+    text-align: center;
+    width: 30px;
+    height: 24px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    margin-right: 2px;
+}
+.details-list-add-list-registrationt-text-day{
+    text-align: center;
+    width: 30px;
+    height: 24px;
+    outline-offset: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    margin-right: 2px;
+}
+/* 
+수정
+<!-- 수정 -->
+<div class="list-fix">수정</div>
+<div class="details-list-add-list-fix">
+<label class="details-list-add-list-fix-label">
+<span class="details-list-add-list-fix-span">수정</span>
+</label>
+</div>
+*/
+.list-fix{
+    width: 36px;
+    text-align: center;
+}
+.details-list-add-list-fix{
+    width: 36px;
+    
+    
+}
+.details-list-add-list-fix-button{
+    width: 36px;
+    padding: 0px;
+}
+
+/*
+삭제
+<!-- 삭제 -->
+<div class="list-del">삭제</div>    
+<div class="details-list-add-list-del">
+<label class="details-list-add-list-del-label">
+<span class="details-list-add-list-del-span">삭제</span>
+</label>
+</div> */
 .list-del{
-    padding-right:100px;
+    width: 36px;
+    text-align: center;
+}
+
+.details-list-add-list-del{
+    width: 36px;
+    
+    
+}
+.details-list-add-list-del-button{
+    width: 36px;
+    padding: 0px;
+}
+
+/* 전체 목록 감싸는 div */
+.details-list-add-list{
+    font-size: 13px;
+    padding-left: 9px;
+    padding-right: 9px;
 }
 
 
 
-/* 목록 추가 리스트  */
 
-/* 이미지div */
-.detalis-list-add-list-img{
-    width: 50px;
-    margin-left: 45px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 7px;
-}
-#badge-list-img{
-    width: 50px;
-    display: flex;
-    margin: auto; 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .event-div-hidden{
     margin: auto;;
@@ -1353,11 +1629,12 @@ list-img
 
 
 /* 제목 목록 추가리스트 */
+/* 뱃지 텍스트 박스 크기 */
 .detalis-list-add-list-tilte-div{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    min-width: 380px;
-    
+    min-width: 300px;
+    padding-left: 30px;
 
 }
 .details-list-add-list-title-label{
@@ -1379,22 +1656,66 @@ list-img
     padding-right: 10px;
     width: 100%;
     height: 48px;
+
+/* 가격 레이 */
+}
+.details-list-add-list-price-label{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    background-color : #fff;
 }
 
+/* 가격 리스트 */
+/* div */
 .details-list-add-list-price{
-    min-width: 70px;
-    max-width: 70px;
-    margin-right: 10px;
+    padding-right:0;
     text-align: center;
+    width: 150px;
+    
 }
 
+/* 가격 */
 .details-list-add-list-price-input{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 100%;
+    height: 48px;
+    text-align: center;}
+
+/* 생성 날짜 */
+/* dic */
+.details-list-add-list-date{
+    width: 150px;
+}
+
+/* details-list-add-list-date-label */
+.details-list-add-list-date-label{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    border-color: rgba(0,0,0,.1);
+    background-color : #fff;
+}
+
+.details-list-add-list-date-input{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 100%;
     height: 48px;
 }
 
-.details-list-add-list-del{
-    padding-right: 88px;
-}
 
 
 
@@ -1457,6 +1778,108 @@ admin-content-writepost-button-div */
     /* background-image: none; */
     cursor: pointer;
     /* text-transform: none;} */
-    margin: auto;}
+margin: auto;}
+
+select{
+    background-color:transparent;
+    color: #888888;
+    outline: none;
+    
+}
+
+option{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
 
 
+
+
+/* 파일 삽입 */
+.details-list-add-list-content-all-ul{
+    padding: 0;
+    margin: 0;
+}
+
+
+div.wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+div.image {
+    cursor: pointer;
+    background-image: url("images/images.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+div.cancel {
+    /* display: none; */
+    cursor: pointer;
+    /* position: absolute; */
+    background-image: url("images/delete.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    top: 0;
+}
+
+.admin-logo-img-div{
+    width: 100%;
+}
+.admin-logo{
+    width: 100%;
+}
+
+
+
+/* 검색 */
+
+/* 검색 레이블 */
+.scope-search-label{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 1px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    border-color: rgba(0,0,0,.1);
+    cursor: default;
+}
+/* 인풋창 */
+.scope-search-label-text{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333334;
+    fill: #333334;
+}
+
+
+.scope-search-button-img{
+    width: 20px;
+    height: 20px;
+
+}
