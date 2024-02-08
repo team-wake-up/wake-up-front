@@ -1,0 +1,207 @@
+/* main footer */
+.footer {
+    height: 180px;
+    padding: 40px 0px 45px;
+    position: relative;
+    border-top: 1px solid rgb(238, 238, 238);
+    box-sizing: border-box;
+    background-color: rgb(247, 247, 247);
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 1120px;
+    margin: 0px auto;
+    align-items: flex-start;
+}
+
+.footer-inner-a {
+    width: 115px;
+    height: 18px;
+    flex-shrink: 0;
+    display: block;
+    background: url(/staticfiles/css/jth/images/WakeUp!.png) center center / contain no-repeat;
+}
+
+.footer-inner-p {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+    padding: 16px 0px 18px;
+    margin: 0px;
+}
+
+.footer-inner-div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    border: 0px;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    /* border-top: 1px solid rgb(238, 238, 238); */
+}
+
+.footer-inner-ul-left {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-inner-li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.footer-inner-li::after {
+    display: block;
+    content: "";
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    background-color: rgb(68, 68, 68);
+}
+
+.footer-inner-li-a {
+    display: inline-block;
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-inner-li-a::after {
+    margin-left: 10px;
+    margin-right: -10px;
+    content: "";
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    background-color: rgb(68, 68, 68);
+}
+
+.footer-inner-li-span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 0px;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+}
+
+.footer-inner-li-dif {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.footer-inner-li-span-dif {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 0px;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+}
+/* footer 오른쪽 */
+.footer-inner-ul-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-inner-ul-right-li {
+    display: list-item;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.footer-inner-ul-right-a {
+    display: inline-block;
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-inner-ul-right-span {
+    box-sizing: border-box;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+}
+
+.footer-inner-ul-right-i-left {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    background: url(//t1.kakaocdn.net/together_image/svg/footer_kakaotalk_gray80.svg) center center / contain no-repeat;
+}
+
+.footer-inner-ul-right-i-mid {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    background: url(//t1.kakaocdn.net/together_image/svg/footer_facebook_gray80.svg) center center / contain no-repeat;
+}
+
+.footer-inner-ul-right-i-right {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    background: url(//t1.kakaocdn.net/together_image/svg/footer_instagram_gray80.svg) center center / contain no-repeat;
+}
