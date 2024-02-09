@@ -1,9 +1,3 @@
-const fixButton = document.querySelector("button.details-list-add-list-fix-button");
-
-fixButton.addEventListener("click", (e) => {
-    alert("저장되었습니다.");
-});
-
 const delButton = document.querySelector("button.details-list-add-list-del-button");
 
 // fixButton.addEventListener("click", (e) => {
