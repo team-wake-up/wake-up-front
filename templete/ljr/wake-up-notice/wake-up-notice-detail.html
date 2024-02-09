@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wake-up! : 공지사항</title>
+        <link href="/templete/ljr/admin/images/favicon.png" rel="shortcut icon" />
+        <link rel="stylesheet" href="../../../staticfiles/css/ljr/wake-up-notice/wake-up-notice-detail.css" />
+    </head>
+    <body>
+        <together-together> </together-together>
+        <!-- 중간 메뉴 -->
+        <span id="rootContent">
+            <router-outlet></router-outlet>
+            <notice-content>
+                <div id="dkContent" class="cont-join">
+                    <div id="mArticle">
+                        <h2 id="dkBody" class="screen-out">공지사항</h2>
+                        <!-- 중간 메뉴 -->
+                        <div class="wrap-tap">
+                            <h3 class="screen-out">공지사항 메뉴</h3>
+                            <ul class="list-tap-tap-type4">
+                                <!-- 중메뉴 메뉴 카테고리 -->
+                                <li>
+                                    <a class="link-tap" href="#">
+                                        <span class="txt-tab">공지사항1</span>
+                                    </a>
+                                    <!-- <span class="screen-out">선택됨</span> -->
+                                    <!---->
+                                </li>
+
+                                <li>
+                                    <!-- <::before></::before> -->
+                                    <a class="#tap-1-link-tap" href="#">
+                                        <span class="txt-tab">공지사항2</span>
+                                    </a>
+                                    <!---->
+                                </li>
+                                <!--  -->
+                                <li>
+                                    <!-- <::before></::before> -->
+                                    <a class="#tap-2-link-tap" href="#">
+                                        <span class="txt-tab">공지사항3</span>
+                                    </a>
+                                    <!---->
+                                </li>
+                                <li>
+                                    <!-- <::before></::before> -->
+                                    <a class="#tap-3-link-tap" href="#">
+                                        <span class="txt-tab">공지사항4</span>
+                                    </a>
+                                    <!---->
+                                </li>
+                            </ul>
+                            <!---->
+                        </div>
+                        <router-outlet></router-outlet>
+                        <!-- 메인 공지사항 디테일 -->
+                        <ng-component>
+                            <div class="wrap-view-notice-view">
+                                <h4 class="screen-out">제안자안내 상세</h4>
+                                <!-- 공지 제목 -->
+                                <div class="view-head">
+                                    <span class="tit-official">제안자안내</span>
+                                    <strong class="subject-official">카카오같이가치 정기기부 파트너 모집 안내</strong>
+                                    <span class="date-official">2024.01.29</span>
+                                </div>
+                                <!-- 공지 내용 -->
+                                <div class="view-body">
+                                    <p>
+                                        <img
+                                            src="https://mud-kage.kakaocdn.net/dn/8U08N/btsEhTV2fvF/4xAwEnxl2MkuIksfAoj16K/img.jpg"
+                                            id="notice-img"
+                                        /><br />
+                                    </p>
+                                    <!-- 게시글을 작성할때 기본적으로  -->
+                                    <p style="line-height: 1.5">
+                                        <span style="font-size: 16px"
+                                            >Wake-up은 더 나은 사회를 만들고자 행동하는 제안자님을 응원하고, 기부에 적극
+                                            동참해 주시는 기부자님에게 더욱 다양한 프로젝트를 알리고자 꾸준히 고민하고
+                                            있습니다. 동물 영역 모금의 신뢰성 및 공익성을 보장하고, 다양한 동물권 보장을
+                                            위한 모금 활성화를 위하여 아래와 같이 지원 내용을 재정비하였으니 참고
+                                            부탁드립니다.</span
+                                        >
+                                    </p>
+                                    <p style="line-height: 1.5">
+                                        <span style="font-size: 16px">감사합니다.</span>
+                                    </p>
+                                </div>
+                                <!---->
+                                <div class="view-foot">
+                                    <strong class="name-writer">by. 관리자❤️❤️</strong>
+                                    <div class="add-email">
+                                        <span class="add-email-info"
+                                            >이메일을 등록 하시면<br />중요한 이벤트 및 혜택을 알려드려요.</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-component>
+                    </div>
+                </div>
+            </notice-content>
+        </span>
+        <hr class="hide" />
+    </body>
+</html>
