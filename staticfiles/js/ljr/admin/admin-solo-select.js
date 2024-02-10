@@ -21,3 +21,11 @@ badgeButton.addEventListener("mouseover", (e) => {
 badgeButton.addEventListener("mouseout", (e) => {
     e.target.style.background = "#1d1d1e";
 });
+
+const fixButton = document.querySelector("button.details-list-add-list-fix-button");
+
+fixButton.addEventListener("click", (e) => {
+    alert("저장되었습니다.");
+});
+
+const delButton = document.querySelector("button.details-list-add-list-del-button");

@@ -60,12 +60,13 @@ badgeButton.addEventListener("click", (e) => {
     });
 });
 
-const delButton = document.querySelector(
-    "button.details-list-add-list-del-target"
-);
+const delButton = document.querySelector("button.details-list-add-list-del-target");
 
 badgeDiv.addEventListener("click", (e) => {
     if (e.target.classList.contains("details-list-add-list-del-target")) {
+        if (!confirm("정말로 삭제하시겠습니까?")) {
+            return false;
+        }
         e.target.closest("li").remove();
     }
 });

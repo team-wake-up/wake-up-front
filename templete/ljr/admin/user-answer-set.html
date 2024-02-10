@@ -7,11 +7,11 @@
         <link href="../images/favicon.png" style="width: 20px;" rel="shortcut icon" />
         <link href="images/favicon.png" rel="shortcut icon" />
         <link
-            href="../../../staticfiles/css/ljr/admin/admin-notice-select.css"
+            href="../../../staticfiles/css/ljr/admin/admin-answer-set.css"
             rel="stylesheet"
         />
 
-        <title>관리자페이지 : 공지사항 관리 </title>
+        <title>관리자페이지 : 문의 관리 </title>
     </head>
     <body class="body-full">
         <div class="all-full-div">
@@ -218,7 +218,7 @@
                                         <h1
                                             class="admin-content-post-header-top-title"
                                         >
-                                        공지사항 관리
+                                        문의 관리
                                         </h1>
                                         <div
                                             class="admin-content-post-header-middle-menu-div"
@@ -330,61 +330,58 @@
 
                                 <div class="content-list">
                                     <div class="details-list">
-                                            <div class="list-title">제목</div>
-                                            <div class="list-admin">등록자</div>
-                                                                                    
-                                            
-                                            
-                                            <div class="list-range">공지 범위</div>
-                                            <div class="list-week-registrationt">등록 날짜</div>
-                                            <div class="list-fix">수정</div>
+                                            <div class="list-title">문의 제목</div>
+                                            <div class="list-admin">문의자</div>
+                                            <div class="list-category">문의 카테고리</div>                                                                                                   
+                                            <div class="list-range">공개 범위</div>
+                                            <div class="list-date">문의 등록 날짜</div>
+                                            <div class="list-answer">답변 여부</div>
                                             <div class="list-del">삭제</div>
                                     </div>
                                     <!-- 목록 추가 --> 
-                                    
                                     <div class="details-list-add-list">
-                                        
+
+                                        <!-- 예시문의 -->
                                         <li class="details-list-add-list-content-all">
-                                            <!-- 공지 제목 -->
-                                            <div class="detalis-list-add-list-title">
-                                                <label class="detalis-list-add-list-title-label">
-                                                <input type="text" class ="detalis-list-add-list-title-text" placeholder="제목1" maxlength="13">
-                                                </label>
-                                                                                    
+                                            <!-- 제목 -->
+                                            <button class="user-title">
+                                                <div class="user-title-div">
+                                                    <span class="user-name-title">아니 진짜 제가 증말 매일 했는데 어제 하루 빠진거라니깐요?</span>
+                                                </div>
+                                            </button>
+                                            <!-- 문의자 -->
+                                            <div class="user-name">
+                                                <div class="user-name-div">
+                                                    <span class="user-name-span">푸바오</span>
+                                                </div>
                                             </div>
-                                            <!-- 등록자 -->
-                                            <div class="details-list-add-list-admin">
-                                                <label class="details-list-add-list-admin-label">
-                                                    
-                                                    <input type="text" class="details-list-add-list-admin-text" placeholder="" maxlength="5" value="관리자">
-                                                </label> 
-                                                    
+                                            <!-- 문의 카테고리 -->
+                                            <div class="user-category">
+                                                <div class="user-category-div">
+                                                    <span class="user-category-span">기타사항</span>
+                                                </div>
                                             </div>
-                                            
-                                            
-                                            <!-- 공지 범위 -->
-                                            <div class="details-list-add-list-range">
-                                                <label class="details-list-add-list-range-label">
-                                                    <input type="text" class="details-list-add-list-range-text" value="전체 공지">
-                                                </label>
+                                            <!-- 공개여부 -->
+                                            <div class="user-range">
+                                                <div class="user-ragne-div">
+                                                    <span class="user-ragne-span">전체 공개</span>
+                                                </div>
                                             </div>
-                                            <!-- 등록 날짜 -->
-                                            <div class="details-list-add-list-registrationt">
-                                                <label class="details-list-add-list-registrationt-label">
-                                                    <input type="text" class="details-list-add-list-registrationt-text-year" placeholder="OOOO">년
-                                                    <input type="text" class="details-list-add-list-registrationt-text-month" placeholder="OO">월
-                                                    <input type="text" class="details-list-add-list-registrationt-text-day" placeholder="OO">일
-                                                </label>
-                                                
+                                            <!-- 문의 등록 날짜  -->
+                                            <div class="user-date">
+                                                <div class="user-date-div">
+                                                    <span class="user-date-span">2019.04.03</span>
+                                                </div>
                                             </div>
-                                            <!-- 수정 -->
-                                            <div class="details-list-add-list-fix">
-                                                <label class="details-list-add-list-fix-label">
-                                                    <button type="button" class="details-list-add-list-fix-button">
-                                                        <!-- 버튼누르면 수정을 위해 작성페이지로 이동 -->
-                                                        <a href="#">수정</a>
-                                                    </button>
-                                                </label>
+                                            <!--답변 여부 -->
+                                            <div class="user-answer">
+                                                <div class="user-answer-div">
+                                                    <select class="user-answer-select">
+                                                        <option>대기</option>
+                                                        <option>보류</option>
+                                                        <option>완료</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <!-- 삭제 -->
                                             <div class="details-list-add-list-del">
@@ -394,46 +391,45 @@
                                             </div>
                                         </li>
                                         <li class="details-list-add-list-content-all">
-                                            <!-- 공지 제목 -->
-                                            <div class="detalis-list-add-list-title">
-                                                <label class="detalis-list-add-list-title-label">
-                                                <input type="text" class ="detalis-list-add-list-title-text" placeholder="제목2" maxlength="13">
-                                                </label>
-                                                                                    
+                                            <!-- 제목 -->
+                                            <button class="user-title">
+                                                <div class="user-title-div">
+                                                    <span class="user-name-title">하루 잤는데 이틀이 지났어요</span>
+                                                </div>
+                                            </button>
+                                            <!-- 문의자 -->
+                                            <div class="user-name">
+                                                <div class="user-name-div">
+                                                    <span class="user-name-span">김정륜</span>
+                                                </div>
                                             </div>
-                                            <!-- 등록자 -->
-                                            <div class="details-list-add-list-admin">
-                                                <label class="details-list-add-list-admin-label">
-                                                    
-                                                    <input type="text" class="details-list-add-list-admin-text" placeholder="" maxlength="5" value="관리자">
-                                                </label> 
-                                                    
+                                            <!-- 문의 카테고리 -->
+                                            <div class="user-category">
+                                                <div class="user-category-div">
+                                                    <span class="user-category-span">버그</span>
+                                                </div>
                                             </div>
-                                            
-                                            
-                                            <!-- 공지 범위 -->
-                                            <div class="details-list-add-list-range">
-                                                <label class="details-list-add-list-range-label">
-                                                    <input type="text" class="details-list-add-list-range-text" value="전체 공지">
-                                                </label>
+                                            <!-- 공개여부 -->
+                                            <div class="user-range">
+                                                <div class="user-ragne-div">
+                                                    <span class="user-ragne-span">전체 공개</span>
+                                                </div>
                                             </div>
-                                            <!-- 등록 날짜 -->
-                                            <div class="details-list-add-list-registrationt">
-                                                <label class="details-list-add-list-registrationt-label">
-                                                    <input type="text" class="details-list-add-list-registrationt-text-year" placeholder="OOOO">년
-                                                    <input type="text" class="details-list-add-list-registrationt-text-month" placeholder="OO">월
-                                                    <input type="text" class="details-list-add-list-registrationt-text-day" placeholder="OO">일
-                                                </label>
-                                                
+                                            <!-- 문의 등록 날짜  -->
+                                            <div class="user-date">
+                                                <div class="user-date-div">
+                                                    <span class="user-date-span">2019.04.03</span>
+                                                </div>
                                             </div>
-                                            <!-- 수정 -->
-                                            <div class="details-list-add-list-fix">
-                                                <label class="details-list-add-list-fix-label">
-                                                    <button type="button" class="details-list-add-list-fix-button">
-                                                        <!-- 버튼누르면 수정을 위해 작성페이지로 이동 -->
-                                                        <a href="#">수정</a>
-                                                    </button>
-                                                </label>
+                                            <!--답변 여부 -->
+                                            <div class="user-answer">
+                                                <div class="user-answer-div">
+                                                    <select class="user-answer-select">
+                                                        <option>대기</option>
+                                                        <option>보류</option>
+                                                        <option>완료</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <!-- 삭제 -->
                                             <div class="details-list-add-list-del">
@@ -442,13 +438,56 @@
                                                 </label>
                                             </div>
                                         </li>
-                                        
-                                    </div>
-                                    
-                                     <!-- 게시글이 없을 경우 뜨는 이미지 -->
-
-
-                                <!-- 목록 시작// 목록 타이틀 -->
+                                        <li class="details-list-add-list-content-all">
+                                            <!-- 제목 -->
+                                            <button class="user-title">
+                                                <div class="user-title-div">
+                                                    <span class="user-name-title">실수로 하루 깜박했는데 기간 하루만 늘려주세요.</span>
+                                                </div>
+                                            </button>
+                                            <!-- 문의자 -->
+                                            <div class="user-name">
+                                                <div class="user-name-div">
+                                                    <span class="user-name-span">이훈종</span>
+                                                </div>
+                                            </div>
+                                            <!-- 문의 카테고리 -->
+                                            <div class="user-category">
+                                                <div class="user-category-div">
+                                                    <span class="user-category-span">기타사항</span>
+                                                </div>
+                                            </div>
+                                            <!-- 공개여부 -->
+                                            <div class="user-range">
+                                                <div class="user-ragne-div">
+                                                    <span class="user-ragne-span">전체 공개</span>
+                                                </div>
+                                            </div>
+                                            <!-- 문의 등록 날짜  -->
+                                            <div class="user-date">
+                                                <div class="user-date-div">
+                                                    <span class="user-date-span">2019.11.03</span>
+                                                </div>
+                                            </div>
+                                            <!--답변 여부 -->
+                                            <div class="user-answer">
+                                                <div class="user-answer-div">
+                                                    <select class="user-answer-select">
+                                                        <option>대기</option>
+                                                        <option>보류</option>
+                                                        <option>완료</option>
+                                                    </select>
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- 삭제 -->
+                                            <div class="details-list-add-list-del">
+                                                <label class="details-list-add-list-del-label">
+                                                    <button type="submit" value="삭제" class="details-list-add-list-del-button" onclick="delOk()" >삭제</button>
+                                                </label>
+                                            </div>
+                                        </li>                                                                                                                    
+                                    </div>                                                                   
                                 </div>
                             </div>
                         </div>
@@ -456,5 +495,5 @@
                 </div>
         </div>
     </body>
-    <script src="../../../staticfiles/js/ljr/admin/admin-notice-select.js"></script>
+    <script src="../../../staticfiles/js/ljr/admin/admin-answer-select.js"></script>
 </html>
