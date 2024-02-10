@@ -7,11 +7,11 @@
         <link href="../images/favicon.png" style="width: 20px;" rel="shortcut icon" />
         <link href="images/favicon.png" rel="shortcut icon" />
         <link
-            href="../../../staticfiles/css/ljr/admin/admin-answer-set.css"
+            href="../../../staticfiles/css/ljr/admin/admin-user-set.css"
             rel="stylesheet"
         />
 
-        <title>관리자페이지 : 문의 관리 </title>
+        <title>관리자페이지 : 회원 관리 </title>
     </head>
     <body class="body-full">
         <div class="all-full-div">
@@ -218,7 +218,7 @@
                                         <h1
                                             class="admin-content-post-header-top-title"
                                         >
-                                        문의 관리
+                                        회원 관리
                                         </h1>
                                         <div
                                             class="admin-content-post-header-middle-menu-div"
@@ -287,15 +287,15 @@
                                                     <!-- </button> -->
                                                 </div>
                                                 <!-- 공개범위 전체 -->
-                                                <div class="scope-all-div">
+                                                <!-- <div class="scope-all-div">
                                                     <select>
-                                                        <option>출시일▼</option>
+                                                        <option>번호순▲</option>
                                                         <option>
-                                                            출시일▲
+                                                            번호순▼
                                                         </option>
-                                                        <option>이름순</option>
+                                                        <option>나이순</option>
                                                     </select>
-                                                </div>
+                                                </div> -->
 
                                                 <!-- 검색 -->
                                                 <div class="scope-search-div">
@@ -306,7 +306,7 @@
                                                             type="text"
                                                             class="scope-search-label-text"
                                                             maxlength="15"
-                                                            placeholder="제목으로 검색"
+                                                            placeholder="검색"
                                                         />
                                                         <button
                                                             class="scope-search-button-img"
@@ -330,59 +330,71 @@
 
                                 <div class="content-list">
                                     <div class="details-list">
-                                            <div class="list-title">문의 제목</div>
-                                            <div class="list-admin">문의자</div>
-                                            <div class="list-category">문의 카테고리</div>                                                                                                   
-                                            <div class="list-range">공개 범위</div>
-                                            <div class="list-date">문의 등록 날짜</div>
-                                            <div class="list-answer">답변 여부</div>
+                                            <div class="list-number">번호</div>
+                                            <div class="list-id">아이디</div>
+                                            <div class="list-name">이름</div>
+                                            <div class="list-nickname">닉네임</div>                                                                                                   
+                                            <div class="list-phone">전화번호</div>
+                                            <div class="list-birth">생년월일</div>
+                                            <div class="list-gender">성별</div>
+                                            <div class="list-enter">가입날짜</div>
                                             <div class="list-del">삭제</div>
                                     </div>
                                     <!-- 목록 추가 --> 
                                     <div class="details-list-add-list">
 
-                                        <!-- 예시문의 -->
+                                        <!-- 예시 -->
                                         <li class="details-list-add-list-content-all">
-                                            <!-- 제목 -->
-                                            <button class="user-title">
-                                                <div class="user-title-div">
-                                                    <span class="user-name-title">아니 진짜 제가 증말 매일 했는데 어제 하루 빠진거라니깐요?</span>
+                                            <!-- 번호 -->
+                                            <div class="user-number">
+                                                <div class="user-number-div">
+                                                    <span>1</span>
                                                 </div>
-                                            </button>
-                                            <!-- 문의자 -->
+                                            </div>
+                                            <!-- 아이디 -->
+                                            <div class="user-id">
+                                                <div class="user-id-div">
+                                                    <span class="user-id-title">ryuni1</span>
+                                                </div>
+                                            </div>
+                                            <!-- 이름 -->
                                             <div class="user-name">
                                                 <div class="user-name-div">
-                                                    <span class="user-name-span">푸바오</span>
+                                                    <span class="user-name-span">이정륜</span>
                                                 </div>
                                             </div>
-                                            <!-- 문의 카테고리 -->
-                                            <div class="user-category">
-                                                <div class="user-category-div">
-                                                    <span class="user-category-span">기타사항</span>
+                                            <!-- 닉네임 -->
+                                            <div class="user-nickname">
+                                                <div class="user-nickname-div">
+                                                    <span class="user-nickname-span">루삥뽕</span>
                                                 </div>
                                             </div>
-                                            <!-- 공개여부 -->
-                                            <div class="user-range">
-                                                <div class="user-ragne-div">
-                                                    <span class="user-ragne-span">전체 공개</span>
+                                            <!-- 전화번호 -->
+                                            <div class="user-phone">
+                                                <div class="user-phone-div">
+                                                    <span class="user-phone-span-start">010</span>
+                                                    <span class="user-phone-span-mid">0000</span>
+                                                    <span class="user-phone-span-end">0000</span>
                                                 </div>
                                             </div>
-                                            <!-- 문의 등록 날짜  -->
-                                            <div class="user-date">
-                                                <div class="user-date-div">
-                                                    <span class="user-date-span">2019.04.03</span>
+                                            <!-- 생년월일  -->
+                                            <div class="user-birth">
+                                                <div class="user-birth-div">
+                                                    <span class="user-birth-span">2019.04.03</span>
                                                 </div>
                                             </div>
-                                            <!--답변 여부 -->
-                                            <div class="user-answer">
-                                                <div class="user-answer-div">
-                                                    <select class="user-answer-select">
-                                                        <option>대기</option>
-                                                        <option>보류</option>
-                                                        <option>완료</option>
-                                                    </select>
+                                            <!--성별 -->
+                                            <div class="user-gender">
+                                                <div class="user-gender-div">
+                                                    <span>여자</span>
                                                 </div>
                                             </div>
+                                            <!-- 가입 날짜 -->
+                                            <div class="user-enter">
+                                                <div class="user-enter-div">
+                                                    <span class="user-enter-span">2019.04.03</span>
+                                                </div>
+                                            </div>                  
                                             <!-- 삭제 -->
                                             <div class="details-list-add-list-del">
                                                 <label class="details-list-add-list-del-label">
@@ -390,47 +402,59 @@
                                                 </label>
                                             </div>
                                         </li>
+                                         
+                                        <!-- 예시2 -->
                                         <li class="details-list-add-list-content-all">
-                                            <!-- 제목 -->
-                                            <button class="user-title">
-                                                <div class="user-title-div">
-                                                    <span class="user-name-title">하루 잤는데 이틀이 지났어요</span>
+                                            <!-- 번호 -->
+                                            <div class="user-number">
+                                                <div class="user-number-div">
+                                                    <span>1</span>
                                                 </div>
-                                            </button>
-                                            <!-- 문의자 -->
+                                            </div>
+                                            <!-- 아이디 -->
+                                            <div class="user-id">
+                                                <div class="user-id-div">
+                                                    <span class="user-id-title">ryuni1</span>
+                                                </div>
+                                            </div>
+                                            <!-- 이름 -->
                                             <div class="user-name">
                                                 <div class="user-name-div">
-                                                    <span class="user-name-span">김정륜</span>
+                                                    <span class="user-name-span">이정륜2</span>
                                                 </div>
                                             </div>
-                                            <!-- 문의 카테고리 -->
-                                            <div class="user-category">
-                                                <div class="user-category-div">
-                                                    <span class="user-category-span">버그</span>
+                                            <!-- 닉네임 -->
+                                            <div class="user-nickname">
+                                                <div class="user-nickname-div">
+                                                    <span class="user-nickname-span">루삥뽕</span>
                                                 </div>
                                             </div>
-                                            <!-- 공개여부 -->
-                                            <div class="user-range">
-                                                <div class="user-ragne-div">
-                                                    <span class="user-ragne-span">전체 공개</span>
+                                            <!-- 전화번호 -->
+                                            <div class="user-phone">
+                                                <div class="user-phone-div">
+                                                    <span class="user-phone-span-start">010</span>
+                                                    <span class="user-phone-span-mid">0000</span>
+                                                    <span class="user-phone-span-end">0000</span>
                                                 </div>
                                             </div>
-                                            <!-- 문의 등록 날짜  -->
-                                            <div class="user-date">
-                                                <div class="user-date-div">
-                                                    <span class="user-date-span">2019.04.03</span>
+                                            <!-- 생년월일  -->
+                                            <div class="user-birth">
+                                                <div class="user-birth-div">
+                                                    <span class="user-birth-span">2019.04.03</span>
                                                 </div>
                                             </div>
-                                            <!--답변 여부 -->
-                                            <div class="user-answer">
-                                                <div class="user-answer-div">
-                                                    <select class="user-answer-select">
-                                                        <option>대기</option>
-                                                        <option>보류</option>
-                                                        <option>완료</option>
-                                                    </select>
+                                            <!--성별 -->
+                                            <div class="user-gender">
+                                                <div class="user-gender-div">
+                                                    <span>여자</span>
                                                 </div>
                                             </div>
+                                            <!-- 가입 날짜 -->
+                                            <div class="user-enter">
+                                                <div class="user-enter-div">
+                                                    <span class="user-enter-span">2019.04.03</span>
+                                                </div>
+                                            </div>                  
                                             <!-- 삭제 -->
                                             <div class="details-list-add-list-del">
                                                 <label class="details-list-add-list-del-label">
@@ -438,55 +462,65 @@
                                                 </label>
                                             </div>
                                         </li>
+                                        <!-- 예시3 -->
                                         <li class="details-list-add-list-content-all">
-                                            <!-- 제목 -->
-                                            <button class="user-title">
-                                                <div class="user-title-div">
-                                                    <span class="user-name-title">실수로 하루 깜박했는데 기간 하루만 늘려주세요.</span>
+                                            <!-- 번호 -->
+                                            <div class="user-number">
+                                                <div class="user-number-div">
+                                                    <span>1</span>
                                                 </div>
-                                            </button>
-                                            <!-- 문의자 -->
+                                            </div>
+                                            <!-- 아이디 -->
+                                            <div class="user-id">
+                                                <div class="user-id-div">
+                                                    <span class="user-id-title">ryuni1</span>
+                                                </div>
+                                            </div>
+                                            <!-- 이름 -->
                                             <div class="user-name">
                                                 <div class="user-name-div">
-                                                    <span class="user-name-span">이훈종</span>
+                                                    <span class="user-name-span">이정륜3</span>
                                                 </div>
                                             </div>
-                                            <!-- 문의 카테고리 -->
-                                            <div class="user-category">
-                                                <div class="user-category-div">
-                                                    <span class="user-category-span">기타사항</span>
+                                            <!-- 닉네임 -->
+                                            <div class="user-nickname">
+                                                <div class="user-nickname-div">
+                                                    <span class="user-nickname-span">루삥뽕</span>
                                                 </div>
                                             </div>
-                                            <!-- 공개여부 -->
-                                            <div class="user-range">
-                                                <div class="user-ragne-div">
-                                                    <span class="user-ragne-span">전체 공개</span>
+                                            <!-- 전화번호 -->
+                                            <div class="user-phone">
+                                                <div class="user-phone-div">
+                                                    <span class="user-phone-span-start">010</span>
+                                                    <span class="user-phone-span-mid">0000</span>
+                                                    <span class="user-phone-span-end">0000</span>
                                                 </div>
                                             </div>
-                                            <!-- 문의 등록 날짜  -->
-                                            <div class="user-date">
-                                                <div class="user-date-div">
-                                                    <span class="user-date-span">2019.11.03</span>
+                                            <!-- 생년월일  -->
+                                            <div class="user-birth">
+                                                <div class="user-birth-div">
+                                                    <span class="user-birth-span">2019.04.03</span>
                                                 </div>
                                             </div>
-                                            <!--답변 여부 -->
-                                            <div class="user-answer">
-                                                <div class="user-answer-div">
-                                                    <select class="user-answer-select">
-                                                        <option>대기</option>
-                                                        <option>보류</option>
-                                                        <option>완료</option>
-                                                    </select>
-                                                    
+                                            <!--성별 -->
+                                            <div class="user-gender">
+                                                <div class="user-gender-div">
+                                                    <span>여자</span>
                                                 </div>
                                             </div>
+                                            <!-- 가입 날짜 -->
+                                            <div class="user-enter">
+                                                <div class="user-enter-div">
+                                                    <span class="user-enter-span">2019.04.03</span>
+                                                </div>
+                                            </div>                  
                                             <!-- 삭제 -->
                                             <div class="details-list-add-list-del">
                                                 <label class="details-list-add-list-del-label">
                                                     <button type="submit" value="삭제" class="details-list-add-list-del-button" onclick="delOk()" >삭제</button>
                                                 </label>
                                             </div>
-                                        </li>                                                                                                                    
+                                        </li>
                                     </div>                                                                   
                                 </div>
                             </div>
@@ -495,5 +529,5 @@
                 </div>
         </div>
     </body>
-    <script src="../../../staticfiles/js/ljr/admin/admin-answer-set.js"></script>
+    <script src="../../../staticfiles/js/ljr/admin/admin-user-set.js"></script>
 </html>
