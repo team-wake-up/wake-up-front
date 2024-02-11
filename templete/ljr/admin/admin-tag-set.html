@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- 파비콘 및 타이틀 -->
         <link href="images/favicon.png" rel="shortcut icon" />
-        <link href="../../../staticfiles/css/ljr/admin/admin-badge-select.css" rel="stylesheet" />
+        <link href="../../../staticfiles/css/ljr/admin/admin-tag-set.css" rel="stylesheet" />
         <link rel="stylesheet" href="../../../../staticfiles/css/ljr/admin/modal.css" />
-        <title>관리자페이지 : 뱃지샵 관리</title>
+        <title>관리자페이지 : 태그 관리</title>
     </head>
     <body class="body-full">
         <div class="all-full-div">
@@ -145,7 +145,7 @@
                                 <div class="admin-content-post-menu">
                                     <!-- 상단 타이틀 제목 -->
                                     <header class="admin-content-post-header-top">
-                                        <h1 class="admin-content-post-header-top-title">뱃지샵 관리</h1>
+                                        <h1 class="admin-content-post-header-top-title">태그 관리</h1>
                                         <div class="admin-content-post-header-middle-menu-div">
                                             <!-- <button aria-label="button" class ="category-fix">뱃지 편집</button> -->
                                             <button aria-label="button" class="write">작성</button>
@@ -154,32 +154,7 @@
 
                                     <!-- 게시완료, 임시보관 -->
                                     <div class="admin-content-post-header-middle">
-                                        <ul class="admin-content-post-header-middle-menu">
-                                            <!-- <li class = "completion-button-li">
-                                                <button class="completion-button" aria-label="tab button" type="button">
-                                                    <div class = "completion-button-div">
-                                                        <p class="completion-p">게시완료</p>
-                                                        <div class = "completion-num-div">
-                                                            <p class="completion-num-p">0</p>
-                                                        </div>
-                                                    </div>
-                                                </button>
-                                                <div class = "completion-button-underline"></div>
-                                            </li> -->
-                                            <!-- 임시보관 -->
-                                            <!-- <li class = "storage-button-li">
-                                                <button class = "storage-button" aria-label="tab button" type="button">
-                                                    <div class = "storage-button-div">
-                                                        <div class="storage-button-div-div">
-                                                            <p class="storage-p">임시보관</p>
-                                                            <div class="storage-count-div">
-                                                                <p class="storage-num-p">0</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </button>
-                                            </li> -->
-                                        </ul>
+                                        <ul class="admin-content-post-header-middle-menu"></ul>
                                     </div>
 
                                     <!-- 전체/ 카테고리 전체, 공개범위 전체, 최신순 -->
@@ -204,8 +179,8 @@
                                             <!-- 공개범위 전체 -->
                                             <div class="scope-all-div">
                                                 <select>
-                                                    <option>출시일▼</option>
-                                                    <option>출시일▲</option>
+                                                    <option>생성순▼</option>
+                                                    <option>생▲</option>
                                                     <option>이름순</option>
                                                 </select>
                                             </div>
@@ -221,34 +196,27 @@
                                     </div>
                                 </div>
 
-                                <!-- 원래 부모였던 div -->
-                                <!-- 목록 시작// 목록 타이틀 -->
+                                <!-- 태그 추가 -->
 
                                 <div class="content-list">
                                     <div class="details-list">
-                                        <div class="list-img">뱃지 이미지</div>
-                                        <div class="list-title">뱃지명</div>
-                                        <div class="list-price">뱃지 가격</div>
-                                        <div class="list-date">뱃지 설명</div>
-                                        <div class="list-del">삭제</div>
-                                    </div>
-
-                                    <!-- 목록 추가 -->
-                                    <div class="details-list-add-list"></div>
-                                </div>
-                                <!-- 게시글이 없을 경우 뜨는 이미지 -->
-                                <div class="admin-content-post-conetent">
-                                    <div id="event-div-hidden">
-                                        <img src="images/nonpost.png" class="nonpost-img" />
-                                        <p class="admin-content-post-conetent-nonpost-msg">등록된 뱃지가 없습니다.</p>
-                                        <p class="admin-content-post-conetent-firstpost-msg">뱃지를 추가하세요.</p>
-                                        <div class="admin-content-writepost-button-div">
-                                            <!-- <button aria-label="button" class="admin-content-writepost-button" type="button">
-                                                뱃지 등록하기
-                                            </button> -->
+                                        <div class="add-tag-div">
+                                            <h2>태그 추가</h2>
+                                            <div class="add-tag-input-div">
+                                                <input
+                                                    type="text"
+                                                    placeholder="추가할 태그를 입력하세요."
+                                                    class="tag-text"
+                                                />
+                                                <!-- <button class="add-tag-input-button">추가</button> -->
+                                            </div>
                                         </div>
                                     </div>
+
+                                    <!-- 태그 목록 추가 -->
+                                    <div class="details-list-add-list"></div>
                                 </div>
+                                <!--  -->
                             </div>
                         </div>
                     </div>
@@ -257,5 +225,5 @@
         </div>
     </body>
     <script src="../../../../staticfiles/js/ljr/modal.js"></script>
-    <script src="../../../staticfiles/js/ljr/admin/admin-badge.js"></script>
+    <script src="../../../staticfiles/js/ljr/admin/admin-tag-set.js"></script>
 </html>

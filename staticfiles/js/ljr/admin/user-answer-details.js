@@ -13,15 +13,14 @@ addButton.addEventListener("mouseout", (e) => {
 
 const textarea = document.querySelector("textarea");
 
+var count = 0;
 addButton.addEventListener("click", function () {
     const answerText = textarea.value;
-    let count = 0;
-
-    count++;
 
     if (textarea.value.length == 0) {
         alert("답변을 입력하세요.");
     } else {
+        count++;
         const addAnswer = document.querySelector("ul.admin-answer");
         const datetime = new Date(); // Get the current datetime
         const gap = timeForToday(datetime); // Calculate the time gap
@@ -58,7 +57,7 @@ addButton.addEventListener("click", function () {
                     <!-- 답글 내용 -->
                     <div class="admin-answer-list-comment-div">
                         <p class="admin-answer-list-comment-div-p">
-                            <span class="${count++}">${answerText}</span>
+                            <span class="${count}">${answerText}</span>
                         </p>
                     </div>
                     <div style="height: 8px"></div>
