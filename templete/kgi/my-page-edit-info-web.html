@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../staticfiles/css/kgi/my-page-edit-info-web.css" />
+        <title>설정 : Wake Up!</title>
+    </head>
+    <body>
+        
+        <div id="edit-info">
+            <header></header>
+            <span class="edit-content">
+                <!-- 휴대폰번호 모달 -->
+                <div class="phone-modal-wrap">
+                    <div class="phone-modal">
+                        <div class="phone-head">
+                            <strong class="screen-out">휴대폰 번호 변경</strong>
+                        </div>
+                        <div class="phone-body">
+                            <form class="body-form">
+                                <fieldset>
+                                    <legend class="screen-out">휴대폰 번호 변경 양식</legend>
+                                    <div class="wrap-phone">
+                                        <dl class="list-write">
+                                            <dt id="phone-dt">
+                                                Wake Up!과 연락 가능한
+                                                <br>
+                                                휴대폰 번호를 입력해주세요.
+                                                <br>
+                                                입력하신 휴대폰 번호로 발송된 인증번호를 입력 후 확인 버튼 클릭 시 휴대폰 번호가 즉시 변경됩니다.
+                                            </dt>
+                                            <dd id="phone-dd">
+                                                <div class="info-phone">
+                                                    <div class="phone-num-group1">
+                                                        <label for="phone-num1" class="screen-out">전화번호 앞자리</label>
+                                                        <input type="text" id="phone-num1" class="phone-num">
+                                                    </div>
+                                                    <span class="dash-among">
+                                                        <span class="inner-among"></span>
+                                                    </span>
+                                                    <div class="phone-num-group2">
+                                                        <label for="phone-num2" class="screen-out">전화번호 중간자리</label>
+                                                        <input type="text" id="phone-num2" class="phone-num">
+                                                    </div>
+                                                    <span class="dash-among">
+                                                        <span class="inner-among"></span>
+                                                    </span>
+                                                    <div class="phone-num-group3">
+                                                        <label for="phone-num3" class="screen-out">전화번호 뒷자리</label>
+                                                        <input type="text" id="phone-num3" class="phone-num">
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="certify-button">인증번호 받기</button>
+                                                <div class="check-num">
+                                                    <label class="txt-lab">인증번호 4자리 입력</label>
+                                                    <input type="text" class="certify-num">
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="check-button-wrap">
+                                        <button class="check-button">확인</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div class="phone-foot">
+                                <button type="button" class="close-button">
+                                    <span class="close-icon">닫기</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <!-- 휴대폰 모달끝 -->
+                <!-- 이메일 모달 -->
+                <div class="email-modal-wrap">
+                    <div class="email-modal">
+                        <div class="phone-head">
+                            <strong class="screen-out">이메일 변경</strong>
+                        </div>
+                        <div class="email-body">
+                            <form class="body-form">
+                                <fieldset>
+                                    <legend class="screen-out">이메일 변경 양식</legend>
+                                    <div class="wrap-mail">
+                                        <dl class="list-write">
+                                            <dt id="email-dt">
+                                                Wake Up!과 연락 가능한
+                                                <br>
+                                                이메일을 입력해주세요.
+                                                <br>
+                                                입력하신 이메일로 발송된 인증번호를 입력 후 확인 버튼 클릭 시 이메일 주소가 즉시 변경됩니다.
+                                            </dt>
+                                            <dd id="email-dd">
+                                                <div class="info-phone">
+                                                    <div class="check-num">
+                                                        <label class="txt-lab">이메일 입력</label>
+                                                        <input type="text" class="certify-mail">
+                                                    </div>
+                                                    
+                                                </div>
+                                                <button type="button" class="certify-button">인증번호 받기</button>
+                                                <div class="check-num">
+                                                    <label class="txt-lab">인증번호 4자리 입력</label>
+                                                    <input type="text" class="certify-mail">
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="check-button-wrap">
+                                        <button class="check-button">확인</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div class="email-foot">
+                                <button type="button" class="close-button">
+                                    <span class="close-icon">닫기</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <!-- 이메일 모달끝 -->
+                <div class="content-declare">
+                    <div class="article">
+                        <div class="profile-wrap">
+                            <div class="profile-thumb">
+                                <div class="file-upload">
+                                    <img
+                                        src="https://mud-kage.kakaocdn.net/dn/ddtJGv/btsEyQw1Ldo/GFuMlGkLQ6eRefIoBSCf70/img.jpg?convert=c360x360"
+                                        class="thumb-img"
+                                    />
+                                    <label for="attach" class="lab-photo">
+                                        <span class="photo-icon">사진첨부</span>
+                                    </label>
+                                    
+                                </div>
+                                <input id="attach" type="file" class="profile-input" />
+                            </div>
+                            <div class="content-box">
+                                <dl class="write-list">
+                                    <dt>닉네임</dt>
+                                    <dd>
+                                        <div class="name-wrap">
+                                            <label for="sub-title" class="screen-out">닉네임</label>
+                                            <input type="text" id="sub-title" class="input-name" maxlength="20"/>
+                                        </div>
+                                        <div class="info-append">
+                                            <span class="screen-out">입력된 글자 수:</span>
+                                            <span class="txt-num">0</span>
+                                            /20
+                                        </div>
+                                    </dd>
+                                    <div class="dash-line"></div>
+                                    <section id="profile-edit">
+                                        <dt>연락처</dt>
+                                        <dd class="phone-item">
+                                            <div class="phone-num-wrap">01046342519</div>
+                                            <button type="button" class="phone-modify-btn">변경</button>
+                                        </dd>
+                                        <dt>이메일</dt>
+                                        <dd class="phone-item">
+                                            <div class="phone-num-wrap">dev.gyuil@gmail.com</div>
+                                            <button type="button" class="email-modify-btn">변경</button>
+                                        </dd>
+                                        <dt>나이</dt>
+                                        <dd>
+                                            <div class="select-wrap">
+                                                <div class="select-box">
+                                                    <div class="age-select">
+                                                        <label for="age-option" class="screen-out">나이 선택</label>
+                                                        <span class="age-select-option">2000년생</span>
+                                                        <select id="age-option" class="select-age-wrap" onchange="ageValue()">
+                                                                <option value="15">2010년생</option>
+                                                                <option value="16">2009년생</option>
+                                                                <option value="17">2008년생</option>
+                                                                <option value="18">2007년생</option>
+                                                                <option value="19">2006년생</option>
+                                                                <option value="20">2005년생</option>
+                                                                <option value="21">2004년생</option>
+                                                                <option value="22">2003년생</option>
+                                                                <option value="23">2002년생</option>
+                                                                <option value="24">2001년생</option>
+                                                                <option value="25">2000년생</option>
+                                                                <option value="26">1999년생</option>
+                                                                <option value="27">1998년생</option>
+                                                                <option value="28">1997년생</option>
+                                                                <option value="29">1996년생</option>
+                                                                <option value="30">1995년생</option>
+                                                                <option value="31">1994년생</option>
+                                                        </select>
+                                                        <span class="box-arrow">
+                                                            <span class="arrow-icon"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dt>성별</dt>
+                                        <dd>
+                                            <div class="gender-wrap">
+                                                <span class="choice-btn">
+                                                    <input type="radio" class="gender-check">
+                                                    <label class="gender-color">남자</label>
+                                                </span>
+                                                <span class="choice-btn">
+                                                    <input type="radio" class="gender-check">
+                                                    <label class="gender-color">여자</label>
+                                                </span>
+                                                <span class="choice-btn">
+                                                    <input type="radio" class="gender-check">
+                                                    <label class="gender-check-color gender-color">선택안함</label>
+                                                </span>
+                                            </div>
+                                        </dd>
+                                        <dt>
+                                            지역
+                                        </dt>
+                                        <dd>
+                                            <div class="select-wrap position-test">
+                                                <div class="select-box">
+                                                    <div class="region-select">
+                                                        <label for="region-option" class="screen-out">시, 도 지역선택</label>
+                                                        <span id="state-region" class="region-select-option">시, 도 선택</span>
+                                                        <select id="region-select1" onchange="RegionValue()" class="select-region-wrap">
+                                                                <option>-선택-</option>
+                                                                <option value="1">서울</option>
+                                                                <option value="2">부산</option>
+                                                                <option value="3">대구</option>
+                                                                <option value="4">인천</option>
+                                                                <option value="5">광주</option>
+                                                                <option value="6">대전</option>
+                                                                <option value="7">울산</option>
+                                                                <option value="8">강원</option>
+                                                                <option value="9">경기</option>
+                                                                <option value="10">경남</option>
+                                                                <option value="11">경북</option>
+                                                                <option value="12">전남</option>
+                                                                <option value="13">전북</option>
+                                                                <option value="14">제주</option>
+                                                                <option value="15">충남</option>
+                                                                <option value="16">충북</option>
+                                                                <option value='17'>세종</option>
+                                                                <option value="99"> 해외 </option>
+                                                        </select>
+                                                        <span class="box-arrow">
+                                                            <span class="arrow-icon"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="select-box">
+                                                    <div class="region-select">
+                                                        <label for="region-option" class="screen-out">시,군,구 지역선택</label>
+                                                        <span id="county-region" class="region-select-option">시, 군, 구, 지역선택</span>
+                                                        <select id="region-select2" class="select-region-wrap" onchange="CountyValue()">
+                                                            <option>시, 군, 구 선택</option>
+                                                        </select>
+                                                        <span class="box-arrow">
+                                                            <span class="arrow-icon"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                        </dd>
+                                        
+                                        </div>
+                                    </section>
+                                </dl>
+                            </div>
+                            <div class="dash-line"></div>
+                            <div class="save-button-wrap">
+                                <button type="button" class="save-button">저장하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </body>
+    <script src="../../staticfiles/js/kgi/my-page-edit-info-web.js"></script>
+</html>
