@@ -524,8 +524,9 @@
                         <h3 class="cheer-comment-title">모두의행동을 응원해 주세요.</h3>
                         <div class="comment-user-screen">
                             <strong class="WfZZU">댓글 쓰기</strong>
-                            <div tabindex="0" id="commentpage" class="user-screen-box">
-                                <div class="user-screen-style">
+                            <!-- 댓글 최소화 상태 -->
+                            <div tabindex="0" id="mouse" class="user-screen-box">
+                                <div id="review-nomal" class="user-screen-style">
                                     <div class="user-screen-field-box">
                                         <div class="user-screen-container">
                                             <div class="user-screen-photo">
@@ -535,7 +536,19 @@
                                         </div>
                                         <textarea name="textForm" placeholder="따뜻한 댓글을 남겨주세요" class="user-screen-on"></textarea>
                                     </div>
-                                    <div id="pageopen" class="user-screen-util">
+                                </div>
+                                <!-- 댓글창 클릭시 -->
+                                <div id="review-click" class="secret-user-screen-style">
+                                    <div class="user-screen-field-box">
+                                        <div class="secret-user-screen-container">
+                                            <div class="user-screen-photo">
+                                                <img src="https://mk.kakaocdn.net/dn/together/images/profile05.png" alt="" class="user-screen-img" />
+                                            </div>
+                                            <strong class="user-screen-writer">지원이</strong>
+                                        </div>
+                                        <textarea placeholder="따뜻한 댓글을 남겨주세요" class="secret-user-screen-on"></textarea>
+                                    </div>
+                                    <div class="user-screen-util">
                                         <button type="button" color="transparent" class="screen-util-button">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" width="20" height="20" opacity="1" class="util-button-path">
                                                 <g fill="#999" fill-rule="evenodd">
@@ -546,8 +559,8 @@
                                                     <path d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0zm0 3C10.611 3 3 10.611 3 20s7.611 17 17 17 17-7.611 17-17S29.389 3 20 3z" fill-rule="nonzero"></path>
                                                 </g>
                                             </svg>
-                                            <span size="13" color="#999" class="emoticon-text"
-                                                >이모티콘
+                                            <span size="13" color="#999" class="emoticon-text">
+                                                이모티콘
                                                 <span class="WfZZU">입력하기</span>
                                             </span>
                                         </button>

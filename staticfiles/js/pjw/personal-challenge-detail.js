@@ -74,3 +74,35 @@ reviewclose.forEach((review) => {
         });
     });
 });
+
+// 좋아요 버튼 (자랑하기)
+
+// 좋아요 버튼 (댓글)
+
+// 좋아요 (자랑하기 사진)
+
+// 댓글 누르면 댓글창 열리기
+const input = document.querySelector("div#mouse");
+const nomal = document.querySelector("div#review-nomal");
+const click = document.querySelector("div#review-click");
+const box = document.querySelector("textarea.secret-user-screen-on");
+
+input.addEventListener("click", () => {
+    console.log("들어옴");
+    nomal.style.display = "none";
+    click.style.display = "flex";
+});
+
+box.addEventListener("blur", () => {
+    console.log("들어옴");
+    nomal.style.display = "flex";
+    click.style.display = "none";
+});
+
+// 댓글 적으면 글자수 카운팅
+
+// 자랑하기 사진 옆 도시락 열기 (공유/신고)
+
+// 댓글 도시락 열기 (신고)
+
+//

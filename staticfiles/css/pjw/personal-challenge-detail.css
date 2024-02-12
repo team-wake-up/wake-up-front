@@ -1282,8 +1282,8 @@ menu, ol, ul {
 }
 
 .user-screen-util {
-    display: none;
     height: 50px;
+    display: flex;
     align-items: center;
     box-sizing: border-box;
     margin-top: 14px;
@@ -1292,6 +1292,23 @@ menu, ol, ul {
     position: relative;
     border-top: 1px solid rgb(238, 238, 238);
     padding: 0px 18px 0px 0px;
+}
+
+.secret-user-screen-on {
+    min-height: 80px;
+    padding-top: 0px;
+    font-size: 15px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    padding: 15px 20px 0px;
+    line-height: 1.6;
+    letter-spacing: -0.3px;
+    color: rgb(68, 68, 68);
+    background: transparent;
+    resize: none;
+    outline: none;
 }
 
 .user-screen-on {
@@ -1341,6 +1358,14 @@ menu, ol, ul {
     mask-size: 100% 100%;
 }
 
+.secret-user-screen-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: -3px;
+    padding: 13px 20px 15px;
+}
+
 .user-screen-container {
     display: none;
     margin-bottom: -3px;
@@ -1353,6 +1378,17 @@ menu, ol, ul {
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+}
+
+.secret-user-screen-style {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid rgb(201, 201, 201);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+    min-height: 100px;
 }
 
 .user-screen-style {
