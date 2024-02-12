@@ -755,13 +755,6 @@ admin-profile-button-img*/
 
 /* 태그  */
 
-.admin-menu-list-tag{
-    background-color:#fce4ec;
-}
-
-.admin-menu-list-tag:hover{
-    /* background-color: #fce4ec; */
-}
 
 .admin-menu-list-badge-img{
     vertical-align: middle;
@@ -790,7 +783,7 @@ admin-profile-button-img*/
     height: 40px;
     display: flex;
     margin-bottom: 8px;
-    /* background-color: #f2f0fc; */
+    background-color: #fce4ec;
 }
 .admin-menu-list-tag-a-tag{
     text-align: -webkit-match-parent;
@@ -1650,8 +1643,9 @@ div.cancel {
 p{
     display: flex;
     justify-content: space-between;
-    padding-left: 9px;
+    padding-left: 13px;
     padding-right: 20px;
+    padding-bottom: 12px;
     
     
 }
