@@ -305,16 +305,6 @@ img {
     background-size: 215px 160px;
 }
 
-/* @media only all and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px),
-    only all and (min-device-pixel-ratio: 1.5) and (min-width: 768px),
-    only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px),
-    only screen and (min-resolution: 1.5dppx) and (min-width: 768px) {
-    .group-profile {
-        background: url('t1.kakaocdn.net/together_image/bg_mypage_rtn.png') 98% 18px no-repeat;
-        background-size: 215px 160px;
-    }
-} */
-
 .group-profile .area-name {
     display: inline-block;
     max-width: 550px;
