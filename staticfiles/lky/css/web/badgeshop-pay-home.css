@@ -769,6 +769,7 @@ var {
 
 .shoporder-detail .wrap-paybtn {
     height: 62px;
+    text-decoration: none;
 }
 
 .btn-pay {
