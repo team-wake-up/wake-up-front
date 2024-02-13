@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, viewport-fit=cover" />
         <title>뱃지 구매</title>
         <link rel="shortcut icon" href="/templete/lky/images/favicon_wake_up.png" type="image/x-icon" />
-        <link rel="stylesheet" href="/staticfiles/lky/css/web/badgeshop-pay-fail.css" />
+        <link rel="stylesheet" href="/staticfiles/css/lky/web/badgeshop-pay-home.css" />
     </head>
     <body class="shopping-new">
         <app-root>
@@ -19,10 +19,10 @@
                                 <h2 class="screen-out">구매 상세</h2>
                             </app-pw-store-order>
                             <div class="shoporder-detail">
-                                <strong class="tit-order">결제 실패 </strong>
+                                <strong class="tit-order">구매 하기 </strong>
                                 <div id="shopper" class="bundle-orderdata on">
                                     <div class="info-shoporder">
-                                        <span class="tit-shoporder-failed"
+                                        <span class="tit-shoporder"
                                             >구매자 정보
                                             <span class="txt-g">(kakao 계정 제공)</span>
                                         </span>
@@ -79,8 +79,8 @@
                                 </div>
                                 <div class="bundle-orderdata on">
                                     <div class="info-shoporder">
-                                        <span class="tit-shoporder-failed"
-                                            >구매 뱃지 정보
+                                        <span class="tit-shoporder"
+                                            >구매뱃지 정보
                                             <span class="txt-g">총 1개</span>
                                         </span>
                                         <!-- 펼치기 버튼 비활성화 -->
@@ -139,7 +139,7 @@
                                 </div>
                                 <div id="pay-amount" class="bundle-orderdata type-payinfo type-payorder">
                                     <div class="info-shoporder">
-                                        <span class="tit-shoporder-failed">결제 실패 정보</span>
+                                        <span class="tit-shoporder">결제정보</span>
                                     </div>
                                     <app-wiew-order-pay-amount>
                                         <div class="desc-shoporder">
@@ -148,22 +148,22 @@
                                                 <div class="origin-receipt">
                                                     <ul class="list-receipt">
                                                         <li>
-                                                            <span class="tit-current-point"> 현재 point </span>
-                                                            <span class="current-point">???Point</span>
+                                                            <span class="tit-receipt"> 뱃지Point (1개) </span>
+                                                            <span class="desc-receipt">???Point</span>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="total-receipt">
-                                                <span class="tit-scarce-point">부족한 Point</span>
+                                                <span class="tit-charge">최종 결제 Point</span>
                                                 <span class="desc-charge">
-                                                    <span class="scarce-point">???Point</span>
+                                                    <span class="price-change">???Point</span>
                                                 </span>
                                             </div>
                                         </div>
                                     </app-wiew-order-pay-amount>
                                 </div>
-                                <!-- <div id="agree-term" class="wrap-terms">
+                                <div id="agree-term" class="wrap-terms">
                                     <div class="group-tit">
                                         <div class="item-choice">
                                             <input
@@ -189,6 +189,7 @@
                                         <div class="item-choice">
                                             <input type="checkbox" class="inp-check" id="Widerrufsrecht" />
                                             <label for="Widerrufsrecht" class="lab-check">
+                                                <!-- 수정된 부분 -->
                                                 <span class="ico-shoporder ico-check"> </span>
                                                 <span class="txt-check"> 청약철회 불가 상품 동의</span>
                                             </label>
@@ -201,9 +202,9 @@
                                             상품들입니다.
                                         </p>
                                     </div>
-                                </div> -->
-                                <a class="return-home" href="">
-                                    <button type="button" class="btn-return-home">뱃지샵으로 돌아가기</button>
+                                </div>
+                                <a class="wrap-paybtn" href="">
+                                    <button type="button" class="btn-pay">???Point 결제하기</button>
                                 </a>
                             </div>
                         </article>
@@ -211,6 +212,6 @@
                 </div>
             </app-pw-wrapper>
         </app-root>
-        <script src="/staticfiles/lky/js/badgeshop-pay-fail.js"></script>
+        <script src="/staticfiles/js/lky/web/badgeshop-pay-home.js"></script>
     </body>
 </html>
