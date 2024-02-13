@@ -458,7 +458,7 @@ body{
     height: 100%;
     background-color: #fff;
     padding-bottom: 66px;
-    padding-bottom: 20px;
+    padding-bottom: 20px !important;
     margin-top: 0;
     position: relative;
     padding: 36px 40px 16px;
@@ -491,6 +491,7 @@ li{
     /* align-content: center; */
     justify-content: center;
     padding: 0%;
+    margin: 0;
 
 }
 
@@ -498,12 +499,15 @@ li{
     min-height: 50px;
 }
 .link-menu-mediabutton-photo-button{
-    justify-content: space-between;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     width: 200px;
+    height: 54px;
     background-color: transparent;
     border: 1px solid #ccc;
+    border-right: 0px;
 }
 
 .link-menu-mediabutton-photo-a-tag{
@@ -511,10 +515,12 @@ li{
     justify-content: center;
 }
 .link-menu-mediabutton-link-button{
-    justify-content: space-between;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     width: 200px;
+    height: 54px;
     background-color: transparent;
     border: 1px solid #ccc;
     
@@ -526,6 +532,10 @@ li{
 }
 
 /* 전체공개 및 취소/올리기 */
+/*  */
+.user-write-open-range-add-div{
+    display: none;
+}
 .user-write-open-range-select-div{
     display: inline;
 }
