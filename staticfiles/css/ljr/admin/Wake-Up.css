@@ -454,6 +454,9 @@ body{
     padding-top: 20px;
 }
 
+
+/* 글쓴이 작성란 div */
+/* 크기 조절 min-height */
 .section-write-disable-dropzone{
     height: 100%;
     background-color: #fff;
@@ -468,6 +471,7 @@ body{
     flex-direction: column;
     border-bottom: 1px solid #dedede;
     /* 클릭시 min-height 증가 */
+    /* min-height: ; */
   
 }
 
@@ -508,6 +512,7 @@ li{
     background-color: transparent;
     border: 1px solid #ccc;
     border-right: 0px;
+    cursor: pointer;;
 }
 
 .link-menu-mediabutton-photo-a-tag{
@@ -524,6 +529,7 @@ li{
     background-color: transparent;
     border: 1px solid #ccc;
     
+    cursor: pointer;;
 }
 
 .link-menu-mediabutton-link-a-tag{
@@ -533,8 +539,12 @@ li{
 
 /* 전체공개 및 취소/올리기 */
 /*  */
+
+/* 미디어 버튼 */
+/* 클릭하지 않았을때 display:none; */
 .user-write-open-range-add-div{
-    display: none;
+    margin-top: 16px;
+    /* display: none; */
 }
 .user-write-open-range-select-div{
     display: inline;
@@ -555,7 +565,7 @@ li{
 .user-write-add-cancel-button-div{
     float: right;
     display: flex;
-    
+    cursor: pointer;
    
 }
 
@@ -763,10 +773,23 @@ li{
     text-decoration: none;
     color: #777777;
 }
+.user-board-open-menu-layer-li-fix-button{
+    cursor: pointer;
+    
+}
 
 /* 삭제 */
 .user-board-open-menu-layer-class-del-button{
     text-decoration: none;
     color: #777777;
 }
+
+.profile-Area-pf-div-back{
+    cursor: pointer;
+}
+
+.user-board-open-menu-layer-li-del-button{
+    cursor: pointer;
+}
+
 

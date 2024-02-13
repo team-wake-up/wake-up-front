@@ -136,7 +136,7 @@
                                                         <!--  -->
                                                         <!-- 입력을 받을 시에 display:none -->
                                                         <label
-                                                            class="-editorPlaceholder-tit-label"
+                                                            class="editorPlaceholder-tit-label"
                                                             for="contents-write"
                                                             style="display: block"
                                                         >
@@ -147,7 +147,15 @@
                                                             class="editable-editable"
                                                             contenteditable="true"
                                                         >
-                                                            입력하는 div
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <p></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -200,6 +208,7 @@
                                                         </select>
                                                     </div>
                                                     <!-- 전체공개 및 취소 / 올리기 -->
+
                                                     <div class="user-write-add-cancel-button-div">
                                                         <div class="user-write-cancel-button-div">
                                                             <button class="user-write-cancel-button">취소</button>
@@ -249,61 +258,73 @@
                                                                     <ul class="user-board-open-menu-layer-ul">
                                                                         <!-- 전체공개 -->
                                                                         <li>
-                                                                            <img
-                                                                                src="images/earth.png"
-                                                                                style="width: 13px"
-                                                                            />
                                                                             <label>
+                                                                                <span>
+                                                                                    <img
+                                                                                        src="images/earth.png"
+                                                                                        style="width: 13px"
+                                                                                /></span>
+
                                                                                 <span
                                                                                     class="layer-menu-user-range-openall"
                                                                                 ></span>
-                                                                                전체공개</label
-                                                                            >
-                                                                            <span>
-                                                                                <input
-                                                                                    type="radio"
-                                                                                    id="layer-menu-user-range-allopen-id-input"
-                                                                                    name="permission"
-                                                                                    class="layer-menu-user-range-allopen-class-input"
-                                                                            /></span>
+                                                                                전체공개
+
+                                                                                <span>
+                                                                                    <input
+                                                                                        type="radio"
+                                                                                        id="layer-menu-user-range-allopen-id-input"
+                                                                                        name="permission"
+                                                                                        class="layer-menu-user-range-allopen-class-input"
+                                                                                /></span>
+                                                                            </label>
                                                                         </li>
                                                                         <!-- 나만보기 -->
                                                                         <li>
-                                                                            <img src="images/lock.png" width="13px" />
                                                                             <label>
+                                                                                <img
+                                                                                    src="images/lock.png"
+                                                                                    width="13px"
+                                                                                />
+
                                                                                 <span
                                                                                     class="layer-menu-user-range-me"
                                                                                 ></span
                                                                                 >나만보기
+
+                                                                                <span>
+                                                                                    <input
+                                                                                        type="radio"
+                                                                                        id="layer-menu-user-range-me-id-input"
+                                                                                        name="permission"
+                                                                                        class="layer-menu-user-range-me-class-input"
+                                                                                    />
+                                                                                </span>
                                                                             </label>
-                                                                            <span>
-                                                                                <input
-                                                                                    type="radio"
-                                                                                    id="layer-menu-user-range-me-id-input"
-                                                                                    name="permission"
-                                                                                    class="layer-menu-user-range-me-class-input"
-                                                                                />
-                                                                            </span>
                                                                         </li>
                                                                         <!-- 수정 -->
                                                                         <li
                                                                             class="user-board-open-menu-layer-li-fix-button"
                                                                         >
-                                                                            <a
-                                                                                href="#"
-                                                                                class="user-board-open-menu-layer-class-fix-button"
-                                                                                >수정</a
-                                                                            >
+                                                                            <label>
+                                                                                <a
+                                                                                    href="#"
+                                                                                    class="user-board-open-menu-layer-class-fix-button"
+                                                                                    >수정</a
+                                                                                >
+                                                                            </label>
                                                                         </li>
                                                                         <!-- 삭제 -->
                                                                         <li
                                                                             class="user-board-open-menu-layer-li-del-button"
                                                                         >
-                                                                            <a
-                                                                                href="#"
-                                                                                class="user-board-open-menu-layer-class-del-button"
-                                                                                >삭제</a
-                                                                            >
+                                                                            <label>
+                                                                                <a
+                                                                                    href="#"
+                                                                                    class="user-board-open-menu-layer-class-del-button"
+                                                                                    >삭제</a
+                                                                                >
+                                                                            </label>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
