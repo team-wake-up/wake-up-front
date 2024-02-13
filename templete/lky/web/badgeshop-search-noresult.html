@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, viewport-fit=cover" />
+        <title>검색 결과 없음</title>
+        <link rel="shortcut icon" href="/templete/lky/images/favicon_wake_up.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/staticfiles/css/lky/web/badgeshop-search-noresult.css" />
+    </head>
+    <body>
+        <section>
+            <div id="dkWrap" class="wakeup-top">
+                <haeder></haeder>
+                <span id="rootContent">
+                    <search>
+                        <div id="dkContent" class="cont-search">
+                            <div id="mArticle">
+                                <h2 id="dkBody" class="screen-out">검색 본문</h2>
+                                <div class="group-schkeyword">
+                                    <form novalidate action="" method="post" class="form-search">
+                                        <fieldset>
+                                            <legend class="screen-out">검색어 입력폼</legend>
+                                            <div class="box-search">
+                                                <input
+                                                    placeholder="검색어를 입력하세요"
+                                                    type="search"
+                                                    id="schkeyword"
+                                                    class="tf-keyword"
+                                                    autocomplete="off"
+                                                />
+                                            </div>
+                                            <button type="button" class="btn-delete">
+                                                <span class="ico-together ico-delete"></span>
+                                            </button>
+                                            <button type="button" class="btn-search">
+                                                <span class="ico-together ico-search">검색</span>
+                                            </button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="search-cont">
+                                    <div class="no-result">
+                                        <span class="txt-noresult">검색결과가 없습니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </search>
+                </span>
+                <hr class="hide" />
+                <footer></footer>
+            </div>
+        </section>
+        <script src="/staticfiles/js/lky/badgeshop-search-noresult.js"></script>
+    </body>
+</html>
