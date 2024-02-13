@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../staticfiles/css/kgi/my-page-wake-up-history-web.css" />
+        <title>내가 쓴 게시물</title>
+    </head>
+    <body>
+        <div id="history">
+            <span id="history-content">
+                <div class="his-content">
+                    <div class="his-article">
+                        <div class="mypage-content">
+                            <div class="group-profile">
+                                <h3 class="screen-out">내 프로필 정보</h3>
+                                <div class="area-name">
+                                    <div class="link-my-profile">
+                                        <strong class="txt-nick">기부천사</strong>
+                                        <div class="box-name">
+                                            <strong class="txt-name">김규일</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="area-thumb">
+                                    <a href="#" class="link-badge">
+                                        <span class="badge-thumb">
+                                            <img
+                                                class="img-thumb"
+                                                alt="카카오같이가치에 오신 것을 환영합니다! 세상의 변화를 만드는 활동에 함께해요."
+                                                src="https://mud-kage.kakaocdn.net/dn/cdS2zq/btqcKJyBiPS/SDkrVVYcKkxHXkcD8l68i0/img.png"
+                                            />
+                                        </span>
+                                    </a>
+                                    <a href="#" class="link-thumb">
+                                        <span class="profile-thumb">
+                                            <img
+                                                src="https://t1.kakaocdn.net/together_image/common/avatar/avatar02.png"
+                                                alt="프로필 사진"
+                                                class="img-thumb"
+                                            />
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="his-wrap">
+                                <h3 class="his-tit">게시글 내역</h3>
+                                <div class="select-his-wrap">
+                                    <div class="select-his">
+                                        <div class="inner-box">
+                                            <div class="opt-box">
+                                                <label for="Period" class="screen-out">기간</label>
+                                                <select id="Period" class="period-select" onchange="period()">
+                                                    <option value="99">전체</option>
+                                                    <option value="2024">2024</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2020">2020</option>
+                                                </select>
+                                                <span class="box-arrow">
+                                                    <span class="arrow-icon"></span>
+                                                </span>
+                                                <span class="select-option">전체</span>
+                                            </div>
+                                        </div>
+                                        <div class="inner-box">
+                                            <div class="opt-box">
+                                                <label for="history-option" class="screen-out">기간</label>
+                                                <select id="history-option" class="history-select" onchange="histories()">
+                                                    <option value="99">전체</option>
+                                                    <option value="1">내가 쓴 게시글</option>
+                                                    <option value="2">내가 쓴 문의</option>
+                                                </select>
+                                                <span class="box-arrow">
+                                                    <span class="arrow-icon"></span>
+                                                </span>
+                                                <span class="select-option his-opt">전체</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="area-his">
+                                    <h4 class="area-tit">
+                                        2024년 2월
+                                        <span class="area-num">(1건)</span>
+                                    </h4>
+                                    <div class="list-box">
+                                        <ul class="his-list">
+                                            <li class="his-item">
+                                                <p class="his-date">2024.02.06</p>
+                                                <p class="his-txt">
+                                                    <a href="#" class="his-link">"띵동", 고요한 어둠 속 안전을 묻는 두드림</a>
+                                                </p>
+                                                <div class="his-num-info">
+                                                    <strong class="num-price">100원</strong>
+                                                    <span class="price-txt">참여기부(응원참여)</span>
+                                                </div>
+                                            </li>
+                                            <li class="his-item">
+                                                <p class="his-date">2024.02.06</p>
+                                                <p class="his-txt">
+                                                    <a href="#" class="his-link">"띵동", 고요한 어둠 속 안전을 묻는 두드림</a>
+                                                </p>
+                                                <div class="his-num-info">
+                                                    <strong class="num-price">100원</strong>
+                                                    <span class="price-txt">참여기부(응원참여)</span>
+                                                </div>
+                                            </li>
+                                            <li class="his-item">
+                                                <p class="his-date">2024.02.06</p>
+                                                <p class="his-txt">
+                                                    <a href="#" class="his-link">"띵동", 고요한 어둠 속 안전을 묻는 두드림</a>
+                                                </p>
+                                                <div class="his-num-info">
+                                                    <strong class="num-price">100원</strong>
+                                                    <span class="price-txt">참여기부(응원참여)</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </body>
+    <script src="../../staticfiles/js/kgi/my-page-wake-up-history-web.js"></script>
+</html>
