@@ -809,6 +809,38 @@ admin-profile-button-img*/
 }
 
 
+
+/* 메뉴리스트 신고 report */
+.admin-menu-list-report{
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    margin-bottom: 8px;
+    /* background-color:  #fce4ec; */
+}
+.admin-menu-list-report:hover{
+    background-color: #fce4ec;
+}
+
+.admin-menu-list-report-img{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: #7e69fe;
+    fill: #7e69fe;
+}
+
+.admin-menu-list-report-name{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1d1d1e;
+    fill: #1d1d1e;
+}
 /* 메뉴 끝
 아래부턴 content 
     내용 */
