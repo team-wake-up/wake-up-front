@@ -1,0 +1,457 @@
+@font-face {
+    font-family: 'KakaoBig regular';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format('woff2'),url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'KakaoBig Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format('woff2'),url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format('woff');
+}
+
+
+/* total */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, menu, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body, th, td, input, select, textarea, button {
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+}
+
+html {
+    display: block;
+}
+
+body {
+    overflow: auto;
+    line-height: 1;
+    display: block;
+}
+@media only screen and (min-width: 768px){
+    body {
+        min-width: 1140px;
+    }
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+} */
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+menu, ol, ul {
+    list-style: none;
+}
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+/* main */
+.main-main-back-color {
+    box-sizing: border-box;
+    min-height: calc(-244px + 100vh);
+    background-color: rgb(243, 243, 243);
+}
+
+@media only screen and (min-width: 768px){
+    .main-main-nav-back-color {
+        min-height: calc(-320px + 100vh);
+        background-color: rgb(247, 247, 247);
+    }
+}
+
+/* main 공통 */
+.main-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    color: transparent;
+}
+
+/* header */
+/* header-왼쪽 */
+.main-nav-back-color {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 200;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+}
+@media only screen and (min-width: 768px) {
+    .main-nav-back-color {
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .main-nav-back-color {
+        min-height: 92px;
+        top: -56px;
+    }
+}
+
+.main-nav-back-color::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(238, 238, 238);
+}
+
+.main-nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-width: 280px;
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .main-nav-div {
+        align-items: center;
+        width: 1120px;
+        height: 100%;
+        margin: 0px auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .main-nav-div {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.main-nav-title {
+    height: 0px;
+    margin: 0px;
+}
+@media only screen and (min-width: 768px) {
+    .main-nav-title {
+        height: 70px;
+    }
+}
+
+.main-nav-title-link  {
+    display: block;
+    width: 103px;
+    height: 100%;
+    background: url(/staticfiles/css/jth/images/title.png) center center / contain no-repeat;
+}
+@media only screen and (min-width: 768px) {
+    .main-nav-title-link {
+        width: 115px;
+        background-image: url(/staticfiles/css/jth/images/title.png);
+    }
+}
+@media only screen and (max-width: 767px) {
+    .main-nav-title-link {
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        height: 55px;
+        transform: translateX(-50%);
+    }
+}
+
+/* header-중앙 */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+@media only screen and (min-width: 768px) {
+    .main-nav {
+        justify-content: center;
+        flex: 1 0 auto;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .main-nav {
+        justify-content: center;
+        order: 2;
+        box-sizing: border-box;
+        width: 100%;
+        height: 37px;
+        transition: height 0.2s ease 0s;
+    }
+}
+
+
+.main-nav-ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+@media only screen and (max-width: 767px) {
+    .main-nav-ul {
+        overflow-x: auto;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        padding: 0px 20px;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+}
+
+.main-nav-li {
+    display: list-item;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+}
+
+.main-nav-li-under {
+    height: 100%;
+    border-bottom: 2px solid rgb(57, 57, 57);
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 768px){
+    .main-nav-li-under {
+        margin: 0px 11px;
+    }
+}
+
+.main-nav-li-a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5px 4px 9px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    text-decoration: none;
+
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.57;
+    letter-spacing: -0.1px;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-nav-li-a {
+        padding: 0px 14px;
+        font-family: "KakaoBig Bold";
+        font-size: 16px;
+        color: rgb(68, 68, 68);
+    }
+}
+
+.link_gnb {color: rgb(32, 32, 32);}
+
+.main-nav-li-rest {
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+    .main-nav-li-rest {
+        margin: 0px 11px;
+    }
+}
+
+/* header-오른쪽 */
+/* 마이페이지 */
+.main-nav-right-mypage {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 767px){
+    .main-nav-right-mypage  {
+        display: none !important;
+    }
+}
+
+.main-nav-right-mypage-div {
+    position: relative;
+    display: flex;
+}
+
+.main-nav-right-mypage-a {
+    display: flex;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    /* display: inline-block; */
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav-right-mypage-inner-div {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    /* width: 34px;
+    height: 34px; */
+    mask-image: url(//t1.kakaocdn.net/together_image/svg/squircle.svg);
+    mask-size: 100% 100%;
+}
+
+.main-nav-right-mypage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* 검색 */
+.main-nav-search {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 55px;
+    padding-left: 11px;
+    padding-right: 21px;
+}
+@media only screen and (min-width: 768px){
+    .main-nav-search {
+        height: auto;
+        margin: 0px 11px 0px 19px;
+        padding: 8px;
+    }
+}
+
+.main-nav-search-img {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    opacity: 1;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+@media only screen and (min-width: 768px){
+    .main-nav-search-img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* 메뉴 */
+.main-nav-menu {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    height: auto;
+    padding: 8px;
+    font-size: 12px;
+    position: relative;
+}
+@media only screen and (max-width: 767px){
+    .main-nav-menu {
+        order: -1;
+        height: 55px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+}
+.main-nav-menu-img {
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+}
+
+
+/* main footer */

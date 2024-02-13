@@ -1,0 +1,416 @@
+@font-face {
+    font-family: "KakaoBig regular";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format("woff2"),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format("woff");
+}
+
+/*!sc*/
+@font-face {
+    font-family: "KakaoBig Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format("woff2"),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format("woff");
+}
+
+dl,
+li,
+menu,
+ol,
+ul {
+    list-style: none;
+}
+
+body,
+button,
+input,
+select,
+td,
+textarea,
+th {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoBig Regular, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, dotum, 돋움, sans-serif;
+    color: #444;
+}
+
+div {
+    display: block;
+}
+
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#history {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100vh;
+}
+
+#history-content {
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+.his-content {
+    position: relative;
+    margin: 0 0 -212px;
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+.his-article {
+    padding-bottom: 212px;
+    padding: 0 0 250px;
+}
+
+.mypage-content {
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 170px;
+}
+
+.group-profile {
+    /* border: 1px solid black; */
+    position: relative;
+    min-height: 190px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background: 98% 18px;
+    background-image: url("t1.kakaocdn.net/together_image/bg_mypage.png");
+    background-repeat: no-repeat;
+    background-size: 215px 160px;
+}
+
+.group-profile .area-name {
+    display: inline-block;
+    max-width: 550px;
+    vertical-align: top;
+}
+
+.group-profile .area-name .txt-nick {
+    max-width: 465px;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    font-size: 18px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+    font-family: KakaoBig Bold, sans-serif;
+}
+
+.group-profile .area-name .box-name {
+    display: inline-block;
+    position: relative;
+    max-width: 465px;
+}
+
+.group-profile .area-name .txt-name {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+    font-family: KakaoBig Bold, sans-serif;
+    text-overflow: ellipsis;
+    font-size: 36px;
+    line-height: 1.4;
+}
+.group-profile .area-thumb {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.group-profile .area-thumb .link-badge {
+    position: absolute;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}
+
+.group-profile .area-thumb .badge-thumb .img-thumb {
+    width: 100%;
+    height: 100%;
+}
+
+.img-thumb {
+    display: block;
+}
+
+.group-profile .area-thumb .link-thumb {
+    display: block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.img-thumb {
+    display: block;
+}
+
+.group-profile .area-thumb .profile-thumb .img-thumb {
+    width: 100%;
+    height: 100%;
+}
+
+.group-profile .area-setting {
+    height: 40px;
+    padding-top: 14px;
+    padding-left: 3px;
+}
+
+.group-profile .area-setting .link-setting {
+    font-size: 14px;
+    border-bottom: 1px solid #444;
+    background-color: initial;
+}
+
+.screen-out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.his-tit {
+    padding-top: 26px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #444;
+    font-family: KakaoBig Bold, sans-serif;
+    box-sizing: border-box;
+    display: block;
+}
+
+.select-his-wrap {
+    padding-top: 19px;
+}
+
+.select-his::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    content: "";
+}
+
+.inner-box {
+    float: left;
+    width: 160px;
+}
+
+.opt-box {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 44px;
+    padding: 0;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 44px;
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.period-select {
+    color: #444;
+    height: 100%;
+    display: block;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    border: 0;
+    background: none;
+    appearance: none;
+    opacity: 0.01;
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+}
+
+.box-arrow {
+    position: absolute;
+    right: 0;
+    width: 29px;
+    height: 44px;
+    background-color: #fff;
+}
+
+.arrow-icon {
+    width: 12px;
+    height: 12px;
+    margin: 17px 0 0 7px;
+    /* background-position: -236px -116px; */
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    background-image: url("./images/down-arrow.png");
+    background-repeat: no-repeat;
+}
+
+.select-option {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    color: #444;
+    overflow: hidden;
+    right: 0;
+    margin: 0 30px 0 12px;
+    padding: 0;
+    line-height: 44px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.history-select {
+    color: #444;
+    height: 100%;
+    display: block;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    border: 0;
+    background: none;
+    appearance: none;
+    opacity: 0.01;
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+}
+
+.area-his {
+    padding-top: 40px;
+}
+
+.area-tit:first-child {
+    padding-top: 0;
+}
+
+.area-tit {
+    display: block;
+    font-family: KakaoBig Bold, sans-serif;
+    padding-bottom: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444;
+}
+
+.list-box {
+    margin-top: 0;
+    padding: 20px 40px 30px;
+    box-shadow: 1px 0 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5, 1px 1px 0 0 #e5e5e5, inset 1px 0 0 0 #e5e5e5, inset 0 1px 0 0 #e5e5e5;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.his-list {
+    margin-top: -20px;
+    clear: both;
+    margin-bottom: -20px;
+}
+
+.his-list li:first-child {
+    border-top: 0;
+}
+
+.his-item {
+    position: relative;
+    padding: 19px 0 25px;
+    border-top: 1px dashed #e5e5e5;
+    line-height: 24px;
+    color: #444;
+    text-align: left;
+}
+
+.his-txt {
+    max-width: 510px;
+    color: #999;
+}
+
+.his-link {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.area-num {
+    color: #999;
+    font-weight: 400;
+    font-family: KakaoBig Regular, sans-serif;
+}
+
+.his-num-info {
+    overflow: hidden;
+    padding-top: 6px;
+}
+
+.num-price {
+    overflow: hidden;
+    float: left;
+    max-width: 350px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: KakaoBig Bold, sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    font-style: normal;
+}
+
+.price-txt {
+    float: left;
+    padding: 4px 0 0 5px;
+    position: relative;
+    line-height: 24px;
+    color: #444;
+    text-align: left;
+}
