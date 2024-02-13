@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, viewport-fit=cover" />
+        <title>검색 하기</title>
+        <link rel="shortcut icon" href="/templete/lky/images/favicon_wake_up.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/staticfiles/css/lky/web/badgeshop-search-home.css" />
+    </head>
+    <body>
+        <section>
+            <div id="dkWrap" class="wakeup-top">
+                <haeder></haeder>
+                <span id="rootContent">
+                    <search>
+                        <div id="dkContent" class="cont-search">
+                            <div id="mArticle">
+                                <h2 id="dkBody" class="screen-out">검색 본문</h2>
+                                <div class="group-schkeyword">
+                                    <form novalidate action="/" method="post" class="form-search">
+                                        <fieldset>
+                                            <legend class="screen-out">검색어 입력폼</legend>
+                                            <div class="box-search">
+                                                <input
+                                                    placeholder="검색어를 입력하세요"
+                                                    type="search"
+                                                    id="schkeyword"
+                                                    class="tf-keyword"
+                                                    autocomplete="off"
+                                                />
+                                            </div>
+                                            <button type="button" class="btn-delete">
+                                                <span class="ico-together ico-delete">삭제</span>
+                                            </button>
+                                            <button type="button" class="btn-search">
+                                                <span class="ico-together ico-search">검색</span>
+                                            </button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="search-cont">
+                                    <h4 class="screen-out">검색결과</h4>
+                                    <div class="group-schtag">
+                                        <h3 class="tit-section">태그로 찾기</h3>
+                                        <div class="hash-group">
+                                            <tag-card>
+                                                <a class="link-hash hash-type8">#태그내용1</a>
+                                                <a class="link-hash hash-type4">#태그내용2</a>
+                                                <a class="link-hash hash-type2">#태그내용3</a>
+                                                <a class="link-hash hash-type9">#태그내용4</a>
+                                                <a class="link-hash hash-type3">#태그내용5</a>
+                                                <a class="link-hash hash-type9">#태그내용6</a>
+                                                <a class="link-hash hash-type4">#태그내용7</a>
+                                                <a class="link-hash hash-type7">#태그내용8</a>
+                                                <a class="link-hash hash-type9">#태그내용9</a>
+                                                <a class="link-hash hash-type3">#태그내용10</a>
+                                            </tag-card>
+                                        </div>
+                                    </div>
+                                    <!-- 챌린지 찾기, Wake Up -->
+                                    <!-- <div class="group-schtheme">
+                                        <h3 class="tit-section">챌린지 찾기</h3>
+                                        <ul class="list-category">
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/bQjYnL/btqeTkRkzAP/IB4VKsziubpzV8kKuGCxR0/c160.jpg"
+                                                        alt
+                                                        class="img-thumb"
+                                                    />개인 챌린지1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/dfayUM/btqeS2cdK6X/FlDQlr0X6My32rDcwekgY1/c160.jpg"
+                                                        alt
+                                                        class="img-thumb"
+                                                    />개인 챌린지2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/9kdhx/btqeSdZmGXT/KKE26ESkOu5KwKBlil2Fw1/c160.jpg"
+                                                        alt
+                                                        class="img-thumb"
+                                                    />개인 챌린지3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/8zxrh/btqeTEPHxVL/UOv4GIR6MDN9J89q7K6TGk/c160.jpg"
+                                                        alt
+                                                        class="img-thumb"
+                                                    />개인 챌린지4
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/cBGsiW/btqeUqDFmle/5t3Al23C3KXbPpG7MmgAs1/c160.jpg"
+                                                        alt
+                                                        class="img-thumb"
+                                                    />그룹 챌린지1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/Bhaea/btqfGqi6rfE/FNXWp35egH4mZTvR5A02C0/c160.jpg"
+                                                        alt
+                                                        class="img-thumb"
+                                                    />그룹 챌린지2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/8Fooq/btqeS2i0Gjy/J9Eacd99lo5f8WcdJt8ZVK/c160.jpg"
+                                                        alt
+                                                        class="img-thumb"
+                                                    />그룹 챌린지3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/CsgvK/btqeSKW5obk/ikiKdRhKa1ceBHj5kPDwmK/c160.jpg"
+                                                        alt
+                                                        class="img-thumb"
+                                                    />그룹 챌린지4
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-schtarget">
+                                        <h3 class="tit-section">Wake Up! 찾기</h3>
+                                        <ul class="list-category category-type2">
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/eE4eDt/btqeTEvo1oi/i3hCyjx9BasmNFN6Qnewz0/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/UcO28/btqeSczkjeJ/QIoX8Kg45A3hnVyzQatqz1/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/z41G3/btqeTE3fkJ7/8m34WVDUITvKA9HK5sP5yk/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/d5gPUJ/btqfHHdGVIP/Vu5fbI09DHvjCPCQDvhWX1/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User4
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/cekYgk/btqeP3QlYgW/iGZakpOWT5gfqBPLIzZW80/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User5
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/frExg/btqeTDJ2jTL/CqkNDew6OjvYCBLpRBTCF1/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User6
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/bdDKwv/btqeQqknQLL/8h7PFHZZEaXKp7nO5mXNf1/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User7
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/iz3uB/btqeSecVdjr/6FTKuCc940lx8umkW62yxK/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User8
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/c1NBO8/btqeSdyhf27/jiHPeyih8G4tXMP0jKALBk/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User9
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/brQVqD/btqeT7EeCWH/hcbrm9YzfqwSt7iu6tgaUk/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User10
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="link-category" href="">
+                                                    <img
+                                                        src="https://mud-kage.kakaocdn.net/dn/cZHX7b/btqfFTy4RVF/QTNHn5utvQLjYLkkCCAtM1/c160.jpg"
+                                                        alt=""
+                                                        class="img-thumb"
+                                                    />User11
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </search>
+                </span>
+                <footer></footer>
+            </div>
+        </section>
+        <script src="/staticfiles/js/lky/badgeshop-search-home.js"></script>
+    </body>
+</html>

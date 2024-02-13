@@ -1,0 +1,464 @@
+/* HTML CSS */
+
+@font-face {
+    font-family: 'KakaoBig regular';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format('woff');
+}
+/*!sc*/
+@font-face {
+    font-family: 'KakaoBig Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format('woff');
+}
+
+html {
+    display: block;
+}
+
+/* html[Attributes Style] {
+    -webkit-locale: "ko";
+} */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* head CSS */
+
+/* body CSS */
+
+body {
+    line-height: 1;
+}
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-family: 'KakaoBig Regular', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        min-width: 1140px;
+    }
+}
+/* main CSS */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+.badge-contents {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(-244px + 100vh);
+    background-color: rgb(246, 246, 246);
+    box-sizing: border-box;
+}
+
+.badge-home {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    color: transparent;
+}
+
+.badge-wholeB {
+    padding-bottom: 24px;
+}
+
+.badge-wholeA {
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+    .badge-wholeA {
+        width: 1120px;
+        margin: 0px auto;
+        padding: 40px 0px 64px;
+    }
+}
+
+.badge-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    color: transparent;
+}
+
+.badge-top-wordC {
+    text-align: center;
+}
+
+.badge-top-wordB {
+    color: rgb(32, 32, 32);
+    font-size: 26px;
+    font-style: normal;
+    font-family: 'KakaoBig Bold', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}
+
+.badge-top-wordA {
+    font-family: 'KakaoBig Bold';
+    line-height: 1.52;
+}
+
+.top-barB {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.check-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.check-input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    outline: 0px;
+    opacity: 0;
+}
+
+.check-boxA {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+}
+
+.check-boxB {
+    flex-shrink: 0;
+}
+
+.sort-list {
+    height: 22px;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    background-color: rgb(246, 246, 246);
+    border-color: rgb(170, 170, 170);
+}
+
+.check-input:not(:checked) + svg circle {
+    stroke: rgb(174, 174, 174);
+}
+
+.check-input:not(:checked) + svg path {
+    fill: rgb(229, 229, 229);
+}
+
+.check-input:checked + svg circle {
+    fill: rgb(32, 32, 32);
+    stroke: rgb(32, 32, 32);
+}
+
+.check-input:checked + svg path {
+    fill: rgb(255, 255, 255);
+}
+
+.check-labelA {
+    padding-left: 4px;
+}
+
+.check-labelB {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-style: normal;
+    font-family: 'KakaoBig Regular', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.5;
+}
+
+.badge-wrapA {
+    padding: 16px 20px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    .badge-wrapA {
+        padding: 8px 0px 0px;
+    }
+}
+
+.wrap-wholeA {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrap-wholeB {
+        margin: -10px;
+    }
+}
+
+.content-cardA {
+    box-sizing: border-box;
+    height: 100px;
+}
+
+.wrap-wholeA .content-cardB {
+    margin: 20px calc(10px);
+}
+
+.wrap-wholeB .content-cardB {
+    width: 360px;
+    height: auto;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px;
+}
+
+.card-innerA {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wrap-wholeA .content-cardB .card-inner {
+    flex-direction: column;
+}
+
+.thumbnailA::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: inherit;
+}
+
+.thumbnailA {
+    flex-shrink: 0;
+    position: relative;
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    background: url('/templete/lky/images/challenge-ex-image.jpg') 50% 50% / cover no-repeat,
+        url('/templete/lky/images/challenge-ex-image.jpg');
+}
+
+.wrap-wholeB .content-cardA .thumbnail {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 0px;
+    height: 180px;
+}
+
+.card-contentA {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+.wrap-wholeB .content-cardB .card-content {
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    padding: 24px 20px;
+}
+
+.card-titleA {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'KakaoBig Regular', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.56;
+}
+
+.card-titleB {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+}
+
+.wrap-wholeB .content-cardB .card-title {
+    font-size: 18px;
+    line-height: 1.48;
+    font-weight: 600;
+}
+
+.card-subtextA {
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    font-style: normal;
+    font-family: 'KakaoBig Regular', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.5;
+}
+
+.card-subtextB {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.wrap-wholeB .content-cardB .card-subtext {
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+.wrap-wholeA .content-cardB {
+    margin: 20px calc(10px);
+}
+
+.wrap-wholeB .content-cardA {
+    height: auto;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px;
+}
+
+.wrap-wholeB .content-cardA {
+    width: 360px;
+}
