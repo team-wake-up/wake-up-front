@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wake Up!</title>
+        <link rel="stylesheet" href="/staticfiles/css/khj/wake-up.css" />
+    </head>
+    <body class="noline-desktop">
+        <span class="style-span">Wake-Up!</span>
+        <!-- 내용 전체 바디 -->
+        <div id="wakeupWrap">
+            <!-- 헤더 -->
+            <div class="div1">
+                <div class="div2">
+                    <div class="headBar-head-story">
+                        <!-- 왼쪽 타이틀 -->
+                        <h1 class="title-logo">
+                            <!-- 왼쪽 상단 로고 이미지 -->
+                            <a href="#" class="link-title-logo">
+                                <img
+                                    src="images/logo.png"
+                                    class="title-logo-img"
+                                />
+                            </a>
+                        </h1>
+                        <!-- 검색 -->
+                        <div class="headBar-form">
+                            <form class="Wakeup-search" id="wakeup-search">
+                                <!-- 검색창 -->
+                                <h2 class="screen-out">검색</h2>
+                                <fieldset class="fld-inside">
+                                    <!-- 검색창 필드셋 -->
+                                    <legend class="screen-out">
+                                        챌린지 및 태그 검색
+                                    </legend>
+                                    <div class="box-searchbar">
+                                        <input
+                                            type="text"
+                                            class="search-input"
+                                            placeholder="챌린지 및 태그 검색"
+                                            autocomplete="off"
+                                        />
+                                        <button
+                                            class="button-search"
+                                            type="submit"
+                                        >
+                                            <img
+                                                src="images/search.png"
+                                                class="ico-ks-ico-search"
+                                            />
+                                        </button>
+                                    </div>
+                                </fieldset>
+                                <!-- 검색 fieldset끝 -->
+                            </form>
+                            <!--  -->
+                        </div>
+                        <!--  -->
+                        <div class="layer-left-menu-bar">
+                            <h2 class="screen-out">WakeUp 메인메뉴</h2>
+                            <!-- 오른쪽 메뉴 li -->
+                            <ul class="left-menu-ul">
+                                <!-- 글쓰기 버튼 -->
+                                <li class="write">
+                                    <a class="link-write" href="#">
+                                        <img
+                                            src="images/write.png"
+                                            class="wirte-img"
+                                    /></a>
+                                    <div class="WriteButtonTooltip">
+                                        <!-- <p class="txt-tooltip">작성중인 소식이 있습니다.</p> -->
+                                        <span class="ico-arr"></span>
+                                    </div>
+                                </li>
+                                <!-- 알림 -->
+                                <li class="newnoti">
+                                    <a class="link-newnoti" href="#">
+                                        <img
+                                            src="images/message.png"
+                                            class="newnoti-img"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <!-- Wakeup content -->
+            <!--  -->
+            <div class="WakeUp-content-full-div">
+                <div class="WakeUp-content-full-div-main">
+                    <!-- 오른쪽 자기 메뉴 -->
+                    <div id="my-menu-body">
+                        <div id="my-menu">
+                            <div class="inner-my-menu">
+                                <div class="my-menu-profile">
+                                    <h2 class="screen-out">사용자 프로필</h2>
+
+                                    <div
+                                        class="img-profile-user-link-img-div-size"
+                                    >
+                                        <div
+                                            class="img-profile-user-link-img-div"
+                                        >
+                                            <img
+                                                src="images/human.png"
+                                                class="img-profile-user-link-img"
+                                            />
+                                            <span
+                                                class="img-profile frame-g frame-type1"
+                                            ></span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="name-profile-user-link-name-div"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="name-profile-user-link-name"
+                                        >
+                                            user1234
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="my-menu-under-menu">
+                                    <ul class="my-menu-under-menu-ul">
+                                        <li>
+                                            <button class="my-menu-my-story">
+                                                메인페이지
+                                            </button>
+                                        </li>
+
+                                        <li>
+                                            <button class="my-menu-my-set">
+                                                마이페이지
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="my-menu-my-logout">
+                                                내 스토리
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 내용 -->
+                    <div id="mArticle" class="article-story" role="main">
+                        <div id="kakaoBody" class="inner-article">
+                            <div
+                                data-module="feed settings hashtag more lb storyTeller soso backup"
+                            >
+                                <div>
+                                    <h2 class="screen-out">소식</h2>
+                                    <div></div>
+                                    <div
+                                        data-kant-group="feed.n"
+                                        style=""
+                                        data-part-name="campaign"
+                                    ></div>
+                                    <div class="writing--container">
+                                        <div
+                                            class="write-board"
+                                            data-part-name="writingButton"
+                                        >
+                                            <div
+                                                class="section-write-disable-dropzone"
+                                            >
+                                                <div class="writing">
+                                                    <div
+                                                        class="input-content-control"
+                                                    >
+                                                        <!-- 입력 -->
+                                                        <!-- 입력을 받을 div -->
+                                                        <!-- <div class="editable-123clone-editable-clone">입력을 받는 div</div> -->
+                                                        <!--  -->
+                                                        <p
+                                                            class="-editorOverflowCount overflow-txt"
+                                                            style="
+                                                                display: none;
+                                                            "
+                                                        ></p>
+
+                                                        <!--  -->
+                                                        <!-- 입력을 받을 시에 display:none -->
+                                                        <label
+                                                            class="editorPlaceholder-tit-label"
+                                                            for="contents-write"
+                                                            style="
+                                                                display: block;
+                                                            "
+                                                        >
+                                                            회원님의 이야기를
+                                                            기다리고 있어요.
+                                                        </label>
+                                                        <div
+                                                            id="contents-write"
+                                                            class="editable-editable"
+                                                            contenteditable="true"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+                                                <div id="add-img"></div>
+                                                <!--  -->
+                                                <div class="mediaContainer">
+                                                    <div
+                                                        class="mediachoice-type"
+                                                    >
+                                                        <ul
+                                                            class="mediachoice-type-ul"
+                                                        >
+                                                            <li>
+                                                                <button
+                                                                    class="link-menu-mediabutton-photo-button"
+                                                                >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="link-menu-mediabutton-photo-a-tag"
+                                                                        title="사진 첨부"
+                                                                    >
+                                                                        <img
+                                                                            src="images/photo.png"
+                                                                            style="
+                                                                                width: 20px;
+                                                                                margin-right: 6px;
+                                                                            "
+                                                                        />
+                                                                    </a>
+                                                                    사진
+                                                                    등록하기
+                                                                </button>
+                                                            </li>
+                                                            <!-- 링크 -->
+                                                            <li>
+                                                                <button
+                                                                    class="link-menu-mediabutton-link-button"
+                                                                >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="link-menu-mediabutton-link-a-tag"
+                                                                        title="사진 첨부"
+                                                                    >
+                                                                        <img
+                                                                            src="images/connection.png"
+                                                                            style="
+                                                                                width: 20px;
+                                                                                margin-right: 6px;
+                                                                            "
+                                                                        />
+                                                                    </a>
+                                                                    링크
+                                                                    불러오기
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- 미디어 버튼 끝 -->
+                                                <!-- 작성하기 텍스트를 클릭할 경우 display:block\ -->
+                                                <div
+                                                    class="user-write-open-range-add-div"
+                                                >
+                                                    <!--  -->
+                                                    <div
+                                                        class="user-write-open-range-select-div"
+                                                    >
+                                                        <select
+                                                            name=""
+                                                            id="user-write-open-range-select"
+                                                        >
+                                                            <option>
+                                                                전체공개
+                                                            </option>
+                                                            <option>
+                                                                나만보기
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- 전체공개 및 취소 / 올리기 -->
+
+                                                    <div
+                                                        class="user-write-add-cancel-button-div"
+                                                    >
+                                                        <div
+                                                            class="user-write-cancel-button-div"
+                                                        >
+                                                            <button
+                                                                class="user-write-cancel-button"
+                                                            >
+                                                                취소
+                                                            </button>
+                                                        </div>
+                                                        <div
+                                                            class="user-write-add-button-div"
+                                                        >
+                                                            <button
+                                                                class="user-write-add-button"
+                                                            >
+                                                                올리기
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 하단 버튼 끝 -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 피드 시작 -->
+                                    <div class="feed-list">
+                                        <div class="feed-page-list">
+                                            <div class="wrapper-user-board">
+                                                <div class="section-activity">
+                                                    <div
+                                                        class="section-activityBody"
+                                                    >
+                                                        <div
+                                                            class="subTitleWrapper"
+                                                        ></div>
+                                                        <!-- 프로필 사진 -->
+                                                        <div
+                                                            class="profile-Area-pf"
+                                                        >
+                                                            <div
+                                                                class="profile-Area-pf-div"
+                                                            >
+                                                                <div
+                                                                    class="profile-Area-pf-div-back"
+                                                                >
+                                                                    <img
+                                                                        src="images/human.png"
+                                                                        style="
+                                                                            width: 36px;
+                                                                        "
+                                                                        alt=""
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                            <!-- 이름 -->
+                                                            <div
+                                                                class="add-top-name-info"
+                                                            >
+                                                                <div
+                                                                    class="my-id-profile"
+                                                                >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="pf-name"
+                                                                        >user1234</a
+                                                                    >
+                                                                </div>
+                                                                <!-- p태그는 등록시간 -->
+                                                                <p
+                                                                    class="add-board-time"
+                                                                >
+                                                                    날짜
+                                                                </p>
+                                                                <!-- 글 상세 버튼 -->
+                                                                <div
+                                                                    class="button-top-menu-fix-button"
+                                                                >
+                                                                    <img
+                                                                        src="images/menu.png"
+                                                                        width="20px"
+                                                                    />
+                                                                </div>
+
+                                                                <!-- 메뉴 버튼을 누를때 뜨는 div -->
+                                                                <div
+                                                                    class="user-board-open-menu-layer"
+                                                                >
+                                                                    <ul
+                                                                        class="user-board-open-menu-layer-ul"
+                                                                    >
+                                                                        <!-- 전체공개 -->
+                                                                        <li>
+                                                                            <label>
+                                                                                <span>
+                                                                                    <img
+                                                                                        src="images/earth.png"
+                                                                                        style="
+                                                                                            width: 13px;
+                                                                                        "
+                                                                                /></span>
+
+                                                                                <span
+                                                                                    class="layer-menu-user-range-openall"
+                                                                                ></span>
+                                                                                전체공개
+
+                                                                                <span>
+                                                                                    <input
+                                                                                        type="radio"
+                                                                                        id="layer-menu-user-range-allopen-id-input"
+                                                                                        name="permission"
+                                                                                        class="layer-menu-user-range-allopen-class-input"
+                                                                                /></span>
+                                                                            </label>
+                                                                        </li>
+                                                                        <!-- 나만보기 -->
+                                                                        <li>
+                                                                            <label>
+                                                                                <img
+                                                                                    src="images/lock.png"
+                                                                                    width="13px"
+                                                                                />
+
+                                                                                <span
+                                                                                    class="layer-menu-user-range-me"
+                                                                                ></span
+                                                                                >나만보기
+
+                                                                                <span>
+                                                                                    <input
+                                                                                        type="radio"
+                                                                                        id="layer-menu-user-range-me-id-input"
+                                                                                        name="permission"
+                                                                                        class="layer-menu-user-range-me-class-input"
+                                                                                    />
+                                                                                </span>
+                                                                            </label>
+                                                                        </li>
+                                                                        <!-- 수정 -->
+                                                                        <li
+                                                                            class="user-board-open-menu-layer-li-fix-button"
+                                                                        >
+                                                                            <label>
+                                                                                <a
+                                                                                    href="#"
+                                                                                    class="user-board-open-menu-layer-class-fix-button"
+                                                                                    >수정</a
+                                                                                >
+                                                                            </label>
+                                                                        </li>
+                                                                        <!-- 삭제 -->
+                                                                        <li
+                                                                            class="user-board-open-menu-layer-li-del-button"
+                                                                        >
+                                                                            <label>
+                                                                                <a
+                                                                                    href="#"
+                                                                                    class="user-board-open-menu-layer-class-del-button"
+                                                                                    >삭제</a
+                                                                                >
+                                                                            </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!--  -->
+                                                            <div
+                                                                class="fd-content-user-write-screen"
+                                                            >
+                                                                <div
+                                                                    class="txt-wrap"
+                                                                >
+                                                                    <div
+                                                                        class="-content"
+                                                                    >
+                                                                        텍스트가
+                                                                        들어가는
+                                                                        자리
+                                                                    </div>
+                                                                    <p
+                                                                        class="more -moreBtnContainer"
+                                                                        style="
+                                                                            display: none;
+                                                                        "
+                                                                    >
+                                                                        <a
+                                                                            href="#"
+                                                                            class="-btnFeedMore"
+                                                                            data-kant-id="86"
+                                                                            >...더보기</a
+                                                                        >
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <!--  -->
+                                                            <!-- 좋아요/공유 버튼 -->
+                                                            <div
+                                                                class="user-add-act-btn"
+                                                            >
+                                                                <!-- 좋아요 -->
+                                                                <div
+                                                                    class="btn-like-group-in"
+                                                                >
+                                                                    <span
+                                                                        class="btn-like-group-in-span"
+                                                                        ><button
+                                                                            class="user-btnlike"
+                                                                        >
+                                                                            <img
+                                                                                src="images/empty-heart.png"
+                                                                                style="
+                                                                                    width: 30px;
+                                                                                "
+                                                                            /></button
+                                                                    ></span>
+                                                                    <div></div>
+                                                                </div>
+                                                                <!-- 공유 -->
+                                                                <!-- <div
+                                                                    class="btn-share-group-in"
+                                                                >
+                                                                    <span
+                                                                        class="btn-share-group-in-span"
+                                                                        ><button
+                                                                            class="user-btnShare"
+                                                                        >
+                                                                            <img
+                                                                                src="images/share.png"
+                                                                                style="
+                                                                                    width: 30px;
+                                                                                "
+                                                                            /></button
+                                                                    ></span>
+                                                                    <div></div>
+                                                                </div> -->
+                                                            </div>
+                                                            <!-- 좋아요 개수 -->
+                                                            <div
+                                                                class="user-comment-like-count-div"
+                                                            >
+                                                                <div
+                                                                    class="user-comment-like-count"
+                                                                >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="like-button-count-human-link"
+                                                                    >
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="end-body-margin"
+                                                            ></div>
+                                                            <!-- 끝 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 피드 리스트 끝 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/staticfiles/js/khj/wake-up.js"></script>
+</html>
