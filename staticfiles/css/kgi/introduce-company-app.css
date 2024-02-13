@@ -17,7 +17,7 @@
 }
 
 body {
-    min-width: 1140px;
+    min-width: 390px;
     display: block;
 }
 
@@ -259,6 +259,7 @@ video {
 }
 
 .main {
+    width: 390px;
     display: flex;
     flex-direction: column;
     min-height: calc(-244px + 100vh);
@@ -280,7 +281,7 @@ video {
     font-size: 100px; */
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("https://t1.kakaocdn.net/together_image/common/bg_intro_visual.png");
+    background-image: url("https://cdn.discordapp.com/attachments/1003237723789852710/1206794327880368168/2.png?ex=65dd4dcc&is=65cad8cc&hm=c11143ade04214741289420b82196fee8edca170cd3e326fbae40931b0ad7b57&");
 }
 
 .main-txt {
@@ -409,7 +410,7 @@ span.tab-menu-txt-on {
 }
 
 .main-subject {
-    width: 700px;
+    width: 390px;
     margin-top: -130px;
     padding-top: 50px;
     border-radius: 10px;
@@ -526,7 +527,7 @@ span.tab-menu-txt-on {
     display: flex;
     justify-content: center;
     gap: 20px;
-    width: 700px;
+    width: 390px;
     margin: 20px auto 0px;
 }
 
@@ -620,7 +621,7 @@ span.tab-menu-txt-on {
 }
 
 .star-share {
-    width: 700px;
+    width: 390px;
     margin: 0px auto;
     box-sizing: border-box;
     border-radius: 10px;
@@ -704,7 +705,7 @@ span.tab-menu-txt-on {
 }
 
 .review-wrap {
-    width: 700px;
+    width: 390px;
     margin: 40px auto 0px;
     padding-bottom: 54px;
     display: flex;
@@ -846,7 +847,7 @@ span.tab-menu-txt-on {
 }
 
 .slider-list {
-    width: 860%;
+    width: 1720%;
     text-align: left;
     user-select: auto;
     /* transform: translateX(calc(-50% + 5408px)); */
@@ -1019,7 +1020,7 @@ span.tab-menu-txt-on {
 }
 
 .action-container {
-    width: 700px;
+    width: 390px;
     margin-top: -93px;
     padding: 50px 0px 32px;
     border-radius: 10px;
@@ -1075,17 +1076,19 @@ span.tab-menu-txt-on {
 }
 
 .every-action-wrap {
+    overflow: hidden;
     padding-bottom: 38px;
     padding: 32px 20px 28px;
 }
 
 .action-slider-control {
     pointer-events: auto;
-    margin-bottom: -38px;
+    margin-bottom: 60px;
 }
 
 .action-slide-wrap {
-    width: 100%;
+    width: 390px;
+    height: 500px;
 }
 
 .action-dots {
@@ -1096,8 +1099,8 @@ span.tab-menu-txt-on {
     z-index: 1;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
+    bottom: -110px;
+    right: 30px;
     pointer-events: none;
 }
 
@@ -1126,7 +1129,7 @@ span.tab-menu-txt-on {
 }
 
 .action-slider-list {
-    width: 900%;
+    width: 1800%;
     text-align: left;
     user-select: auto;
     /* transform: translateX(calc(-38.8889% + 0px)); */
@@ -1134,9 +1137,9 @@ span.tab-menu-txt-on {
 }
 
 .action-prev-clone {
-    width: 5.555555555555555%;
+    width: 358px;
     height: auto;
-    padding: 0 8px;
+    padding: 0 7px;
     opacity: 1;
 }
 
@@ -1266,7 +1269,7 @@ span.tab-menu-txt-on {
 }
 
 .mind-weather-container {
-    width: 700px;
+    width: 390px;
     margin-top: -111px;
     padding: 50px 40px 24px;
     border-radius: 10px;
@@ -1314,7 +1317,7 @@ span.tab-menu-txt-on {
     padding-top: 36px;
     margin-top: 32px;
     border-top: 1px solid rgb(229, 229, 229);
-    padding: 32px 20px 0px;
+    padding: 32px 9px 0px;
 }
 
 .mind-icon {
@@ -1383,7 +1386,7 @@ span.tab-menu-txt-on {
     display: block;
 }
 
-#crrent {
+#current {
     display: none;
 }
 
@@ -1406,8 +1409,8 @@ span.tab-menu-txt-on {
 }
 
 .now-donate-wrap {
-    width: 700px;
-    padding: 40px 26px 32px;
+    width: 370px;
+    padding: 40px 10px 32px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px 0px;
@@ -1445,7 +1448,7 @@ span.tab-menu-txt-on {
 
 .donate-detail-list {
     display: grid;
-    grid-template-columns: repeat(3, 216px);
+    grid-template-columns: repeat(1, 300px);
     row-gap: 16px;
     flex-direction: column;
     padding-top: 24px;
@@ -1521,17 +1524,17 @@ span.tab-menu-txt-on {
 }
 
 .graph-wrap {
-    display: flex;
+    display: block;
     justify-content: center;
     gap: 20px;
-    width: 700px;
+    width: 390px;
     margin: 20px auto 0px;
 }
 
 .with-donate {
-    width: 700px;
+    width: 370px;
     height: 702px;
-    margin: 100px auto 0px;
+    margin: 100px 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
