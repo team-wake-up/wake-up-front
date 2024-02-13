@@ -1346,89 +1346,74 @@ storage-p */
     fill: #1d1d1e;
 }
 /* 번호 */
-.list-report-number{
+.list-wake-up-number{
     width: 30px;
     text-align: center;
     }
-.user-report-number{
+.user-wake-up-number-div{
     width: 30px;
     text-align: center;
 }
 
-/* 불량 유저 */
-.list-report-poor-user{
-    width: 120px;
-    text-align: center;
-}
-
-.user-report-poor-user{
-    width: 120px;
-    text-align: center;
-}
-.user-report-poor-user-div{
-    width: 120px;
-    text-align: center;
-}
-
-/* 신고 사유 */
-.list-report-category{
-    width: 150px;
-    text-align: center;
-}
-.user-report-category{
-    width: 150px;
-    text-align: center;
-}
-.user-report-category-div{
+/* 게시판 */
+.list-wake-up-board{
     width: 150px;
     text-align: center;
 }
 
-/* 신고자 */
-.list-report-reporter{
-    width: 100px;
+.user-wake-up-board{
+    width: 150px;
     text-align: center;
 }
-.user-report-reporter{
-    width: 100px;
-    text-align: center;
-}
-.user-report-reporter-div{
-    width: 100px;
+.user-wake-up-board-div{
+    width: 150px;
     text-align: center;
 }
 
-/* 신고 날짜 */
-.list-report-date{
-    width:100px;
+/* 이미지 링크 */
+.list-wake-up-image{
+    width: 200px;
     text-align: center;
 }
-.user-report-date{
-    width:100px;
+.user-wake-up-image{
+    width: 200px;
     text-align: center;
 }
-.user-report-date-div{
-    width:100px;
-    text-align: center;
-}
-
-/* 상태 */
-.list-report-status{
-    width: 100px;
-    text-align: center;
-}
-.user-report-status{
-    width: 100px;
-    text-align: center;
-}
-.user-report-status-div{
-    width: 100px;
+.user-wake-up-image-div{
+    width: 200px;
     text-align: center;
 }
 
+/* 게시자 */
+.list-wake-up-user{
+    width: 150px;
+    text-align: center;
+}
+.user-wake-up-user{
+    width: 150px;
+    text-align: center;
+}
+.user--wake-up-user-div{
+    width: 150px;
+    text-align: center;
+}
+
+/* 게시 날짜 */
+.list-wake-up-date{
+    width:110px;
+    text-align: center;
+}
+.user-wake-up-date{
+    width:110px;
+    text-align: center;
+}
+.user-wake-up-date-div{
+    width:110px;
+    text-align: center;
+}
 
 /* 삭제 */
-.list-report-del{
+.list-wake-up-del{
     width: 36px;
     text-align: center;
 }
