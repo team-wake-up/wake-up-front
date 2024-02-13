@@ -231,6 +231,7 @@ function autoSlide2() {
 // 네이게이션 바 컨트롤
 
 const lists = document.querySelectorAll("li#tab-menu");
+console.log(lists);
 const listTexts = document.querySelectorAll("span#tab-menu-txt");
 const introduce = document.querySelector("div#company-introduce");
 const current = document.querySelector("div#current");
