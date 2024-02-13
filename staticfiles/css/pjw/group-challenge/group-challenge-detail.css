@@ -45,6 +45,195 @@ menu, ol, ul {
     list-style: none;
 }
 
+.report-modal-layer {
+    position: fixed;
+    inset: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.report-sign-button {
+    flex-grow: 1;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(173, 76, 254);
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(173, 76, 254);
+    cursor: pointer;
+    height: 40px;
+    padding: 0px 18px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+    margin-left: 10px;
+}
+
+.report-cancel-button {
+    flex-grow: 1;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 6px;
+    margin: 0px;
+    font-family: "KakaoBig Bold";
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(68, 68, 68);
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    padding: 0px 18px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+
+.report-actions-tool {
+    align-items: center;
+    display: flex;
+}
+
+.report-actions {
+    box-sizing: border-box;
+    /* flex-shrink: 0; */
+    padding: 0px 20px 20px;
+    padding-top: 20px;
+}
+
+.report-desc {
+    padding: 0px;
+    letter-spacing: -0.3px;
+    overflow-wrap: break-word;
+}
+
+/* 신고사유 체크 안하는 부분 (점) */
+.report-not-check-circle {
+    opacity: 0;
+}
+/* 신고사유 체크 안 하는 부분 (테두리 회색) */
+.report-not-check {
+    fill: rgb(201, 201, 201);
+}
+
+/* 신고사유 체크 안된부분 (글씨) */
+.report-label-texts {
+    margin-top: -2px;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    font-style: normal;
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    line-height: 1.5;
+    padding-left: 8px;
+}
+
+/* 클릭했을 때 */
+.report-click {
+    font-family: "KakaoBig Bold";
+}
+
+.report-dot-in {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+}
+
+.report-label-dots {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 18px;
+    height: 18px;
+    margin: 0px;
+    outline: 0px;
+    opacity: 0;
+}
+
+.report-label-style {
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.report-group {
+    justify-content: space-between;
+    padding: 20px 8px 0px 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.report-modal-body {
+    overflow-y: auto;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.report-modal-title {
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: 55px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 55px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.report-modal-page {
+    max-height: 80%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+    width: 300px;
+}
+
+.report-button {
+    overflow: hidden;
+    position: fixed;
+    inset: 0px;
+    z-index: 400;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
 .review-cancle-save {
     margin-left: 10px;
     flex-grow: 1;
@@ -939,7 +1128,6 @@ menu, ol, ul {
 .set-button-tool {
     position: absolute;
     z-index: 100;
-    display: flex;
     top: 20px;
     left: 0px;
     display: none;
@@ -963,6 +1151,20 @@ menu, ol, ul {
     cursor: pointer;
     height: auto;
     font-size: 12px;
+}
+
+.display-none {
+    display: none;
+}
+.display-flex {
+    display: flex;
+}
+
+.comment-setting .display-none {
+    display: none;
+}
+.comment-setting .display-flex {
+    display: flex;
 }
 
 .comment-setting {
@@ -993,13 +1195,22 @@ menu, ol, ul {
     letter-spacing: -0.1px;
 }
 
-.comment-like-style {
+.comment-like-icon-style.on {
     flex-shrink: 0;
     width: 50px;
     height: 50px;
     margin: -16px -19px -17px;
     transform: scale(0.65);
-    background: url(https://t1.kakaocdn.net/together_image/common/heart_fundraising.png) 0px 0px / auto 100% repeat-x;
+    background: url("https://t1.kakaocdn.net/together_image/common/heart_fundraising.png") 50px 0px / auto 100% repeat-x;
+}
+
+.comment-like-icon-style {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin: -16px -19px -17px;
+    transform: scale(0.65);
+    background: url("https://t1.kakaocdn.net/together_image/common/heart_fundraising.png") 0px 0px / auto 100% repeat-x;
 }
 
 .comment-like-button {
@@ -1499,7 +1710,7 @@ menu, ol, ul {
     bottom: 26px;
     position: absolute;
     z-index: 100;
-    display: flex;
+    /* display: flex; */
     right: 0px;
     display: none;
 }
@@ -1601,11 +1812,25 @@ menu, ol, ul {
     box-sizing: border-box;
 }
 
-.like-icon-button {
+.review-like-icon-button.on {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: image-set(url(https://t1.kakaocdn.net/together_image/common/heart_action_white_1x.png) 1x,url(https://t1.kakaocdn.net/together_image/common/heart_action_white_2x.png) 2x);
+    /* background-image: image-set(url(https://t1.kakaocdn.net/together_image/common/heart_action_white_1x.png) 1x,url(https://t1.kakaocdn.net/together_image/common/heart_action_white_2x.png) 2x); */
+    background-image: url("imges/review-like-on.png");
+    background-size: auto 100%;
+    flex-shrink: 0;
+    margin-left: -16px;
+    transform: scale(0.9);
+    box-sizing: border-box;
+}
+
+.review-like-icon-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* background-image: image-set(url(https://t1.kakaocdn.net/together_image/common/heart_action_white_1x.png) 1x,url(https://t1.kakaocdn.net/together_image/common/heart_action_white_2x.png) 2x); */
+    background-image: url("imges/review-like.png");
     background-size: auto 100%;
     flex-shrink: 0;
     margin-left: -16px;
@@ -1691,21 +1916,14 @@ menu, ol, ul {
     z-index: 5;
 }
 
-.list-menu-second {
-    position: relative;
-    margin-top: -1px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    margin-left: 0px;
-    color: rgb(32, 32, 32);
-    flex-grow: 1;
-}
-
-.list-menu-first {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    color: rgb(32, 32, 32);
-    flex-grow: 1;
+.list-menu-second::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(242, 242, 242);
 }
 
 .list-menu-style {
@@ -1728,6 +1946,22 @@ menu, ol, ul {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
 }
 
+.list-menu-second {
+    position: relative;
+    margin-top: -1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: 0px;
+    color: rgb(32, 32, 32);
+    flex-grow: 1;
+}
+
+.list-menu-first {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: rgb(32, 32, 32);
+    flex-grow: 1;
+}
 .list-change-menu {
     width: 80px;
     display: flex;
@@ -1750,6 +1984,13 @@ menu, ol, ul {
     z-index: 100;
 }
 
+.action-list-button .display-none {
+    display: none;
+}
+.action-list-button .display-flex {
+    display: flex;
+}
+
 .list-change-open {
     width: 12px;
     height: 12px;
@@ -1758,7 +1999,15 @@ menu, ol, ul {
     opacity: 1;
 }
 
-.list-change-first {
+span#recent {
+    display: flex;
+}
+
+span#cheer {
+    display: none;
+}
+
+.list-change-son {
     color: rgb(32, 32, 32);
     font-size: 14px;
     font-style: normal;
@@ -2444,11 +2693,25 @@ li.tab-menu-on {
     box-sizing: border-box;
 }
 
+.like-number-button-icon.on {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* background-image: image-set(url(https://t1.kakaocdn.net/together_image/common/heart_action_1x_220907.png) 1x,url(https://t1.kakaocdn.net/together_image/common/heart_action_2x_220907.png) 2x); */
+    background-image: url("imges/like-on.png");
+    background-size: auto 100%;
+    margin-left: -16px;
+    transform: scale(0.8);
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
 .like-number-button-icon {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: image-set(url(https://t1.kakaocdn.net/together_image/common/heart_action_1x_220907.png) 1x,url(https://t1.kakaocdn.net/together_image/common/heart_action_2x_220907.png) 2x);
+    /* background-image: image-set(url(https://t1.kakaocdn.net/together_image/common/heart_action_1x_220907.png) 1x,url(https://t1.kakaocdn.net/together_image/common/heart_action_2x_220907.png) 2x); */
+    background-image: url("imges/like.png");
     background-size: auto 100%;
     margin-left: -16px;
     transform: scale(0.8);
@@ -2465,7 +2728,7 @@ li.tab-menu-on {
     align-items: center;
     width: 100%;
     height: 46px;
-    cursor: pointe
+    cursor: pointer;
     padding: 0;
     border: 0 none;
     vertical-align: middle;
@@ -3405,4 +3668,20 @@ li.tab-menu-on {
 
 body {
     min-width: 1140px;
+}
+
+.li-test {
+    margin-right: 0px;
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    vertical-align: top;
+    left: 10px;
+}
+
+.test {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
 }

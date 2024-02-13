@@ -3,15 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, viewport-fit=cover" />
-        <link rel="stylesheet" href="../../staticfiles/css/pjw/personal-challenge-detail.css" />
-        <title>춘식이와 함께 태극기를 달아주세요!</title>
+        <link rel="stylesheet" href="../../../staticfiles/css/pjw/group-challenge/group-challenge-detail.css" />
+        <title>개인: 춘식이와 함께 태극기를 달아주세요!</title>
+        <link rel="icon" href="../../pjw/group-challenge/imges/WU-logo-pink.png" />
     </head>
     <body style="background-color: white; overflow: auto">
-        <!-- 히든 : 바로가기 메뉴 -->
-        <div class="hidden-sortcuts WfZZU">
-            <a href="#main" class="p-chall-shortcuts">본문 바로가기</a>
-            <a href="#navigation" class="p-chall-shortcuts">메뉴 바로가기</a>
-        </div>
         <!-- 챌린지 상세보기 -->
         <div>
             <section class="p-main-section">
@@ -35,11 +31,11 @@
                             </button>
                         </div>
                         <h3 color="white" class="p-main-title">춘식이와 함께 태극기를 달아주세요!</h3>
-                        <div width="100%" class="people-processbar" aria-hidden="true">
-                            <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" class="people-processbar-num"></div>
+                        <div width="100%" class="people-processbar">
+                            <div class="people-processbar-num"></div>
                         </div>
-                        <div role="text" class="title-lower">
-                            <span aria-label="총 169464명 행동중 달성률 85%" class="lower-box">
+                        <div class="title-lower">
+                            <span class="lower-box">
                                 <button class="lower-button">
                                     <span size="13" color="white" aria-hidden="true" class="sc-5dc55ca7-0 sc-3338cf70-4 gjzPP cCbacr">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 28" width="14" height="14" opacity="1" class="lower-inner">
@@ -205,8 +201,9 @@
                                 </button>
                             </li>
                         </ul>
-                        <div id="action-button" class="p-chall-movement">
+                        <div id="action-doing-button" class="p-chall-movement">
                             <button type="button" class="p-chall-movement-button">자랑하기</button>
+                            <!-- 이미 참여한 챌린지일때 나타나는 창 -->
                             <div class="review-movement-message" role="alert" tabindex="0">
                                 <div role="document" class="review-message-box">
                                     <strong class="review-message-style">이미 행동해주셨네요.</strong>
@@ -220,7 +217,7 @@
                             <div class="like-number-box">
                                 <div data-tiara-custom="alex.component=REACTION&amp;alex.clientId=9a7u9hj4lbx0NE0O744C7Od5@together-action&amp;alex.itemKey=project-38-like&amp;alex.forumKey=together-action" class="like-number-main">
                                     <div class="like-number-selections">
-                                        <button data-action-type="LIKE" data-tiara-action-name="액션_좋아요" data-tiara-custom="alex.topType=좋아요" class="like-number-button">
+                                        <button id="clicklike" class="like-number-button">
                                             <div data-animation="BGSLIDE" class="like-number-button-icon"></div>
                                             <div class="like-number-label">좋아요</div>
                                             <span class="like-number-count">6,977</span>
@@ -228,6 +225,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- 좋아요 눌렀을 때 나타나는 창-->
                             <div class="like-movement-message" role="alert" tabindex="0">
                                 <div role="document" class="like-message-box">
                                     <strong class="review-message-style">응원 감사합니다.</strong>
@@ -425,12 +423,13 @@
                         <strong class="WfZZU">이미지형 행동 목록</strong>
                         <div class="action-list-button">
                             <button type="button" color="transparent" class="list-change-button">
-                                <span size="14" class="list-change-first">최신순</span>
+                                <span id="recent" size="14" class="list-change-son">최신순</span>
+                                <span id="cheer" size="14" class="list-change-son">응원순</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="12" height="12" opacity="1" rotate="270" class="list-change-open">
                                     <path d="M16.53.912a1.5 1.5 0 0 1 2.17 2.065l-.105.111-9.4 8.916 9.384 8.653a1.5 1.5 0 0 1 .184 2.002l-.098.118a1.5 1.5 0 0 1-2.002.184l-.118-.098-10.562-9.741a1.5 1.5 0 0 1-.12-2.082l.105-.11L16.53.913z" fill="#202020" fill-rule="nonzero"></path>
                                 </svg>
                             </button>
-                            <div class="list-change-tooltip" role="tooltip" tabindex="0">
+                            <div class="list-change-tooltip" tabindex="0">
                                 <div class="list-change-tooltip-content">
                                     <div class="list-change-menu">
                                         <button type="button" color="gray40" class="list-menu-first list-menu-style">최신순</button>
@@ -475,8 +474,8 @@
                                     <div class="action-board-like">
                                         <div data-tiara-custom="alex.component=REACTION&amp;alex.clientId=9a7u9hj4lbx0NE0O744C7Od5@together-action&amp;alex.itemKey=user-action-165939-like&amp;alex.forumKey=together-action" class="board-like-main">
                                             <div class="board-like-selection">
-                                                <button data-action-type="LIKE" data-tiara-action-name="액션_좋아요" data-tiara-custom="alex.topType=좋아요" class="like-selection-button">
-                                                    <div data-animation="BGSLIDE" class="like-icon-button"></div>
+                                                <button class="like-selection-button">
+                                                    <div class="review-like-icon-button"></div>
                                                     <div class="like-letter">좋아요</div>
                                                     <span class="like-count-number">18</span>
                                                 </button>
@@ -507,7 +506,7 @@
                                         <div class="board-option-tooltip" role="tooltip" tabindex="0">
                                             <div class="board-tooltip-content">
                                                 <div class="board-option-menu">
-                                                    <button type="button" color="gray40" class="board-option-share board-button-first">공유</button>
+                                                    <!-- <button type="button" color="gray40" class="board-option-share board-button-first">공유</button> -->
                                                     <button type="button" color="gray40" class="board-option-share board-button-second">신고</button>
                                                 </div>
                                             </div>
@@ -601,7 +600,7 @@
                                         </div>
                                         <div class="comment-add-more">
                                             <button type="button" color="transparent" class="comment-like-button">
-                                                <i class="comment-like-style"></i>
+                                                <i class="comment-like-icon-style"></i>
                                                 <span color="gray80" class="comment-like-counts">912</span>
                                             </button>
                                             <span color="gray60" class="comment-write-date">2023.9.22</span>
@@ -806,7 +805,7 @@
                         </div>
                         <div class="p-chall-photo-box">
                             <button type="button" color="black" class="p-chall-photo-button" role="" tabindex="0">
-                                <input accept="image/*,.jpeg,.png" multiple="" tabindex="-1" type="file" style="display: none" />
+                                <input id="attach" accept="image/*,.jpeg,.png" multiple="" tabindex="-1" type="file" style="display: none" />
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 42 40" width="20" height="21" opacity="1" class="p-chall-photo-add">
                                     <g transform="translate(0 4.051)" fill="#202020" fill-rule="evenodd">
                                         padding-top: 16px; padding-bottom: 16px;
@@ -839,7 +838,7 @@
                             </div>
                         </div>
                         <ul class="chall-start-guide">
-                            <li class="start-guide-first">사진은 10MB 이내 첨부 가능합니다.</li>
+                            <li class="start-guide-first">사진은 1장만 첨부 가능합니다.</li>
                             <li class="start-guide-second">미션 내용이 맞지 않거나 게시글 정책을 위반한 경우 삭제됩니다.</li>
                         </ul>
                         <div id="review-close-button" class="p-chall-last-box">
@@ -877,6 +876,108 @@
             </div>
             <div class="chall-do-modal-layer"></div>
         </div>
+        <!-- 신고버튼 모달 -->
+        <div id="report-btn" class="report-button">
+            <div class="report-modal-page">
+                <h5 class="report-modal-title">신고사유</h5>
+                <div class="report-modal-body">
+                    <form>
+                        <div class="report-group">
+                            <!-- 신고 리스트 (기본 체크됨) -->
+                            <label class="report-label-style">
+                                <input class="report-label-dots" type="radio" value="A" checked="" name="reportCode" />
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" width="18" height="18" opacity="1" class="report-dot-in">
+                                    <g fill="#202020" fill-rule="evenodd" class="report-not-check">
+                                        <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0zm0 2C9.163 2 2 9.163 2 18s7.163 16 16 16 16-7.163 16-16S26.837 2 18 2z" fill-rule="nonzero"></path>
+                                        <circle id="circle-a" cx="18" cy="18" r="8" class="report-not-check-circle"></circle>
+                                    </g>
+                                </svg>
+                                <span color="gray80" class="report-label-texts">영리, 홍보목적</span>
+                            </label>
+                            <!-- 신고 리스트 (이외) -->
+                            <label class="report-label-style">
+                                <input class="report-label-dots" type="radio" value="O" name="reportCode" />
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" width="18" height="18" opacity="1" class="report-dot-in">
+                                    <g fill="#202020" fill-rule="evenodd" class="report-not-check">
+                                        <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0zm0 2C9.163 2 2 9.163 2 18s7.163 16 16 16 16-7.163 16-16S26.837 2 18 2z" fill-rule="nonzero"></path>
+                                        <circle cx="18" cy="18" r="8" class="report-not-check-circle"></circle>
+                                    </g>
+                                </svg>
+                                <span color="gray80" class="report-label-texts">불법정보</span>
+                            </label>
+                            <label class="report-label-style">
+                                <input class="report-label-dots" type="radio" value="O" name="reportCode" />
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" width="18" height="18" opacity="1" class="report-dot-in">
+                                    <g fill="#202020" fill-rule="evenodd" class="report-not-check">
+                                        <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0zm0 2C9.163 2 2 9.163 2 18s7.163 16 16 16 16-7.163 16-16S26.837 2 18 2z" fill-rule="nonzero"></path>
+                                        <circle cx="18" cy="18" r="8" class="report-not-check-circle"></circle>
+                                    </g>
+                                </svg>
+                                <span color="gray80" class="report-label-texts">음란, 청소년 유해</span>
+                            </label>
+                            <label class="report-label-style">
+                                <input class="report-label-dots" type="radio" value="O" name="reportCode" />
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" width="18" height="18" opacity="1" class="report-dot-in">
+                                    <g fill="#202020" fill-rule="evenodd" class="report-not-check">
+                                        <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0zm0 2C9.163 2 2 9.163 2 18s7.163 16 16 16 16-7.163 16-16S26.837 2 18 2z" fill-rule="nonzero"></path>
+                                        <circle cx="18" cy="18" r="8" class="report-not-check-circle"></circle>
+                                    </g>
+                                </svg>
+                                <span color="gray80" class="report-label-texts">욕설,비방,차별,혐오</span>
+                            </label>
+                            <label class="report-label-style">
+                                <input class="report-label-dots" type="radio" value="O" name="reportCode" />
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" width="18" height="18" opacity="1" class="report-dot-in">
+                                    <g fill="#202020" fill-rule="evenodd" class="report-not-check">
+                                        <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0zm0 2C9.163 2 2 9.163 2 18s7.163 16 16 16 16-7.163 16-16S26.837 2 18 2z" fill-rule="nonzero"></path>
+                                        <circle cx="18" cy="18" r="8" class="report-not-check-circle"></circle>
+                                    </g>
+                                </svg>
+                                <span color="gray80" class="report-label-texts">개인 정보 노출,거래</span>
+                            </label>
+                            <label class="report-label-style">
+                                <input class="report-label-dots" type="radio" value="O" name="reportCode" />
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" width="18" height="18" opacity="1" class="report-dot-in">
+                                    <g fill="#202020" fill-rule="evenodd" class="report-not-check">
+                                        <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0zm0 2C9.163 2 2 9.163 2 18s7.163 16 16 16 16-7.163 16-16S26.837 2 18 2z" fill-rule="nonzero"></path>
+                                        <circle cx="18" cy="18" r="8" class="report-not-check-circle"></circle>
+                                    </g>
+                                </svg>
+                                <span color="gray80" class="report-label-texts">도배,스팸</span>
+                            </label>
+                            <label class="report-label-style">
+                                <input class="report-label-dots" type="radio" value="O" name="reportCode" />
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" width="18" height="18" opacity="1" class="report-dot-in">
+                                    <g fill="#202020" fill-rule="evenodd" class="report-not-check">
+                                        <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0zm0 2C9.163 2 2 9.163 2 18s7.163 16 16 16 16-7.163 16-16S26.837 2 18 2z" fill-rule="nonzero"></path>
+                                        <circle cx="18" cy="18" r="8" class="report-not-check-circle"></circle>
+                                    </g>
+                                </svg>
+                                <span color="gray80" class="report-label-texts">권리침해 신고</span>
+                            </label>
+                            <label class="report-label-style">
+                                <input class="report-label-dots" type="radio" value="O" name="reportCode" />
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" width="18" height="18" opacity="1" class="report-dot-in">
+                                    <g fill="#202020" fill-rule="evenodd" class="report-not-check">
+                                        <path d="M18 0c9.941 0 18 8.059 18 18s-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0zm0 2C9.163 2 2 9.163 2 18s7.163 16 16 16 16-7.163 16-16S26.837 2 18 2z" fill-rule="nonzero"></path>
+                                        <circle cx="18" cy="18" r="8" class="report-not-check-circle"></circle>
+                                    </g>
+                                </svg>
+                                <span color="gray80" class="report-label-texts">불법촬영물 등 유통 신고</span>
+                            </label>
+                        </div>
+                        <div class="report-desc"></div>
+                        <div class="report-actions">
+                            <div class="report-actions-tool">
+                                <button type="button" color="gray80" class="report-cancel-button">취소</button>
+                                <button type="submit" class="report-sign-button">신고</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="report-modal-layer"></div>
+        </div>
     </body>
-    <script src="../../staticfiles/js/pjw/personal-challenge-detail.js"></script>
+    <script src="../../../staticfiles/js/pjw/group-challenge-detail.js"></script>
 </html>
