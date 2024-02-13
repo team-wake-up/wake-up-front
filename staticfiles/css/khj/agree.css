@@ -1,0 +1,1408 @@
+@font-face {
+    font-family: "NotoSans";
+    src: url(/templete/khj/fonts/NotoSansKR-Regular.woff);
+}
+
+/* body */
+body, html {
+    height: 100%;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333
+}
+
+body {
+    background: #fff;
+    -webkit-text-size-adjust: none;
+}
+
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: block;
+}
+
+/* container-doc */
+
+#container-doc{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    display: block;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+/* inner-container */
+.inner-container {
+    display: inline-block;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+/* login-main */
+main {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-main {
+    display: inline-block;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+/* login-title */
+.login-title {
+    padding-top: 50px;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container-doc .inner-container {
+    display: inline-block;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+/* til-service */
+.tit-service {
+    display: block;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* logo-kakao */
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* ir-wa  */
+/* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때 */
+.ir-wa {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.ir-wa {
+    display: block;
+    overflow: hidden;
+}
+
+/* .logo-kakao {
+    display: block;
+    width: 88px;
+    height: 27px;
+    margin: 0 auto;
+    background: #fff url(https://accounts.kakaocdn.net/images/pc/logo_kakao.png) no-repeat 0 0;
+    background-size: 100px 80px;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+} */
+
+.logo-kakao {
+    display: block;
+    width: 130px; /* 변경된 너비 */
+    height: auto; /* 변경된 높이 */
+    margin: 0 auto;
+    background: #fff url(/templete/khj/images/logo.png) no-repeat 0 0;
+    background-size: contain; /* 배경 크기를 콘텐츠에 맞게 조정 */
+    font-size: 19px; /* 폰트 크기 */
+    line-height: 27px; /* 행 간격 */
+    text-align: center; /* 가운데 정렬 */
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* content-article */
+.content-article {
+    width: 580px;
+    height: 100%;
+    margin: 40px auto 42px;
+    padding: 0 69px;
+    border: 1px solid rgba(0,0,0,.12);
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+article {
+    display: block;
+}
+
+/* cont-login */
+.cont-login {
+    word-wrap: break-word;
+}
+
+
+.content-article [class^=cont-] {
+    position: relative;
+    height: 100%;
+    padding: 55px 0 50px;
+    box-sizing: border-box;
+}
+
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+/* login-kakaomail */
+form{
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: block;
+}
+
+/* item-form fst */
+/* 아이디 */
+.login-kakaomail .item-form.fst {
+    margin-top: 4px;
+}
+
+
+.item-form {
+    position: relative;
+    margin-top: 5px;
+    padding-bottom: 3px;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* box-tf */
+.box-tf {
+    position: relative;
+    border: solid #ccc;
+    border-width: 0 0 2px;
+}
+
+/* screen-out */
+.screen-out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.screen-out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    cursor: default;
+}
+
+/* input login-id */
+.box-tf .tf-g {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 0 8px;
+    border: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #191919;
+    background-color: transparent;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    outline: 0 none;
+    caret-color: #191919;
+    opacity: 1;
+}
+
+html input[type=button], input[type=email], input[type=password], input[type=reset], input[type=search], input[type=submit], input[type=tel], input[type=text] {
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+}
+
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+.content-article .cont-login {
+    word-wrap: break-word;
+}
+
+/* util-tf */
+.box-tf .util-tf {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    z-index: 10;
+    min-width: 55px;
+    height: 43px;
+    font-size: 0;
+    text-align: right;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+/* item-form */
+/* 비밀번호 */
+.item-form {
+    position: relative;
+    margin-top: 5px;
+    padding-bottom: 3px;
+}
+
+
+div {
+    display: block;
+}
+
+/* item-form */
+.screen-out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.screen-out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+label {
+    cursor: default;
+}
+
+/* input login-password */
+.box-tf .tf-g[type=password] {
+    padding: 12px 0 8px;
+    font: small-caption;
+    font-size: 18px;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo-Regular,맑은 고딕,Malgun Gothic,돋움,dotum,sans-serif;
+    letter-spacing: .15em;
+}
+
+.box-tf .tf-g {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 0 8px;
+    border: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #191919;
+    background-color: transparent;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    outline: 0 none;
+    caret-color: #191919;
+    opacity: 1;
+}
+
+.box-tf .tf-g[type=password] {
+    padding: 12px 0 8px;
+    font: small-caption;
+    font-size: 18px;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo-Regular,맑은 고딕,Malgun Gothic,돋움,dotum,sans-serif;
+    letter-spacing: .15em;
+}
+
+html input[type=button], input[type=email], input[type=password], input[type=reset], input[type=search], input[type=submit], input[type=tel], input[type=text] {
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+}
+
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+input {
+    margin:0;
+    padding:0;
+}
+
+input[type="password" i] {
+    -webkit-text-security: disc !important;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+/* set-login */
+.set-login {
+    margin-top: 25px;
+}
+
+.set-login:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/* item-choice */
+.set-login .item-choice {
+    float: left;
+    padding-right: 0;
+}
+
+.cont-login .item-choice {
+    display: block;
+}
+
+.item-choice {
+    display: block;
+    position: relative;
+    vertical-align: top;
+}
+
+.set-login .item-choice:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/* input inp-choice */
+/* 간편로그인 */
+
+.set-login .item-choice .inp-choice {
+    right: 20px;
+    width: auto;
+}
+.set-login .inp-choice {
+    top: 0;
+}
+
+.item-choice .inp-choice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+
+/* lab-choice */
+.set-login .item-choice .lab-choice {
+    float: left;
+}
+.set-login .lab-choice {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.lab-choice {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    cursor: pointer;
+}
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+
+
+
+/* btn-help */
+.set-login .item-choice .btn-help {
+    float: left;
+    margin: 1px 0 0 6px;
+}
+
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.content-article .cont-login {
+    word-wrap: break-word;
+}
+
+
+
+/* line-or */
+.line-or {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.confirm-btn {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.content-article .cont-login {
+    word-wrap: break-word;
+}
+/* line-or before after(또는 옆에 줄) */
+.line-or:after,.line-or:before {
+    display: inline-block;
+    width: calc(50% - 20px);
+    height: 1px;
+    margin: 8px 0;
+    background-color: rgba(0,0,0,.06);
+    vertical-align: top;
+    content: "";
+}
+.line-or {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+/* txt-or */
+.line-or .txt-or {
+    display: inline-block;
+    width: 40px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #828282;
+}
+
+.line-or {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+/* link-join */
+/* 회원가입으로 이동 */
+.cont-login .info-user {
+    margin-top: 26px;
+}
+.info-user .link-join {
+    float: left;
+    font-size: 12px;
+}
+
+.cont-login a {
+    color: #191919;
+}
+
+a {
+    cursor: pointer;
+}
+
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+a {
+    text-decoration: none !important; 
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ul list-user */
+.info-user .list-user {
+    float: right;
+}
+
+dl, li, menu, ol, ul {
+    list-style: none;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* li */
+.info-user .list-user li:before {
+    content: "";
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 4px 10px;
+    background-color: rgba(0,0,0,.08);
+}
+
+.info-user .list-user li {
+    float: left;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* a */
+.info-user .list-user .link-user {
+    float: left;
+    font-size: 12px;
+}
+
+.cont-login a {
+    color: #191919;
+}
+
+/* footer */
+/* 하단 */
+.login-footer {
+    display: block;
+    padding-bottom: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.screen-out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ir-caption, .screen-out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.login-footer .service-info, .login-footer .service-info .link-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* sevice-info a태그 */
+.login-footer .service-info .link-info:first-child {
+    margin-left: 0;
+}
+
+.login-footer .service-info .link-info {
+    font-size: 12px;
+    padding: 0 5px;
+    color: #4c4c4c;
+}
+
+.service-info .link-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login-footer .service-info .link-info+.link-info {
+    margin-left: 5px;
+}
+
+
+/* list-option */
+.login-footer .item-select .list-select {
+    bottom: 25px;
+}
+
+.item-select .list-select {
+    display: none;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    bottom: -12px;
+    z-index: 10;
+    min-width: 90px;
+    max-height: 240px;
+    font-size: 13px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+}
+
+dl, li, menu, ol, ul {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+/* copyright */
+.login-footer .txt-copyright {
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(0,0,0,.5);
+}
+
+/* kakaocorp */
+.login-footer .link-kakaocorp {
+    font-weight: 700;
+    color: rgba(0,0,0,.5);
+}
+
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* join.css */
+.screen-out {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.ir-caption, .screen-out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* navigation-wrap */
+.navigation-wrap {
+    width: 60px;
+    height: 4px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    background: rgba(0,0,0,.08);
+}
+
+
+/* bar-navigation */
+.navigation-wrap .bar-navigation {
+    height: 4px;
+    border-radius: 4px;
+    background: #4c4c4c;
+    text-indent: -9999px;
+}
+
+/* tit-g */
+.cont-sign .tit-g {
+    letter-spacing: -.03em;
+}
+
+.tit-g {
+    display: block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #191919;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+/* check-all */
+.check-all {
+    margin-top: 49px;
+    padding: 0 0 19px 28px;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.check-all .item-choice, .cont-agree .list-agree .item-choice {
+    margin-left: -28px;
+}
+
+.item-choice {
+    display: block;
+    position: relative;
+    vertical-align: top;
+}
+
+.item-choice .inp-choice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+.check-all .lab-choice {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.item-choice .lab-choice {
+    line-height: 20px;
+}
+
+.item-choice .lab-choice {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    cursor: pointer;
+}
+a, button, input, label {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.check-all .lab-choice .ico-check {
+    margin-top: 2px;
+}
+
+.item-choice .lab-choice .ico-check {
+    background-position: 0 0;
+}
+
+
+.item-choice .inp-choice:checked+.lab-choice .ico-check {
+    background-position: -25px 0;
+}
+
+.item-choice .lab-choice .ico-comm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.ico-account, .ico-comm {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    vertical-align: top;
+}
+
+.ico-comm {
+    background: url(https://accounts.kakaocdn.net/images/pc/ico_comm.png) 0 0 no-repeat;
+    background-size: 300px auto;
+}
+
+
+/* txt-info */
+.check-all .txt-info {
+    padding-top: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    /* 마진 수정 */
+    margin: 0px;
+}
+
+.txt-info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+/* list-agree */
+.list-agree {
+    padding-top: 22px;
+}
+
+dl, li, menu, ol, ul {
+    list-style: none;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.list-agree li:first-child {
+    margin-top: 0;
+}
+
+.list-agree li {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 16px 0 28px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.list-agree .item-choice {
+    margin-left: -28px;
+}
+
+.item-choice {
+    display: block;
+    position: relative;
+    vertical-align: top;
+}
+
+.item-choice .inp-choice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+.item-choice .lab-choice {
+    line-height: 20px;
+}
+
+.item-choice .lab-choice {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    cursor: pointer;
+}
+/* li1 */
+.list-agree .lab-choice .ico-check {
+    margin-top: 2px;
+}
+
+.item-choice .lab-choice .ico-check {
+    background-position: 0 0;
+}
+
+.item-choice .lab-choice .ico-comm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.ico-account, .ico-comm {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    vertical-align: top;
+}
+
+.list-agree .link-arr {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.link-arr {
+    display: inline-block;
+    vertical-align: top;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo,Malgun Gothic,맑은 고딕,돋움,dotum,sans-serif;
+    color: #333;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.link-arr .ico-arr {
+    width: 9px;
+    height: 14px;
+    margin: 8px 10px 8px 11px;
+    background-position: -110px -75px;
+}
+
+.list-agree .txt-info {
+    margin-top: 0px;
+    margin-right: -6px;
+    padding-top: 4px;
+}
+
+.txt-info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* confirm-btn */
+.btn-g:disabled {
+    color: #b2b2b2;
+    background-color: #fafafa;
+    pointer-events: none;
+    cursor: default;
+}
+
+address, button[type=submit], caption, cite, code, dfn, em, input[type=submit], var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.confirm-btn {
+    padding-top: 45px;
+}
+
+.btn-g {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 51px;
+    color: #191919;
+    background-color: #f0f0f0;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+
+
+
+/* 전체동의 버튼 클래스만  */
+.item-choice .inp-choice-all {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+.item-choice .inp-choice-all:checked+.lab-choice .ico-check {
+    background-position: -25px 0;
+}

@@ -1,0 +1,569 @@
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url(/templete/khj/fonts/NotoSans-Regular-f0ee3ba6b2d732c631f4d221ee25de542d0a3e109e4fed1f294e435da4aa03f1.woff);
+}
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url(/templete/khj/fonts/NotoSans-Bold-f6cfb0159bf1f9c6e22c04ca69fac98b34f9476bfbe93ad5d8a02d08a460b31e.woff);
+}
+
+html {
+    height: 100%;
+}
+
+/* body */
+.account-comm {
+    display: table;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    border-collapse: separate;
+}
+
+body, th, td, input, select, textarea, button {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: NotoSans-Regular,AppleSDGothicNeo-Regular,"맑은 고딕",Malgun Gothic,"돋움",dotum,sans-serif;
+    color: #7c7c7c;
+    letter-spacing: -0.03em;
+    word-wrap: break-word;
+}
+
+body {
+    background: #fff;
+    -webkit-text-size-adjust: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body, th, td, input, select, textarea, button {
+    font-family: NotoSans-Regular,AppleSDGothicNeo-Regular,'맑은 고딕',Malgun Gothic,'돋움',dotum,sans-serif;
+}
+
+label, button, a, input {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+/* kakao-wrap */
+
+.account-comm #kakaoWrap {
+    position: relative;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    padding: 50px 0;
+}
+
+.account-comm #kakaoHead {
+    max-width: 520px;
+    text-align: center;
+    margin: 0 auto;
+}
+div {
+    display: block;
+}
+
+/* 로고 */
+/* #kakaoServiceLogo {
+    display: inline-block;
+    width: 88px;
+    height: 27px;
+    margin: 0 auto;
+    line-height: 1;
+    vertical-align: top;
+    background: url(/templete/khj/images/logo.png);
+} */
+
+#kakaoServiceLogo{
+    display: block;
+    width: 130px; /* 변경된 너비 */
+    height: auto; /* 변경된 높이 */
+    margin: 0 auto;
+    background: #fff url(/templete/khj/images/logo.png) no-repeat 0 0;
+    background-size: contain; /* 배경 크기를 콘텐츠에 맞게 조정 */
+    font-size: 19px; /* 폰트 크기 */
+    line-height: 27px; /* 행 간격 */
+    text-align: center; /* 가운데 정렬 */
+}
+
+
+/* ir-wa */
+.ir-wa {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* mArticle */
+.account-comm #mArticle {
+    position: relative;
+    max-width: 580px;
+    min-height: 520px;
+    margin: 40px auto;
+    padding: 58px 69px 139px;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#kakaoContent, #mArticle {
+    display: block;
+}
+
+/* pageFindAcoountPhone */
+div[data-role=page].km-page-active {
+    display: block;
+}
+
+.tit-main {
+    font-size: 24px;
+    line-height: 34px;
+    color: #252525;
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* desc-main */
+.desc-main {
+    margin-top: 15px;
+    text-align: left;
+    word-break: keep-all;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* form */
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+/* field-set */
+.cont-find .fld-apply {
+    margin-top: 4px;
+}
+
+fieldset {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+fieldset, img {
+    border: 0 none;
+}
+
+/* legend */
+.screen-out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+/* item-tf */
+.item-tf {
+    position: relative;
+    padding-right: 0;
+}
+
+/* tf-required */
+.tf-required {
+    display: block;
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+/* button */
+.tf-required .btn-help {
+    margin: -3px 0 0 2px;
+}
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input, select, textarea, button {
+    vertical-align: middle;
+}
+
+/* ico-help */
+.ico-help {
+    display: block !important; 
+    width: 20px;
+    height: 20px;
+    background-position: 0 -140px !important;
+}
+
+.ico-account {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    vertical-align: top;
+    background: url(https://accounts.kakao.com/assets/weblogin/techin/ico_account-ade5816f891a9a5856db33c0816b08cb5664edfd8d144ddf845f084dd8b95f58.png);
+}
+
+/* item-inp */
+/* input div */
+.item-tf {
+    position: relative;
+    padding-right: 0;
+}
+
+.lab-g {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #4c4c4c;
+    cursor: pointer;
+}
+
+/* input.tf-g */
+.item-tf .tf-g {
+    width: 100%;
+    height: 48px;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #ebebeb;
+    padding: 11px 70px 8px 0;
+    color: #252525;
+    outline: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    caret-color: #191919;
+    text-decoration: none;
+}
+
+/* util-tf */
+.util-tf {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    min-width: 55px;
+    text-align: right;
+}
+
+.util-tf .btn-del .ico-del {
+    display: block;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    background-position: -170px -290px;
+}
+
+.util-tf .ico-done {
+    width: 23px;
+    height: 20px;
+    margin-right: 10px;
+    background-position: -150px -30px;
+}
+
+/* info-count */
+.util-tf .info-count {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 12px;
+    color: #adadad;
+    line-height: 22px;
+}
+
+/* info-error */
+.info-error {
+    margin-top: 10px;
+    color: #e65f3e;
+    font-size: 13px;
+}
+
+/* tf-required */
+.tf-required {
+    display: block;
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+/* wrap-inp */
+/* 전화번호 div창 */
+.type-phone {
+    position: relative;
+    height: 48px;
+    padding-left: 85px;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.wrap-inp {
+    box-sizing: border-box;
+}
+
+/* item-inp item-select */
+.type-phone .item-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+}
+
+.wrap-inp .item-inp {
+    display: inline-block;
+    padding-right: 0;
+}
+
+/* a태그 link-selected */
+.item-select .link-selected {
+    position: relative;
+    display: block;
+    height: 48px;
+    line-height: 47px;
+}
+
+a {
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+.type-phone .link-selected .ico-arr {
+    position: absolute;
+    right: 16px;
+}
+
+.item-select .link-selected .ico-arr {
+    width: 12px;
+    height: 10px;
+    margin: 17px 0 0 8px;
+    background-position: -180px -30px;
+}
+
+/* ul태그 list-select */
+.type-phone .item-select .list-select {
+    width: 260px;
+    max-height: 438px;
+}
+
+.item-select .list-select {
+    display: none;
+    position: absolute;
+    top: 40px;
+    max-height: 160px;
+    overflow-y: auto;
+    font-size: 13px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    background-color: #fff;
+    z-index: 10;
+}
+
+.item-select .link-select {
+    height: 40px;
+    padding: 0 15px;
+    color: #252525;
+    line-height: 40px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.type-phone .item-select .list-select .num-select {
+    display: inline-block;
+    min-width: 35px;
+}
+
+dl, ul, ol, menu, li {
+    list-style: none;
+}
+
+/* 전화번호 input창 */
+.wrap-inp .item-inp {
+    display: inline-block;
+    padding-right: 0;
+}
+
+.item-tf {
+    position: relative;
+    padding-right: 0;
+}
+
+/* label 전화번호 */
+.lab-g {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #4c4c4c;
+    cursor: pointer;
+}
+
+/* 전화번호 input창 */
+.type-phone .item-tf .tf-g {
+    padding-left: 15px;
+}
+
+.wrap-inp .tf-g {
+    border-width: 0;
+    height: 46px;
+}
+
+/* list-desc */
+.fld-apply .list-desc {
+    margin-top: 22px;
+}
+
+.list-desc {
+    margin-top: 22px;
+    font-size: 12px;
+    color: #959595;
+}
+
+dl, ul, ol, menu, li {
+    list-style: none;
+}
+
+.cont-find .fld-apply .list-desc li {
+    margin-top: 10px;
+}
+
+.list-desc li {
+    position: relative;
+    margin-top: 6px;
+    padding-left: 7px;
+}
+
+.list-desc .ico-dot {
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background-position: -20px -60px;
+}
+
+.ico-account {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    vertical-align: top;
+    background: url(https://accounts.kakao.com/assets/weblogin/techin/ico_account-ade5816f891a9a5856db33c0816b08cb5664edfd8d144ddf845f084dd8b95f58.png);
+}
+
+/* 계정찾기 버튼 */
+.cont-find .wrap-btn {
+    margin-top: 40px;
+}
+
+.wrap-btn3 {
+    overflow: hidden;
+    position: absolute;
+    right: 69px;
+    bottom: 49px;
+    left: 69px;
+}
+
+.wrap-btn .btn-g {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #191919;
+    background: rgba(0,0,0,0.06);
+}
+
+.btn-g {
+    display: inline-block;
+    height: 42px;
+    padding: 0 31px;
+    color: #252525;
+    border: 1px solid #dbdbdb;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+/* footer */
+.account-comm #kakaoFoot {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-comm .service-info {
+    font-size: 0;
+}
+
+.footer-comm .link-info {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #4c4c4c;
+    line-height: 20px;
+}
+
+.footer-comm .link-policy {
+    font-family: NotoSans-Bold,sans-serif;
+}
+
+.footer-comm .txt-copyright {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    color: #7c7c7c;
+    line-height: 18px;
+    letter-spacing: 0;
+}
+
+.wrap-btn .btn-g:hover {
+    background-color: #e7e7e7;
+}
+

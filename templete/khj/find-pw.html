@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>비밀번호 찾기-계정 입력</title>
+        <link rel="stylesheet" href="/staticfiles/css/khj/find-pw.css" />
+    </head>
+    <body class="account-comm">
+        <div id="kakaoWrap">
+            <!-- 상단 -->
+            <div id="kakaoHead" role="banner">
+                <h1 id="kakaoServiceLogo">
+                    <span class="ir-wa">kakao</span>
+                    <img
+                        id="brand"
+                        height="30"
+                        class="img-logo"
+                        alt="kakao"
+                        style="display: none"
+                    />
+                </h1>
+            </div>
+            <!-- 중단 -->
+            <div id="kakaoContent" class="cont-find" role="main">
+                <div id="cMain">
+                    <article id="mArticle">
+                        <h2 id="kakaoBody" class="screen-out">
+                            웨이크 업 계정 찾기 본문
+                        </h2>
+                        <div
+                            id="pageEnterIdentification"
+                            data-role="page"
+                            data-url="pageEnterIdentification"
+                            class="km-page-active"
+                        >
+                            <h2 class="tit-main">
+                                웨이크 업 계정의<br />
+                                비밀번호를 재설정합니다.
+                            </h2>
+                            <p class="desc-main">
+                                비밀번호를 재설정할<br />
+                                웨이크 업 계정의 아이디 또는 전화번호를 입력해
+                                주세요.
+                            </p>
+                            <form
+                                id="findByEmailForm"
+                                action="#"
+                                method="post"
+                                name="formByEmail"
+                            >
+                                <fieldset class="fld-apply">
+                                    <legend class="screen-out">
+                                        정보입력 폼
+                                    </legend>
+                                    <strong class="tf-required">
+                                        웨이크 업 계정
+                                    </strong>
+                                    <div class="item-tf">
+                                        <div
+                                            class="item-tf item-inp type-error"
+                                            style=""
+                                        >
+                                            <label
+                                                for="tfNick"
+                                                class="lab-g lab-txt screen-out"
+                                                id="tfNick-label"
+                                            >
+                                                <span class="screen-out"
+                                                    >아이디 또는 전화번호</span
+                                                >
+                                            </label>
+                                            <input
+                                                data-type="text"
+                                                class="tf-g"
+                                                name="email-or-phone"
+                                                id="tfNick"
+                                                validator="email-or-phone"
+                                                type="text"
+                                                placeholder="아이디 또는 전화번호"
+                                            />
+
+                                            <div class="util-tf">
+                                                <button
+                                                    type="button"
+                                                    class="btn-del"
+                                                >
+                                                    <span
+                                                        class="ico-account ico-del"
+                                                        >삭제</span
+                                                    >
+                                                </button>
+                                            </div>
+
+                                            <p class="info-error">
+                                                웨이크 업 계정을 정확하게 입력해
+                                                주세요.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-btn wrap-btn3">
+                                        <button
+                                            type="button"
+                                            class="btn-g submit btn-type2 btn-disabled"
+                                        >
+                                            다음
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- 하단 -->
+            <div
+                id="kakaoFoot"
+                class="footer-comm"
+                role="contentinfo"
+                aria-hidden="false"
+            >
+                <strong class="screen-out">서비스 이용정보</strong>
+                <div class="service-info">
+                    <a
+                        href="https://www.kakao.com/policy/terms?lang=ko"
+                        class="link-info"
+                        >이용약관</a
+                    ><span class="txt-bar"></span>
+                    <a
+                        href="https://www.kakao.com/policy/privacy?lang=ko"
+                        class="link-info link-policy"
+                        >개인정보 처리방침</a
+                    ><span class="txt-bar"></span>
+                    <a
+                        href="https://www.kakao.com/policy/oppolicy?lang=ko"
+                        class="link-info"
+                        >운영정책</a
+                    ><span class="txt-bar"></span>
+                    <a href="https://cs.kakao.com/" class="link-info"
+                        >고객센터</a
+                    >
+                    <a
+                        href="https://www.kakao.com/notices?lang=ko"
+                        class="link-info"
+                        >공지사항</a
+                    ><span class="txt-bar"></span>
+                </div>
+                <small class="txt-copyright"
+                    >Copyright ©
+                    <a
+                        href="https://www.kakaocorp.com/?lang=ko"
+                        class="link-kakao"
+                        >Kakao Corp.</a
+                    >
+                    All rights reserved.
+                </small>
+            </div>
+        </div>
+    </body>
+    <script src="/staticfiles/js/khj/find-pw.js"></script>
+</html>
