@@ -10,8 +10,8 @@
     to {scale: 0;}
 }
 
-div.modal {
-    display: none;
+.edit-modal {
+    display: block;
     position: fixed;
     flex-direction: column;
     inset: 0px;
@@ -22,7 +22,7 @@ div.modal {
     background-color: #8586898a;
 }
 
-div.warn-modal {
+.edit-section-write-disable-dropzone {
     box-sizing: border-box;
     position: unset;
     width: 288px;
@@ -32,10 +32,7 @@ div.warn-modal {
     border-radius: 8px;
 }
 
-div.warn-modal {
+.edit-section-write-disable-dropzone  {
     padding: 24px;
 }
 
-div#content-wrap span{
-    display: block;
-}
