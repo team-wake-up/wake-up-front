@@ -273,8 +273,11 @@ video {
 
 .main-img {
     width: 100%;
-    height: 376px;
+    height: 378px;
     padding-top: 0px;
+    /* text-align: center;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    font-size: 100px; */
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("https://t1.kakaocdn.net/together_image/common/bg_intro_visual.png");
