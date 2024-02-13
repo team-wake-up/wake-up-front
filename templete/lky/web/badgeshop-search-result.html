@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, viewport-fit=cover" />
+        <title>검색 하기</title>
+        <link rel="shortcut icon" href="/templete/lky/images/favicon_wake_up.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/staticfiles/css/lky/web/badgeshop-search-result.css" />
+    </head>
+    <body>
+        <section>
+            <div id="dkWrap" class="wakeup-top">
+                <haeder></haeder>
+                <span id="rootContent">
+                    <search>
+                        <div id="dkContent" class="cont-search">
+                            <div id="mArticle">
+                                <h2 id="dkBody" class="screen-out">검색 본문</h2>
+                                <div class="group-schkeyword">
+                                    <form novalidate action="/" method="post" class="form-search">
+                                        <fieldset>
+                                            <legend class="screen-out">검색어 입력폼</legend>
+                                            <div class="box-search">
+                                                <input
+                                                    placeholder="검색어를 입력하세요"
+                                                    type="search"
+                                                    id="schkeyword"
+                                                    class="tf-keyword"
+                                                    autocomplete="off"
+                                                />
+                                            </div>
+                                            <button type="button" class="btn-delete">
+                                                <span class="ico-together ico-delete">삭제</span>
+                                            </button>
+                                            <button type="button" class="btn-search">
+                                                <span class="ico-together ico-search">검색</span>
+                                            </button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="search-cont">
+                                    <div class="group-schtag">
+                                        <strong class="tit-section"
+                                            >태그
+                                            <span class="txt-total">3</span>
+                                        </strong>
+                                        <div class="hash-group">
+                                            <tag-card>
+                                                <a class="link-hash hash-type9">#태그내용1</a>
+                                            </tag-card>
+                                            <tag-card>
+                                                <a class="link-hash hash-type4">#태그내용2</a>
+                                            </tag-card>
+                                            <tag-card>
+                                                <a class="link-hash hash-type3">#태그내용3</a>
+                                            </tag-card>
+                                            <tag-card>
+                                                <a class="link-hash hash-type7">#태그내용4</a>
+                                            </tag-card>
+                                        </div>
+                                    </div>
+                                    <div class="group-schproject">
+                                        <div class="search-sort">
+                                            <strong class="tit-section"
+                                                >챌린지
+                                                <span class="txt-total">100</span>
+                                            </strong>
+                                            <div class="sort-cate">
+                                                <!-- <span class="inner-sort-cate">
+                                                    <span class="box-sorting">
+                                                        <input
+                                                            type="radio"
+                                                            id="sortCate0"
+                                                            name="sortCate"
+                                                            value="y"
+                                                            class="inp-sort"
+                                                        />
+                                                        <label for="sortCate0" class="lab-sort"> 제목+본문 검색 </label>
+                                                    </span>
+                                                    <span class="box-sorting">
+                                                        <input
+                                                            type="radio"
+                                                            id="sortCate1"
+                                                            name="sortCate"
+                                                            value="n"
+                                                            class="inp-sort"
+                                                        />
+                                                        <label for="sortCate0" class="lab-sort"> 제목 검색 </label>
+                                                    </span>
+                                                </span> -->
+                                            </div>
+                                            <div class="box-select">
+                                                <div class="opt-comm">
+                                                    <label for="opKinds" class="screen-out" 결과분류></label>
+                                                    <span class="select-option select-on">전체</span>
+                                                    <select id="opKinds" class="opt-select">
+                                                        <option value="total">전체</option>
+                                                        <option
+                                                            value="
+                                                        recruiting"
+                                                        >
+                                                            모집중
+                                                        </option>
+                                                        <option value="epilogue">후기</option>
+                                                        <option value="personal">개인챌린지</option>
+                                                        <option value="group">그룹챌린지</option>
+                                                    </select>
+                                                    <span class="box-arrow">
+                                                        <span class="ico-together ico-arrow"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="list-challenge">
+                                            <li>
+                                                <challenge-card>
+                                                    <a class="link-pack" href="">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                class="img-thumb"
+                                                                kagetype="c203"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/G8C5X/btr2ZVBfp5p/mbpMpFrKKbLTEKmlpD9rm0/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                            <span class="box-together">
+                                                                <span class="bundle-tit">
+                                                                    <strong class="tit-together ellipsis-type1">
+                                                                        <span class="tag-bundle">
+                                                                            <span class="tag-state tag-state-default"
+                                                                                >후기</span
+                                                                            >
+                                                                        </span>
+                                                                        챌린지 내용1
+                                                                    </strong>
+                                                                    <span class="txt-proposer">
+                                                                        <span class="screen-out">챌린지 종류</span>
+                                                                        개인 챌린지
+                                                                    </span>
+                                                                </span>
+                                                                <span class="wrap-state">
+                                                                    <span class="state-bar">
+                                                                        <span
+                                                                            class="state-gage state-end"
+                                                                            style="width: 100%"
+                                                                        ></span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="box-number">
+                                                                    <span class="successful-user">
+                                                                        <span class="screen-out">총 성공한 인원</span>
+                                                                        ???명
+                                                                    </span>
+                                                                    <span class="success-rate state-end">
+                                                                        <span class="screen-out">성공률</span>
+                                                                    </span>
+                                                                    ???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </challenge-card>
+                                            </li>
+                                            <li>
+                                                <challenge-card>
+                                                    <a class="link-pack" href="">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                class="img-thumb"
+                                                                kagetype="c203"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/G8C5X/btr2ZVBfp5p/mbpMpFrKKbLTEKmlpD9rm0/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                            <span class="box-together">
+                                                                <span class="bundle-tit">
+                                                                    <strong class="tit-together ellipsis-type1">
+                                                                        <span class="tag-bundle">
+                                                                            <span class="tag-state tag-state-default"
+                                                                                >후기</span
+                                                                            >
+                                                                        </span>
+                                                                        챌린지 내용1
+                                                                    </strong>
+                                                                    <span class="txt-proposer">
+                                                                        <span class="screen-out">챌린지 종류</span>
+                                                                        그룹 챌린지
+                                                                    </span>
+                                                                </span>
+                                                                <span class="wrap-state">
+                                                                    <span class="state-bar">
+                                                                        <span
+                                                                            class="state-gage state-end"
+                                                                            style="width: 100%"
+                                                                        ></span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="box-number">
+                                                                    <span class="successful-user">
+                                                                        <span class="screen-out">총 성공한 인원</span>
+                                                                        ???명
+                                                                    </span>
+                                                                    <span class="success-rate state-end">
+                                                                        <span class="screen-out">성공률</span>
+                                                                    </span>
+                                                                    ???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </challenge-card>
+                                            </li>
+                                            <li>
+                                                <challenge-card>
+                                                    <a class="link-pack" href="">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                class="img-thumb"
+                                                                kagetype="c203"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/G8C5X/btr2ZVBfp5p/mbpMpFrKKbLTEKmlpD9rm0/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                            <span class="box-together">
+                                                                <span class="bundle-tit">
+                                                                    <strong class="tit-together ellipsis-type1">
+                                                                        <span class="tag-bundle">
+                                                                            <span class="tag-state tag-state-default"
+                                                                                >후기</span
+                                                                            >
+                                                                        </span>
+                                                                        챌린지 내용1
+                                                                    </strong>
+                                                                    <span class="txt-proposer">
+                                                                        <span class="screen-out">챌린지 종류</span>
+                                                                        개인 챌린지
+                                                                    </span>
+                                                                </span>
+                                                                <span class="wrap-state">
+                                                                    <span class="state-bar">
+                                                                        <span
+                                                                            class="state-gage state-end"
+                                                                            style="width: 100%"
+                                                                        ></span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="box-number">
+                                                                    <span class="successful-user">
+                                                                        <span class="screen-out">총 성공한 인원</span>
+                                                                        ???명
+                                                                    </span>
+                                                                    <span class="success-rate state-end">
+                                                                        <span class="screen-out">성공률</span>
+                                                                    </span>
+                                                                    ???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </challenge-card>
+                                            </li>
+                                            <li>
+                                                <challenge-card>
+                                                    <a class="link-pack" href="">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                class="img-thumb"
+                                                                kagetype="c203"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/G8C5X/btr2ZVBfp5p/mbpMpFrKKbLTEKmlpD9rm0/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                            <span class="box-together">
+                                                                <span class="bundle-tit">
+                                                                    <strong class="tit-together ellipsis-type1">
+                                                                        <span class="tag-bundle">
+                                                                            <span class="tag-state tag-state-default"
+                                                                                >후기</span
+                                                                            >
+                                                                        </span>
+                                                                        챌린지 내용1
+                                                                    </strong>
+                                                                    <span class="txt-proposer">
+                                                                        <span class="screen-out">챌린지 종류</span>
+                                                                        그룹 챌린지
+                                                                    </span>
+                                                                </span>
+                                                                <span class="wrap-state">
+                                                                    <span class="state-bar">
+                                                                        <span
+                                                                            class="state-gage state-end"
+                                                                            style="width: 100%"
+                                                                        ></span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="box-number">
+                                                                    <span class="successful-user">
+                                                                        <span class="screen-out">총 성공한 인원</span>
+                                                                        ???명
+                                                                    </span>
+                                                                    <span class="success-rate state-end">
+                                                                        <span class="screen-out">성공률</span>
+                                                                    </span>
+                                                                    ???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </challenge-card>
+                                            </li>
+                                            <li>
+                                                <challenge-card>
+                                                    <a class="link-pack" href="">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                class="img-thumb"
+                                                                kagetype="c203"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/G8C5X/btr2ZVBfp5p/mbpMpFrKKbLTEKmlpD9rm0/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                            <span class="box-together">
+                                                                <span class="bundle-tit">
+                                                                    <strong class="tit-together ellipsis-type1">
+                                                                        챌린지 내용1
+                                                                    </strong>
+                                                                    <span class="tag-bundle">
+                                                                        <span class="tag-state tag-state-recruiting"
+                                                                            >모집 중</span
+                                                                        >
+                                                                    </span>
+                                                                    <span class="txt-proposer">
+                                                                        <span class="screen-out">챌린지 종류</span>
+                                                                        개인 챌린지
+                                                                    </span>
+                                                                </span>
+                                                                <span class="wrap-state">
+                                                                    <span class="state-bar">
+                                                                        <span
+                                                                            class="state-gage state-end"
+                                                                            style="width: 50%"
+                                                                        ></span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="box-number">
+                                                                    <span class="successful-user">
+                                                                        <span class="screen-out">총 성공한 인원</span>
+                                                                        ???명
+                                                                    </span>
+                                                                    <span class="success-rate state-end">
+                                                                        <span class="screen-out">성공률</span>
+                                                                    </span>
+                                                                    ???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </challenge-card>
+                                            </li>
+                                            <li>
+                                                <challenge-card>
+                                                    <a class="link-pack" href="">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                class="img-thumb"
+                                                                kagetype="c203"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/G8C5X/btr2ZVBfp5p/mbpMpFrKKbLTEKmlpD9rm0/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                            <span class="box-together">
+                                                                <span class="bundle-tit">
+                                                                    <strong class="tit-together ellipsis-type1">
+                                                                        챌린지 내용1
+                                                                    </strong>
+                                                                    <span class="tag-bundle">
+                                                                        <span class="tag-state tag-state-recruiting"
+                                                                            >모집 중</span
+                                                                        >
+                                                                    </span>
+                                                                    <span class="txt-proposer">
+                                                                        <span class="screen-out">챌린지 종류</span>
+                                                                        그룹 챌린지
+                                                                    </span>
+                                                                </span>
+                                                                <span class="wrap-state">
+                                                                    <span class="state-bar">
+                                                                        <span
+                                                                            class="state-gage state-end"
+                                                                            style="width: 50%"
+                                                                        ></span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="box-number">
+                                                                    <span class="successful-user">
+                                                                        <span class="screen-out">총 성공한 인원</span>
+                                                                        ???명
+                                                                    </span>
+                                                                    <span class="success-rate state-end">
+                                                                        <span class="screen-out">성공률</span>
+                                                                    </span>
+                                                                    ???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </challenge-card>
+                                            </li>
+                                            <li>
+                                                <challenge-card>
+                                                    <a class="link-pack" href="">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                class="img-thumb"
+                                                                kagetype="c203"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/G8C5X/btr2ZVBfp5p/mbpMpFrKKbLTEKmlpD9rm0/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                            <span class="box-together">
+                                                                <span class="bundle-tit">
+                                                                    <strong class="tit-together ellipsis-type1">
+                                                                        챌린지 내용1
+                                                                    </strong>
+                                                                    <span class="tag-bundle">
+                                                                        <span class="tag-state tag-state-recruiting"
+                                                                            >모집 중</span
+                                                                        >
+                                                                    </span>
+                                                                    <span class="txt-proposer">
+                                                                        <span class="screen-out">챌린지 종류</span>
+                                                                        개인 챌린지
+                                                                    </span>
+                                                                </span>
+                                                                <span class="wrap-state">
+                                                                    <span class="state-bar">
+                                                                        <span
+                                                                            class="state-gage state-end"
+                                                                            style="width: 50%"
+                                                                        ></span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="box-number">
+                                                                    <span class="successful-user">
+                                                                        <span class="screen-out">총 성공한 인원</span>
+                                                                        ???명
+                                                                    </span>
+                                                                    <span class="success-rate state-end">
+                                                                        <span class="screen-out">성공률</span>
+                                                                    </span>
+                                                                    ???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </challenge-card>
+                                            </li>
+                                            <li>
+                                                <challenge-card>
+                                                    <a class="link-pack" href="">
+                                                        <span class="box-thumb">
+                                                            <span
+                                                                class="img-thumb"
+                                                                kagetype="c203"
+                                                                style="
+                                                                    background-image: url('https://mud-kage.kakaocdn.net/dn/G8C5X/btr2ZVBfp5p/mbpMpFrKKbLTEKmlpD9rm0/c203.jpg');
+                                                                "
+                                                            ></span>
+                                                            <span class="box-together">
+                                                                <span class="bundle-tit">
+                                                                    <strong class="tit-together ellipsis-type1">
+                                                                        챌린지 내용1
+                                                                    </strong>
+                                                                    <span class="tag-bundle">
+                                                                        <span class="tag-state tag-state-recruiting"
+                                                                            >모집 중</span
+                                                                        >
+                                                                    </span>
+                                                                    <span class="txt-proposer">
+                                                                        <span class="screen-out">챌린지 종류</span>
+                                                                        그룹 챌린지
+                                                                    </span>
+                                                                </span>
+                                                                <span class="wrap-state">
+                                                                    <span class="state-bar">
+                                                                        <span
+                                                                            class="state-gage state-end"
+                                                                            style="width: 50%"
+                                                                        ></span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="box-number">
+                                                                    <span class="successful-user">
+                                                                        <span class="screen-out">총 성공한 인원</span>
+                                                                        ???명
+                                                                    </span>
+                                                                    <span class="success-rate state-end">
+                                                                        <span class="screen-out">성공률</span>
+                                                                    </span>
+                                                                    ???%
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </challenge-card>
+                                            </li>
+                                        </ul>
+                                        <div type="button" class="list-more">
+                                            <button class="link-round link-other2">더보기</button>
+                                        </div>
+                                    </div>
+                                    <div class="group-schbrag2">
+                                        <strong class="tit-section"
+                                            >Wake Up!
+                                            <span class="txt-total">12</span>
+                                        </strong>
+                                        <ul class="list-brag2">
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 1</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 1이 올린 Wake Up! 의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 2</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 2이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 3</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 3이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 4</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 4이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 5</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 5이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 6</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 6이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 7</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 7이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user81</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 8이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 9</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 9이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 10</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 10이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 11</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 11이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="link-brag2">
+                                                    <span
+                                                        class="img-profile2"
+                                                        style="
+                                                            background-image: url('https://mud-kage.kakaocdn.net/dn/x3ihD/btrLZPGiVoG/oabZc33gEqyH7Jv4Jo8Zt1/c160.jpg');
+                                                        "
+                                                    ></span>
+                                                    <span class="info-brag2">
+                                                        <span class="brag-user-name2">user 12</span>
+                                                        <span class="cont-brag2 ellipsis-type1"
+                                                            >user 12이 올린 Wake Up!의 간략한 내용</span
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div type="button" class="list-more">
+                                        <button class="link-round link-other2">더보기</button>
+                                    </div>
+                                    <!-- <div class="group-schbrag1">
+                                        <strong class="tit-section">
+                                            Wake Up!
+                                            <span class="txt-total">6</span>
+                                        </strong>
+                                        <div class="area-brag">
+                                            <div class="pack-brag">
+                                                <a class="link-brag" href="" targhet="-blank">
+                                                    <span class="wrap-thumb">
+                                                        <img
+                                                            class="img-profile"
+                                                            src="https://mud-kage.kakaocdn.net/dn/AHEd3/btstzwoKwUp/FlKmCcAvUj6okhm6wpsNAk/c160.jpg"
+                                                            alt="프로필 이미지"
+                                                        />
+                                                    </span>
+                                                    <span class="info-brag-user">
+                                                        <spna class="name-brag-user">user 1</spna>
+                                                        <spna class="txt-assist"
+                                                            >user 1이 올린 Wake Up! 글의 간략한 내용</spna
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="pack-brag">
+                                                <a class="link-brag" href="" targhet="-blank">
+                                                    <span class="wrap-thumb">
+                                                        <img
+                                                            class="img-profile"
+                                                            src="https://mud-kage.kakaocdn.net/dn/AHEd3/btstzwoKwUp/FlKmCcAvUj6okhm6wpsNAk/c160.jpg"
+                                                            alt="프로필 이미지"
+                                                        />
+                                                    </span>
+                                                    <span class="info-brag-user">
+                                                        <spna class="name-brag-user">user 2</spna>
+                                                        <spna class="txt-assist"
+                                                            >user 2이 올린 Wake Up! 글의 간략한 내용</spna
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="pack-brag">
+                                                <a class="link-brag" href="" targhet="-blank">
+                                                    <span class="wrap-thumb">
+                                                        <img
+                                                            class="img-profile"
+                                                            src="https://mud-kage.kakaocdn.net/dn/AHEd3/btstzwoKwUp/FlKmCcAvUj6okhm6wpsNAk/c160.jpg"
+                                                            alt="프로필 이미지"
+                                                        />
+                                                    </span>
+                                                    <span class="info-brag-user">
+                                                        <spna class="name-brag-user">user 3</spna>
+                                                        <spna class="txt-assist"
+                                                            >user 3이 올린 Wake Up! 글의 간략한 내용</spna
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="pack-brag">
+                                                <a class="link-brag" href="" targhet="-blank">
+                                                    <span class="wrap-thumb">
+                                                        <img
+                                                            class="img-profile"
+                                                            src="https://mud-kage.kakaocdn.net/dn/AHEd3/btstzwoKwUp/FlKmCcAvUj6okhm6wpsNAk/c160.jpg"
+                                                            alt="프로필 이미지"
+                                                        />
+                                                    </span>
+                                                    <span class="info-brag-user">
+                                                        <spna class="name-brag-user">user 4</spna>
+                                                        <spna class="txt-assist"
+                                                            >user 4이 올린 Wake Up! 글의 간략한 내용</spna
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="pack-brag">
+                                                <a class="link-brag" href="" targhet="-blank">
+                                                    <span class="wrap-thumb">
+                                                        <img
+                                                            class="img-profile"
+                                                            src="https://mud-kage.kakaocdn.net/dn/AHEd3/btstzwoKwUp/FlKmCcAvUj6okhm6wpsNAk/c160.jpg"
+                                                            alt="프로필 이미지"
+                                                        />
+                                                    </span>
+                                                    <span class="info-brag-user">
+                                                        <spna class="name-brag-user">user 5</spna>
+                                                        <spna class="txt-assist"
+                                                            >user 5이 올린 Wake Up! 글의 간략한 내용</spna
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="pack-brag">
+                                                <a class="link-brag" href="" targhet="-blank">
+                                                    <span class="wrap-thumb">
+                                                        <img
+                                                            class="img-profile"
+                                                            src="https://mud-kage.kakaocdn.net/dn/AHEd3/btstzwoKwUp/FlKmCcAvUj6okhm6wpsNAk/c160.jpg"
+                                                            alt="프로필 이미지"
+                                                        />
+                                                    </span>
+                                                    <span class="info-brag-user">
+                                                        <spna class="name-brag-user">user 6</spna>
+                                                        <spna class="txt-assist"
+                                                            >user 6이 올린 Wake Up! 글의 간략한 내용</spna
+                                                        >
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div type="button" class="list-more">
+                                                <button class="link-round link-other2">더보기</button>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </search>
+                </span>
+                <footer></footer>
+            </div>
+        </section>
+        <script src="/staticfiles/js/lky/web/badgeshop-search-result.js"></script>
+    </body>
+</html>

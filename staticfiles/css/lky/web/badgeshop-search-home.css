@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'KakaoBig regular';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format('woff');
+}
+/*!sc*/
+@font-face {
+    font-family: 'KakaoBig Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format('woff2'),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format('woff');
+}
+
+html input[type='button'],
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='reset'],
+input[type='search']::-webkit-search-cancel-button,
+input[type='submit'],
+input[type='tel'],
+input[type='text'],
+input[type='url'] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+select,
+textarea {
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+/* body CSS */
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    background: #fff;
+}
+
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+td,
+textarea,
+th {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoBig Regular, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, dotum, 돋움, sans-serif;
+    color: #444;
+}
+
+body,
+html {
+    min-width: 1140px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+#dkWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100vh;
+}
+
+#dkContent,
+#rootContent {
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+#dkContent {
+    position: relative;
+    margin: 0 0 -212px;
+}
+
+#mArticle {
+    padding: 0 0 250px;
+}
+
+.cont-search #mArticle {
+    padding-bottom: 262px;
+}
+
+.cont-search #mArticle {
+    margin-bottom: 100px;
+    padding-bottom: 252px;
+}
+
+.screen-out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.group-schkeyword {
+    padding-top: 40px;
+}
+
+.group-schkeyword .form-search {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+.group-schkeyword .box-search {
+    position: relative;
+    height: 70px;
+    padding: 0 67px;
+    border-radius: 35px;
+    background-color: #f7f8f9;
+}
+
+.group-schkeyword .box-search .tf-keyword {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: #444;
+    font-family: KakaoBig Bold, sans-serif;
+    background-color: initial;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+button {
+    border: 0;
+    border-radius: 0;
+    background-color: initial;
+    cursor: pointer;
+}
+
+.group-schkeyword .btn-delete {
+    position: absolute;
+    right: 26px;
+    top: 20px;
+    width: 29px;
+    height: 29px;
+    display: none;
+}
+
+.group-schkeyword .ico-delete {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background-position: -532px -128px;
+}
+
+.group-schkeyword .btn-search {
+    position: absolute;
+    top: 19px;
+    left: 28px;
+    width: 30px;
+    height: 30px;
+}
+
+.ico-together {
+    background: url('https://t1.kakaocdn.net/together_image/common/ico_together_231005.png') no-repeat 0 0;
+}
+
+.ico-together,
+.ico-together2 {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.group-schkeyword .ico-search {
+    width: 25px;
+    height: 25px;
+    background-position: -492px -512px;
+}
+
+.search-cont {
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.group-schtag {
+    padding-top: 56px;
+    clear: both;
+}
+
+.tit-section {
+    display: block;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #444;
+    font-family: KakaoBig Bold, sans-serif;
+    box-sizing: border-box;
+}
+
+.search-cont .tit-section {
+    font-size: 20px;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+.hash-group {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 19px;
+    text-align: center;
+}
+
+.group-schtag .hash-group {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 16px;
+    margin: 0 -3px;
+    text-align: left;
+    font-size: 0;
+}
+
+.link-hash {
+    display: inline-block;
+    margin: 3px 1px 3px 2px;
+    padding: 7px 16px 9px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.hash-type8 {
+    color: #bc77a9;
+    background-color: #f8f1f6;
+}
+
+.hash-type4 {
+    color: #b77d00;
+    background-color: #fdf8ea;
+}
+
+.hash-type2 {
+    color: #b67a69;
+    background-color: #f8f1f0;
+}
+
+.hash-type9 {
+    color: #6c6c6c;
+    background-color: #f4f4f4;
+}
+
+.hash-type3 {
+    color: #678c3f;
+    background-color: #f2f7ed;
+}
+
+.hash-type7 {
+    color: #48af71;
+    background-color: #ecf7f1;
+}
+
+.group-schtheme {
+    padding-top: 49px;
+}
+
+.tit-section {
+    display: block;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #444;
+    font-family: KakaoBig Bold, sans-serif;
+    box-sizing: border-box;
+}
+
+.search-cont .tit-section {
+    font-size: 20px;
+}
+
+dl,
+li,
+menu,
+ol,
+ul {
+    list-style: none;
+}
+
+.list-category {
+    overflow: hidden;
+    margin: 10px 0 0 -14px;
+}
+
+.list-category li {
+    float: left;
+    width: 128px;
+    height: 131px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+a {
+    color: #444;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+.list-category .link-category {
+    display: block;
+    width: 128px;
+    font-size: 15px;
+}
+
+.img-thumb {
+    display: block;
+}
+
+.list-category .link-category .img-thumb {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 7px;
+    border-radius: 50%;
+}
+
+.group-schtarget {
+    padding-top: 52px;
+}
