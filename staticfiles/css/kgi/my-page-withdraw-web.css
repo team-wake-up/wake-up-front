@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "KakaoBig regular";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format("woff2"),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format("woff");
+}
+
+/*!sc*/
+@font-face {
+    font-family: "KakaoBig Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format("woff2"),
+        url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format("woff");
+}
+
+body,
+button,
+input,
+select,
+td,
+textarea,
+th {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoBig Regular, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, dotum, 돋움, sans-serif;
+    color: #444;
+}
+
+div {
+    display: block;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+dl,
+li,
+menu,
+ol,
+ul {
+    list-style: none;
+}
+
+#withdraw {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100vh;
+}
+
+#withdraw-content {
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+.withdraw-container {
+    position: relative;
+    margin: 0 0 -212px;
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+.withdraw-article {
+    padding: 0 0 250px;
+}
+
+.withdraw-wrap {
+    width: 700px;
+    margin: 80px auto 60px;
+}
+
+.withdraw-tit {
+    display: block;
+    color: #202020;
+    font-family: KakaoBig Bold, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: -0.1px;
+}
+
+.withdraw-txt {
+    padding-top: 8px;
+    color: #202020;
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: -0.1px;
+}
+
+.area-info {
+    margin-top: 20px;
+    padding: 28px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+}
+
+.info-tit {
+    display: block;
+    color: #202020;
+    font-family: KakaoBig Bold, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.info-desc + .info-tit {
+    padding-top: 30px;
+}
+
+.info-desc {
+    color: #202020;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.info-list .info-desc {
+    color: #202020;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.info-list .info-item {
+    display: block;
+    font-family: KakaoBig Bold, sans-serif;
+}
+
+.info-list .info-desc + .info-desc {
+    padding-top: 30px;
+}
+
+.withdraw-img {
+    width: 80px;
+    height: 80px;
+    margin: 40px auto 0;
+    background: url("https://t1.kakaocdn.net/together_image/common/choonsik_sad.png") no-repeat 50% 50% / cover;
+}
+
+.bye-txt {
+    padding-top: 26px;
+    font-family: KakaoBig Bold, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.bye-btn-wrap {
+    width: 335px;
+    margin: 20px auto 0;
+}
+
+.withdraw-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 47px;
+    border-radius: 6px;
+    background-color: #ff4050;
+    color: #fff;
+    font-family: KakaoBig Bold, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+}
