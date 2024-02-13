@@ -371,9 +371,8 @@ section {
     height: 100%;
     overflow: hidden;
     border-radius: 6px;
-    background: url(https://mud-kage.kakaocdn.net/dn/cqB365/btsCLrFqH7N/13QO3lxPyusKtBJqWZexL0/img.jpg) 50% 50% / cover
-            no-repeat,
-        url(https://t1.kakaocdn.net/together-image/common/no-image.png);
+    background: url('/templete/lky/images/challenge-ex-image.jpg') 50% 50% / cover no-repeat,
+        url('/templete/lky/images/challenge-ex-image.jpg');
 }
 
 .wrap-wholeB .content-cardA .thumbnail {
