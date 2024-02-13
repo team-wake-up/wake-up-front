@@ -127,17 +127,6 @@ h1 {
 }
 
 /* logo-kakao */
-.logo-kakao {
-    display: block;
-    width: 88px;
-    height: 27px;
-    margin: 0 auto;
-    background: #fff url(/images/pc/logo_kakao.png) no-repeat 0 0;
-    background-size: 100px 80px;
-    font-size: 19px;
-    line-height: 27px;
-    text-align: center;
-}
 
 h1 {
     font-size: 2em;
@@ -158,7 +147,7 @@ h1 {
     overflow: hidden;
 }
 
-.logo-kakao {
+/* .logo-kakao {
     display: block;
     width: 88px;
     height: 27px;
@@ -168,6 +157,18 @@ h1 {
     font-size: 19px;
     line-height: 27px;
     text-align: center;
+} */
+
+.logo-kakao {
+    display: block;
+    width: 130px; /* 변경된 너비 */
+    height: auto; /* 변경된 높이 */
+    margin: 0 auto;
+    background: #fff url(/templete/khj/images/logo.png) no-repeat 0 0;
+    background-size: contain; /* 배경 크기를 콘텐츠에 맞게 조정 */
+    font-size: 19px; /* 폰트 크기 */
+    line-height: 27px; /* 행 간격 */
+    text-align: center; /* 가운데 정렬 */
 }
 
 h1 {

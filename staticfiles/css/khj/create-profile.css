@@ -71,15 +71,16 @@ h1 {
 
 .doc-title .tit-service .logo-kakao {
     display: block;
-    width: 88px;
-    height: 27px;
+    width: 130px; /* 변경된 너비 */
+    height: auto; /* 변경된 높이 */
     margin: 0 auto;
-    background: #fff url(https://accounts.kakaocdn.net/images/pc/logo_kakao.png) no-repeat 0 0;
-    background-size: 100px 80px;
-    font-size: 19px;
-    line-height: 27px;
-    text-align: center;
+    background: #fff url(/templete/khj/images/logo.png) no-repeat 0 0;
+    background-size: contain; /* 배경 크기를 콘텐츠에 맞게 조정 */
+    font-size: 19px; /* 폰트 크기 */
+    line-height: 27px; /* 행 간격 */
+    text-align: center; /* 가운데 정렬 */
 }
+
 
 /* ir-wa */
 .ir-wa {

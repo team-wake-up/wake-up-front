@@ -155,12 +155,12 @@ certifyNumber.addEventListener("input", () => {
     if (certifyRegex.test(certifyNumber.value)) {
         certifyError.style.display = "none";
         certifyDiv.style.borderBottom = "2px solid black";
-        nextButton.style.backgroundColor = "#fada0a";
+        nextButton.style.backgroundColor = "#fee500";
         nextButton.addEventListener("mouseover", () => {
-            nextButton.style.backgroundColor = "#fee500";
+            nextButton.style.backgroundColor = "#fada0a";
         });
         nextButton.addEventListener("mouseout", () => {
-            nextButton.style.backgroundColor = "#fada0a";
+            nextButton.style.backgroundColor = "#fee500";
         });
     } else {
         nextButton.style.backgroundColor = "f0f0f0";

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>비밀번호 찾기-새로운 비밀번호 설정</title>
+        <link rel="stylesheet" href="/staticfiles/css/khj/find-pw-new.css" />
+    </head>
+    <body class="account-comm">
+        <div id="kakaoWrap">
+            <!-- 상단 -->
+            <div id="kakaoHead" role="banner">
+                <h1 id="kakaoServiceLogo">
+                    <span class="ir-wa">wake up</span>
+                    <img
+                        id="brand"
+                        height="30"
+                        class="img-logo"
+                        alt="kakao"
+                        style="display: none"
+                    />
+                </h1>
+            </div>
+            <!-- 중단 -->
+            <div id="kakaoContent" class="cont-find" role="main">
+                <div id="cMain">
+                    <article id="mArticle">
+                        <h2 id="kakaoBody" class="screen-out">
+                            웨이크 업 계정 찾기 본문
+                        </h2>
+                        <div
+                            id="pageChangePasswordForFindPassword"
+                            data-role="page"
+                            data-url="pageChangePasswordForFindPassword"
+                            class="km-page-active"
+                        >
+                            <h2 class="tit-main">
+                                새로운 비밀번호를 입력해 주세요.
+                            </h2>
+                            <form action="#">
+                                <fieldset class="fld-apply fld-pwd">
+                                    <legend class="screen-out">
+                                        새로운 비밀번호 입력폼
+                                    </legend>
+                                    <strong class="tf-required"
+                                        >비밀번호</strong
+                                    >
+                                    <div class="item-tf">
+                                        <label
+                                            for="newPw"
+                                            class="lab-g lab-placeholder"
+                                        ></label>
+
+                                        <div class="item-tf item-inp" style="">
+                                            <label
+                                                for="id-new-password-8"
+                                                class="lab-g lab-placeholder lab-txt"
+                                                id="id-new-password-8-label"
+                                            >
+                                                <span class="screen-out"
+                                                    >비밀번호(8~32자리)</span
+                                                >
+                                            </label>
+                                            <input
+                                                data-type="password"
+                                                class="tf-g"
+                                                name="new-password"
+                                                type="password"
+                                                validator="new-password"
+                                                id="id-new-password-8"
+                                                autocomplete="off"
+                                                placeholder="비밀번호(8~32자리)"
+                                            />
+
+                                            <div class="util-tf">
+                                                <button
+                                                    type="button"
+                                                    class="btn-del"
+                                                    id="btn-del"
+                                                >
+                                                    <span
+                                                        class="ico-account ico-del"
+                                                        >삭제</span
+                                                    >
+                                                </button>
+                                            </div>
+
+                                            <p
+                                                class="info-error"
+                                                id="input-error"
+                                            >
+                                                비밀번호는
+                                                8~32자리(영문자/숫자/특수문자)로
+                                                입력할 수 있어요.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item-tf">
+                                        <label
+                                            for="againPw"
+                                            class="lab-g lab-placeholder"
+                                        ></label>
+
+                                        <div class="item-tf item-inp" style="">
+                                            <label
+                                                for="id-password-confirm-9"
+                                                class="lab-g lab-placeholder lab-txt"
+                                                id="id-password-confirm-9-label"
+                                            >
+                                                <span class="screen-out"
+                                                    >비밀번호 재입력</span
+                                                >
+                                            </label>
+                                            <input
+                                                data-type="password"
+                                                class="tf-g"
+                                                name="password-confirm"
+                                                type="password"
+                                                validator="password-confirm"
+                                                id="id-password-confirm-9"
+                                                autocomplete="off"
+                                                placeholder="비밀번호 재입력"
+                                            />
+
+                                            <div class="util-tf">
+                                                <button
+                                                    type="button"
+                                                    class="btn-del"
+                                                    id="re-btn-del"
+                                                >
+                                                    <span
+                                                        class="ico-account ico-del"
+                                                        >삭제</span
+                                                    >
+                                                </button>
+                                            </div>
+
+                                            <p
+                                                class="info-error"
+                                                id="re-input-error"
+                                            >
+                                                입력한 비밀번호와 재입력한
+                                                비밀번호가 일치하지 않습니다.
+                                                다시 확인해 주세요.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="list-desc">
+                                        <li>
+                                            <span
+                                                class="ico-account ico-dot"
+                                            ></span
+                                            >비밀번호는 8 ~ 32 자의 영문
+                                            대소문자, 숫자, 특수문자를 조합하여
+                                            설정해 주세요.
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="ico-account ico-dot"
+                                            ></span
+                                            >다른사이트에서 사용하는 것과
+                                            동일하거나 쉬운 비밀번호는 사용하지
+                                            마세요.
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="ico-account ico-dot"
+                                            ></span
+                                            >안전한 계정 사용을 위해 비밀번호는
+                                            주기적으로 변경해 주세요.
+                                        </li>
+                                    </ul>
+                                    <div class="wrap-btn wrap-btn3">
+                                        <button
+                                            class="btn-g submit btn-disabled btn-type2"
+                                            type="button"
+                                        >
+                                            완료
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- 하단 -->
+            <div
+                id="kakaoFoot"
+                class="footer-comm"
+                role="contentinfo"
+                aria-hidden="false"
+            >
+                <strong class="screen-out">서비스 이용정보</strong>
+                <div class="service-info">
+                    <a
+                        href="https://www.kakao.com/policy/terms?lang=ko"
+                        class="link-info"
+                        >이용약관</a
+                    ><span class="txt-bar"></span>
+                    <a
+                        href="https://www.kakao.com/policy/privacy?lang=ko"
+                        class="link-info link-policy"
+                        >개인정보 처리방침</a
+                    ><span class="txt-bar"></span>
+                    <a
+                        href="https://www.kakao.com/policy/oppolicy?lang=ko"
+                        class="link-info"
+                        >운영정책</a
+                    ><span class="txt-bar"></span>
+                    <a href="https://cs.kakao.com/" class="link-info"
+                        >고객센터</a
+                    >
+                    <a
+                        href="https://www.kakao.com/notices?lang=ko"
+                        class="link-info"
+                        >공지사항</a
+                    ><span class="txt-bar"></span>
+                </div>
+                <small class="txt-copyright"
+                    >Copyright ©
+                    <a
+                        href="https://www.kakaocorp.com/?lang=ko"
+                        class="link-kakao"
+                        >Kakao Corp.</a
+                    >
+                    All rights reserved.
+                </small>
+            </div>
+        </div>
+    </body>
+    <script src="/staticfiles/js/khj/find-pw-new.js"></script>
+</html>
