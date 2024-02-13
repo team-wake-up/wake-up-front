@@ -1,0 +1,423 @@
+/* kakao font */
+@font-face {
+    font-family: 'KakaoBig regular';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2) format('woff2'),url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff) format('woff');
+}
+
+/*!sc*/
+@font-face {
+    font-family: 'KakaoBig Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2) format('woff2'),url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff) format('woff');
+}
+
+
+
+/* .txt-tab:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 12px;
+    margin-top: -6px;
+    background-color: #e5e5e5;
+}
+ */
+
+
+
+li+li ::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 12px;
+    margin-top: -6px;
+    background-color: #e5e5e5;
+    
+}
+/* li 태그 전체 스타일 */
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+/* a 태그 전체 스타일 */
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+}
+
+/* ul 태그 전체 스타일 */
+ul{
+    margin: 0 !important;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+/* body 태그 전체 스타일 */
+body{
+    min-width: 1140px;
+    margin: 0;
+    /* padding: 0; */
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoBig Regular,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,dotum,돋움,sans-serif;
+    color: #444;
+    background: #fff;
+    -webkit-text-size-adjust: none;
+    display: block;
+
+}
+
+
+
+
+.wrap-tap{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 6px solid #eee;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoBig Regular,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,dotum,돋움,sans-serif;
+    color: #444;
+    -webkit-text-size-adjust: none;
+
+
+
+
+    
+}
+
+/* 전체를 감싸는 span */
+#rootContent{
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoBig Regular,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,dotum,돋움,sans-serif;
+    color: #444;
+    -webkit-text-size-adjust: none;
+}
+
+.cont-join{
+    position: relative;
+    margin: 0 0 -212px;
+    /* flex-grow: 1; */
+    min-height: calc(100vh - (70px + 250px));
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#mArticle {
+    padding: 0 0 250px;
+    margin: 0;
+}
+.screen-out{
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* 중메뉴 시작 css*/
+.wrap-tab {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 6px solid #eee;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.screen-out{
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+/* 중메뉴의 ul태그 메뉴이름들 */
+.list-tap-tap-type4{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+
+/* 중메뉴 1 */
+/* <::before></::before> */
+.link-tap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* padding: 0 28px; */
+    font-size: 14px;
+    color: #888;
+    font-family: KakaoBig Bold;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+
+.txt-tab{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 28px;
+    font-size: 14px;
+    /* color: #888; */
+    font-family: KakaoBig Bold;
+    cursor: pointer;
+    /* color: #444; */
+}
+/* .screen-out{
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    list-style: none;
+    text-align: -webkit-match-parent;
+} */
+
+/* 공지사항 목록 */
+.group-official{
+    padding-bottom: 100px;
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 40px !important;
+    /* margin: 0; */
+    padding: 0;
+    display: block;
+}
+/* 전체리스트 (가려짐) */
+.screen-out{
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+/* 목록이 되는 ul태그 */
+.list-official{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.group-official .list-official li {
+    padding: 29px 0 35px;
+    border-bottom: 1px solid #eaeaea;
+    list-style: none;
+    margin: 0;
+    /* padding: 0; */
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* a태그 */
+.link-official {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    cursor: pointer;
+}
+.subject-official{
+    padding-top: 0;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    /* padding-top: 16px; */
+    /* display: block; */
+    font-weight: 400;
+    font-family: KakaoBig Bold;
+    font-size: 20px;
+    line-height: 31px;
+    font-style: normal;
+    /* font-weight: 400; */
+}
+.ico-pin{
+    display: inline-block;
+
+}
+.icon-pin{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    width: 14px;
+    
+}
+.ir-pm{
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+
+}
+
+/* 상세보기 */
+.wrap-view-notice-view{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+/* 상세보기 큰 div */
+.view-head{
+    display: table;
+    width: 700px;
+    margin: 0 auto;
+    padding: 31px 0 25px;  
+}
+/* 작성자 */
+.tit-official{
+    padding-top: 11px;
+    display: block;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* 상세보기 제목 */
+.subject-official{
+    padding-top: 7px;
+    display: block;
+    font-weight: 400;
+    font-family: KakaoBig Bold;
+    font-size: 20px;
+    line-height: 31px;
+    font-style: normal;
+    /* font-weight: 400; */
+}
+/* 상세보기 공지 등록날짜 */
+.date_official{
+    padding-top: 3px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: top;
+}
+/* 목록 작성 글 세부사항 */
+.view-body{
+    padding-top: 44px;
+    overflow: hidden;
+    width: 700px;
+    margin: 0 auto;
+    border-top: 1px solid #e5e5e5;
+    display: block;
+}
+#notice-img{
+    width: 1273px;
+    max-width: 100% ;
+    vertical-align: top;
+    border: 0;  
+}
+/* img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+} */
+/* 공지사항 세부 내용 */
+.span-notice-content{
+    font-family: Arial;
+    font-size: 16px;
+}
+p {
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.view-foot{
+    width: 700px;
+    margin: 52px auto 10px;
+}
+.name-writer{
+    position: relative;
+    display: block;
+    padding-top: 27px;
+    font-weight: 400;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-weight: bold;
+}

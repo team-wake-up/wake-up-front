@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style></style>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 파비콘 및 타이틀 -->
+        <link href="images/favicon.png" rel="shortcut icon" />
+        <link href="../../../staticfiles/css/ljr/admin/user-answer-details.css" rel="stylesheet" />
+        <title>문의 상세</title>
+    </head>
+    <body class="body-full">
+        <div class="all-full-div">
+            <!-- 모달 -->
+
+            <!-- 관리자페이지 전체 -->
+            <div class="content-full-div">
+                <!-- 상단 메뉴 -->
+                <div>
+                    <nav class="header-menu-nav">
+                        <!-- 관리자 왼쪽 로고 -->
+                        <div class="admin-left-logo-div">
+                            <a href="#">
+                                <div class="admin-logo-img-div">
+                                    <img src="images/logo.png" id="admin-logo" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                    <!-- 상단 메뉴 끝 -->
+
+                    <div class="admin-menu-end" style="width: 0%; height: 3px"></div>
+                </div>
+                <!-- 글 목록 -->
+                <div class="content-full-body-div">
+                    <main class="content-full">
+                        <div style="height: 12px"></div>
+                        <h3 class="user-answer-title">유저가 작성한 문의 제목</h3>
+                        <div class="user-answer-profile-div">
+                            <div class="user-answer-profile-div-detail">
+                                <!-- 프로필 이미지 -->
+                                <div>
+                                    <a href="">
+                                        <img src="../admin/images/human.png" alt="" class="user-profile-img" />
+                                    </a>
+                                </div>
+                                <!-- 프로필 닉네임 -->
+                                <div>
+                                    <!-- 닉네임 클릭시 타겟의 마이페이지 이동 가능 -->
+                                    <!-- 닉네임 -->
+                                    <div>
+                                        <a href="#" class="user-profile-name-move"> 정륜 </a>
+                                    </div>
+                                    <!-- 등록 날짜 및 시간-->
+                                    <div class="user-profile-date-time">
+                                        <a class="user-profile-date-time-day-atag" href="#"
+                                            ><span class="user-profile-date-time-day">2024. 2. 6. 10:20</span></a
+                                        >
+                                        <!-- 공개 범위 -->
+                                        <img src="../admin/images/circle.png" class="user-profile-circle-img" />
+                                        <p class="user-profile-range">전체공개</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 공유 버튼 및 메뉴 -->
+                            <div class="user-profile-share-menu-div">
+                                <!-- 공유 버튼 -->
+                                <!-- <div class="share-img-div">
+                                    <button aria-label="share" type="button" class="share">
+                                        <img class="share-img" src="images/share.png" alt="" />
+                                    </button>
+                                </div> -->
+                                <!-- 메뉴 버튼 -->
+                                <!-- <div class="menu-img-div">
+                                    <div class="menu-img-div-div">
+                                        <button aria-label="more-menu" type="button" class="more-button">
+                                            <img class="menu-img" src="images/menu.png" />
+                                        </button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- 프로필 끝 -->
+                        <div class="user-answer-content">
+                            <!-- 내용 -->
+                            <div class="user-answer-content-post-detail">
+                                <p>안녕하세요. 반갑습니당!</p>
+                            </div>
+                            <div class="width380px" style="width: 380px">
+                                <div style="height: 12px"></div>
+                                <div style="height: 52px"></div>
+                            </div>
+                        </div>
+
+                        <!-- 하단 유저정보 -->
+                        <section class="user-info">
+                            <!-- 사진 -->
+                            <div>
+                                <button class="user-info-img-button">
+                                    <img src="../admin/images/human.png" class="user-info-img" alt="" />
+                                </button>
+                            </div>
+                            <!-- 이름 -->
+                            <div class="user-info-name">
+                                <button class="user-info-name-text">정륜</button>
+                            </div>
+                        </section>
+                        <div class="border-t-border-primary"></div>
+                        <div style="height: 28px"></div>
+                        <!-- 답글 -->
+                        <div>
+                            <h4 class="comment-title">답글</h4>
+                            <div style="height: 24px"></div>
+                            <div class="comment-content-full-div">
+                                <div class="comment-content-full-div-div">
+                                    <div class="comment-content-admin-div">
+                                        <!-- 답글 : 관리자 댓글 사진 -->
+                                        <button class="comment-content-admin-button" type="button">
+                                            <img
+                                                src="../admin/images/favicon.png"
+                                                class="comment-content-admin-button-img"
+                                            />
+                                            <div class="comment-content-admin-button-div"></div>
+                                        </button>
+                                        <!-- 답글 : 관리자 명 -->
+                                        <div class="comment-content-admin-name-div">
+                                            <div class="comment-content-admin-name">관리자</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 12px"></div>
+                                    <!-- 답글 : 댓글 텍스트창 -->
+                                    <div class="comment-content-admin-text-box-div">
+                                        <label class="comment-content-admin-text-box-label">
+                                            <textarea
+                                                placeholder="답글을 작성해주세요."
+                                                class="comment-content-admin-textarea"
+                                                id="te"
+                                            ></textarea>
+                                        </label>
+                                        <div style="height: 18px"></div>
+                                        <!-- 취소 등록 버튼 -->
+                                        <div class="comment-content-admin-button-cancel-add">
+                                            <button class="comment-content-admin-button-cancel">취소</button>
+                                            <button class="comment-content-admin-button-add">등록</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="height: 23px"></div>
+                            <ul class="admin-answer"></ul>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../../../staticfiles/js/ljr/admin/user-answer-details.js"></script>
+</html>
