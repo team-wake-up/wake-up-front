@@ -275,13 +275,9 @@ video {
     width: 100%;
     height: 378px;
     padding-top: 0px;
-    /* text-align: center;
-    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
-    font-size: 100px; */
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("https://cdn.discordapp.com/attachments/1003237723789852710/1206781175654387762/1_.png?ex=65dd418d&is=65cacc8d&hm=a5ba3f086575df755aea8381c662ada66acc42f3bc2fa1c7368321ce6c23cd4a&");
-    /* background-image: url("./images/banner.png"); */
 }
 
 .main-txt {

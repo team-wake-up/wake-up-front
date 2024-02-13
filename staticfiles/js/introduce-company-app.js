@@ -41,7 +41,7 @@ dots.forEach((dot, i) => {
 
         if (count == 1) {
             console.log("1들어옴");
-            banner.style.transform = `translate(${-338.97 * i}px)`;
+            banner.style.transform = `translate(${-365.72 * i}px)`;
             banner.style.transition = "transform 0.7s";
             count = 1;
             changeButtonStyle();
@@ -50,7 +50,7 @@ dots.forEach((dot, i) => {
         }
         if (count == 2) {
             console.log("2들어옴");
-            banner.style.transform = `translate(${-338.97 * i}px)`;
+            banner.style.transform = `translate(${-365.72 * i}px)`;
             banner.style.transition = "transform 0.7s";
             count = 2;
             changeButtonStyle();
@@ -59,7 +59,7 @@ dots.forEach((dot, i) => {
         }
         if (count == 3) {
             console.log("3들어옴");
-            banner.style.transform = `translate(${-338.97 * i}px)`;
+            banner.style.transform = `translate(${-365.72 * i}px)`;
             banner.style.transition = "transform 0.7s";
             count = 3;
             changeButtonStyle();
@@ -68,7 +68,7 @@ dots.forEach((dot, i) => {
         }
         if (count == 4) {
             console.log("4들어옴");
-            banner.style.transform = `translate(${-338.97 * i}px)`;
+            banner.style.transform = `translate(${-365.72 * i}px)`;
             banner.style.transition = "transform 0.7s";
             count = 4;
             changeButtonStyle();
@@ -77,7 +77,7 @@ dots.forEach((dot, i) => {
         }
         if (count == 5) {
             console.log("5들어옴");
-            banner.style.transform = `translate(${-338.97 * i}px)`;
+            banner.style.transform = `translate(${-365.72 * i}px)`;
             banner.style.transition = "transform 0.7s";
             count = 5;
             changeButtonStyle();
@@ -89,18 +89,18 @@ dots.forEach((dot, i) => {
 
 function autoSlide() {
     if (count == 1) {
-        banner.style.transform = `translate(${-338.97 * 0}px)`;
+        banner.style.transform = `translate(${-365.72 * 0}px)`;
         banner.style.transition = "transform 0.7s";
     }
     check = false;
-    banner.style.transform = `translate(${-338.97 * count}px)`;
+    banner.style.transform = `translate(${-365.72 * count}px)`;
     // console.log(count);
     banner.style.transition = "transform 0.7s";
     count++;
     // console.log(count);
 
     if (count == 6) {
-        banner.style.transform = `translate(${-338.97 * (count - 1)}px)`;
+        banner.style.transform = `translate(${-365.72 * (count - 1)}px)`;
         setTimeout(() => {
             banner.style.transition = "transform 0s";
             banner.style.transform = `translate(0px)`;
@@ -156,7 +156,7 @@ dots2.forEach((dot, i) => {
 
         if (count2 == 1) {
             console.log("1들어옴");
-            banner2.style.transform = `translate(${-354 * i}px)`;
+            banner2.style.transform = `translate(${-372 * i}px)`;
             banner2.style.transition = "transform 0.7s";
             count2 = 1;
             changeButtonStyle2();
@@ -165,7 +165,7 @@ dots2.forEach((dot, i) => {
         }
         if (count2 == 2) {
             console.log("2들어옴");
-            banner2.style.transform = `translate(${-354 * i}px)`;
+            banner2.style.transform = `translate(${-372 * i}px)`;
             banner2.style.transition = "transform 0.7s";
             count2 = 2;
             changeButtonStyle2();
@@ -174,7 +174,7 @@ dots2.forEach((dot, i) => {
         }
         if (count2 == 3) {
             console.log("3들어옴");
-            banner2.style.transform = `translate(${-354 * i}px)`;
+            banner2.style.transform = `translate(${-372 * i}px)`;
             banner2.style.transition = "transform 0.7s";
             count2 = 3;
             changeButtonStyle2();
@@ -183,7 +183,7 @@ dots2.forEach((dot, i) => {
         }
         if (count2 == 4) {
             console.log("4들어옴");
-            banner2.style.transform = `translate(${-354 * i}px)`;
+            banner2.style.transform = `translate(${-372 * i}px)`;
             banner2.style.transition = "transform 0.7s";
             count2 = 4;
             changeButtonStyle2();
@@ -192,7 +192,7 @@ dots2.forEach((dot, i) => {
         }
         if (count2 == 5) {
             console.log("5들어옴");
-            banner2.style.transform = `translate(${-354 * i}px)`;
+            banner2.style.transform = `translate(${-372 * i}px)`;
             banner2.style.transition = "transform 0.7s";
             count2 = 5;
             changeButtonStyle2();
@@ -204,18 +204,18 @@ dots2.forEach((dot, i) => {
 
 function autoSlide2() {
     if (count2 == 1) {
-        banner2.style.transform = `translate(${-354 * 0}px)`;
+        banner2.style.transform = `translate(${-372 * 0}px)`;
         banner2.style.transition = "transform 0.7s";
     }
     check2 = false;
-    banner2.style.transform = `translate(${-354 * count2}px)`;
+    banner2.style.transform = `translate(${-372 * count2}px)`;
     // console.log(count);
     banner2.style.transition = "transform 0.7s";
     count2++;
     // console.log(count2);
 
     if (count2 == 6) {
-        banner2.style.transform = `translate(${-354 * (count2 - 1)}px)`;
+        banner2.style.transform = `translate(${-372 * (count2 - 1)}px)`;
         setTimeout(() => {
             banner2.style.transition = "transform 0s";
             banner2.style.transform = `translate(0px)`;
